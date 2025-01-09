@@ -26,7 +26,13 @@ class DataExtractor:
         folder_path:str="./data/input_data/", 
         file_number:int=1
     ):
-        self.file_name = folder_path + f"paper_{file_number}.pdf"
+        if file_number < 10:
+            self.file_name = folder_path + f"paper_00{file_number}.pdf"
+        elif file_number < 100:
+            self.file_name = folder_path + f"paper_0{file_number}.pdf"
+        else:
+            self.file_name = folder_path + f"paper_{file_number}.pdf"
+            
         self.retriever = embedding_file(file=self.file_name)
         
         self.model = ChatOpenAI(model_name="gpt-4o", temperature=0.7)
