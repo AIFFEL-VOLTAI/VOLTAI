@@ -174,7 +174,7 @@ class DataExtractor:
         return GraphState(relevance=response.score)
 
 
-    def is_relevant(state: GraphState) -> GraphState:
+    def is_relevant(self, state: GraphState) -> GraphState:
         """관련성을 체크하는 함수
 
         Args:
