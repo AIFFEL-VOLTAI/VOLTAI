@@ -33,7 +33,7 @@ class DataExtractor:
             self.file_name = folder_path + f"paper_0{file_number}.pdf"
         else:
             self.file_name = folder_path + f"paper_{file_number}.pdf"
-            
+
         self.retriever = embedding_file(file=self.file_name)
         
         self.model = ChatOpenAI(model_name="gpt-4o-mini", temperature=0.7)
