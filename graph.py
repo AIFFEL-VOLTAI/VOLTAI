@@ -7,7 +7,8 @@ from langchain_core.documents.base import Document
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_teddynote.messages import messages_to_history
 from langchain.prompts import PromptTemplate
-from langchain_teddynote.evaluator import GroundednessChecker
+from pydantic import BaseModel, Field
+# from langchain_teddynote.evaluator import GroundednessChecker
 from tools import embedding_file
 
 
@@ -32,11 +33,11 @@ class DataExtractor:
             self.file_name = folder_path + f"paper_0{file_number}.pdf"
         else:
             self.file_name = folder_path + f"paper_{file_number}.pdf"
-          
+
         self.retriever = embedding_file(file=self.file_name)
         
-        self.model = ChatOpenAI(model_name="gpt-4o", temperature=0.7)
-        self.relevance_checker = ChatOpenAI(model="gpt-4o", temperature=0.7)
+        self.model = ChatOpenAI(model_name="gpt-4o-mini", temperature=0.7)
+        self.relevance_checker = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
         self.llm_answer_prompt = """
         Based on the following document, please provide an answer to the given question.
         Document:
@@ -47,6 +48,15 @@ class DataExtractor:
 
         Answer:
         """
+        self.relevance_check_template = """
+        You are a grader assessing relevance of a retrieved document to a user question. \n 
+        Here is the retrieved document: \n\n {context} \n\n
+        Here is the answer: {answer} \n
+        If the document contains keyword(s) or semantic meaning related to the user answer, grade it as relevant. \n
+        
+        Give a binary score 'yes' or 'no' score to indicate whether the retrieved document is relevant to the answer.
+        """
+
         
         # 그래프 생성
         bulider = StateGraph(GraphState)
@@ -163,21 +173,37 @@ class DataExtractor:
         Returns:
             GraphState: 관련성 점수를 저장한 상태 변수
         """    
-        # 관련성 평가기를 생성합니다.
-        retrieval_answer_relevant = GroundednessChecker(
-            llm=self.relevance_checker, target="retrieval-answer"
-        ).create()
+        
+        class GradeAnswer(BaseModel):
+            """Binary scoring to evaluate the appropriateness of answers to retrieval"""
+
+            binary_score: str = Field(
+                description="Indicate 'yes' or 'no' whether the answer solves the question"
+            )
+            
+        # 프롬프트 생성
+        prompt = PromptTemplate(
+            template=self.relevance_check_template,
+            input_variables=["context", "answer"],
+        )
+
+        # 체인
+        structured_relevance_checker = self.relevance_checker.with_structured_output(GradeAnswer)
+        relevance_chain = prompt | structured_relevance_checker
+        
+        # retrieval_answer_relevant = GroundednessChecker(
+        #     llm=self.relevance_checker, target="retrieval-answer"
+        # ).create()
 
         # 관련성 체크를 실행("yes" or "no")
-        response = retrieval_answer_relevant.invoke(
+        response = relevance_chain.invoke(
             {"context": state["context"], "answer": state["answer"]}
         )
 
-        print("==== [RELEVANCE CHECK] ====")
-        print(response.score)
+        print(f"RELEVANCE CHECK : {response.binary_score}")
 
         # 참고: 여기서의 관련성 평가기는 각자의 Prompt 를 사용하여 수정할 수 있습니다. 여러분들의 Groundedness Check 를 만들어 사용해 보세요!
-        return GraphState(relevance=response.score)
+        return GraphState(relevance=response.binary_score)
 
 
     def is_relevant(self, state: GraphState) -> GraphState:
