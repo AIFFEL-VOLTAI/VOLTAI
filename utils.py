@@ -20,7 +20,7 @@ def save_csv2output_folder(output_folder: str, df: pd.DataFrame, filename: str):
     
     # DataFrame을 CSV로 저장
     df.to_csv(output_path, index=False, encoding='utf-8-sig')
-    print(f"{filename} 파일이 {output_path}에 저장되었습니다.")
+    print(f"    {filename} 파일이 {output_path}에 저장되었습니다.")
 
 
 def outputs2csv(total_outputs:dict, filename="temp_result") -> pd.DataFrame:
