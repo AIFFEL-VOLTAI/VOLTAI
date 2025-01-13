@@ -24,20 +24,25 @@ class GraphState(TypedDict):
 class DataExtractor:
     def __init__(
         self, 
-        folder_path:str="./data/input_data/", 
-        file_number:int=1
+        file_folder:str="./data/input_data", 
+        file_number:int=1, 
+        db_folder:str="./vectordb"
     ):
         if file_number < 10:
-            self.file_name = folder_path + f"paper_00{file_number}.pdf"
+            file_name = f"paper_00{file_number}"
         elif file_number < 100:
-            self.file_name = folder_path + f"paper_0{file_number}.pdf"
+            file_name = f"paper_0{file_number}"
         else:
-            self.file_name = folder_path + f"paper_{file_number}.pdf"
+            file_name = f"paper_{file_number}"
 
-        self.retriever = embedding_file(file=self.file_name)
+        self.retriever = embedding_file(
+            file_folder=file_folder, 
+            file_name=file_name, 
+            db_folder=db_folder
+        )
         
         self.model = ChatOpenAI(model_name="gpt-4o", temperature=0.7)
-        self.relevance_checker = ChatOpenAI(model="gpt-4o", temperature=0.7)
+        self.relevance_checker = ChatOpenAI(model="gpt-4o", temperature=0.2)
         self.llm_answer_prompt = """
         Based on the following document, please provide an answer to the given question.
         Document:
@@ -200,7 +205,7 @@ class DataExtractor:
             {"context": state["context"], "answer": state["answer"]}
         )
 
-        print(f"RELEVANCE CHECK : {response.binary_score}")
+        print(f"        RELEVANCE CHECK : {response.binary_score}")
 
         # 참고: 여기서의 관련성 평가기는 각자의 Prompt 를 사용하여 수정할 수 있습니다. 여러분들의 Groundedness Check 를 만들어 사용해 보세요!
         return GraphState(relevance=response.binary_score)
