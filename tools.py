@@ -35,7 +35,8 @@ def embedding_file(file: str) -> VectorStoreRetriever:
 
     ## 검색기로 변환: 현재 벡터 저장소를 기반으로 VectorStoreRetriever 객체를 생성하는 기능을 제공
     retriever = vector_store.as_retriever(
-        search_type="similarity"    ## 어떻게 검색할 것인지? default가 유사도
+        search_type="similarity",    ## 어떻게 검색할 것인지? default가 유사도
+        search_kwargs={"k": 10}
     )
 
     return retriever
