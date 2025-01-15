@@ -1,0 +1,48 @@
+{
+    "CAM (Cathode Active Material)": {
+        "Stoichiometry information": {
+            "NCM-811": {
+                "Li ratio": "1",
+                "Ni ratio": "0.8",
+                "Co ratio": "0.1",
+                "Mn ratio": "0.1",
+                "O ratio": "2"
+            }
+        },
+        "Commercial NCM": "Yes",
+        "Lithium source": "LiOH",
+        "Synthesis method": "co-precipitation",
+        "Crystallization method": "None",
+        "Crystallization temperature": "None",
+        "Crystallization time": "None",
+        "Doping": "Mg doping",
+        "Coating": "Li3PO4 coating",
+        "Additional treatment": "None"
+    },
+    "Electrode (only for coin-cell (half-cell))": {
+        "Active material : Conductive additive : Binder ratio": "96 : 2 : 2",
+        "Electrolyte": "1 M LiPF6 in dimethyl carbonate (DMC), ethylene carbonate (EC), and ethyl methyl carbonate (EMC) (1:1:1 volume ratio)",
+        "Additive": "None",
+        "Electrode thickness": "None",
+        "Only Cathode Electrode diameter": "None",
+        "Loading density (mass loading of NCM)": "None",
+        "Additional treatment for electrode": "None"
+    },
+    "Morphological results": {
+        "Explanation of SEM results": "Fig. 2A, B; both samples have spherical secondary particles (about 11.7 μm), composed of primary particles with average diameters of 170 to 230 nm. MgHPO4 modification does not influence the size and shape of NCM cathode materials.",
+        "Explanation of TEM results": "Fig. 2D; a thin Li3PO4 coating layer with about 1.8 nm thickness is formed on the M-NCM particle."
+    },
+    "Cathode Performance": {
+        "Capacity at all C-rate, mAh/g (with electrode state)": [
+            {
+                "203.5 mAh/g": "@0.1C, M-NCM",
+                "199.1 mAh/g": "@0.1C, pristine NCM",
+                "203.4 mAh/g": "@0.1C, M-NCM",
+                "180.0 mAh/g": "@5.0C, M-NCM",
+                "159.0 mAh/g": "@5.0C, pristine NCM"
+            }
+        ],
+        "Voltage range": "3.0–4.3 V",
+        "Temperature": "Room temperature"
+    }
+}
