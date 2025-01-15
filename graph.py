@@ -41,8 +41,8 @@ class DataExtractor:
             db_folder=db_folder
         )
         
-        self.model = ChatOpenAI(model_name="gpt-4o", temperature=0.7)
-        self.relevance_checker = ChatOpenAI(model="gpt-4o", temperature=0.2)
+        self.model = ChatOpenAI(model_name="gpt-4o", temperature=0.4)
+        self.relevance_checker = ChatOpenAI(model="gpt-4o", temperature=0.5)
         self.llm_answer_prompt = """
         Based on the following document, please provide an answer to the given question.
         Document:
@@ -60,7 +60,7 @@ class DataExtractor:
         If the document contains keyword(s) or semantic meaning related to the user answer, grade it as relevant. \n
         
         Give a binary score 'yes' or 'no' score to indicate whether the retrieved document is relevant to the answer.
-        If the retrieved document does not contain the values or information being searched for, and 'none' is provided as the answer, check if the response accurately reflects the absence of the requested information. If the absence is accurate and justified, grade the document as relevant even if the values are 'none'.
+        If the retrieved document does not contain the values or information being searched for, and 'None' is provided as the answer, check if the response accurately reflects the absence of the requested information. If the absence is accurate and justified, grade the document as relevant even if the values are 'None'.
         """
         
         # 그래프 생성
