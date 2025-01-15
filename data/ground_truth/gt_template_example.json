@@ -1,48 +1,70 @@
 {
     "CAM (Cathode Active Material)": {
         "Stoichiometry information": {
-            "NCM-811": {
+            "LiNi1/3Co1/3Mn1/3O2": {
                 "Li ratio": "1",
-                "Ni ratio": "0.8",
-                "Co ratio": "0.1",
-                "Mn ratio": "0.1",
+                "Ni ratio": "1/3",
+                "Co ratio": "1/3",
+                "Mn ratio": "1/3",
                 "O ratio": "2"
             }
         },
-        "Commercial NCM": "Yes",
-        "Lithium source": "LiOH",
-        "Synthesis method": "co-precipitation",
-        "Crystallization method": "None",
-        "Crystallization temperature": "None",
-        "Crystallization time": "None",
-        "Doping": "Mg doping",
-        "Coating": "Li3PO4 coating",
-        "Additional treatment": "None"
+        "Whether or not commercial NCM was used for each sample (Stoichiometry information in order)": [
+            "no"
+        ],
+        "Lithium source": "LiNO3",
+        "Synthesis method": "solution combustion",
+        "Describe the crystallization method, such as Hydrothermal, Sintering, or any other technique used during the process.": "calcination",
+        "What is the Crystallization final temperature in degree of Celcius used in the process? (e.g., calcination or sintering) mentioned for the crystallization stage.": "850",
+        "What is the time duration for the final crystallization process, including any calcination or sintering stages? Specify the hours.": "15",
+        "Doping": "None",
+        "Coating": "reduced graphene oxide (RGO)",
+        "Additional treatment": "microwave irradiation for reduction of graphene oxide"
     },
     "Electrode (only for coin-cell (half-cell))": {
-        "Active material : Conductive additive : Binder ratio": "96 : 2 : 2",
-        "Electrolyte": "1 M LiPF6 in dimethyl carbonate (DMC), ethylene carbonate (EC), and ethyl methyl carbonate (EMC) (1:1:1 volume ratio)",
+        "Active material to Conductive additive to Binder ratio": "None",
+        "Electrolyte": {
+            "Salt": "LiPF6",
+            "Concentration": "1M",
+            "Solvent": "EC:DMC",
+            "Solvent ratio": "1:1"
+        },
         "Additive": "None",
-        "Electrode thickness": "None",
-        "Only Cathode Electrode diameter": "None",
-        "Loading density (mass loading of NCM)": "None",
+        "Loading density (mass loading of NCM, Standardize the unit to mg/cm^2)": "None",
         "Additional treatment for electrode": "None"
     },
     "Morphological results": {
-        "Explanation of SEM results": "Fig. 2A, B; both samples have spherical secondary particles (about 11.7 μm), composed of primary particles with average diameters of 170 to 230 nm. MgHPO4 modification does not influence the size and shape of NCM cathode materials.",
-        "Explanation of TEM results": "Fig. 2D; a thin Li3PO4 coating layer with about 1.8 nm thickness is formed on the M-NCM particle."
+        "Explanation of SEM results": "The SEM micrographs of the NCM synthesized by the combustion route show a uniform distribution of particle size with no significant agglomeration. The NCM particles have a narrow size range of 200-300 nm and exhibit a faceted morphology, resembling regular polyhedrons with smooth surfaces, indicating high crystallinity of the material.",
+        "Explanation of TEM results": "The TEM images reveal that the graphene sheets are supported on the TEM holder, showing thin carbon sheets with relatively aggregated structures, wrinkled surfaces, and folding. The graphene sheet has a 1-2 mm lateral size. In the NCMeRGO composite, the TEM micrographs depict transparent RGO sheets wrapped around either individual NCM nanoparticles or a bunch of oxide particles, forming a core-shell-like structure."
     },
     "Cathode Performance": {
         "Capacity at all C-rate, mAh/g (with electrode state)": [
             {
-                "203.5 mAh/g": "@0.1C, M-NCM",
-                "199.1 mAh/g": "@0.1C, pristine NCM",
-                "203.4 mAh/g": "@0.1C, M-NCM",
-                "180.0 mAh/g": "@5.0C, M-NCM",
-                "159.0 mAh/g": "@5.0C, pristine NCM"
+                "155.3 mAh/g": "@0.1C, Pristine (NR0)"
+            },
+            {
+                "154.6 mAh/g": "@0.1C, NR1"
+            },
+            {
+                "166.5 mAh/g": "@0.1C, NR3"
+            },
+            {
+                "175.0 mAh/g": "@0.1C, NR5"
+            },
+            {
+                "45.5 mAh/g": "@5C, Pristine (NR0)"
+            },
+            {
+                "47.0 mAh/g": "@5C, NR1"
+            },
+            {
+                "75.4 mAh/g": "@5C, NR3"
+            },
+            {
+                "95.4 mAh/g": "@5C, NR5"
             }
         ],
-        "Voltage range": "3.0–4.3 V",
+        "Voltage range": "2.5–4.3 V",
         "Temperature": "Room temperature"
     }
 }
