@@ -181,4 +181,7 @@ pyrightconfig.json
 *.pkl
 vectordb/
 
+# output
+output/
+
 # End of https://www.toptal.com/developers/gitignore/api/python
