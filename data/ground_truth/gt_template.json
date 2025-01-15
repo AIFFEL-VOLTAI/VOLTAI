@@ -1,0 +1,40 @@
+{
+    "CAM (Cathode Active Material)": {
+        "Stoichiometry information": {
+            "": {
+                
+            }            
+        },
+        "Commercial NCM": ,
+        "Lithium source": ,
+        "Synthesis method": ,
+        "Crystallization method": ,
+        "Crystallization temperature": ,
+        "Crystallization time": ,
+        "Doping": ,
+        "Coating": ,
+        "Additional treatment": 
+    },
+    "Electrode (only for coin-cell (half-cell))": {
+        "Active material : Conductive additive : Binder ratio": ,
+        "Electrolyte": ,
+        "Additive": ,
+        "Electrode thickness": ,
+        "Only Cathode Electrode diameter": ,
+        "Loading density (mass loading of NCM)": ,
+        "Additional treatment for electrode": 
+    },
+    "Morphological results": {
+        "Explanation of SEM results": ,
+        "Explanation of TEM results": 
+    },
+    "Cathode Performance": {
+        "Capacity at all C-rate, mAh/g (with electrode state)": [
+            {
+
+            }
+        ],
+        "Voltage range": ,
+        "Temperature": 
+    }
+}
