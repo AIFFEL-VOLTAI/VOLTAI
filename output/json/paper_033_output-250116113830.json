@@ -1,0 +1,64 @@
+{
+    "CAM (Cathode Active Material)": {
+        "Stoichiometry information": {
+            "NCM701515": {
+                "Li ratio": "None",
+                "Ni ratio": "0.7",
+                "Co ratio": "0.15",
+                "Mn ratio": "0.15",
+                "O ratio": "None"
+            }
+        },
+        "Whether or not commercial NCM was used for each sample (Stoichiometry information in order)": [
+            "None"
+        ],
+        "Lithium source": "None",
+        "Synthesis method": "None",
+        "Describe the crystallization method, such as Hydrothermal, Sintering, or any other technique used during the process.": "None",
+        "What is the Crystallization final temperature in degree of Celcius used in the process? (e.g., calcination or sintering) mentioned for the crystallization stage.": "600",
+        "What is the time duration for the final crystallization process, including any calcination or sintering stages? Specify the hours.": "None",
+        "Doping": "None",
+        "Coating": "Al2O3/LiAlO2",
+        "Additional treatment": "Heat treatment"
+    },
+    "Electrode (only for coin-cell (half-cell))": {
+        "Active material to Conductive additive to Binder ratio": "90 : 5 : 5",
+        "Electrolyte": {
+            "Salt": "None",
+            "Concentration": "None",
+            "Solvent": "None",
+            "Solvent ratio": "None"
+        },
+        "Additive": "None",
+        "Loading density (mass loading of NCM, Standardize the unit to mg/cm^2)": "10.4−10.8",
+        "Additional treatment for electrode": "None"
+    },
+    "Morphological results": {
+        "Explanation of SEM results": "The SEM images (Figure 2a-c) depict the NCM701515 powders, including P-NCM, C-NCM-30, and C-NCM-600. The images show that both pristine and coated samples maintain a similar spherical morphology with diameters ranging from 5 to 15 µm. These secondary particles consist of submicron and nanosized primary particles. Additionally, EDX mappings (Figure 2d-g) confirm an even distribution of aluminum, indicating a uniform and conformal coating of Al2O3 on the NCM surface.",
+        "Explanation of TEM results": "High-resolution transmission electron microscopy (HR-TEM) analysis, as mentioned in the document, confirms the homogeneous coating of the NCM particles with an amorphous Al2O3 layer approximately 6 nm thick. This indicates that the coating process does not significantly alter the particle morphology or structure."
+    },
+    "Cathode Performance": {
+        "Capacity at all C-rate, mAh/g (with electrode state)": [
+            {
+                "153.5 mAh/g": "@0.1C, P-NCM"
+            },
+            {
+                "58.9 mAh/g": "After 190 cycles, P-NCM"
+            },
+            {
+                "83.3% retention": "After 190 cycles, C-NCM-600"
+            },
+            {
+                "Initial capacities are comparable for all three NCM cathodes": "@0.1C, all NCM cathodes"
+            },
+            {
+                "Lower capacity at 4C than P-NCM": "C-NCM-30"
+            },
+            {
+                "Significant improvement in C-rate performance above 0.5C compared to both P-NCM and C-NCM-30": "C-NCM-600"
+            }
+        ],
+        "Voltage range": "3.0–4.3 V vs Li+/Li",
+        "Temperature": "25°C"
+    }
+}

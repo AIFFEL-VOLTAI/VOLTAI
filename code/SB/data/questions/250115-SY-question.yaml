@@ -1,0 +1,33 @@
+main_question: |
+  Below are instructions for filling out items by referring to the examples.
+  The values shown to the right of the colon (":") are examples;
+  please delete them after reviewing and rewrite them with the values found in the PDF.
+  If any item is not mentioned in the PDF, do not remove it—write "None."
+
+example1:
+- CAM (Cathode Active Material):
+    Stoichiometry information:
+      NCM-622:
+        Li ratio: "1"
+        Ni ratio: "0.6"
+        Co ratio: "0.2"
+        Mn ratio: "0.2"
+        O ratio: "2"
+      ZrO2-NCM-622 (Z622):
+        Li ratio: "0.98"
+        Ni ratio: "0.6"
+        Co ratio: "0.2"
+        Mn ratio: "0.2"
+        O ratio: "2"
+    Whether or not commercial NCM was used for each sample (Stoichiometry information in order):
+      - "yes"
+      - "no"
+    Lithium source: "LiOH"
+    Synthesis method: "co-precipitation"
+    Describe the crystallization method, such as Hydrothermal, Sintering, or any other technique used during the process.: "Hydrothermal"
+    What is the Crystallization final temperature in degree of Celcius used in the process? (e.g., calcination or sintering) mentioned for the crystallization stage.: "100"
+    What is the time duration for the final crystallization process, including any calcination or sintering stages? Specify the hours.: "12"
+    Doping: "Zr4+"
+    Coating: "ZrO2"
+    Additional treatment: "None"
+

@@ -26,7 +26,8 @@ class DataExtractor:
         self, 
         file_folder:str="./data/input_data", 
         file_number:int=1, 
-        db_folder:str="./vectordb"
+        db_folder:str="./vectordb",
+        temperature:int=0.4
     ):
         if file_number < 10:
             file_name = f"paper_00{file_number}"
@@ -41,7 +42,7 @@ class DataExtractor:
             db_folder=db_folder
         )
         
-        self.model = ChatOpenAI(model_name="gpt-4o", temperature=0.5)
+        self.model = ChatOpenAI(model_name="gpt-4o", temperature=temperature)
         self.relevance_checker = ChatOpenAI(model="gpt-4o", temperature=0.5)
         self.llm_answer_prompt = """
         Based on the following document, please provide an answer to the given question.
