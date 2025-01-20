@@ -1,0 +1,58 @@
+{
+    "CAM (Cathode Active Material)": {
+        "Stoichiometry information": {
+            "LiNi1/3Co1/3Mn1/3O2": {
+                "Li ratio": "1",
+                "Ni ratio": "1/3",
+                "Co ratio": "1/3",
+                "Mn ratio": "1/3",
+                "O ratio": "2"
+            }
+        },
+        "Whether or not commercial NCM was used for each sample (Stoichiometry information in order)": [
+            "no"
+        ],
+        "Lithium source": "LiAc·2H2O",
+        "Synthesis method": "sol-gel method",
+        "Describe the crystallization method, such as Hydrothermal, Sintering, or any other technique used during the process.": "sintering",
+        "What is the Crystallization final temperature in degree of Celcius used in the process? (e.g., calcination or sintering) mentioned for the crystallization stage.": "850",
+        "What is the time duration for the final crystallization process, including any calcination or sintering stages? Specify the hours.": "10",
+        "Doping": "None",
+        "Coating": "Carbon coating",
+        "Additional treatment": "None"
+    },
+    "Electrode (only for coin-cell (half-cell))": {
+        "Active material to Conductive additive to Binder ratio": "80:15:5",
+        "Electrolyte": {
+            "Salt": "LiPF6",
+            "Concentration": "1 M",
+            "Solvent": ["ethylene carbonate (EC)", "dimethyl carbonate (DMC)"],
+            "Solvent ratio": "1:1 [v/v]"
+        },
+        "Additive": "None",
+        "Loading density (mass loading of NCM, Standardize the unit to mg/cm^2)": "5 mg",
+        "Additional treatment for electrode": "None"
+    },
+    "Morphological results": {
+        "Explanation of SEM results": "NCM and NCM/C exhibit irregular particle shapes with very small particle sizes.",
+        "Explanation of TEM results": "NCM particles range from 50–200 nm. NCM/C particles appear aggregated, uniformly distributed with a size of ~150 nm, and encapsulated by a carbon coating layer ~10 nm thick."
+    },
+    "Cathode Performance": {
+        "Capacity at all C-rate, mAh/g (with electrode state)": [
+            {
+                "0.5C": {
+                    "NCM/C": "191.2 mAh/g", 
+                    "NCM": "175.7 mAh/g"
+                }
+            },
+            {
+                "40C": {
+                    "NCM/C": "54.6 mAh/g", 
+                    "NCM": "13.2 mAh/g"
+                }
+            }
+        ],
+        "Voltage range": "2.50–4.50 V",
+        "Temperature": "30°C"
+    }
+}
