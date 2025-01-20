@@ -1,0 +1,59 @@
+{
+    "CAM (Cathode Active Material)": {
+      "Stoichiometry information": {
+        "LiNi0.85Co0.10Mn0.05O2": {
+          "Li ratio": "1",
+          "Ni ratio": "0.85",
+          "Co ratio": "0.10",
+          "Mn ratio": "0.05",
+          "O ratio": "2"
+        }
+      },
+      "Whether or not commercial NCM was used for each sample (Stoichiometry information in order)": [
+        "None"
+      ],
+      "Lithium source": "LiOH",
+      "Synthesis method": "co-precipitation",
+      "Describe the crystallization method, such as Hydrothermal, Sintering, or any other technique used during the process.": "Sintering",
+      "What is the Crystallization final temperature in degree of Celcius used in the process? (e.g., calcination or sintering) mentioned for the crystallization stage.": "750",
+      "What is the time duration for the final crystallization process, including any calcination or sintering stages? Specify the hours.": "12",
+      "Doping": "None",
+      "Coating": "boric acid (H3BO3) coating",
+      "Additional treatment": "water washing"
+    },
+    "Electrode (only for coin-cell (half-cell))": {
+      "Active material to Conductive additive to Binder ratio": "96.5:1.5:2",
+      "Electrolyte": {
+        "Salt": "LiPF6",
+        "Concentration": "1 M",
+        "Solvent": "EC:DMC",
+        "Solvent ratio": "1:1"
+      },
+      "Additive": "None",
+      "Loading density (mass loading of NCM, Standardize the unit to mg/cm^2)": "12",
+      "Additional treatment for electrode": "None"
+    },
+    "Morphological results": {
+      "Explanation of SEM results": "Fig. 2 shows that LiNi0.85Co0.10Mn0.05O2 crystallites are assembled into spherical agglomerates with dense packing. The agglomerates are about 20 μm in size and are formed by clusters of crystallites that are about 0.3-0.5 μm in size. The intercrystallite space is partly accessible to the liquid electrolyte and partly supplies lithium ions to the crystallites in the solid phase. The S1bare sample shows inclusions of irregular shape and widely varying sizes on the agglomerates surface, which are likely LiOH and Li2CO3. The washed and coated samples have fewer of these inclusions.",
+      "Explanation of TEM results": "None"
+    },
+    "Cathode Performance": {
+      "Capacity at all C-rate, mAh/g (with electrode state)": [
+        {
+          "197 mAh/g": "@0.2C, pristine"
+        },
+        {
+          "205 mAh/g": "@0.2C, Coating"
+        },
+        {
+          "181 mAh/g": "@2C, pristine"
+        },
+        {
+          "185 mAh/g": "@2C, Coating"
+        }
+      ],
+      "Voltage range": "3–4.3 V",
+      "Temperature": "Room temperature"
+    }
+  }
+  
