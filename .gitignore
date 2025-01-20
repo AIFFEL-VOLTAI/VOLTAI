@@ -176,4 +176,10 @@ pyrightconfig.json
 # pdf
 *.pdf
 
+# faiss & pkl
+*.faiss
+*.pkl
+vectordb/
+
+
 # End of https://www.toptal.com/developers/gitignore/api/python
