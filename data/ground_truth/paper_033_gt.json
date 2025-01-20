@@ -22,7 +22,7 @@
     "Coating": "Al2O3, Al2O3/LiAlO2",
     "Additional treatment": "Post-annealing at 600°C for 8 hours"
   },
-  "Electrode": {
+  "Electrode (only for coin-cell (half-cell))": {
     "Active material, Conductive additive, Binder ratio": "90: 5: 5",
     "Electrolyte": {
         "Salt": "LiPF6",

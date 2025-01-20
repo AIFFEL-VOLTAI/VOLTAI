@@ -21,7 +21,7 @@
         "Coating": "None",
         "Additional treatment": "None"
     },
-    "Electrode": {
+    "Electrode (only for coin-cell (half-cell))": {
         "Active material to Conductive additive to Binder ratio": "96: 2: 2",
         "Electrolyte": {
             "Salt": "LiPF6",
