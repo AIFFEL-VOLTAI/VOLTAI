@@ -4,8 +4,6 @@ from langchain_core.runnables import RunnableConfig
 from langchain_teddynote.messages import random_uuid
 
 import argparse
-import yaml
-import json
 
 from graph import DataExtractor
 from utils import load_question, outputs2csv, outputs2pprint, outputs2json
@@ -42,7 +40,11 @@ def main(args):
         voltai_graph = DataExtractor(file_folder=args.file_folder, file_number=file_num).graph
 
         # config 설정(재귀 최대 횟수, thread_id)
-        config = RunnableConfig(recursion_limit=args.recursion_limit, configurable={"thread_id": random_uuid()})
+        config = RunnableConfig(
+            recursion_limit=args.recursion_limit, 
+            # configurable={"thread_id": str(uuid.uuid4())}
+            configurable={"thread_id": random_uuid()}
+            )
         
         # 4개의 질문에 대해 그래프 실행 및 출력
         results = []
@@ -75,8 +77,8 @@ if __name__ == "__main__":
     parser.add_argument("-ff", "--file_folder", default="./data/input_data/", type=str, help="input data folder path")
     parser.add_argument("-fl", "--file_list", default=[56, 139], nargs='+', type=int, help="input data number")
     parser.add_argument("-rl", "--recursion_limit", default=20, type=int, help="maximum cycle of relevance check recursion")
-    parser.add_argument("-fn", "--fcsv_ile_name", default="temp_name", type=str, help="name of csv file")
-    parser.add_argument("-m", "--mode", default="csv", choices=["csv", "json"], type=str, help="choose output form")
+    parser.add_argument("-fn", "--csv_file_name", default="temp_name", type=str, help="name of csv file")
+    parser.add_argument("-m", "--mode", default="json", choices=["csv", "json"], type=str, help="choose output form")
     parser.add_argument("-a", "--all_files", default=False, type=str2bool, nargs='?', help="process to all papers")
     args = parser.parse_args()
 

@@ -41,7 +41,7 @@ class DataExtractor:
             db_folder=db_folder
         )
         
-        self.model = ChatOpenAI(model_name="gpt-4o", temperature=0.4)
+        self.model = ChatOpenAI(model_name="gpt-4o", temperature=0.5)
         self.relevance_checker = ChatOpenAI(model="gpt-4o", temperature=0.5)
         self.llm_answer_prompt = """
         Based on the following document, please provide an answer to the given question.
