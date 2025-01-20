@@ -34,8 +34,8 @@
         "Additional treatment for electrode": "None"
     },
     "Morphological results": {
-        "SEM results": "Figure 3 shows that all powders have a similar spherical morphology with no significant differences between samples. The spherical samples are composed of numerous primary particles, which are around 500 nm in size, regardless of the vanadium doping level. Vanadium doping does not appear to affect the morphology and size of the NCM materials.",
-        "TEM results": "None"
+        "Explanation of SEM results": "Figure 3 shows that all powders have a similar spherical morphology with no significant differences between samples. The spherical samples are composed of numerous primary particles, which are around 500 nm in size, regardless of the vanadium doping level. Vanadium doping does not appear to affect the morphology and size of the NCM materials.",
+        "Explanation of TEM results": "None"
     },
     "Cathode Performance": {
         "Capacity at all C-rate": [
