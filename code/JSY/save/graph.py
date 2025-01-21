@@ -36,13 +36,7 @@ class DataExtractor:
             
         self.retriever = embedding_file(file=self.file_name)
         
-        # SY) 여러 temperature 값 설정 및 모델 생성
-        self.temperatures = [0.4, 0.6, 0.8]
-        self.models = [
-            ChatOpenAI(model_name="gpt-4o", temperature=temp) 
-            for temp in self.temperatures
-        ]
-
+        self.model = ChatOpenAI(model_name="gpt-4o", temperature=0.5)
         self.relevance_checker = ChatOpenAI(model="gpt-4o", temperature=0.5)
         self.llm_answer_prompt = """
         Based on the following document, please provide an answer to the given question.
@@ -156,37 +150,22 @@ class DataExtractor:
             template=self.llm_answer_prompt,
             input_variables=["context", "question"],
             )
-        
-        # responses 딕셔너리에 각 temperature 값의 답변 저장
-        responses = {}
 
-        for i, model in enumerate(self.models):  # self.models에서 모델 가져오기
-            temp = self.temperatures[i]  # 해당 모델의 temperature 값
-            chain = prompt | model | JsonOutputParser()  # 체인 생성
-            
-            # 답변 생성
-            response = chain.invoke(
-                {
-                    "question": latest_question,
-                    "context": context,
-                    "chat_history": messages_to_history(state["messages"]),
-                }
-            )
+        # 체인 호출
+        chain = prompt | self.model | JsonOutputParser()
 
-            # temperature별 답변 저장
-            responses[f"answer_temp_{temp}"] = response
+        response = chain.invoke(
+            {
+                "question": latest_question,
+                "context": context,
+                "chat_history": messages_to_history(state["messages"]),
+            }
+        )
 
-        # 각 temperature 답변과 메세지를 상태에 저장
-        messages = [
-            ("user", latest_question),
-            ("assistant_temp_0.4", responses["answer_temp_0.4"]),
-            ("assistant_temp_0.6", responses["answer_temp_0.6"]),
-            ("assistant_temp_0.8", responses["answer_temp_0.8"]),
-        ]
-
+        # 생성된 답변, (유저의 질문, 답변) 메시지를 상태에 저장합니다.
         return GraphState(
-            **responses,  # 각 temperature 답변 추가
-            messages=messages  # 전체 메세지 저장
+            answer=response,
+            messages=[("user", latest_question), ("assistant", response)]
         )
 
 
