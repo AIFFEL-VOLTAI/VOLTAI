@@ -1,0 +1,91 @@
+{
+    "CAM (Cathode Active Material)": {
+        "Stoichiometry information": {
+            "NCM111": {
+                "Li ratio": "1",
+                "Ni ratio": "0.33",
+                "Co ratio": "0.33",
+                "Mn ratio": "0.33",
+                "O ratio": "2"
+            }, 
+            "NCM523": {
+                "Li ratio": "1",
+                "Ni ratio": "0.5",
+                "Co ratio": "0.2",
+                "Mn ratio": "0.3",
+                "O ratio": "2"
+            }, 
+            "NCM622": {
+                "Li ratio": "1",
+                "Ni ratio": "0.6",
+                "Co ratio": "0.2",
+                "Mn ratio": "0.2",
+                "O ratio": "2"
+            }, 
+            "NCM721": {
+                "Li ratio": "1",
+                "Ni ratio": "0.7",
+                "Co ratio": "0.2",
+                "Mn ratio": "0.1",
+                "O ratio": "2"
+            }, 
+            "NCM811": {
+                "Li ratio": "1",
+                "Ni ratio": "0.8",
+                "Co ratio": "0.1",
+                "Mn ratio": "0.1",
+                "O ratio": "2"
+            }, 
+            "NCM851005": {
+                "Li ratio": "1",
+                "Ni ratio": "0.85",
+                "Co ratio": "0.10",
+                "Mn ratio": "0.05",
+                "O ratio": "2"
+            }
+        },
+        "Whether or not commercial NCM was used for each sample (Stoichiometry information in order)": [
+            "Yes"
+        ],
+        "Lithium source": "None",
+        "Synthesis method": "None",
+        "Describe the crystallization method, such as Hydrothermal, Sintering, or any other technique used during the process.": "None",
+        "What is the Crystallization final temperature in degree of Celcius used in the process? (e.g., calcination or sintering) mentioned for the crystallization stage.": "None",
+        "What is the time duration for the final crystallization process, including any calcination or sintering stages? Specify the hours.": "None",
+        "Doping": "None",
+        "Coating": "None",
+        "Additional treatment": "None"
+    },
+    "Electrode (only for coin-cell (half-cell))": {
+        "Active material to Conductive additive to Binder ratio": {
+            "NCM111 and NCM523": "93 wt%, 4 wt%, 3 wt% (Super C65 1.5wt%, SFG6L 2.5wt%, Solef 5130 PVDF binder)",
+            "NCM622, NCM721, NCM811, NCM851005": "94 wt%, 3 wt%, 3 wt% (Super C65 1wt%, SFG6L 2wt%, Solef 5130 PVDF binder)"
+        },
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1 M",
+                "Solvent": ["ethylene carbonate (EC)", "dimethyl carbonate (DMC)"],
+                "Solvent ratio": "1:1 [wt/wt]"
+            },
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1 M",
+                "Solvent": ["ethylene carbonate (EC)", "diethyl carbonate (DEC)"],
+                "Solvent ratio": "3:7 [w/w]"
+            }
+        ],
+        "Additive": "None",
+        "Loading density (mass loading of NCM, Standardize the unit to mg/cm^2)": "None",
+        "Additional treatment for electrode": "None"
+    },
+    "Morphological results": {
+        "Explanation of SEM results": "None",
+        "Explanation of TEM results": "None"
+    },
+    "Cathode Performance": {
+        "Capacity at all C-rate, mAh/g (with electrode state)": "None",
+        "Voltage range": "3.0–4.6 V",
+        "Temperature": "25°C"
+    }
+}
