@@ -10,7 +10,7 @@ def load_question(question_path:str="./data/questions/250115-SY-question.yaml"):
         questions = yaml.safe_load(file)
     
     question_list = []
-    for i in range(1,2):
+    for i in range(1, 5):
         if i == 3 or i == 4:
            temp_question = f"""
 {questions["main_question"]}{questions[f"add_question{i}"]}
@@ -26,13 +26,6 @@ def load_question(question_path:str="./data/questions/250115-SY-question.yaml"):
 
     return question_list
 
-def load_discussion(path:str = "./data/yaml/discussion.yaml"):
-    with open(path, 'r', encoding = "utf-8") as file:
-        discussion = yaml.safe_laod(file)
-    
-    discussion_list = []
-
-    return 
 
 def save_data2output_folder(output_folder: str, data, filename: str):
     """
