@@ -1,0 +1,1543 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Between Scylla and Charybdis: Balancing Among Structural Stability and Energy Density of Layered NCM Cathode Materials for Advanced Lithium-Ion Batteries</title>
+				<funder>
+					<orgName type="full">BASF International Network for Batteries and Electrochemistry</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>American Chemical Society (ACS)</publisher>
+				<availability status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2017-10-31">October 31, 2017</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Lea</forename><surname>De Biasi</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Aleksandr</forename><forename type="middle">O</forename><surname>Kondrakov</surname></persName>
+							<idno type="ORCID">0000-0003-1465-2854</idno>
+							<affiliation key="aff2">
+								<orgName type="institution">BASF SE</orgName>
+								<address>
+									<postCode>67056</postCode>
+									<settlement>Ludwigshafen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Holger</forename><surname>Geßwein</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Institute for Applied Materials</orgName>
+								<orgName type="laboratory">Battery and Electrochemistry Laboratory</orgName>
+								<orgName type="institution" key="instit1">Institute of Nanotechnology</orgName>
+								<orgName type="institution" key="instit2">Karlsruhe Institute of Technology</orgName>
+								<address>
+									<addrLine>Hermann-von-Helmholtz-Platz 1</addrLine>
+									<postCode>76344</postCode>
+									<settlement>Eggenstein-Leopoldshafen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">Helmholtz Institute Ulm for Electrochemical Energy Storage</orgName>
+								<address>
+									<addrLine>Helmholtzstraße 11</addrLine>
+									<postCode>89081</postCode>
+									<settlement>Ulm</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Torsten</forename><surname>Brezesinski</surname></persName>
+							<idno type="ORCID">0000-0002-4336-263X</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Pascal</forename><surname>Hartmann</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="institution">BASF SE</orgName>
+								<address>
+									<postCode>67056</postCode>
+									<settlement>Ludwigshafen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jürgen</forename><surname>Janek</surname></persName>
+						</author>
+						<title level="a" type="main">Between Scylla and Charybdis: Balancing Among Structural Stability and Energy Density of Layered NCM Cathode Materials for Advanced Lithium-Ion Batteries</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">The Journal of Physical Chemistry C</title>
+						<title level="j" type="abbrev">J. Phys. Chem. C</title>
+						<idno type="ISSN">1932-7447</idno>
+						<idno type="eISSN">1932-7455</idno>
+						<imprint>
+							<publisher>American Chemical Society (ACS)</publisher>
+							<biblScope unit="volume">121</biblScope>
+							<biblScope unit="issue">47</biblScope>
+							<biblScope unit="page" from="26163" to="26171"/>
+							<date type="published" when="2017-10-31">October 31, 2017</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">ADB003BCBAB7F3ADD54EEB21DB4B1B76</idno>
+					<idno type="DOI">10.1021/acs.jpcc.7b06363</idno>
+					<note type="submission">Received: June 28, 2017 Revised: October 26, 2017</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.1" ident="GROBID" when="2025-01-24T07:31+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Two major strategies are currently pursued to improve the energy density of lithium-ion batteries using LiNi x Co y Mn z O 2 (NCM) cathode materials. One is to increase the fraction of redox active Ni (≥80%), which allows larger amounts of Li to be extracted at a given cutoff voltage (U max ). The other is to increase U max , in particular for medium-Ni content NCM materials. However, the accompanying lattice changes ultimately lead to capacity fading in both cases. Here the structural changes occurring in Li 1.02 Ni x Co y Mn z O 2 (with x = 1 / 3 , 0.5, 0.6, 0.7, 0.8 and 0.85) during cycling operation in the voltage range between 3.0 and 4.6 V vs Li are quantified by means of operando X-ray diffraction combined with detailed Rietveld analysis. All samples show a large decrease in unit cell volume upon charging, ranging from 2.4% for NCM111 (33% Ni) to 8.0% for NCM851005 (85% Ni). To make a fair comparison of the structural stability of the different NCM materials, energy densities as a function of U max are estimated and correlated with X-ray diffraction results. It is shown that NCMs with a lower Ni content allow for specific energies similar to that of, e.g., Ni-rich NCM811 (80% Ni) when operated at sufficiently high U max , but still undergo less pronounced changes in structure. Nevertheless, as indicated by charge/discharge tests, the capacity retention of low-and medium-Ni content NCMs cycled to high U max is also strongly affected by factors other than stability of the layered crystal lattice (electrolyte decomposition etc.). Overall, it is demonstrated that the complexity of the degradation processes needs to be better understood to identify optimal cycling conditions for specific cathode compositions.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>■ INTRODUCTION</head><p>The continuous development of optimized lithium-ion batteries (LIBs) is indispensable on the way to sustainable, cost-efficient and long-range electric vehicles (EVs). Besides the quest for high power performance and good safety characteristics, increasing the energy density appears to be a prime goal in the development of next-generation LIBs. <ref type="bibr" target="#b0">1</ref> Layered LiCoO 2 (LCO) is the state-of-the-art cathode material for commercial application in consumer electronics for more than 25 years. However, because of the high price of cobalt metal, the specific costs ($/kWh) of LCO-based LIBs do not allow for the introduction of EVs into the mass market. Layered lithium transition metal (TM) oxides of the general formula LiTMO 2 (with TM = 3d transition metals such as Ni, Co and Mn), <ref type="bibr" target="#b1">[2]</ref><ref type="bibr" target="#b2">[3]</ref><ref type="bibr" target="#b4">[4]</ref> so-called NCMs, allow to cut the costs and surpass the energy density limit of LCO cells due to the synergetic effect of the different TMs. <ref type="bibr" target="#b5">5</ref> Current 18650 cells comprising LCO and NCM cathode materials reach practical values of 740 Wh/L (250 Wh/kg) and 770 Wh/L (270 Wh/kg), respectively. While Ni increases the specific capacity, Mn has a stabilizing effect on the layered α-NaFeO 2 -type crystal structure and Co tends to mix less with Li and further reduces the amount of Ni in the Li layers. <ref type="bibr" target="#b1">2,</ref><ref type="bibr" target="#b6">6</ref> Extraction of Li proceeds mainly through oxidation of Ni and Co, <ref type="bibr" target="#b7">7</ref> yet the Ni ions are believed to be the main redox active species in the voltage range between 3.0 and 4.2 V (vs graphite). <ref type="bibr" target="#b8">8</ref> Thus, increasing substitution of Ni by both Mn and Co leads to a decrease in specific capacity. <ref type="bibr" target="#b9">9</ref> For example, LiNi 1/3 Co 1/3 Mn 1/3 O 2 (NCM111) delivers a specific capacity of about 150 mAh/g for U max = 4.2 V (when cycled against graphite, or U max = 4.3 V when cycled against lithium), which is not sufficient for long-range EVs though. In recent years, it has been demonstrated that high-Ni LiNi x Co y Mn z O 2 (x ≫ 1 / 3 ) allow for much higher degrees of delithiation, and therefore specific capacities in excess of 150 mAh/g. <ref type="bibr" target="#b10">10</ref> Nevertheless, increasing the Ni content is associated with a decrease in capacity retention, which is a major drawback so far. <ref type="bibr" target="#b11">11</ref> Part of the reason for this is the fact that Ni-rich materials suffer from larger volumetric changes with delithiation, leading to more severe degradation and mechanical failure. <ref type="bibr" target="#b10">10,</ref><ref type="bibr" target="#b12">[12]</ref><ref type="bibr" target="#b13">[13]</ref><ref type="bibr" target="#b14">[14]</ref><ref type="bibr" target="#b15">[15]</ref> Besides, increasing the Ni content results in increased surface reactivity (electrolyte decomposition). <ref type="bibr" target="#b16">[16]</ref><ref type="bibr" target="#b17">[17]</ref><ref type="bibr" target="#b18">[18]</ref> Another strategy to improve the energy density is to increase the charge cutoff voltage to over 4.3 V vs Li. For the sake of clarity, all voltages are given with respect to Li/Li + in the following (note that the voltage difference among cells using graphite [full-cell geometry] and lithium metal anodes [half-cell geometry] is around -100 mV). As an example, NCM111 has been reported to deliver a specific capacity of about 200 mAh/g in the voltage range from 2.5 to 4.6 V. <ref type="bibr" target="#b1">2</ref> However, charging NCM cathode materials to higher states of charge (SOC) is accompanied by more pronounced changes in lattice structure. <ref type="bibr" target="#b10">10,</ref><ref type="bibr" target="#b13">13,</ref><ref type="bibr" target="#b19">19</ref> From both industrial and scientific points of view, the question what cathode composition and voltage range provides the optimum in terms of energy density, costs, stability and safety is yet to be answered. For automotive applications, in particular, energy density is one of the most important parameters. In literature, electrode materials for LIBs are often benchmarked for a given voltage range or degree of (de)lithiation. For example, Ishidzu et al. studied and compared the volume changes of NCMs of different composition in the voltage range of 2.5-4.5 V. <ref type="bibr" target="#b13">13</ref> Nevertheless, from a technological point of view, the mere evaluation of, e.g., cycling stability for a given maximum cell voltage may not be sufficient. Cells using low-Ni NCMs typically last significantly longer than high-Ni NCM-based cells when operated in the same voltage range. However, for the latter, a significantly lower maximum cell voltage would be required for achieving similar energy densities.</p><p>In this work, we show that NCM111 and NCM811 cells provide virtually the same energy density at 4.6 and 4.3 V, respectively. Furthermore, we demonstrate that it is very important to analyze both the performance and structural degradation of different Ni content NCM cathodes for a given energy level rather than voltage range in a reference-type LIB. To allow for a reasonable performance assessment, we estimate the energy densities as a function of U max for a variety of NCMs and correlate the results with structural properties of the materials from operando X-ray diffraction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>■ EXPERIMENTAL SECTION</head><p>Li 1.02 Ni x Mn y Co z O 2 (x + y + z = 1) cathode materials with x:y:z = 1:1:1 (NCM111), 5:2:3 (NCM523), 6:2:2 (NCM622), 7:2:1 (NCM721), 8:1:1 (NCM811) and 85:10:5 (NCM851005) were obtained from BASF SE (Ludwigshafen, Germany). All electrodes were prepared by slurry casting onto Al foil using a KTF-S roll-to-roll coater (Mathis AG). For NCM622, NCM721, NCM811 and NCM851005, slurries were obtained by dispersing cathode material (94 wt %), Super C65 (1 wt %, Timcal) and SFG6L (2 wt %, Timcal) conductive carbon additives as well as Solef 5130 PVDF binder (3 wt %, Solvay) in 1-ethyl-2-pyrrolidone (NEP). For NCM111 and NCM523, slurries were obtained by dispersing cathode material (93 wt %), Super C65 (1.5 wt %) and SFG6L (2.5 wt %) conductive carbon additives as well as Solef 5130 PVDF binder (3 wt %) in NEP.</p><p>Electrochemical characterization was conducted at 25 °C on coin-type cells. The cells were assembled inside an Ar-filled glovebox (MBraun) by stacking cathode, glass microfiber separator (GF/D, GE Healthcare Life Sciences, Whatman) and lithium foil anode (Albemarle Germany GmbH) of diameters 13, 17, and 13 mm, respectively, using 250 μL of either LP30 (1 M LiPF 6 in a 1:1 [wt/wt] mixture of ethylene carbonate and dimethyl carbonate) or LP47 (1 M LiPF 6 in a 3:7 [w/w] mixture of ethylene carbonate and diethyl carbonate) as electrolytes (BASF SE). The areal loadings were 2.0 mAh/ cm 2 at C/10 and U max = 4.3 V. The energy densities were calculated from the specific capacity and average discharge voltage and are given as average of two cycles from two to four cells. Powder X-ray diffraction (XRD) was performed using a laboratory diffractometer optimized for battery research. <ref type="bibr" target="#b20">20</ref> The diffractometer is equipped with a molybdenum microfocus rotating anode (Mo-Kα 1,2 ) and a Pilatus 300 K-W area detector. The high brilliance of the primary beam allows penetration of pouch cells, so that measurements can be performed under realistic conditions (without using custom cells or X-ray windows). For operando XRD, pouch cells were assembled inside a dry room with dew point below -50 °C by stacking cathode (20 mm × 40 mm), Celgard 2500 polypropylene separator (30 mm × 50 mm) and lithium foil anode (24 mm × 44 mm) using 250 μL of LP47 (see Figure <ref type="figure" target="#fig_0">S1</ref> for comparison of the cyclability of pouch cells and standard coin cells). Prior to XRD, the electrodes were galvanostatically cycled in the voltage range between 3.0 and 4.3 V for three cycles. Then, the cells were inserted into the diffractometer and charged/discharged at C/10 during the measurement. A constant voltage step at the cutoff voltages was applied for 1 h to allow for thermodynamic equilibration of the electrode materials. 2D diffraction images were collected in transmission geometry with an exposure time of 75 s. The intensity of two consecutive images was added up and then integrated to obtain 1D patterns for further evaluation, resulting in a total time resolution of 150 s. Data analysis was performed by Rietveld refinement using TOPAS-Academic version 5. The instrumental resolution function was determined from an annealed CeO 2 sample and described by means of a (Thompson-Cox-Hastings) pseudo-Voigt profile function. <ref type="bibr" target="#b21">21</ref> The analysis comprised refinement of lattice parameters a and c and atomic coordinate z of the oxygen position. Both lithium (occ 3a = 1.00, occ 3b = 0.02) and oxygen occupancy parameters (occ 6c = 1.00) were fixed during refinement. Broadening effects (apparent crystallite size, microstrain etc.) were accounted for by convolution-based profile fitting as implemented in TOPAS. This approach is equivalent to the double-Voigt method described by Balzar et al. and is based on the integral breadth of the diffraction lines. <ref type="bibr" target="#b22">22,</ref><ref type="bibr" target="#b23">23</ref> Background refinement was made using a 10-term Chebyshev polynomial function. Zero-point correction was used to correct for sample displacement errors of both the cathode material and Al current collector. <ref type="bibr" target="#b24">24</ref> The VESTA software package was used to generate crystal structure images. <ref type="bibr" target="#b25">25</ref> ■ RESULTS AND DISCUSSION Electrochemical Characteristics. Electrochemical testing was performed on Li 1.02 Ni x Co y Mn z O 2 cathode materials with x:y:z = 1:1:1 (NCM111), 5:2:3 (NCM523), 6:2:2 (NCM622), 7:2:1 (NCM721), 8:1:1 (NCM811), and 85:10:5 (NCM851005) using coin-type cells with a lithium metal counter electrode. Figure <ref type="figure" target="#fig_0">1a</ref> shows charge/discharge curves obtained at C/5 between 3.0 and 4.6 V. As is seen, the higher the Ni content the more Li can be extracted, and therefore the higher the specific capacity (see also Figure <ref type="figure" target="#fig_1">2a</ref>). Besides, the voltage profiles show different features depending on the Ni content due to different redox behavior, as indicated by the differential capacity curves in Figure <ref type="figure" target="#fig_0">1b</ref>. While in the ternary system of LiNiO 2 , LiCoO 2 and LiMnO 2 the TMs are formally in the trivalent state (i.e., Ni 3+ , Co 3+ and Mn 3+ ), charge transfer is assumed to occur between Ni and Mn in the LiNi x Co y Mn z O 2 phase. The reason is the difference in electronegativity. <ref type="bibr" target="#b26">26,</ref><ref type="bibr" target="#b27">27</ref> Theoretical calculations suggest formal oxidation states of mixed divalent and trivalent Ni, trivalent Co, and tetravalent Mn. <ref type="bibr" target="#b26">[26]</ref><ref type="bibr" target="#b27">[27]</ref><ref type="bibr" target="#b30">[28]</ref> However, the main redox active species are believed to be Ni 2+ and Ni 3+ , and their concentration depends on the overall TM ratio.</p><p>All samples show characteristic redox peaks in the voltage range of 3.6-3.8 V (Figure <ref type="figure" target="#fig_0">1b</ref>). The peak splitting indicates the presence of two Ni redox pairs (namely, Ni 2+ /Ni 3+ and Ni 3+ / Ni 4+ ) with cycling, and their shape and area ratio point to different contributions depending on the Ni content. <ref type="bibr" target="#b26">26,</ref><ref type="bibr" target="#b27">27</ref> The peaks shift toward lower voltage with increasing Ni content, leading to a decrease in the average charge/discharge voltages. This phenomenon has been observed before and attributed to the lower redox potential of Ni than Co. <ref type="bibr" target="#b13">13,</ref><ref type="bibr" target="#b32">29</ref> Kim et al. showed that the electrochemical equilibrium potentials of these redox reactions also vary with Mn content in the structure. <ref type="bibr" target="#b26">26</ref> Using experimental GITT and computational calculations they found that high-Ni NCMs exhibit redox activity at lower relative voltages. However, less Mn also leads to lower voltages for the same Ni content. The Ni-rich samples, in particular NCM811 and NCM851005, further show features in the high-voltage region above 3.9 V, which we believe are due to multiphase transitions caused by slight distortions in the crystal structure. Such transformations have been observed for LiNiO 2 during delithiation and are likely to occur in high-Ni NCMs as well. <ref type="bibr" target="#b33">30</ref> Both NCM811 and NCM851005 show an additional voltage plateau around 4.2 V, appearing as a distinct peak in the differential capacity curves. This peak is not seen for the other NCM materials, and its origin has not yet been clearly resolved.</p><p>Figure <ref type="figure" target="#fig_1">2a</ref> depicts the specific capacity of the NCM cathodes after charging to 4.3 V ≤ U max ≤ 4.6 V. As expected, both NCM811 and NCM851005 provide the highest values, irrespective of the U max . At 4.3 V these cathode materials deliver capacities similar to that of the widely used LiNi 0.8 Co 0.15 Al 0.05 O 2 (NCA). <ref type="bibr" target="#b34">31,</ref><ref type="bibr" target="#b36">32</ref> The gravimetric energy density (GED) calculated as the product of specific charge and average discharge voltage is shown in Figure <ref type="figure" target="#fig_1">2b</ref>. The GED increases with both increasing Ni content and U max .</p><p>To make a fair comparison among the different NCM materialsalso with respect to their structural stability (see below)U max required to achieve the specific energy of NCM811 operated at 4.3 V (≈750 Wh/kg) was calculated for each composition. According to our estimates, NCM111, NCM523, NCM622, NCM721, and NCM851005 need to be operated at around 4.6, 4.55, 4.45, 4.4, and 4.25 V, respectively (Figure <ref type="figure" target="#fig_2">3</ref>). The obtained U max values agree well with the technological roadmaps of some cell manufacturers (e.g., NCM622 at 4.35 V in full-cells). Both NCM811 and NCM851005 offer the highest energy densities when U max is limited to 4.3 V, as is currently the case in commercial highperformance LIBs. However, similar GEDs can be achieved with the low-and medium-Ni NCM materials when increasing the maximum operation voltage. Thus, it is of upmost importance to identify the optimum in terms of materials composition and operating voltage range for specific  applications. From a scientific point of view, this means that the major degradation processes need to be better understood. In the following we focus on the (crystallographic) volume changes of NCMs occurring in the voltage range between 3.0 and 4.6 V since these are known to cause mechanical stress, which in turn leads to material fracture and fatigue.</p><p>Structural Characteristics. An overview of the NCM materials employed in this work and their composition are given in Table <ref type="table" target="#tab_0">1</ref>. The samples exhibit a well-developed layered crystalline structure of α-NaFeO 2 -type (space group R3m ̅ , Z = 3). It can be viewed as a stacking of alternating layers, in which TM and Li ions occupy octahedral sites in a cubic close-packed oxygen lattice (Figure <ref type="figure" target="#fig_3">4</ref>). The Ni, Co and Mn ions are statistically distributed over the 3b site in first approximation. Li ions (Wyckoff site 3a) are located in the interslabs between the TM layers. We assume that 2% of the 3b site in the TM layer are occupied by Li ions because of the small Li excess.</p><p>The lattice parameters of the pristine materials are given in Table <ref type="table" target="#tab_1">2</ref>. An increase in a with increasing Ni content is observed, which is due to the larger ionic radii of Ni 2+ (0.69 Å) and Ni 3+ (0.56 Å) compared to Co 3+ (0.545 Å) and Mn 4+ (0.530 Å). <ref type="bibr" target="#b38">33</ref> In contrast, c decreases, which is somewhat surprising and seems to be related to the content of all three TMs (rather than Ni only). For example, substitution of Mn by Co is known to cause a decrease in both lattice parameters. <ref type="bibr" target="#b39">34</ref> To gain insight into the evolution of the host structure with cycling, a series of operando XRD measurements were performed on the different NCM materials. Prior to XRD, the cells were cycled between 3.0 and 4.3 V first at C/10 for two cycles and then at C/5 for another cycle. The Li content δ per formula unit was around 1.02 for the pristine samples. To estimate δ at the beginning and end of the fourth charge cycle, we assumed that Coulombic efficiencies of less than 100% are a result of Li loss from the cathode material only. This loss of active Li during precycling was taken into account when calculating the amount of transferred Li + ions. The NCM cells exhibited open-circuit voltages ranging from 3.57 to 3.65 V prior to the fourth cycle. As can be seen from Table <ref type="table" target="#tab_0">1</ref>, δ was ≤0.21 after charging (note that a constant voltage step at U max = 4.6 V was applied for 1 h).</p><p>Figure <ref type="figure" target="#fig_4">5</ref> depicts contour plots of operando XRD patterns for NCM622. The evolution of the reflection positions and intensities is shown together with the voltage profile. We note that Bragg reflections other than those originating from the cathode material can be assigned to aluminum (from the current collector and pouch cell foil). A distinct hkl-dependent shift is observed during cycling. The reflections with h = k = 0 and l ≠ 0 (e.g., 003) first shift to lower 2θ values in the charge cycle. However, when the cell reaches a voltage of about 4.0 V, they shift back to the initial positions or to even larger 2θ values. In contrast, the reflections with h ≠ 0, k ≠ 0 and l = 0 (e.g., 110) show the opposite trend in that they shift almost exclusively toward larger 2θ values. Reverse shifts are observed upon discharge, and all reflections virtually reach their initial positions at the end of the cycle. This leads us to conclude that the layered structure is well preserved. However, a slight    broadening of the Bragg reflections occurs above 3.9 V and becomes more pronounced with further charging. During discharge a decrease in full width at half-maximum (fwhm) is observed below 3.8 V. As an example, Δfwhm 003 is found to be 0.002°after the charge/discharge cycle, thus emphasizing the high reversibility of the (de)lithiation process. Structural multiphase transitions from hexagonal to monoclinic (H1 → M), monoclinic to hexagonal (M → H2) and hexagonal to hexagonal (H2 → H3) typically occur when Li 1-x NiO 2 is delithiated with charging to 4.3 V, as indicated by the splitting of the original H1 10l and 11l reflections. <ref type="bibr" target="#b33">30,</ref><ref type="bibr" target="#b41">35</ref> It should be noted that the monoclinic modification differs only marginally from the hexagonal arrangement, and this break in symmetry leads to the appearance of additional reflections. However, Yang et al. showed that those assigned to the monoclinic phase can also be interpreted alternatively as two coexisting hexagonal phases. <ref type="bibr" target="#b42">36</ref> In both cases, nevertheless, the 2θ positions of the newly formed phase-whether hexagonal or monoclinic-would hardly differ from those of the initial reflections (Figure <ref type="figure" target="#fig_1">S2</ref>). Overall, we believe that this effect contributes to the observed broadening of the reflections.</p><p>Analogous XRD measurements were conducted on all NCM cathode materials. Figure <ref type="figure" target="#fig_5">6</ref> depicts contour plots of operando XRD patterns in the 2θ range around the 003 reflection obtained during charge (see also contour plots for selected 2θ ranges in Figure <ref type="figure" target="#fig_2">S3</ref>). Degradation of the layered structure is not observed in the voltage range studied, and the Bragg reflections show similar trends in the evolution with time. Again, the 003 reflection initially shifts to lower 2θ values and then to higher angles. Besides, the minimum in 2θ is similar at 8.4-8.5°for all samples. However, there are also significant differences. For example, the turning point (from decrease to increase) is at lower cell voltage for the high-Ni NCMs. Furthermore, the total shift in 2θ to higher angles is much less pronounced for the low-and medium-Ni NCMs (i.e., NCM111 and NCM523), with the position of the 003 reflection (8.6°2θ) being virtually identical before and after charging. In contrast, the 003 reflection shifts to significantly larger 2θ values in the highvoltage region with increasing Ni content and the final position is much different from the starting value.   <ref type="table" target="#tab_0">S1</ref>, while Figure <ref type="figure" target="#fig_4">S5</ref> shows selected Rietveld plots for NCM622. Both a and c strongly change with the voltage. The a-axis shrinks linearly at first, then levels off between 4.3 and 4.4 V and finally increases again slightly. The magnitude of the latter increase is larger for the Ni-rich NCMs. In contrast, the caxis first shows an increase by about 1.5%, followed by a decrease for all samples. This shrinkage always occurs when δ approaches 0.4 (Figure <ref type="figure" target="#fig_3">S4</ref>), and it is particularly severe for high-Ni NCMs (LiNi x Co y Mn z O 2 with x ≥ 0.8). The general trends observed are in agreement with the study by Ishidzu et al. <ref type="bibr" target="#b13">13</ref> It has been shown that the lattice parameter a reflects the TM-TM distance (in the TM layer). <ref type="bibr" target="#b43">37,</ref><ref type="bibr" target="#b44">38</ref> The ionic radii of the TMs decrease with increasing oxidation state, and therefore the decrease in lattice parameter a is likely associated with the oxidation of the TMs. The lattice parameter c represents the interslab distance of the Li layers. <ref type="bibr" target="#b43">37,</ref><ref type="bibr" target="#b44">38</ref> The initial increase is usually interpreted as a result of increasing Coulomb repulsion with Li extraction from the interlayer galleries. It has also been reported that lithium interacts electrostatically with oxygen. <ref type="bibr" target="#b44">38</ref> This interaction is apparently accompanied by partial charge transfer, which in turn is believed to effectively screen the electrostatic repulsion between the oxygen layers. The screening effect is reduced with increasing degree of delithiation, resulting in increased repulsion and expansion along the c-axis. When most of the lithium is removed, a contraction of the interslab distance is observed and with that a decrease in lattice parameter c. <ref type="bibr" target="#b19">19</ref> In particular for Ni-rich NCM materials, the severe change along the c-direction presumably causes structural instability of the lattice.</p><p>Because of the excellent time resolution of only 150 s per pattern we were able to directly correlate structural with electrochemical features. As mentioned above, both NCM811 and NCM851005 show a subtle plateau in the voltage profile above 4.1 V, appearing as a peak in the differential capacity curves. On the basis of the XRD data we calculated the "differential unit cell volume", which is the first derivative of the unit cell volume with respect to cell voltage (Figure <ref type="figure" target="#fig_7">8</ref>). Interestingly, a distinct peak is observed in the high-voltage region as in the case of the differential capacity curves. Even more interestingly, the peaks in the differential capacity and unit cell volume curves correlate with each other in terms of position (4.22 V for NCM811; 4.20 V for NCM851005) and relative height. This result thus provides evidence that the appearance of the redox peak around 4.2 V is due to structural effects, and we take it as an indication of an undesired phase transformation.</p><p>From a practical point of view, it is important to note that the relative changes in lattice parameters a and c during charge lead to a large decrease in unit cell volume. As is shown in Figures <ref type="figure" target="#fig_8">9a</ref> and<ref type="figure" target="#fig_5">S6</ref>, this decrease is more severe as the Ni content rises or, in other words, the total change in unit cell volume increases with increasing Ni content. Also, the change is highly anisotropic, resulting in significant strain in the NCM particles (see also Figure <ref type="figure" target="#fig_6">S7</ref> for the evolution of c/a ratio with cell voltage). All NCM materials employed in this work are found to exhibit the most pronounced changes in unit cell volume at high SOC. This is apparent from the change in slope of the ΔV vs U curves, with the onset correlating with the collapse of the c-axis when δ ≈ 0.4 (see Figures <ref type="figure" target="#fig_6">7b</ref> and<ref type="figure" target="#fig_3">S4</ref>). It is believed that lattice changes with cycling are the major source of mechanical  stress in the particles and cause material fracture, among others. <ref type="bibr" target="#b12">12,</ref><ref type="bibr" target="#b15">15,</ref><ref type="bibr" target="#b45">39,</ref><ref type="bibr" target="#b46">40</ref> Breakage of particles ultimately leads to disconnection of a fraction of active cathode material (i.e., loss of electrical contact) and creates new and reactive surfaces, thereby accelerating degradation. Consequently, it is a reasonable concern whether high-Ni NCMs have an intrinsic disadvantage over medium-Ni NCMs when it comes to cycling stability and longevity.</p><p>To better compare the microstructural stability among the different NCM samples, the relative unit cell volume changes with delithiation were evaluated in more detail. Figure <ref type="figure" target="#fig_8">9b</ref> shows the corresponding data for U max = 4.3 V and when operating the cathode materials at a similar specific energy or, more specifically, when charging to U max required to achieve the gravimetric energy density of NCM811 at 4.3 V (Figure <ref type="figure" target="#fig_2">3</ref>). Interestingly, the relative change in unit cell volume increases in a linear fashion with increasing Ni content when U max is adjusted for each composition-as opposed to when the cutoff voltage is set at 4.3 V. From these data, it is evident that Ni-rich NCM materials are more prone to structural changes/ mechanical deformation and therefore likely to fracture during operation (due to structural stress associated with the continuous shrinking and swelling of the primary crystallites in the secondary cathode particles).</p><p>Finally, the cycling performance of the different Ni content NCMs was evaluated based on our specific energy concept (Figure <ref type="figure" target="#fig_9">10</ref>, parts a and b). Noh et al. performed similar experiments using half-cells, but focused on the stability in the 3.0-4.3 V range. <ref type="bibr" target="#b10">10</ref> They found that the capacity retention significantly decreases with increasing Ni content (Figure <ref type="figure" target="#fig_9">10b</ref>), which was explained by lower structural stability of high-Ni NCMs. At first glance, this result is not surprising and is also in agreement with our data, showing a nonlinear increase in relative volume change with increasing Ni content (Figure <ref type="figure" target="#fig_8">9b</ref>) when the voltage on charge is limited to U max = 4.3 V; so more structural degradation is expected when U max is not tailored to the specific energy. However, when doing so, we find that Nirich NCMs show better capacity retention than samples with a low Ni content, although they have a clear disadvantage in terms of structural stability. This result provides evidence that the cycle life is also strongly affected by factors other than stability of the lattice structure. Particularly when the charge cutoff voltage is increased beyond the stability limit of organic electrolytes, electrolyte oxidation occurs (and with that gas evolution). <ref type="bibr" target="#b47">41,</ref><ref type="bibr" target="#b48">42</ref> For example, Dahn and co-workers showed recently that ethylene carbonate-containing electrolytes significantly reduce the cell performance and life at high voltages. <ref type="bibr" target="#b49">43,</ref><ref type="bibr" target="#b50">44</ref> Ultimately, this means that new electrolytes and additives are needed for high-voltage battery applications.</p><p>Overall, it is not entirely clear which NCM cell chemistry provides the optimum in terms of energy density and cycling stability. To answer this question it is important to better understand the different LIB degradation processes and how they affect each other. Clearly, for high-Ni NCMs, improving the structural stability is one of the major challenges toward commercialization, while for medium-Ni NCMs, the high (surface) reactivity toward oxidative electrolyte decomposition at high operating voltage must be addressed.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>■ CONCLUSION</head><p>A comparative study of the electrochemical and structural properties of a series of Li 1.02 Ni x Co y Mn z O 2 cathode materials with x = 1/3, 0.5, 0.6, 0.7, 0.8, and 0.85 in Li cells was performed in an attempt to identify the composition providing the optimum in energy density and stability. It is shown that high-Ni NCMs (NCM811 and NCM851005) offer the highest energy densities in the state-of-the-art voltage range of 3.0-4.3 V. However, it is important to note that low-and medium-Ni NCMs, in principle, would be capable of delivering competitive energy densities if the maximum cell voltage could be increased without inducing deleterious side reactions (e.g., NCM111 and NCM622 at 4.6 and 4.45 V, respectively).</p><p>Operando X-ray diffraction revealed that, irrespective of the Ni content, all NCM materials are subjected to structural changes during operation. Yet, most importantly, it was found that the total change in unit cell volume increases virtually linearly with increasing Ni content for similar energy densities (here based on that of NCM811 at 4.3 V). This leads us to the assumption that increasing the Ni content results in major challenges in terms of mechanical strain and structural degradation. However, galvanostatic charge/discharge tests indicated that Ni-rich NCMs still show better capacity retention than low-and medium-Ni NCMs charged to higher cutoff voltages. This result emphasizes that each and every NCM cathode material has its own issues, especially when approaching the desired specific energy range required for application in electric vehicles. Thus, from a scientific point of view, it is a must to recognize and understand the (cell-voltagedependent) limiting factors of the different Ni content NCMs and to find solutions to optimize their performance. Besides, the presence and interplay of degradation processes such as electrolyte decomposition and transition metal dissolution, to name a few, need to be thoroughly investigated when dealing with full-cells.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>■ ASSOCIATED CONTENT</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>* S Supporting Information</head><p>The Supporting Information is available free of charge on the ACS Publications website at DOI: 10.1021/acs.jpcc.7b06363. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. (a) Charge/discharge curves at C/5 in the voltage range between 3.0 and 4.6 V and (b) the corresponding differential capacity plots for the different Ni content NCM-based cells.</figDesc><graphic coords="3,99.95,113.67,161.01,254.61" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. (a) Specific discharge capacity as a function of U max for the different Ni content NCM-based cells. (b) Maximum gravimetric energy densities calculated from the specific capacity and average discharge voltage.</figDesc><graphic coords="3,366.12,69.17,156.70,256.54" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Charge cutoff voltage as a function of Ni content required to achieve the gravimetric energy density of NCM811 at U max = 4.3 V.</figDesc><graphic coords="4,104.15,69.17,152.62,150.92" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Crystal structure and schematic of the unit cell of layered LiNi x Co y Mn z O 2 .</figDesc><graphic coords="4,324.45,69.17,239.98,168.44" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. Contour plots of operando XRD patterns obtained on a NCM622-based cell showing the evolution of the reflection positions and intensities in the fourth charge/discharge cycle at C/10.</figDesc><graphic coords="5,140.03,69.17,344.86,241.63" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 6 .</head><label>6</label><figDesc>Figure 6. Contour plots of operando XRD patterns in the 2θ range of the 003 reflection obtained on the different Ni content NCM-based cells during the charge cycle.</figDesc><graphic coords="5,347.02,352.23,194.85,309.32" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 7 .</head><label>7</label><figDesc>Figure 7. Relative changes in lattice parameters (a) a and (b) c as a function of cell voltage during delithiation for the different Ni content NCM materials.</figDesc><graphic coords="6,101.03,102.67,158.85,263.74" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 8 .</head><label>8</label><figDesc>Figure 8. Differential capacity (black) and unit cell volume plots (blue) in the voltage range between 3.8 and 4.6 V for (a) NCM811 and (b) NCM851005.</figDesc><graphic coords="6,361.93,190.72,165.09,263.23" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 9 .</head><label>9</label><figDesc>Figure 9. (a) Relative changes in unit cell volume as a function of cell voltage for the different Ni content NCM materials. (b) Relative changes in unit cell volume for U max = 4.3 V (empty circles) and U max required to achieve the gravimetric energy density of NCM811 at 4.3 V (solid circles).</figDesc><graphic coords="7,107.49,69.17,145.87,253.19" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Figure 10 .</head><label>10</label><figDesc>Figure 10. (a) Capacity retention based on the second cycle discharge capacity for the different Ni content NCM-based cells cycled between 3.0 V and U max required to achieve the gravimetric energy density of NCM811 at 4.3 V (i.e., 4.6 V, 4.55 V, 4.45 V, 4.4 and 4.25 V for NCM111, NCM523, NCM622, NCM721 and NCM851005, respectively). After the first cycle at C/10 was completed, the Crates were set to C/4 charge and C/2 discharge for the subsequent cycles. (b) Comparison of the capacity retention after 100 cycles achieved by tailoring U max and the results of Noh et al. for U max = 4.3 V. 10</figDesc><graphic coords="7,366.01,69.17,156.93,258.92" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Composition of the Different Ni Content NCM Cathode Materials before Cycling and at the Beginning and End of the Fourth Charge Cycle Co 1/3 Mn 1/3 O 2 Li 0.94 Ni 1/3 Co 1/3 Mn 1/3 O 2 Li 0.21 Ni 1/3 Co 1/3 Mn 1/3 O 2 NCM523 Li 1.02 Ni 0.5 Co 0.2 Mn 0.3 O 2 Li 0.93 Ni 0.5 Co 0.2 Mn 0.3 O 2 Li 0.19 Ni 0.5 Co 0.2 Mn 0.3 O 2 NCM622 Li 1.02 Ni 0.6 Co 0.2 Mn 0.2 O 2 Li 0.93 Ni 0.6 Co 0.2 Mn 0.2 O 2 Li 0.18 Ni 0.6 Co 0.2 Mn 0.2 O 2 NCM721 Li 1.02 Ni 0.7 Co 0.2 Mn 0.1 O 2 Li 0.91 Ni 0.7 Co 0.2 Mn 0.1 O 2 Li 0.13 Ni 0.7 Co 0.2 Mn 0.1 O 2 NCM811 Li 1.02 Ni 0.8 Co 0.1 Mn 0.1 O 2 Li 0.90 Ni 0.8 Co 0.1 Mn 0.1 O 2 Li 0.11 Ni 0.8 Co 0.1 Mn 0.1 O 2</figDesc><table><row><cell>sample</cell><cell>pristine state</cell><cell>cycled state (3.0 V)</cell><cell>cycled state (4.6 V)</cell></row><row><cell>NCM111</cell><cell>Li 1.02 Ni 1/3</cell><cell/><cell/></row></table><note><p>NCM851005 Li 1.02 Ni 0.85 Co 0.1 Mn 0.05 O 2 Li 0.89 Ni 0.85 Co 0.1 Mn 0.05 O 2 Li 0.09 Ni 0.85 Co 0.1 Mn 0.05 O 2</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Lattice Parameters and Oxygen Coordinate for the Different Ni Content NCM Cathode Materials</figDesc><table><row><cell>sample</cell><cell>a (Å)</cell><cell>c (Å)</cell><cell>z</cell></row><row><cell>NCM111</cell><cell>2.8575(1)</cell><cell>14.2166(5)</cell><cell>0.2401(1)</cell></row><row><cell>NCM523</cell><cell>2.8659(1)</cell><cell>14.2234(3)</cell><cell>0.2406(1)</cell></row><row><cell>NCM622</cell><cell>2.8661(1)</cell><cell>14.2062(3)</cell><cell>0.2403(1)</cell></row><row><cell>NCM721</cell><cell>2.8647(1)</cell><cell>14.1808(4)</cell><cell>0.2403(1)</cell></row><row><cell>NCM811</cell><cell>2.8688(1)</cell><cell>14.1867(4)</cell><cell>0.2416(1)</cell></row><row><cell>NCM851005</cell><cell>2.8700(1)</cell><cell>14.1795(3)</cell><cell>0.2409(1)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head/><label/><figDesc>Comparison of NCM622-based pouch and coin cell voltage profiles, simulated diffraction patterns, contour plots of operando XRD patterns for selected 2θ ranges, relative changes in lattice parameters and unit cell volume versus the Li content, changes in c/a ratio as a function of cell voltage, Rietveld plots for NCM622, and summary of Rietveld refinement results for each operando XRD measurement (PDF)</figDesc><table><row><cell>■ AUTHOR INFORMATION Corresponding Authors</cell></row><row><cell>*(L.d.B.) Telephone: +49 721 60826870. E-mail: lea.biasi@kit.</cell></row><row><cell>edu.</cell></row><row><cell>*(T.B.) Telephone: +49 721 60828827. E-mail: torsten.</cell></row><row><cell>brezesinski@kit.edu.</cell></row></table><note><p>*(P.H.) Telephone: +49 621 6048636. E-mail: pascal. hartmann@basf.com.</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>DOI: 10.1021/acs.jpcc.7b06363 J. Phys. Chem. C 2017, 121, 26163-26171</p></note>
+		</body>
+		<back>
+
+			<div type="funding">
+<div><p>This study is part of the projects being funded within the <rs type="funder">BASF International Network for Batteries and Electrochemistry</rs>.</p></div>
+			</div>
+			<listOrg type="funding">
+			</listOrg>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Building Better Batteries</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Armand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-M</forename><surname>Tarascon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">451</biblScope>
+			<biblScope unit="page" from="652" to="657"/>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Novel Lithium Insertion Material of LiCo 1/3 Ni 1/3 Mn 1/3 O 2 for Advanced Lithium-Ion Batteries</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Yabuuchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ohzuku</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Power Sources</title>
+		<imprint>
+			<biblScope unit="page" from="171" to="174"/>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Layered Cathode Materials Li</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">D</forename><surname>Macneil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Dahn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ni x Li</title>
+		<imprint/>
+	</monogr>
+	<note>1/3-2x/3) Mn (2/3-x/3</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">O 2 for Lithium-Ion Batteries</title>
+	</analytic>
+	<monogr>
+		<title level="j">Electrochem. Solid-State Lett</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">A191</biblScope>
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Ni x Co 1-2x Mn x ]O 2 Cathode Materials for Lithium-Ion Batteries</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">D</forename><surname>Macneil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Dahn</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electrochem. Solid-State Lett</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">A200</biblScope>
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Nickel-Rich and Lithium-Rich Layered Oxide Cathodes: Progress and Perspectives</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Manthiram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Knight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-T</forename><surname>Myung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-M</forename><surname>Oh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-K</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Energy Mater</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">1501010</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Structure and Electrochemistry of Li[Ni x Co 1-2x Mn x ]O 2 (0 ≤ x ≤ 1/2)</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">D</forename><surname>Macneil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Dahn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electrochem. Soc</title>
+		<imprint>
+			<biblScope unit="volume">149</biblScope>
+			<biblScope unit="page">1332</biblScope>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Investigation on Lithium de-Intercalation Mechanism for Li 1-y Ni 1/3 Mn 1/3 Co 1/3 O 2</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Kobayashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Arachi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Emura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Kageyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Tatsumi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kamiyama</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Power Sources</title>
+		<imprint>
+			<biblScope unit="volume">146</biblScope>
+			<biblScope unit="page" from="640" to="644"/>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">A First Principles Investigation of New Cathode Materials for Advanced Lithium Batteries</title>
+		<author>
+			<persName><forename type="first">Y.-A</forename><surname>Jeon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-K</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-S</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D.-H</forename><surname>Won</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B.-I</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K.-S</forename><surname>No</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electroceram</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="667" to="671"/>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Characterization, and Electrochemical Behavior of Improved Li[Ni x Co 1-2x Mn x ]O 2 (0.1 ≤ x ≤ 0.5)</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jouanneau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">W</forename><surname>Eberman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Krause</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Dahn</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Synthesis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electrochem. Soc</title>
+		<imprint>
+			<biblScope unit="volume">150</biblScope>
+			<biblScope unit="page">1637</biblScope>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">-O 2 (x = 1/3, 0.5, 0.6, 0.7, 0.8 and 0.85Cathode Material for Lithium-Ion Batteries</title>
+		<author>
+			<persName><forename type="first">H.-J</forename><surname>Noh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Youn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Yoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-K</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ni x Co y Mn z ]</title>
+		<imprint>
+			<biblScope unit="volume">233</biblScope>
+			<biblScope unit="page" from="121" to="130"/>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note>J. Power Sources</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Synthesis and Characterization of LiNi 1-x-y Co x Mn y O 2 as the Cathode Materials of Secondary Lithium Batteries</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Power Sources</title>
+		<imprint>
+			<biblScope unit="page" from="416" to="419"/>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Capacity Fading Behavior of Ni-Rich Layered Cathode Materials in Li-Ion Full Cells</title>
+		<author>
+			<persName><forename type="first">H.-R</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-G</forename><surname>Woo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-H</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-J</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electroanal. Chem</title>
+		<imprint>
+			<biblScope unit="volume">782</biblScope>
+			<biblScope unit="page" from="168" to="173"/>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Lattice Volume Change during Charge/discharge Reaction and Cycle Performance of Li[Ni x Co y Mn z ]O 2</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ishidzu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Oka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Nakamura</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Solid State Ionics</title>
+		<imprint>
+			<biblScope unit="volume">288</biblScope>
+			<biblScope unit="page" from="176" to="179"/>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Li + -Ion Extraction/Insertion of Ni-Rich Li 1+x (Ni y Co z Mn z ) w O 2 (0.005</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ghanty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Markovsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Erickson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Talianker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Haik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Tal-Yossef</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Aurbach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lampert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Volkov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ChemElectroChem</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="1479" to="1486"/>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note>0.03; y: z = 8:1,w≈1) Electrodes: In Situ XRD and Raman Spectroscopy Study</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Anisotropic Lattice Strain and Mechanical Degradation of High-and Low-Nickel NCM Cathode Materials for Li-Ion Batteries</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">O</forename><surname>Kondrakov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Geßwein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Monig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hartmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Sommer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Brezesinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Janek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. C</title>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="page" from="3286" to="3294"/>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Structural Changes and Thermal Stability of Charged LiNi x Mn y Co z O 2 Cathode Materials Studied by Combined In Situ Time-Resolved XRD and Mass Spectroscopy</title>
+		<author>
+			<persName><forename type="first">S.-M</forename><surname>Bak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Senanayake</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-J</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K.-B</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">Y</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X.-Q</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K.-W</forename><surname>Nam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACS Appl. Mater. Interfaces</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="22594" to="22601"/>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Surface Modification by Sulfated Zirconia on High-Capacity Nickel-Based Cathode Materials for Li-Ion Batteries</title>
+		<author>
+			<persName><forename type="first">S.-G</forename><surname>Woo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-H</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-H</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-S</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-J</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electrochim. Acta</title>
+		<imprint>
+			<biblScope unit="volume">153</biblScope>
+			<biblScope unit="page" from="115" to="121"/>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Impedance Studies on the Capacity Fading Mechanism of Li(Ni 0.5 Co 0. 2 Mn 0. 3 )O 2 Cathode with High-Voltage and High-Temperature</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q.-C</forename><surname>Zhuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-M</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M.-Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X.-L</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electrochem. Soc</title>
+		<imprint>
+			<biblScope unit="volume">162</biblScope>
+			<biblScope unit="page" from="2770" to="A2779"/>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Charge-Transfer-Induced Lattice Collapse in Ni-Rich NCM Cathode Materials during Delithiation</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">O</forename><surname>Kondrakov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Geßwein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Galdina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>De Biasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Meded</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">O</forename><surname>Filatova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Schumacher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wenzel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hartmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Brezesinski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. C</title>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="page" from="24381" to="24388"/>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Unravelling the Mechanism of Lithium Insertion into and Extraction from Trirutile-Type LiNiFeF 6 Cathode Material for Li-Ion Batteries</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>De Biasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Lieser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Indris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Drager</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Glatthaar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Monig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ehrenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Schumacher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Binder</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">CrystEngComm</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="6163" to="6174"/>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Refinement of Debye-Scherrer Synchrotron X-Ray Data from Al 2 O 3</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Cox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Hastings</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Rietveld</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Appl. Crystallogr</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="79" to="83"/>
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Voigt-Function Modeling in Fourier Analysis of Size-and Strain-Broadened X-Ray Diffraction Peaks</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Balzar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ledbetter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Appl. Crystallogr</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="97" to="103"/>
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Size-strain Line-Broadening Analysis of the Ceria Round-Robin Sample</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Balzar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Audebrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Daymond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fitch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hewat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">I</forename><surname>Langford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Le Bail</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Louer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Masson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">N</forename><surname>Mccowan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Appl. Crystallogr</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="911" to="924"/>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Synchrotron Powder Diffraction Using Imaging Plates: Crystal Structure Determination and Rietveld Refinement</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Norby</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Appl. Crystallogr</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="21" to="30"/>
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">VESTA 3 for Three-Dimensional Visualization of Crystal, Volumetric and Morphology Data</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Momma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Izumi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Appl. Crystallogr</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="1272" to="1276"/>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Design of Nickel-Rich Layered Oxides Using d Electronic Donor for Redox Reactions</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-M</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-G</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-S</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M.-S</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Cho</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chem. Mater</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="6450" to="6456"/>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Mn 1/3</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Koyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Yabuuchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Tanaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Adachi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ohzuku</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Solid-State Chemistry and Electrochemistry of LiCo</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">3</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">O</title>
+		<imprint>
+			<biblScope unit="issue">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">for Advanced Lithium-Ion Batteries</title>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electrochem. Soc</title>
+		<imprint>
+			<biblScope unit="volume">151</biblScope>
+			<biblScope unit="page">1545</biblScope>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Stabilizing Nickel-Rich Layered Cathode Materials by a High-Charge Cation Doping Strategy: Zirconium-Doped Li-Ni 0</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Schipper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dixit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kovacheva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Talianker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Haik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Grinblat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Erickson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ghanty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">T</forename><surname>Major</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Markovsky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">6 Co</title>
+		<imprint>
+			<biblScope unit="volume">0</biblScope>
+			<biblScope unit="issue">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mater. Chem. A</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="16073" to="16084"/>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Structure, Electrode Voltage and Activation Energy of LiMn x Co y Ni 1-x-y O 2 Solid Solutions as Cathode Materials for Li Batteries from First-Principles</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Ke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electrochem. Soc</title>
+		<imprint>
+			<biblScope unit="volume">159</biblScope>
+			<biblScope unit="page" from="1203" to="A1208"/>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">In Situ X-Ray Diffraction and Electrochemical Studies of Li 1-x NiO 2</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Reimers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Dahn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Solid State Ionics</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="page" from="123" to="130"/>
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">K</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">S</forename><surname>Yoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">B</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">Y</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T</forename><surname>Hong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Characterization of LiNi</title>
+		<imprint>
+			<biblScope unit="volume">0</biblScope>
+			<biblScope unit="issue">0</biblScope>
+			<biblScope unit="page">5</biblScope>
+		</imprint>
+	</monogr>
+	<note>Co</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">O 2 (M = Al, Fe) as a Cathode Material for Lithium Secondary Batteries</title>
+	</analytic>
+	<monogr>
+		<title level="j">J. Power Sources</title>
+		<imprint>
+			<biblScope unit="page" from="308" to="312"/>
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Electrochemical Evaluation of Mixed Oxide Electrode for Li-Ion Secondary Batteries: Li 1.1 Mn 1.9 O 4 and LiNi 0</title>
+		<author>
+			<persName><forename type="first">S.-T</forename><surname>Myung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">T</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">H</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C.-S</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">8 Co 0</title>
+		<imprint>
+			<biblScope unit="issue">15</biblScope>
+			<biblScope unit="page">5</biblScope>
+		</imprint>
+	</monogr>
+	<note>Al</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">J. Power Sources</title>
+		<imprint>
+			<biblScope unit="volume">146</biblScope>
+			<biblScope unit="page" from="222" to="225"/>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Revised Effective Ionic Radii and Systematic Studies of Interatomic Distances in Halides and Chalcogenides</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Shannon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Crystallogr., Sect. A: Cryst. Phys., Diffr., Theor. Gen. Crystallogr</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="751" to="767"/>
+			<date type="published" when="1976">1976</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Structural Transformation of Li[Ni 0.5-x Co 2x Mn 0.5-x</title>
+		<author>
+			<persName><forename type="first">B.-C</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">J</forename><surname>Bang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Yoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-T</forename><surname>Myung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Prakash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-K</forename><surname>Sun</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">1) Charged in High-Voltage Range (4.5 V)</title>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electrochem. Soc</title>
+		<imprint>
+			<biblScope unit="volume">154</biblScope>
+			<biblScope unit="page">520</biblScope>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Electrochemistry and Structural Chemistry of LiNiO 2 (R-3m) for 4 V Secondary Lithium Cells</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ohzuku</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ueda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nagayama</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electrochem. Soc</title>
+		<imprint>
+			<biblScope unit="volume">140</biblScope>
+			<biblScope unit="page" from="1862" to="1870"/>
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">New Findings on the Phase Transitions in Li 1-x NiO 2 : In Situ Synchrotron X-Ray Diffraction Studies</title>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">Q</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mcbreen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electrochem. Commun</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="227" to="232"/>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Synthesis and Characterization of LiNi 1/3 Mn 1/3 Co 1/3 O 2 by Wet-Chemical Method</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mauger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Groult</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Perrigaud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Gendron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Julien</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electrochim. Acta</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="page" from="6440" to="6449"/>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">First-Principles Investigation of Phase Stability in Li x CoO 2</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Van Der Ven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Aydinol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Ceder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kresse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hafner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B: Condens. Matter Mater. Phys</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="2975" to="2987"/>
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Capacity Fading of LiAl y Ni 1-x-y Co x O 2 Cathode for Lithium-Ion Batteries during Accelerated Calendar and Cycle Life Tests (effect of Depth of Discharge in Charge-discharge Cycling on the Suppression of the Micro-Crack Generation of LiAl y Ni 1-x-y Co x O 2 Particle)</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Watanabe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kinoshita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hosokawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Morigaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nakura</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Power Sources</title>
+		<imprint>
+			<biblScope unit="volume">260</biblScope>
+			<biblScope unit="page" from="50" to="56"/>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">On the Fragmentation of Active Material Secondary Particles in Lithium Ion Battery Cathodes Induced by Charge Cycling</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Sui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Korsunsky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Extreme Mech. Lett</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="449" to="458"/>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Gas Evolution in Operating Lithium-Ion Batteries Studied In Situ by Neutron Imaging</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Michalak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Sommer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mannes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kaestner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Brezesinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Janek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Rep</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">15627</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">On the Gassing Behavior of Lithium-Ion Batteries with NCM523 Cathodes</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">B</forename><surname>Berkes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schiele</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Sommer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Brezesinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Janek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Solid State Electrochem</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="2961" to="2967"/>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Electrolyte System for High Voltage Li-Ion Cells</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Petibon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Dahn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electrochem. Soc</title>
+		<imprint>
+			<biblScope unit="volume">163</biblScope>
+			<biblScope unit="page" from="2571" to="A2578"/>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Enabling Linear Alkyl Carbonate Electrolytes for High Voltage Li-Ion Cells</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Petibon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Dahn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Power Sources</title>
+		<imprint>
+			<biblScope unit="volume">328</biblScope>
+			<biblScope unit="page" from="124" to="135"/>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
