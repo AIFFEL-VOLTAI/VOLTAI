@@ -1,19 +1,25 @@
-from typing import Annotated, TypedDict
-from langgraph.graph.message import add_messages
-from langchain_openai import ChatOpenAI
+import warnings
+warnings.filterwarnings("ignore")
+
 from langgraph.graph import END, StateGraph
+from langchain_core.output_parsers import JsonOutputParser
+
+from typing import Annotated, TypedDict
+from langchain_openai import ChatOpenAI
+from typing_extensions import TypedDict
+
+from langgraph.graph.message import add_messages
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_core.documents.base import Document
-from langchain_core.output_parsers import JsonOutputParser
 from langchain_teddynote.messages import messages_to_history
 from langchain.prompts import PromptTemplate
 from pydantic import BaseModel, Field
-# from langchain_teddynote.evaluator import GroundednessChecker
+
 from tools import embedding_file
 
 
 # GraphState 상태 정의
-class GraphState(TypedDict):
+class GraphStateElephantRAG(TypedDict):
     question: Annotated[str, "Question"]  # 질문
     context: Annotated[str, "Context"]  # 문서의 검색 결과
     answer1: Annotated[str, "Answer1"]  # 답변
@@ -21,14 +27,14 @@ class GraphState(TypedDict):
     answer3: Annotated[str, "Answer3"]  # 답변
     messages: Annotated[list, add_messages]  # 메시지(누적되는 list)
     discussion: Annotated[str, "Discussion"]
-    
 
 # Graph 구축
-class DataExtractor:
+class ElephantRAG:
     def __init__(
         self, 
         file_folder:str="./data/input_data", 
         file_number:int=1, 
+        model_name:str="gpt-4o-mini",
         db_folder:str="./vectordb"
     ):
         if file_number < 10:
@@ -41,12 +47,13 @@ class DataExtractor:
         self.retriever = embedding_file(
             file_folder=file_folder, 
             file_name=file_name, 
-            db_folder=db_folder
+            # db_folder=db_folder
         )
         
-        self.model_1 = ChatOpenAI(model_name="gpt-4o", temperature=0.4)
-        self.model_2 = ChatOpenAI(model_name="gpt-4o", temperature=0.6)
-        self.model_3 = ChatOpenAI(model_name="gpt-4o", temperature=0.8)
+        self.model_name = model_name
+        self.model_1 = ChatOpenAI(model_name=self.model_name, temperature=0.4)
+        self.model_2 = ChatOpenAI(model_name=self.model_name, temperature=0.6)
+        self.model_3 = ChatOpenAI(model_name=self.model_name, temperature=0.8)
         self.llm_answer_prompt = """
 Based on the following document, please provide an answer to the given question.
 Document:
@@ -58,7 +65,7 @@ Question:
 Answer:
 """
 
-        self.relevance_checker = ChatOpenAI(model="gpt-4o", temperature=0.5)
+        self.relevance_checker = ChatOpenAI(model=self.model_name, temperature=0.5)
         self.relevance_check_template1 = """
 You are a grader assessing relevance of a retrieved document to a user question. \n 
 Here is the retrieved document: \n\n {context} \n\n
@@ -87,7 +94,7 @@ Give a binary score 'yes' or 'no' score to indicate whether the retrieved docume
 If the retrieved document does not contain the values or information being searched for, and 'None' is provided as the answer, check if the response accurately reflects the absence of the requested information. If the absence is accurate and justified, grade the document as relevant even if the values are 'None'.
 """
         
-        self.discussion_model = ChatOpenAI(model="gpt-4o", temperature=0.5)
+        self.discussion_model = ChatOpenAI(model=self.model_name, temperature=0.1)
         self.discussion_prompt = """
 You are an expert in extracting crucial information from battery-related research papers and generating the most accurate and comprehensive answers. Below are the answers provided by multiple LLM models to the same question, along with the retrieved document (context). Based on this information, generate the most reliable and well-rounded answer. Follow these guidelines when formulating your response:
 
@@ -106,7 +113,7 @@ You are an expert in extracting crucial information from battery-related researc
 """
         
         # 그래프 생성
-        bulider = StateGraph(GraphState)
+        bulider = StateGraph(GraphStateElephantRAG)
 
         # 노드 정의
         bulider.add_node("retrieve", self.retrieve_document)
@@ -162,7 +169,7 @@ You are an expert in extracting crucial information from battery-related researc
 
         # 컴파일
         self.graph = bulider.compile(checkpointer=memory)        
-        self.graph.get_graph().draw_mermaid_png(output_file_path="graph.png")
+        # self.graph.get_graph().draw_mermaid_png(output_file_path="elephantrag_graph.png")
 
     
     def format_docs(self, docs: list[Document]) -> str:
@@ -177,7 +184,7 @@ You are an expert in extracting crucial information from battery-related researc
         return "\n\n".join(doc.page_content for doc in docs)
     
     
-    def retrieve_document(self, state: GraphState) -> GraphState:
+    def retrieve_document(self, state: GraphStateElephantRAG) -> GraphStateElephantRAG:
         """문서에서 검색하여 질문과 관련성 있는 문서를 찾습니다.
 
         Args:
@@ -196,10 +203,10 @@ You are an expert in extracting crucial information from battery-related researc
         retrieved_docs = self.format_docs(retrieved_docs)
 
         # 검색된 문서를 context 키에 저장합니다.
-        return GraphState(context=retrieved_docs)
+        return GraphStateElephantRAG(context=retrieved_docs)
     
     
-    def llm_answer1(self, state: GraphState) -> GraphState:
+    def llm_answer1(self, state: GraphStateElephantRAG) -> GraphStateElephantRAG:
         """프롬프트에 따라 LLM이 질문에 대한 답변을 출력합니다. 
 
         Args:
@@ -232,13 +239,13 @@ You are an expert in extracting crucial information from battery-related researc
         )
 
         # 생성된 답변, (유저의 질문, 답변) 메시지를 상태에 저장합니다.
-        return GraphState(
+        return GraphStateElephantRAG(
             answer1=response,
             messages=[("user", latest_question), ("assistant", response)]
         )
 
 
-    def llm_answer2(self, state: GraphState) -> GraphState:
+    def llm_answer2(self, state: GraphStateElephantRAG) -> GraphStateElephantRAG:
         """프롬프트에 따라 LLM이 질문에 대한 답변을 출력합니다. 
 
         Args:
@@ -271,13 +278,13 @@ You are an expert in extracting crucial information from battery-related researc
         )
 
         # 생성된 답변, (유저의 질문, 답변) 메시지를 상태에 저장합니다.
-        return GraphState(
+        return GraphStateElephantRAG(
             answer2=response,
             messages=[("user", latest_question), ("assistant", response)]
         )
 
 
-    def llm_answer3(self, state: GraphState) -> GraphState:
+    def llm_answer3(self, state: GraphStateElephantRAG) -> GraphStateElephantRAG:
         """프롬프트에 따라 LLM이 질문에 대한 답변을 출력합니다. 
 
         Args:
@@ -310,13 +317,13 @@ You are an expert in extracting crucial information from battery-related researc
         )
 
         # 생성된 답변, (유저의 질문, 답변) 메시지를 상태에 저장합니다.
-        return GraphState(
+        return GraphStateElephantRAG(
             answer3=response,
             messages=[("user", latest_question), ("assistant", response)]
         )
 
 
-    def relevance_check1(self, state: GraphState) -> GraphState:
+    def relevance_check1(self, state: GraphStateElephantRAG) -> GraphStateElephantRAG:
         """답변과 검색 문서 간의 관련성을 평가합니다. 
 
         Args:
@@ -355,10 +362,10 @@ You are an expert in extracting crucial information from battery-related researc
         print(f"        RELEVANCE CHECK for ANSWER 1 : {response.binary_score}")
 
         # 참고: 여기서의 관련성 평가기는 각자의 Prompt 를 사용하여 수정할 수 있습니다. 여러분들의 Groundedness Check 를 만들어 사용해 보세요!
-        return GraphState(relevance1=response.binary_score)
+        return GraphStateElephantRAG(relevance1=response.binary_score)
 
 
-    def relevance_check2(self, state: GraphState) -> GraphState:
+    def relevance_check2(self, state: GraphStateElephantRAG) -> GraphStateElephantRAG:
         """답변과 검색 문서 간의 관련성을 평가합니다. 
 
         Args:
@@ -397,10 +404,10 @@ You are an expert in extracting crucial information from battery-related researc
         print(f"        RELEVANCE CHECK for ANSWER 2 : {response.binary_score}")
 
         # 참고: 여기서의 관련성 평가기는 각자의 Prompt 를 사용하여 수정할 수 있습니다. 여러분들의 Groundedness Check 를 만들어 사용해 보세요!
-        return GraphState(relevance2=response.binary_score)
+        return GraphStateElephantRAG(relevance2=response.binary_score)
     
     
-    def relevance_check3(self, state: GraphState) -> GraphState:
+    def relevance_check3(self, state: GraphStateElephantRAG) -> GraphStateElephantRAG:
         """답변과 검색 문서 간의 관련성을 평가합니다. 
 
         Args:
@@ -439,10 +446,10 @@ You are an expert in extracting crucial information from battery-related researc
         print(f"        RELEVANCE CHECK for ANSWER 3 : {response.binary_score}")
 
         # 참고: 여기서의 관련성 평가기는 각자의 Prompt 를 사용하여 수정할 수 있습니다. 여러분들의 Groundedness Check 를 만들어 사용해 보세요!
-        return GraphState(relevance3=response.binary_score)
+        return GraphStateElephantRAG(relevance3=response.binary_score)
 
 
-    def is_relevant1(self, state: GraphState) -> GraphState:
+    def is_relevant1(self, state: GraphStateElephantRAG) -> GraphStateElephantRAG:
         """관련성을 체크하는 함수
 
         Args:
@@ -454,7 +461,7 @@ You are an expert in extracting crucial information from battery-related researc
         return state["relevance1"]
 
 
-    def is_relevant2(self, state: GraphState) -> GraphState:
+    def is_relevant2(self, state: GraphStateElephantRAG) -> GraphStateElephantRAG:
         """관련성을 체크하는 함수
 
         Args:
@@ -466,7 +473,7 @@ You are an expert in extracting crucial information from battery-related researc
         return state["relevance2"]
 
 
-    def is_relevant3(self, state: GraphState) -> GraphState:
+    def is_relevant3(self, state: GraphStateElephantRAG) -> GraphStateElephantRAG:
         """관련성을 체크하는 함수
 
         Args:
@@ -478,7 +485,7 @@ You are an expert in extracting crucial information from battery-related researc
         return state["relevance3"]
     
     
-    def discussion_node(self, state: GraphState) -> GraphState:
+    def discussion_node(self, state: GraphStateElephantRAG) -> GraphStateElephantRAG:
         prompt = PromptTemplate(
             template=self.discussion_prompt,
             input_variables=["question", "answer1", "answer2", "answer3", "context"],
@@ -495,4 +502,4 @@ You are an expert in extracting crucial information from battery-related researc
         )
         print(f"        Success Discussion!")
 
-        return GraphState(discussion=response)
+        return GraphStateElephantRAG(discussion=response)

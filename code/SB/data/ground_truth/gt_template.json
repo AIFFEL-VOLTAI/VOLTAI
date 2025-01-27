@@ -1,0 +1,45 @@
+{
+    "CAM (Cathode Active Material)": {
+        "Stoichiometry information": {
+            "": {
+                
+            }
+        },
+        "Whether or not commercial NCM was used for each sample (Stoichiometry information in order)": [
+
+        ],
+        "Lithium source": ,
+        "Synthesis method": ,
+        "Describe the crystallization method, such as Hydrothermal, Sintering, or any other technique used during the process.": ,
+        "What is the Crystallization final temperature in degree of Celcius used in the process? (e.g., calcination or sintering) mentioned for the crystallization stage.": ,
+        "What is the time duration for the final crystallization process, including any calcination or sintering stages? Specify the hours.": ,
+        "Doping": ,
+        "Coating": ,
+        "Additional treatment": 
+    },
+    "Electrode (only for coin-cell (half-cell))": {
+        "Active material to Conductive additive to Binder ratio": ,
+        "Electrolyte": {
+            "Salt": ,
+            "Concentration": ,
+            "Solvent": ,
+            "Solvent ratio": 
+        },
+        "Additive": ,
+        "Loading density (mass loading of NCM, Standardize the unit to mg/cm^2)": ,
+        "Additional treatment for electrode": 
+    },
+    "Morphological results": {
+        "Explanation of SEM results": ,
+        "Explanation of TEM results": 
+    },
+    "Cathode Performance": {
+        "Capacity at all C-rate, mAh/g (with electrode state)": [
+            {
+                
+            }
+        ],
+        "Voltage range": ,
+        "Temperature": 
+    }
+}
