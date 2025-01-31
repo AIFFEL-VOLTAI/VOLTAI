@@ -1,0 +1,21 @@
+## 250127 update(CSY) - Category 4 (question)
+question: |
+  Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field, replacing the placeholders. If the information is not mentioned in the PDF, write "None".
+
+  [
+    {
+      "Samples": [
+        {
+          "Name": "Pristine",
+          "Voltage ranges": [
+            {
+              "Range": ,
+              "Temperature": ,
+              "Data": [
+              ]
+            },
+          ]
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,32 @@
+## 250127 update(CSY) - Category 4 (question)
+question: |
+  Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field, replacing the placeholders. If the information is not mentioned in the PDF, write "None".
+
+  [
+    {
+      "Samples": [
+        {
+          "Name": ,
+          "Voltage ranges": [
+            {
+              "Range": ,
+              "Temperature": ,
+              "Data": [
+                {"C-rate": 0.1, "Capacity": },
+                {"C-rate": 0.2, "Capacity": },
+                {"C-rate": 0.5, "Capacity": },
+                {"C-rate": 1, "Capacity": },
+                {"C-rate": 2, "Capacity": },
+                {"C-rate": 4, "Capacity": },
+                {"C-rate": 6, "Capacity": },
+                {"Other C-rates and performance": [
+                  {"C-rate": , "Capacity": }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
