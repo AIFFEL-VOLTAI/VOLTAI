@@ -169,8 +169,8 @@ You are an expert in extracting crucial information from battery-related researc
         # 컴파일
         self.graph = bulider.compile(checkpointer=memory)        
         
-        if not save_graph_png:
-            self.graph.get_graph().draw_mermaid_png(output_file_path="ensemblerag_graph.png")
+        if save_graph_png:
+            self.graph.get_graph().draw_mermaid_png(output_file_path="./graph_img/ensemblerag_graph.png")
 
     
     def format_docs(self, docs: list[Document]) -> str:
