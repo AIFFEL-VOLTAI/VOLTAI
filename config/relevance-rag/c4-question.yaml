@@ -1,28 +1,48 @@
 ## 250127 update(CSY) - Category 4 (question)
 question: |
-  Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field, replacing the placeholders. If the information is not mentioned in the PDF, write "None".
+  Below are instructions for filling out items by referring to the examples.
+  The values shown to the right of the colon (":") are examples;
+  please delete them after reviewing and rewrite them with the values found in the PDF.
+  If any item is not mentioned in the PDF, do not remove it—write "None."
 
   [
     {
-      "Samples": [
+      "Cathode Performance": [
         {
-          "Name": ,
-          "Voltage ranges": [
+          "Sample Name": "Pristine",
+          "Data": [
             {
-              "Range": ,
-              "Temperature": ,
-              "Data": [
-                {"C-rate": 0.1, "Capacity": },
-                {"C-rate": 0.2, "Capacity": },
-                {"C-rate": 0.5, "Capacity": },
-                {"C-rate": 1, "Capacity": },
-                {"C-rate": 2, "Capacity": },
-                {"C-rate": 4, "Capacity": },
-                {"C-rate": 6, "Capacity": },
+              "Voltage range": "2.5 - 4.0",
+              "Temperature": "25",
+              "C-rate and Specific capacity": [
+                {"C-rate": 0.1, "Capacity": "180"},
+                {"C-rate": 0.2, "Capacity": "178"},
+                {"C-rate": 0.5, "Capacity": "170"},
+                {"C-rate": 1.0, "Capacity": "163"},
+                {"C-rate": 2.0, "Capacity": "152"},
+                {"C-rate": 4.0, "Capacity": "100"},
                 {"Other C-rates and performance": [
-                  {"C-rate": , "Capacity": }
-                  ]
-                }
+                  {"C-rate": 0.3, "Capacity": "175"},
+                  {"C-rate": 3.0, "Capacity": "133"},
+                  {"C-rate": 5.0, "Capacity": "88"}
+                ]}
+              ]
+            },
+            {
+              "Voltage range": "2.5 - 4.3",
+              "Temperature": "25",
+              "C-rate and Specific capacity": [
+                {"C-rate": 0.1, "Capacity": "185"},
+                {"C-rate": 0.2, "Capacity": "181"},
+                {"C-rate": 0.5, "Capacity": "172"},
+                {"C-rate": 1, "Capacity": "169"},
+                {"C-rate": 2, "Capacity": "160"},
+                {"C-rate": 4, "Capacity": "122"},
+                {"Other C-rates and performance": [
+                  {"C-rate": 0.3, "Capacity": "178"},
+                  {"C-rate": 3, "Capacity": "144"},
+                  {"C-rate": 5, "Capacity": "100"}
+                ]}
               ]
             }
           ]

@@ -1,10 +1,13 @@
 ## 250126 update(LHC) - Category 3 (question)
 question: |
-  Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field, replacing the placeholders. If the information is not mentioned in the PDF, write "None".
-
+  Below are instructions for filling out items by referring to the examples.
+  The values shown to the right of the colon (":") are examples;
+  please delete them after reviewing and rewrite them with the values found in the PDF.
+  If any item is not mentioned in the PDF, do not remove it—write "None."
+  
   [ 
       {
-          "MorphologicalProperties": {
+          "Morphological Properties": {
               "ParticleSize": {
               
               },

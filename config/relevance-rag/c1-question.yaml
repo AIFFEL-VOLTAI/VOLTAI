@@ -1,22 +1,41 @@
 ## 250126 update(LHC) - Category 1 (question)
 question: |
-  Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field, replacing the placeholders. If the information is not mentioned in the PDF, write "None".
+  Below are instructions for filling out items by referring to the examples.
+  The values shown to the right of the colon (":") are examples;
+  please delete them after reviewing and rewrite them with the values found in the PDF.
+  If any item is not mentioned in the PDF, do not remove it—write "None."
 
   [
     {
       "CAM (Cathode Active Material)": {
         "Stoichiometry information": {
+          "NCM-622": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.6,
+            "Co ratio": 0.2,
+            "Mn ratio": 0.2,
+            "O ratio": 2.0
+          },
+          "ZrO2-NCM-622 (Z622)": {
+            "Li ratio": 0.98,
+            "Ni ratio": 0.6,
+            "Co ratio": 0.2,
+            "Mn ratio": 0.2,
+            "O ratio": 2.0
+          }
         },
         "Commercial NCM used": {
+          "NCM-622": "yes",
+          "ZrO2-NCM-622 (Z622)": "no"
         },
-        "Lithium source": ,
-        "Synthesis method": ,
-        "Crystallization method": ,
-        "Crystallization final temperature": ,
-        "Crystallization final duration (hours)": ,
-        "Doping": ,
-        "Coating": ,
-        "Additional treatment": 
+        "Lithium source": "LiOH",
+        "Synthesis method": "co-precipitation",
+        "Crystallization method": "Hydrothermal",
+        "Crystallization final temperature": 100,
+        "Crystallization final duration (hours)": 12,
+        "Doping": "Zr4+",
+        "Coating": "ZrO2",
+        "Additional treatment": "None"
       }
     }
   ]
