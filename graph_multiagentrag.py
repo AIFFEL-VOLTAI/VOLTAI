@@ -186,8 +186,8 @@ Ensure the integrity and consistency of the JSON data by strictly adhering to th
         workflow.set_entry_point("Researcher")
         self.graph = workflow.compile()   
         
-        if not save_graph_png:        
-            self.graph.get_graph().draw_mermaid_png(output_file_path="multiagentrag_graph.png")
+        if save_graph_png:        
+            self.graph.get_graph().draw_mermaid_png(output_file_path="./graph_img/multiagentrag_graph.png")
 
 
     def create_agent(self, llm, tools, system_message: str):

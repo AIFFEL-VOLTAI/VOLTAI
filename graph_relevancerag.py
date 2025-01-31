@@ -99,8 +99,8 @@ class RelevanceRAG:
         # 컴파일
         self.graph = bulider.compile(checkpointer=memory) 
         
-        if not save_graph_png:       
-            self.graph.get_graph().draw_mermaid_png(output_file_path="relevancerag_graph.png")
+        if save_graph_png:       
+            self.graph.get_graph().draw_mermaid_png(output_file_path="./graph_img/relevancerag_graph.png")
 
     
     def format_docs(self, docs: list[Document]) -> str:
