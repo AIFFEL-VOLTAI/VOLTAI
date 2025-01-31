@@ -4,25 +4,23 @@ question: |
 
   [
     {
-      "Samples": [
+      "Cathode Performance": [
         {
-          "Name": ,
-          "Voltage ranges": [
+          "Sampe Name": ,
+          "Data": [
             {
-              "Range": ,
+              "Voltage range": ,
               "Temperature": ,
-              "Data": [
+              "C-rate and Specific capacity": [
                 {"C-rate": 0.1, "Capacity": },
                 {"C-rate": 0.2, "Capacity": },
                 {"C-rate": 0.5, "Capacity": },
-                {"C-rate": 1, "Capacity": },
-                {"C-rate": 2, "Capacity": },
-                {"C-rate": 4, "Capacity": },
-                {"C-rate": 6, "Capacity": },
+                {"C-rate": 1.0, "Capacity": },
+                {"C-rate": 2.0, "Capacity": },
+                {"C-rate": 4.0, "Capacity": },
                 {"Other C-rates and performance": [
                   {"C-rate": , "Capacity": }
-                  ]
-                }
+                ]}
               ]
             }
           ]
