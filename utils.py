@@ -11,6 +11,25 @@ from langchain_core.runnables import RunnableConfig
 from langchain_teddynote.messages import random_uuid
 
 
+def load_config(config_folder:str="./config") -> dict:
+    """
+    config 파일을 불러오는 함수입니다. 
+
+    Args:
+        config_folder (str, optional): 설정 파일이 저장된 폴더 경로. Defaults to "./config".
+
+    Returns:
+        dict: YAML 파일 내용을 Python 딕셔너리로 변환하여 반환.
+    """
+    file_path = f"{config_folder}/config.yaml"
+    with open(file_path, "r", encoding="utf-8") as file:
+        config = yaml.safe_load(file)
+    
+    print(f"##      {file_path}를 불러왔습니다.")
+    
+    return config
+
+
 def load_system_prompt(config_folder:str="./config", category_number:int=1, rag_method:str="multiagent-rag") -> dict:
     """
     시스템 프롬프트 구성 파일을 주어진 RAG 방식(rag_method)과 카테고리 번호(category_number)에 따라 불러옵니다.
@@ -109,19 +128,34 @@ def save_data2output_folder(output_folder: str, data, filename: str):
         print("    데이터 형식이 지원되지 않습니다. pandas DataFrame 또는 dict만 저장 가능합니다.")
 
 
-def outputs2csv(total_outputs:dict, filename="temp_result") -> pd.DataFrame:
-    answers_list = []
-    for file_num in list(total_outputs.keys()):
-        outputs = total_outputs[file_num]
-        answers = outputs[0]["answer"][0]["CAM (Cathode Active Material)"] | outputs[1]["answer"][0]["Electrode (only for coin-cell (half-cell))"] | outputs[2]["answer"][0]["Morphological results"] | outputs[3]["answer"][0]["Cathode Performance"]
-        answers["Paper Number"] = file_num
-        answers_list.append(answers)
-
-    answers_csv = pd.DataFrame(answers_list)                               
-    columns = ["Paper Number"] + [col for col in answers_csv.columns if col != "Paper Number"]
-    answers_csv = answers_csv[columns]
+def save_output2json(each_answer:dict, file_num:int, rag_method:str):    
+    ## 파일 이름 설정
+    if file_num < 10:
+        json_file_num = f"00{file_num}"
+    elif file_num < 100:
+        json_file_num = f"0{file_num}"
+    else:
+        json_file_num = f"{file_num}"
+        
+    json_name = f"paper_{json_file_num}_output"
     
-    save_data2output_folder(output_folder="./output/csv/", data=answers_csv, filename=filename)
+    save_data2output_folder(output_folder=f"./output/json/{rag_method}/", data=each_answer, filename=json_name)
+    print(f"##       {json_name}를 저장했습니다.")
+
+
+# def outputs2csv(total_outputs:dict, filename="temp_result") -> pd.DataFrame:
+#     answers_list = []
+#     for file_num in list(total_outputs.keys()):
+#         outputs = total_outputs[file_num]
+#         answers = outputs[0]["answer"][0]["CAM (Cathode Active Material)"] | outputs[1]["answer"][0]["Electrode (only for coin-cell (half-cell))"] | outputs[2]["answer"][0]["Morphological results"] | outputs[3]["answer"][0]["Cathode Performance"]
+#         answers["Paper Number"] = file_num
+#         answers_list.append(answers)
+
+#     answers_csv = pd.DataFrame(answers_list)                               
+#     columns = ["Paper Number"] + [col for col in answers_csv.columns if col != "Paper Number"]
+#     answers_csv = answers_csv[columns]
+    
+#     save_data2output_folder(output_folder="./output/csv/", data=answers_csv, filename=filename)
     
     
 # def outputs2pprint(total_outputs:dict):
@@ -130,20 +164,3 @@ def outputs2csv(total_outputs:dict, filename="temp_result") -> pd.DataFrame:
 #         outputs = total_outputs[file_num]
 #         answers = outputs[0]["answer"][0] | outputs[1]["answer"][0] | outputs[2]["answer"][0] | outputs[3]["answer"][0]
 #         pprint.pprint(answers, sort_dicts=False)
-        
-
-# def outputs2json(total_outputs:dict, file_num:int):
-#     outputs = total_outputs[file_num]
-#     answers = outputs[0]["answer"][0] | outputs[1]["answer"][0] | outputs[2]["answer"][0] | outputs[3]["answer"][0]
-    
-#     ## 파일 이름 설정
-#     if file_num < 10:
-#         json_file_num = f"00{file_num}"
-#     elif file_num < 100:
-#         json_file_num = f"0{file_num}"
-#     else:
-#         json_file_num = f"{file_num}"
-        
-#     json_name = f"paper_{json_file_num}_output"
-    
-#     save_data2output_folder(output_folder="./output/json/", data=answers, filename=json_name)
