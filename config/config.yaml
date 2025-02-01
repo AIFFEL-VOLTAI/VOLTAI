@@ -1,0 +1,10 @@
+category_number: 1
+rag_method: "relevance-rag"
+file_num_list: [8]
+embedding_params:
+  chunk_size: 500
+  chunk_overlap: 100
+  search_k: 10
+model_name: "gpt-4o"
+save_graph_png: False
+process_all_files: False
