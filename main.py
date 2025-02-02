@@ -68,7 +68,7 @@ def main(args):
     invoke_input = load_invoke_input(config_folder=args.config_folder, category_number=config["category_number"], rag_method=config["rag_method"])
     
     ## 프로젝트 이름 설정: langsmith 추척
-    logging.langsmith(f"{config['project_name']}")
+    logging.langsmith(f"{config['project_name']} : {config['rag_method']}")
     
     ## 전체 파일에 대해 진행여부 결정
     if config["process_all_files"]:
