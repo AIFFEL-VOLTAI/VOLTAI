@@ -1,5 +1,6 @@
+project_name: temp-rag-experiment
 category_number: 1
-rag_method: "relevance-rag"
+rag_method: "multiagent-rag"
 file_num_list: [8]
 embedding_params:
   chunk_size: 500

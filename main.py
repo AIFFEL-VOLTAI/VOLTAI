@@ -19,7 +19,6 @@ LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
 
 # LangSmith 추적 기능을 활성화합니다. (선택적)
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_PROJECT"] = "Multi-agent Collaboration"
 
 
 def get_rag_instance(
@@ -60,16 +59,16 @@ def get_rag_instance(
         return MultiAgentRAG(file_folder, file_number, chunk_size, chunk_overlap, search_k, system_prompt, model_name, save_graph_png)
     
 
-def main(args):
-    ## 프로젝트 이름 설정: langsmith 추척
-    logging.langsmith("RAG Experiment")
-    
+def main(args):    
     category_names = ["CAM (Cathode Active Material)", "Electrode (half-cell)", "Morphological Properties", "Cathode Performance"]
     
     ## config 파일과 system_prompt 와 invoke_input 불러오기
     config = load_config(config_folder=args.config_folder)
     system_prompt = load_system_prompt(config_folder=args.config_folder, category_number=config["category_number"], rag_method=config["rag_method"])
     invoke_input = load_invoke_input(config_folder=args.config_folder, category_number=config["category_number"], rag_method=config["rag_method"])
+    
+    ## 프로젝트 이름 설정: langsmith 추척
+    logging.langsmith(f"{config['project_name']}")
     
     ## 전체 파일에 대해 진행여부 결정
     if config["process_all_files"]:
@@ -110,10 +109,15 @@ def main(args):
             temp_answer = result["discussion"][category_names[config["category_number"]-1]]
         elif result.get("messages"):
             temp_answer = result["messages"][-1][category_names[config["category_number"]-1]]
-        
+
+        ## 결과 저장
+        save_output2json(each_answer=temp_answer, file_num=file_number, rag_method=config["rag_method"])
+                
         print(f"##       print {file_number} result")
         print("------------------------------------")
         pprint(temp_answer, sort_dicts=False)        
+        
+
     
     
 if __name__ == "__main__":   

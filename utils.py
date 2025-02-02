@@ -25,7 +25,7 @@ def load_config(config_folder:str="./config") -> dict:
     with open(file_path, "r", encoding="utf-8") as file:
         config = yaml.safe_load(file)
     
-    print(f"##      {file_path}를 불러왔습니다.")
+    print(f"## {file_path}를 불러왔습니다.")
     
     return config
 
@@ -49,7 +49,7 @@ def load_system_prompt(config_folder:str="./config", category_number:int=1, rag_
     with open(system_prompt_path, 'r', encoding="utf-8") as file:
         system_prompt = yaml.safe_load(file)
     
-    print(f"##       {system_prompt_path}를 불러왔습니다.")
+    print(f"## {system_prompt_path}를 불러왔습니다.")
     
     return system_prompt
 
@@ -74,7 +74,7 @@ def load_invoke_input(config_folder:str="./config", category_number:int=1, rag_m
     question_path = f"{config_folder}/{rag_method}/{file_name}"
     with open(question_path, 'r', encoding="utf-8") as file:
         question = yaml.safe_load(file)
-    print(f"##       {question_path}를 불러왔습니다.")
+    print(f"## {question_path}를 불러왔습니다.")
     
     if rag_method == "multiagent-rag": 
         invoke_input = (
@@ -122,7 +122,7 @@ def save_data2output_folder(output_folder: str, data, filename: str):
         file_path = os.path.join(output_folder, f"{filename}-{timestamp}.json")
         with open(file_path, 'w', encoding='utf-8') as json_file:
             json.dump(data, json_file, ensure_ascii=False, indent=4)
-        print(f"    JSON 파일 {file_path}에 저장되었습니다.")
+        print(f"##       {file_path}를 저장했습니다.")
         
     else:
         print("    데이터 형식이 지원되지 않습니다. pandas DataFrame 또는 dict만 저장 가능합니다.")
@@ -140,7 +140,6 @@ def save_output2json(each_answer:dict, file_num:int, rag_method:str):
     json_name = f"paper_{json_file_num}_output"
     
     save_data2output_folder(output_folder=f"./output/json/{rag_method}/", data=each_answer, filename=json_name)
-    print(f"##       {json_name}를 저장했습니다.")
 
 
 # def outputs2csv(total_outputs:dict, filename="temp_result") -> pd.DataFrame:
