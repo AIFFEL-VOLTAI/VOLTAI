@@ -90,24 +90,28 @@ def embedding_file(
     splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
         chunk_size=chunk_size,         ## 최대 청크 길이 정의
         chunk_overlap=chunk_overlap,      ## 청크 간 겹침 길이 정의
-        # separators=["\n\n"]     ## 텍스트를 나눌 때 사용할 구분자를 지정 (문단)
+        separators=["\n\n"]     ## 텍스트를 나눌 때 사용할 구분자를 지정 (문단)
     )
 
     ## PDF 파일 불러오기
+    ### ref 제거 전 코드
+    # loader = PyPDFLoader(f"{file_folder}/{file_name}.pdf")
+    # docs = loader.load_and_split(text_splitter=splitter)
+
     paper_file_path = f"{file_folder}/{file_name}.pdf"
     full_text = remove_last_section_from_pdf(file_path=paper_file_path)
     texts = splitter.split_text(full_text)
     
     ## Embedding 생성 및 vector store에 저장
     embeddings = OpenAIEmbeddings()
-    vector_store = FAISS.from_texts(
-        texts=texts,         ## 벡터 저장소에 추가할 문서 리스트
-        embedding=embeddings    ## 사용할 임베딩 함수
-    )
     # vector_store = FAISS.from_documents(
     #     documents=docs,         ## 벡터 저장소에 추가할 문서 리스트
     #     embedding=embeddings    ## 사용할 임베딩 함수
     # )
+    vector_store = FAISS.from_texts(
+        texts=texts,         ## 벡터 저장소에 추가할 문서 리스트
+        embedding=embeddings    ## 사용할 임베딩 함수
+    )
 
     ## 검색기로 변환: 현재 벡터 저장소를 기반으로 VectorStoreRetriever 객체를 생성하는 기능을 제공
     retriever = vector_store.as_retriever(
