@@ -116,8 +116,6 @@ def main(args):
         print(f"##       print {file_number} result")
         print("------------------------------------")
         pprint(temp_answer, sort_dicts=False)        
-        
-
     
     
 if __name__ == "__main__":   

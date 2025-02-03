@@ -49,6 +49,7 @@ class RelevanceRAG:
         self.retriever = embedding_file(
             file_folder=file_folder, 
             file_name=file_name, 
+            rag_method="relevance-rag", 
             # db_folder=db_folder
             chunk_size=chunk_size, 
             chunk_overlap=chunk_overlap, 

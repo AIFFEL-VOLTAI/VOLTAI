@@ -1,107 +1,105 @@
 {
   "CAM (Cathode Active Material)": {
     "Stoichiometry information": {
-        "pristine NCM": {
+        "SC-NCM": {
             "Li ratio": "1",
-            "Ni ratio": "0.8",
-            "Co ratio": "0.1",
-            "Mn ratio": "0.1",
+            "Ni ratio": "0.83",
+            "Co ratio": "0.12",
+            "Mn ratio": "0.05",
             "O ratio": "2"
         },
-        "M-NCM": {
+        "N-NCM": {
             "Li ratio": "1",
-            "Ni ratio": "0.8",
-            "Co ratio": "0.1",
-            "Mn ratio": "0.1",
+            "Ni ratio": "0.83",
+            "Co ratio": "0.12",
+            "Mn ratio": "0.05",
             "O ratio": "2"
         }
     },
     "Commercial NCM used": {
-        "pristine NCM": "no",
-        "M-NCM": "no"
+        "SC-NCM": "no",
+        "N-NCM": "yes"
     },
-    "Lithium source": "LiOH",
+    "Lithium source": "LiCO3",
     "Synthesis method": "co-precipitation",
     "Crystallization method": "sintering",
-    "Crystallization final temperature": "750",
-    "Crystallization final duration": "15",
-    "Doping": "Mg",
-    "Coating": "Li3PO4",
-    "Additional treatment": "None"
+    "Crystallization final temperature": "860",
+    "Crystallization final duration (hours)": "12",
+    "Doping": "None",
+    "Coating": "None",
+    "Additional treatment": "PVP added during hydrothermal reaction"
   },
   "Electrode (half-cell)": {
-    "Active material to Conductive additive to Binder ratio": "96:2:2",
+    "Active material to Conductive additive to Binder ratio": "90:4:6",
     "Electrolyte": [
         {
             "Salt": "LiPF6",
             "Concentration": "1 M",
-            "Solvent": "DMC:EC:EMC",
-            "Solvent ratio": "1:1:1"
+            "Solvent": "EC:DEC",
+            "Solvent ratio": "1:1"
         }
     ],
     "Additive": "None",
-    "Loading density (mass loading of NCM)": "None",
+    "Loading density": "8",
     "Additional treatment for electrode": "None"
-  },
+},
   "Morphological properties from SEM and TEM results": {
     "Particle size": {
-        "pristine NCM": "11.7 μm",
-        "M-NCM": "11.7 μm"
+        "SC-NCM": "2 μm",
+        "N-NCM": "10-13 μm"
     },
     "Particle shape": {
-        "pristine NCM": "Spherical",
-        "M-NCM": "Spherical"
+        "SC-NCM": "Smooth surfaces, regular structure.",
+        "N-NCM": "Spherical polycrystalline secondary particles with agglomerated primary particles."
     },
     "Particle distribution": {
-        "pristine NCM": "Homogeneous",
-        "M-NCM": "Homogeneous"
+        "SC-NCM": "Uniform particle size.",
+        "N-NCM": "Agglomerated primary particles."
     },
     "Coating layer characteristics": {
-        "M-NCM": "Thin Li3PO4 coating (~1.8 nm) on M-NCM particles."
+        "SC-NCM": "-"
     },
     "Crystal structure and lattice characteristics": {
-        "pristine NCM": "None",
-        "M-NCM": "None"
+        "SC-NCM": "Uniform, clear lattice stripes with ~0.474 nm spacing, corresponding to (003) crystal plane.",
+        "N-NCM": "-"
     }
-  },
+},
   "Cathode Performance": [
     {
-        "Sample Name": "pristine NCM",
+        "Sample Name": "SC-NCM",
         "Data": [
             {
-                "Voltage range": "3.0-4.3",
+                "Voltage range": "2.75-4.30",
                 "Temperature": 25,
                 "C-rate and Specific capacity": [
-                    {"C-rate": 0.1, "Capacity": 199.1},
-                    {"C-rate": 0.2, "Capacity": "None"},
+                    {"C-rate": 0.1, "Capacity": 209.7},
+                    {"C-rate": 0.2, "Capacity": 203.41},
                     {"C-rate": 0.5, "Capacity": "None"},
                     {"C-rate": 1.0, "Capacity": "None"},
                     {"C-rate": 2.0, "Capacity": "None"},
-                    {"C-rate": 4.0, "Capacity": 169.8},
+                    {"C-rate": 4.0, "Capacity": "None"},
                     {"Other C-rates and performance": [
-                        {"C-rate": 5.0, "Capacity": 159.0},
-                        {"C-rate": 6.0, "Capacity": 151.3}
+                        {"C-rate": 5, "Capacity": 166.92}
                     ]}
                 ]
             }
         ]
     },
     {
-        "Sample Name": "M-NCM",
+        "Sample Name": "N-NCM",
         "Data": [
             {
-                "Voltage range": "3.0-4.3",
+                "Voltage range": "2.75-4.30",
                 "Temperature": 25,
                 "C-rate and Specific capacity": [
-                    {"C-rate": 0.1, "Capacity": 203.5},
-                    {"C-rate": 0.2, "Capacity": "None"},
+                    {"C-rate": 0.1, "Capacity": 215.01},
+                    {"C-rate": 0.2, "Capacity": 191.95},
                     {"C-rate": 0.5, "Capacity": "None"},
                     {"C-rate": 1.0, "Capacity": "None"},
                     {"C-rate": 2.0, "Capacity": "None"},
                     {"C-rate": 4.0, "Capacity": "None"},
                     {"Other C-rates and performance": [
-                        {"C-rate": 5.0, "Capacity": 180.0},
-                        {"C-rate": 6.0, "Capacity": 168.9}
+                        {"C-rate": 5, "Capacity": 160.30}
                     ]}
                 ]
             }
@@ -109,4 +107,3 @@
     }
   ]
 }
-  

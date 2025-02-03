@@ -1,0 +1,8 @@
+add_question:
+Provide a detailed explanation of the SEM and TEM results, ensuring all relevant information is included even if dispersed across multiple sections or chunks. Mention particle morphology, size, or any other characteristics noted in the results.
+
+
+example:
+- Morphological results:
+    Explanation of SEM results: "Fig. 2a, b; the NCM-622 seems to have more or less a spherical morphology with a diameter of 3–5 µm, composed of densely packed primary particles"
+    Explanation of TEM results: "In Figure 2 (a) and (b), the (002) plane is observed, with a d-spacing of 0.472 nm. Additionally, a layered structure is evident."

@@ -5,24 +5,42 @@ import json
 import pprint
 import pandas as pd
 
-def load_question(question_path:str="./data/questions/250115-SY-question.yaml"):
-    with open(question_path, 'r', encoding="utf-8") as file:
-        questions = yaml.safe_load(file)
+def load_question(type='m'):
+    base_path = "code/SB/data/category"
+    type_paths = {
+        'r': os.path.join(base_path, "relevance"),
+        'm': os.path.join(base_path, "multiagent"),
+        'e': os.path.join(base_path, "elephant")
+    }
     
+    if type not in type_paths:
+        raise ValueError("type은 'e', 'r', 'm' 중 하나여야 합니다.")
+    
+    directory_path = type_paths[type]
+    yaml_files = [
+        f for f in os.listdir(directory_path)
+        if f.endswith(".yaml") and (type != 'e' or f != "discussion.yaml")
+    ]
+
     question_list = []
-    for i in range(1, 5):
-        if i == 3 or i == 4:
-           temp_question = f"""
+    
+    for yaml_file in yaml_files:
+        file_path = os.path.join(directory_path, yaml_file)
+        with open(file_path, 'r', encoding="utf-8") as file:
+            questions = yaml.safe_load(file)
+        
+        for i in range(1, 5):
+            if i == 3 or i == 4:
+                temp_question = f"""
 {questions["main_question"]}{questions[f"add_question{i}"]}
 {json.dumps(questions[f"example{i}"], ensure_ascii=False, indent=4)}
 """ 
-        else: 
-            temp_question = f"""
+            else: 
+                temp_question = f"""
 {questions["main_question"]}
 {json.dumps(questions[f"example{i}"], ensure_ascii=False, indent=4)}
 """
-
-        question_list.append(temp_question)        
+            question_list.append(temp_question)        
 
     return question_list
 
