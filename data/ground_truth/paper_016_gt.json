@@ -25,9 +25,9 @@
     "Crystallization method": "calcination",
     "Crystallization final temperature": "850",
     "Crystallization final duration (hours)": "10",
-    "Doping": "None",
+    "Doping": null,
     "Coating": "Carbon",
-    "Additional treatment": "None"
+    "Additional treatment": null
   },
   "Electrode (half-cell)": {
     "Active material to Conductive additive to Binder ratio": "80:15:5",
@@ -39,9 +39,9 @@
         "Solvent ratio": "1:1"
       }
     ],
-    "Additive": "None",
+    "Additive": null,
     "Loading density (mass loading of NCM)": "5",
-    "Additional treatment for electrode": "None"
+    "Additional treatment for electrode": null
   },
   "Morphological Properties": {
     "Particle size": {
@@ -60,8 +60,8 @@
       "NCM/C": "NCM particles are homogeneously coated by carbon with a thickness of about 10 nm"
     },
     "Crystal structure and lattice characteristics": {
-      "NCM": "-",
-      "NCM/C": "-"
+      "NCM": null,
+      "NCM/C": null
     }
   },
   "Cathode Performance": {
@@ -72,11 +72,11 @@
         "C-rate and Specific capacity": [
           {
             "C-rate": 0.1,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "C-rate": 0.2,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "C-rate": 0.5,
@@ -92,7 +92,7 @@
           },
           {
             "C-rate": 4.0,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "Other C-rates and performance": [
@@ -124,11 +124,11 @@
         "C-rate and Specific capacity": [
           {
             "C-rate": 0.1,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "C-rate": 0.2,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "C-rate": 0.5,
@@ -144,7 +144,7 @@
           },
           {
             "C-rate": 4.0,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "Other C-rates and performance": [
