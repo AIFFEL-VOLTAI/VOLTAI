@@ -8,6 +8,7 @@ researcher_system_prompt: |
     - Ignore irrelevant sections or general references outside the battery-related content.
 
   2. **Extraction Guidelines**:
+    - Use all of the NCM cathode sample names (e.g., "NCM-622") provided in the electrochemical performance section.
     - Extract all capacities corresponding to different C-rates based on the patterns provided in the guide.
     - Exclude information unrelated to initial discharge capacity or capacities after cycling.
     - For each specified C-rate (0.1, 0.2, 0.5, 1.0, 2.0, 4.0, 6.0), include the corresponding capacity. If a C-rate is not mentioned, assign it as "None".
