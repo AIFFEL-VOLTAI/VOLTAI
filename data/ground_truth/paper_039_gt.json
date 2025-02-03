@@ -27,42 +27,42 @@
       "Crystallization final temperature": "780",
       "Crystallization final duration (hours)": "10",
       "Doping": "W6+",
-      "Coating": "None",
+      "Coating": null,
       "Additional treatment": "Grinding, ball milling, and spray drying"
     },
     "Electrode (half-cell)": {
       "Active material to Conductive additive to Binder ratio": "8:1:1",
       "Electrolyte": [
         {
-          "Salt": "None",
-          "Concentration": "None",
-          "Solvent": "None",
-          "Solvent ratio": "None"
+          "Salt": null,
+          "Concentration": null,
+          "Solvent": null,
+          "Solvent ratio": null
         }
       ],
-      "Additive": "None",
-      "Loading density (mass loading of NCM)": "None",
-      "Additional treatment for electrode": "None"
+      "Additive": null,
+      "Loading density (mass loading of NCM)": null,
+      "Additional treatment for electrode": null
     },
     "Morphological Properties": {
       "Particle size": {
-        "N92": "-",
-        "WN92": "-"
+        "N92": null,
+        "WN92": null
       },
       "Particle shape": {
         "N92": "Granular particles",
         "WN92": "Granular particles"
       },
       "Particle distribution": {
-        "N92": "-",
-        "WN92": "-"
+        "N92": null,
+        "WN92": null
       },
       "Coating layer characteristics": {
-        "N92": "-",
-        "WN92": "-"
+        "N92": null,
+        "WN92": null
       },
       "Crystal structure and lattice characteristics": {
-        "N92": "-",
+        "N92": null,
         "WN92": "Layered structure with space group R-3m"
       }
     },
@@ -70,14 +70,14 @@
       "N92": [
         {
           "Voltage range": "2.8–4.3",
-          "Temperature": "None",
+          "Temperature": null,
           "C-rate and Specific capacity": [
             {"C-rate": 0.1, "Capacity": 211.93},
-            {"C-rate": 0.2, "Capacity": "None"},
+            {"C-rate": 0.2, "Capacity": null},
             {"C-rate": 0.5, "Capacity": 191.47},
-            {"C-rate": 1.0, "Capacity": "None"},
-            {"C-rate": 2.0, "Capacity": "None"},
-            {"C-rate": 4.0, "Capacity": "None"},
+            {"C-rate": 1.0, "Capacity": null},
+            {"C-rate": 2.0, "Capacity": null},
+            {"C-rate": 4.0, "Capacity": null},
             {
               "Other C-rates and performance": [
                 {"C-rate": 5, "Capacity": 64.19}
@@ -89,14 +89,14 @@
       "WN92": [
         {
           "Voltage range": "2.8–4.3",
-          "Temperature": "None",
+          "Temperature": null,
           "C-rate and Specific capacity": [
             {"C-rate": 0.1, "Capacity": 210.83},
-            {"C-rate": 0.2, "Capacity": "None"},
+            {"C-rate": 0.2, "Capacity": null},
             {"C-rate": 0.5, "Capacity": 190.10},
-            {"C-rate": 1.0, "Capacity": "None"},
-            {"C-rate": 2.0, "Capacity": "None"},
-            {"C-rate": 4.0, "Capacity": "None"},
+            {"C-rate": 1.0, "Capacity": null},
+            {"C-rate": 2.0, "Capacity": null},
+            {"C-rate": 4.0, "Capacity": null},
             {
               "Other C-rates and performance": [
                 {"C-rate": 5, "Capacity": 159.11}

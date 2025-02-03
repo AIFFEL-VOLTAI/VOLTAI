@@ -41,7 +41,7 @@
         "Crystallization method": "calcination",
         "Crystallization final temperature": "850",
         "Crystallization final duration (hours)": "15",
-        "Doping": "None",
+        "Doping": null,
         "Coating": "RGO",
         "Additional treatment": "microwave irradiation"
     },
@@ -55,9 +55,9 @@
                 "Solvent ratio": "1:1"
             }
         ],
-        "Additive": "None",
-        "Loading density (mass loading of NCM)": "None",
-        "Additional treatment for electrode": "None"
+        "Additive": null,
+        "Loading density (mass loading of NCM)": null,
+        "Additional treatment for electrode": null
     },
     "Morphological Properties": {
         "Particle size": {
@@ -92,7 +92,7 @@
         }
     },
     "Cathode Performance": {
-        "NR0": {
+        "NR0": [{
             "Voltage range": "2.5-4.3",
             "Temperature": "room temperature",
             "C-rate and Specific capacity": [
@@ -102,11 +102,11 @@
                 },
                 {
                     "C-rate": 0.2,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 0.5,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 1.0,
@@ -114,11 +114,11 @@
                 },
                 {
                     "C-rate": 2.0,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 4.0,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "Other C-rates and performance": [
@@ -133,8 +133,8 @@
                     ]
                 }
             ]
-        },
-        "NR1": {
+        }],
+        "NR1": [{
             "Voltage range": "2.5-4.3",
             "Temperature": "room temperature",
             "C-rate and Specific capacity": [
@@ -144,23 +144,23 @@
                 },
                 {
                     "C-rate": 0.2,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 0.5,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 1.0,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 2.0,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 4.0,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "Other C-rates and performance": [
@@ -175,8 +175,8 @@
                     ]
                 }
             ]
-        },
-        "NR3": {
+        }],
+        "NR3": [{
             "Voltage range": "2.5-4.3",
             "Temperature": "room temperature",
             "C-rate and Specific capacity": [
@@ -186,23 +186,23 @@
                 },
                 {
                     "C-rate": 0.2,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 0.5,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 1.0,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 2.0,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 4.0,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "Other C-rates and performance": [
@@ -217,8 +217,8 @@
                     ]
                 }
             ]
-        },
-        "NR5": {
+        }],
+        "NR5": [{
             "Voltage range": "2.5-4.3",
             "Temperature": "room temperature",
             "C-rate and Specific capacity": [
@@ -228,23 +228,23 @@
                 },
                 {
                     "C-rate": 0.2,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 0.5,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 1.0,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 2.0,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "C-rate": 4.0,
-                    "Capacity": "None"
+                    "Capacity": null
                 },
                 {
                     "Other C-rates and performance": [
@@ -259,6 +259,6 @@
                     ]
                 }
             ]
-        }
+        }]
     }
 }
