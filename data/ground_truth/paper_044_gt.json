@@ -1,82 +1,82 @@
 {
 	"CAM (Cathode Active Material)": {
 		"Stoichiometry information": {
-			"SC-NCM": {
+			"pristine NCM622": {
 				"Li ratio": "1",
-				"Ni ratio": "0.83",
-				"Co ratio": "0.12",
-				"Mn ratio": "0.05",
+				"Ni ratio": "0.6",
+				"Co ratio": "0.2",
+				"Mn ratio": "0.2",
 				"O ratio": "2"
 			},
-			"N-NCM": {
+			"polymer/γ-Al2O3-coated NCM622": {
 				"Li ratio": "1",
-				"Ni ratio": "0.83",
-				"Co ratio": "0.12",
-				"Mn ratio": "0.05",
+				"Ni ratio": "0.6",
+				"Co ratio": "0.2",
+				"Mn ratio": "0.2",
 				"O ratio": "2"
 			}
 		},
 		"Commercial NCM used": {
-			"SC-NCM": "no",
-			"N-NCM": "yes"
+			"pristine NCM622": "no",
+			"polymer/γ-Al2O3-coated NCM622": "no"
 		},
-		"Lithium source": "LiCO3",
+		"Lithium source": "LiOH",
 		"Synthesis method": "co-precipitation",
 		"Crystallization method": "sintering",
-		"Crystallization final temperature": "860",
-		"Crystallization final duration (hours)": "12",
+		"Crystallization final temperature": "875",
+		"Crystallization final duration": "12",
 		"Doping": "None",
-		"Coating": "None",
-		"Additional treatment": "PVP added during hydrothermal reaction"
+		"Coating": "γ-Al2O3",
+		"Additional treatment": "None"
 	},
 	"Electrode (half-cell)": {
 		"Active material to Conductive additive to Binder ratio": "90:4:6",
 		"Electrolyte": [
 			{
 				"Salt": "LiPF6",
-				"Concentration": "1 M",
-				"Solvent": "EC:DEC",
-				"Solvent ratio": "1:1"
+				"Concentration": "1.0 M",
+				"Solvent": "EC:EMC",
+				"Solvent ratio": "3:7"
 			}
 		],
-		"Additive": "None",
-		"Loading density": "8",
+		"Additive": "VC, 2%",
+		"Loading density (mass loading of NCM)": "9.0",
 		"Additional treatment for electrode": "None"
 	},
 	"Morphological Properties": {
 		"Particle size": {
-			"SC-NCM": "2 μm",
-			"N-NCM": "10-13 μm"
+			"pristine NCM622": "-",
+			"polymer/γ-Al2O3-coated NCM622": "-"
 		},
 		"Particle shape": {
-			"SC-NCM": "Smooth surfaces, regular structure.",
-			"N-NCM": "Spherical polycrystalline secondary particles with agglomerated primary particles."
+			"pristine NCM622": "Irregular and rough particle surface.",
+			"polymer/γ-Al2O3-coated NCM622": "Irregular and rough particle surface."
 		},
 		"Particle distribution": {
-			"SC-NCM": "Uniform particle size.",
-			"N-NCM": "Agglomerated primary particles."
+			"pristine NCM622": "-",
+			"polymer/γ-Al2O3-coated NCM622": "-"
 		},
 		"Coating layer characteristics": {
-			"SC-NCM": "-"
+			"polymer/γ-Al2O3-coated NCM622": "Ultrathin and microporous γ-Al2O3 coating (~7.8 nm thick). Porous structure with ~3.6 nm pore size. Smooth and continuous."
 		},
 		"Crystal structure and lattice characteristics": {
-			"SC-NCM": "Uniform, clear lattice stripes with ~0.474 nm spacing, corresponding to (003) crystal plane.",
-			"N-NCM": "-"
+			"pristine NCM622": "-",
+			"polymer/γ-Al2O3-coated NCM622": "-"
 		}
 	},
 	"Cathode Performance": {
-		"SC-NCM": [
+		"pristine NCM622": [
 			{
-				"Voltage range": "2.75-4.30",
-				"Temperature": 25,
+				"Voltage range": "3.0-4.55",
+				"Temperature": "25",
 				"C-rate and Specific capacity": [
 					{
 						"C-rate": 0.1,
-						"Capacity": 209.7
+						"Capacity": 196.07
 					},
 					{
 						"C-rate": 0.2,
-						"Capacity": 203.41
+						"Capacity": "None"
 					},
 					{
 						"C-rate": 0.5,
@@ -95,28 +95,23 @@
 						"Capacity": "None"
 					},
 					{
-						"Other C-rates and performance": [
-							{
-								"C-rate": 5,
-								"Capacity": 166.92
-							}
-						]
+						"Other C-rates and performance": "None"
 					}
 				]
 			}
 		],
-		"N-NCM": [
+		"polymer/γ-Al2O3-coated NCM622": [
 			{
-				"Voltage range": "2.75-4.30",
-				"Temperature": 25,
+				"Voltage range": "3.0-4.55",
+				"Temperature": "25",
 				"C-rate and Specific capacity": [
 					{
 						"C-rate": 0.1,
-						"Capacity": 215.01
+						"Capacity": 203.97
 					},
 					{
 						"C-rate": 0.2,
-						"Capacity": 191.95
+						"Capacity": "None"
 					},
 					{
 						"C-rate": 0.5,
@@ -135,12 +130,7 @@
 						"Capacity": "None"
 					},
 					{
-						"Other C-rates and performance": [
-							{
-								"C-rate": 5,
-								"Capacity": 160.30
-							}
-						]
+						"Other C-rates and performance": "None"
 					}
 				]
 			}
