@@ -1,6 +1,6 @@
 import os
 import re
-import fitz  # PyMuPDF
+import pymupdf  # PyMuPDF
 import unicodedata
 
 from langchain_core.vectorstores.base import VectorStoreRetriever
@@ -20,7 +20,7 @@ def remove_last_section_from_pdf(file_path: str) -> str:
     Returns:
         str: 특정 섹션 제외된 본문 텍스트.
     """
-    doc = fitz.open(file_path)
+    doc = pymupdf.open(file_path)
     full_text = ""
     
     # PDF의 모든 페이지에서 텍스트 추출
