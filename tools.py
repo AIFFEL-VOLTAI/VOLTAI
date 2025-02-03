@@ -1,6 +1,6 @@
-import os
 import re
 import fitz  # PyMuPDF
+from pdfminer.high_level import extract_text
 import unicodedata
 
 from langchain_core.vectorstores.base import VectorStoreRetriever
@@ -20,20 +20,9 @@ def remove_last_section_from_pdf(file_path: str) -> str:
     Returns:
         str: 특정 섹션 제외된 본문 텍스트.
     """
-    doc = fitz.open(file_path)
-    full_text = ""
-    
-    # PDF의 모든 페이지에서 텍스트 추출
-    for page in doc:
-        full_text += page.get_text() + "\n"
-    
-    # for page in doc:
-    #     blocks = page.get_text("blocks") # 블록 단위 추출
-    #     blocks.sort(key=lambda b: (b[1], b[0])) # 좌표 기준 정렬 (y, x)
+    # pdfminer를 활용해서 텍스트 추출하기
+    full_text = extract_text(file_path)
 
-    # for block in blocks:
-    #     text += block[4] + "\n\n" # 문단 구분을 위해 두 줄 바꿈 추가    
-    
     # Unicode 정규화
     full_text = unicodedata.normalize("NFKD", full_text)
 
@@ -41,11 +30,6 @@ def remove_last_section_from_pdf(file_path: str) -> str:
     contains_advancedsciencenews = "www.advancedsciencenews.com" in full_text
     contains_chemelectrochem = "www.chemelectrochem.org" in full_text
     contains_materialsviews = "www.MaterialsViews.com" in full_text
-
-    # print("조건 확인:")
-    # print(f"Contains 'www.advancedsciencenews.com': {contains_advancedsciencenews}")
-    # print(f"Contains 'ChemElectroChem': {contains_chemelectrochem}")
-    # print(f"Contains 'www.MaterialsViews.com': {contains_materialsviews}")
 
     # 조건에 따라 키워드 설정
     if contains_materialsviews:
@@ -74,6 +58,7 @@ def remove_last_section_from_pdf(file_path: str) -> str:
 def embedding_file(
     file_folder: str, 
     file_name: str, 
+    rag_method: str, 
     chunk_size: int=500, 
     chunk_overlap: int=100, 
     search_k: int=10
@@ -92,26 +77,35 @@ def embedding_file(
         chunk_overlap=chunk_overlap,      ## 청크 간 겹침 길이 정의
         separators=["\n\n"]     ## 텍스트를 나눌 때 사용할 구분자를 지정 (문단)
     )
-
-    ## PDF 파일 불러오기
-    ### ref 제거 전 코드
-    # loader = PyPDFLoader(f"{file_folder}/{file_name}.pdf")
-    # docs = loader.load_and_split(text_splitter=splitter)
-
     paper_file_path = f"{file_folder}/{file_name}.pdf"
-    full_text = remove_last_section_from_pdf(file_path=paper_file_path)
-    texts = splitter.split_text(full_text)
     
-    ## Embedding 생성 및 vector store에 저장
-    embeddings = OpenAIEmbeddings()
-    # vector_store = FAISS.from_documents(
-    #     documents=docs,         ## 벡터 저장소에 추가할 문서 리스트
-    #     embedding=embeddings    ## 사용할 임베딩 함수
-    # )
-    vector_store = FAISS.from_texts(
-        texts=texts,         ## 벡터 저장소에 추가할 문서 리스트
-        embedding=embeddings    ## 사용할 임베딩 함수
-    )
+    ## ref 제거 전 코드
+    if rag_method == "multiagent-rag":
+        loader = PyPDFLoader(paper_file_path)
+        docs = loader.load_and_split(text_splitter=splitter) 
+       
+        ## Embedding 생성 및 vector store에 저장
+        embeddings = OpenAIEmbeddings()
+        vector_store = FAISS.from_documents(
+            documents=docs,         ## 벡터 저장소에 추가할 문서 리스트
+            embedding=embeddings    ## 사용할 임베딩 함수
+        )
+    
+    ## ref 제거 후 코드
+    elif rag_method == "relevance-rag" or rag_method == "ensemble-rag":
+        docs = remove_last_section_from_pdf(file_path=paper_file_path)
+        docs = splitter.split_text(docs)
+        
+        ## Embedding 생성 및 vector store에 저장        
+        embeddings = OpenAIEmbeddings()
+        vector_store = FAISS.from_texts(
+            texts=docs,         ## 벡터 저장소에 추가할 문서 리스트
+            embedding=embeddings    ## 사용할 임베딩 함수
+        )
+    
+    ## key error
+    else:
+        raise KeyError(f"Invalid rag_method: {rag_method}")
 
     ## 검색기로 변환: 현재 벡터 저장소를 기반으로 VectorStoreRetriever 객체를 생성하는 기능을 제공
     retriever = vector_store.as_retriever(
