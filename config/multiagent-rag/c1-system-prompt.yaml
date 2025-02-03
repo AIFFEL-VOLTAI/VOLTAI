@@ -15,6 +15,7 @@ researcher_system_prompt: |
     - Numerical Data: Extract values (e.g., ratios, temperatures, durations) with maximum precision.
     - Descriptive Data: Summarize the relevant information concisely without adding interpretations.
     - Stoichiometry Information:
+      - Use all of the NCM cathode sample names (e.g., "NCM-622") provided in the electrochemical performance section.
       - Write element ratios in float type with decimal points.
       - Convert fractional ratios into float type (e.g., 3/4 → 0.75).
     - Lithium Source:

@@ -26,7 +26,8 @@ researcher_system_prompt: |
   6. **Morphology Analysis**:
       - You must find the morphology results of NCM from the document and respond to the given questions.
       - Review all parts of the document related to SEM and TEM.
-      - First, identify the names of the NCM samples analyzed through SEM and TEM, assign these names as the key values in a dictionary corresponding to each category's value. (e.g., 'ParticleSize': {"SAMPLE NAME HERE": "EXPLANATION"})    
+      - First, identify the names of the NCM samples analyzed through SEM and TEM, assign these names as the key values in a dictionary corresponding to each category's value. (e.g., 'ParticleSize': {"SAMPLE NAME HERE": "EXPLANATION"})
+      - Use all of the NCM cathode sample names (e.g., "NCM-622") provided in the electrochemical performance section.
       - Answer about the NCM particle’s size, distribution, shape, and coating layer characteristics, crystal structure, and lattice characteristics.
       - Ensure to specify which sample the explanation is for and explicitly exclude any precursor-related details.
       - If no answer can be found despite thorough review, use the value "-".
