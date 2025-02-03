@@ -111,7 +111,7 @@ def main(args):
             temp_answer = result["messages"][-1][category_names[config["category_number"]-1]]
 
         ## 결과 저장
-        save_output2json(each_answer=temp_answer, file_num=file_number, rag_method=config["rag_method"])
+        save_output2json(each_answer=temp_answer, file_num=file_number, rag_method=config["rag_method"], category_number=config["category_number"])
                 
         print(f"##       print {file_number} result")
         print("------------------------------------")
