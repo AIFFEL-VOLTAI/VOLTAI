@@ -1,0 +1,139 @@
+{
+	"CAM (Cathode Active Material)": {
+		"Stoichiometry information": {
+			"LNCM": {
+				"Li ratio": "1.15",
+				"Ni ratio": "0.15",
+				"Co ratio": "0.15",
+				"Mn ratio": "0.55",
+				"O ratio": "2"
+			},
+			"CLNCM": {
+				"Li ratio": "1.15",
+				"Ni ratio": "0.15",
+				"Co ratio": "0.15",
+				"Mn ratio": "0.55",
+				"O ratio": "2"
+			}
+		},
+		"Commercial NCM used": {
+			"LNCM": "yes",
+			"CLNCM": "yes"
+		},
+		"Lithium source": "None",
+		"Synthesis method": "None",
+		"Crystallization method": "None",
+		"Crystallization final temperature": "None",
+		"Crystallization final duration": "None",
+		"Doping": "None",
+		"Coating": "Ge-132",
+		"Additional treatment": "None"
+	},
+	"Electrode (half-cell)": {
+		"Active material to Conductive additive to Binder ratio": "92:4:4",
+		"Electrolyte": [
+			{
+				"Salt": "LiPF6",
+				"Concentration": "1 M",
+				"Solvent": "EC:EMC",
+				"Solvent ratio": "3:7"
+			}
+		],
+		"Additive": "None",
+		"Loading density (mass loading of NCM)": "7.7",
+		"Additional treatment for electrode": "None"
+	},
+	"Morphological Properties": {
+		"Particle size": {
+			"LNCM": "-",
+			"CLNCM": "-"
+		},
+		"Particle shape": {
+			"LNCM": "Uniform spherical secondary particles with a smooth surface.",
+			"CLNCM": "Uniform spherical secondary particles with a smooth surface."
+		},
+		"Particle distribution": {
+			"LNCM": "-",
+			"CLNCM": "-"
+		},
+		"Coating layer characteristics": {
+			"CLNCM": "Homogeneous coating distribution without agglomeration. The Ge-132 coating is evenly applied."
+		},
+		"Crystal structure and lattice characteristics": {
+			"LNCM": "-",
+			"CLNCM": "-"
+		}
+	},
+	"Cathode Performance": {
+		"LNCM": [
+			{
+				"Voltage range": "2.0-4.65",
+				"Temperature": "20",
+				"C-rate and Specific capacity": [
+					{
+						"C-rate": 0.1,
+						"Capacity": 278
+					},
+					{
+						"C-rate": 0.2,
+						"Capacity": "None"
+					},
+					{
+						"C-rate": 0.5,
+						"Capacity": "None"
+					},
+					{
+						"C-rate": 1.0,
+						"Capacity": "None"
+					},
+					{
+						"C-rate": 2.0,
+						"Capacity": "None"
+					},
+					{
+						"C-rate": 4.0,
+						"Capacity": "None"
+					},
+					{
+						"Other C-rates and performance": "None"
+					}
+				]
+			}
+		],
+		"CLNCM": [
+			{
+				"Voltage range": "2.0-4.65",
+				"Temperature": "20",
+				"C-rate and Specific capacity": [
+					{
+						"C-rate": 0.1,
+						"Capacity": 266
+					},
+					{
+						"C-rate": 0.2,
+						"Capacity": "None"
+					},
+					{
+						"C-rate": 0.5,
+						"Capacity": "None"
+					},
+					{
+						"C-rate": 1.0,
+						"Capacity": "None"
+					},
+					{
+						"C-rate": 2.0,
+						"Capacity": "None"
+					},
+					{
+						"C-rate": 4.0,
+						"Capacity": "None"
+					},
+					{
+						"Other C-rates and performance": "None"
+					}
+				]
+			}
+		]
+	}
+}
