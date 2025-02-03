@@ -1,66 +1,109 @@
 {
-  "CAM (Cathode Active Material)": {
-    "Stoichiometry information": {
-      "LiNi0.92Co0.04Mn0.04O2 (N92)": {
-        "Li ratio": "1",
-        "Ni ratio": "0.92",
-        "Co ratio": "0.04",
-        "Mn ratio": "0.04",
-        "O ratio": "2"
+    "CAM (Cathode Active Material)": {
+      "Stoichiometry information": {
+        "N92": {
+          "Li ratio": "1",
+          "Ni ratio": "0.92",
+          "Co ratio": "0.04",
+          "Mn ratio": "0.04",
+          "O ratio": "2"
+        },
+        "WN92": {
+          "Li ratio": "1",
+          "Ni ratio": "0.91",
+          "Co ratio": "0.04",
+          "Mn ratio": "0.04",
+          "O ratio": "2",
+          "W ratio": "1"
+        }
       },
-      "LiNi0.92−xCo0.04Mn0.04WxO2 (WN92, x = 0.25%, 0.5%, 1%, and 2%)": {
-        "Li ratio": "1",
-        "Ni ratio": "0.92−x",
-        "Co ratio": "0.04",
-        "Mn ratio": "0.04",
-        "W ratio": "x",
-        "O ratio": "2"
+      "Commercial NCM used": {
+        "N92": "no",
+        "WN92": "no"
+      },
+      "Lithium source": "LiOH",
+      "Synthesis method": "solid-phase method",
+      "Crystallization method": "calcination",
+      "Crystallization final temperature": "780",
+      "Crystallization final duration (hours)": "10",
+      "Doping": "W6+",
+      "Coating": "None",
+      "Additional treatment": "Grinding, ball milling, and spray drying"
+    },
+    "Electrode (half-cell)": {
+      "Active material to Conductive additive to Binder ratio": "8:1:1",
+      "Electrolyte": [
+        {
+          "Salt": "None",
+          "Concentration": "None",
+          "Solvent": "None",
+          "Solvent ratio": "None"
+        }
+      ],
+      "Additive": "None",
+      "Loading density (mass loading of NCM)": "None",
+      "Additional treatment for electrode": "None"
+    },
+    "Morphological properties from SEM and TEM results": {
+      "Particle size": {
+        "N92": "-",
+        "WN92": "-"
+      },
+      "Particle shape": {
+        "N92": "Granular particles",
+        "WN92": "Granular particles"
+      },
+      "Particle distribution": {
+        "N92": "-",
+        "WN92": "-"
+      },
+      "Coating layer characteristics": {
+        "N92": "-",
+        "WN92": "-"
+      },
+      "Crystal structure and lattice characteristics": {
+        "N92": "-",
+        "WN92": "Layered structure with space group R-3m"
       }
     },
-    "Whether or not commercial NCM was used for each sample (Stoichiometry information in order)": [
-      "No"
-    ],
-    "Lithium source": "LiOH·H2O",
-    "Synthesis method": "Solid-phase method",
-    "Describe the crystallization method, such as Hydrothermal, Sintering, or any other technique used during the process.": "Sintering",
-    "What is the Crystallization final temperature in degree of Celcius used in the process? (e.g., calcination or sintering) mentioned for the crystallization stage.": "780",
-    "What is the time duration for the final crystallization process, including any calcination or sintering stages? Specify the hours.": "10",
-    "Doping": "W6+ doping",
-    "Coating": "None",
-    "Additional treatment": "None"
-  },
-  "Electrode (only for coin-cell (half-cell))": {
-    "Active material to Conductive additive to Binder ratio": "8:1:1 (cathode powder:carbon powder:PVDF)",
-    "Electrolyte": {
-      "Salt": "None",
-      "Concentration": "None",
-      "Solvent": "None",
-      "Solvent ratio": "None"
-    },
-    "Additive": "None",
-    "Loading density (mass loading of NCM, Standardize the unit to mg/cm^2)": "None",
-    "Additional treatment for electrode": "None"
-  },
-  "Morphological results": {
-    "Explanation of SEM results": "Fig. 2a,b: The SEM images show granular particles with no significant difference in overall morphology between N92 and WN92.",
-    "Explanation of TEM results": "Fig. 3c: The atomic resolution HAADF-STEM image of the WN92 sample shows a layered structure with a space group of R-3m, and the EDS maps reveal that each element is distributed uniformly."
-  },
-  "Cathode Performance": {
-    "Capacity at all C-rate, mAh/g (with electrode state)": [
-      {
-        "210.83 mAh g−1": "@0.1 C, WN92"
-      },
-      {
-        "159.11 mAh g−1": "@5 C, WN92"
-      },
-      {
-        "211.93 mAh g−1": "@0.1 C, N92"
-      },
-      {
-        "64.19 mAh g−1": "@5 C, N92"
-      }
-    ],
-    "Voltage range": "2.8–4.3 V",
-    "Temperature": "Room temperature"
-  }
-}
+    "Cathode Performance": {
+      "N92": [
+        {
+          "Voltage range": "2.8–4.3",
+          "Temperature": "None",
+          "C-rate and Specific capacity": [
+            {"C-rate": 0.1, "Capacity": 211.93},
+            {"C-rate": 0.2, "Capacity": "None"},
+            {"C-rate": 0.5, "Capacity": 191.47},
+            {"C-rate": 1.0, "Capacity": "None"},
+            {"C-rate": 2.0, "Capacity": "None"},
+            {"C-rate": 4.0, "Capacity": "None"},
+            {
+              "Other C-rates and performance": [
+                {"C-rate": 5, "Capacity": 64.19}
+              ]
+            }
+          ]
+        }
+      ],
+      "WN92": [
+        {
+          "Voltage range": "2.8–4.3",
+          "Temperature": "None",
+          "C-rate and Specific capacity": [
+            {"C-rate": 0.1, "Capacity": 210.83},
+            {"C-rate": 0.2, "Capacity": "None"},
+            {"C-rate": 0.5, "Capacity": 190.10},
+            {"C-rate": 1.0, "Capacity": "None"},
+            {"C-rate": 2.0, "Capacity": "None"},
+            {"C-rate": 4.0, "Capacity": "None"},
+            {
+              "Other C-rates and performance": [
+                {"C-rate": 5, "Capacity": 159.11}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+}  
