@@ -1,58 +1,173 @@
 {
-    "CAM (Cathode Active Material)": {
-        "Stoichiometry information": {
-            "LiNi1/3Co1/3Mn1/3O2": {
-                "Li ratio": "1",
-                "Ni ratio": "1/3",
-                "Co ratio": "1/3",
-                "Mn ratio": "1/3",
-                "O ratio": "2"
-            }
-        },
-        "Whether or not commercial NCM was used for each sample (Stoichiometry information in order)": [
-            "no"
-        ],
-        "Lithium source": "LiAc·2H2O",
-        "Synthesis method": "sol-gel method",
-        "Describe the crystallization method, such as Hydrothermal, Sintering, or any other technique used during the process.": "sintering",
-        "What is the Crystallization final temperature in degree of Celcius used in the process? (e.g., calcination or sintering) mentioned for the crystallization stage.": "850",
-        "What is the time duration for the final crystallization process, including any calcination or sintering stages? Specify the hours.": "10",
-        "Doping": "None",
-        "Coating": "Carbon coating",
-        "Additional treatment": "None"
+  "CAM (Cathode Active Material)": {
+    "Stoichiometry information": {
+      "NCM": {
+        "Li ratio": 1,
+        "Ni ratio": 0.33,
+        "Co ratio": 0.33,
+        "Mn ratio": 0.33,
+        "O ratio": 2
+      },
+      "NCM/C": {
+        "Li ratio": 1,
+        "Ni ratio": 0.33,
+        "Co ratio": 0.33,
+        "Mn ratio": 0.33,
+        "O ratio": 2
+      }
     },
-    "Electrode (only for coin-cell (half-cell))": {
-        "Active material to Conductive additive to Binder ratio": "80:15:5",
-        "Electrolyte": {
-            "Salt": "LiPF6",
-            "Concentration": "1 M",
-            "Solvent": ["ethylene carbonate (EC)", "dimethyl carbonate (DMC)"],
-            "Solvent ratio": "1:1 [v/v]"
-        },
-        "Additive": "None",
-        "Loading density (mass loading of NCM, Standardize the unit to mg/cm^2)": "5 mg",
-        "Additional treatment for electrode": "None"
+    "Commercial NCM used": {
+      "NCM": "no",
+      "NCM/C": "no"
     },
-    "Morphological results": {
-        "Explanation of SEM results": "NCM and NCM/C exhibit irregular particle shapes with very small particle sizes.",
-        "Explanation of TEM results": "NCM particles range from 50–200 nm. NCM/C particles appear aggregated, uniformly distributed with a size of ~150 nm, and encapsulated by a carbon coating layer ~10 nm thick."
+    "Lithium source": "LiAc",
+    "Synthesis method": "sol-gel method",
+    "Crystallization method": "calcination",
+    "Crystallization final temperature": "850",
+    "Crystallization final duration (hours)": "10",
+    "Doping": "None",
+    "Coating": "Carbon",
+    "Additional treatment": "None"
+  },
+  "Electrode (half-cell)": {
+    "Active material to Conductive additive to Binder ratio": "80:15:5",
+    "Electrolyte": [
+      {
+        "Salt": "LiPF6",
+        "Concentration": "1 M",
+        "Solvent": "EC:DMC",
+        "Solvent ratio": "1:1"
+      }
+    ],
+    "Additive": "None",
+    "Loading density (mass loading of NCM)": "5",
+    "Additional treatment for electrode": "None"
+  },
+  "Morphological Properties": {
+    "Particle size": {
+      "NCM": "very small, sizes ranging from 50 to 200 nm",
+      "NCM/C": "diameter of about 150 nm"
     },
-    "Cathode Performance": {
-        "Capacity at all C-rate, mAh/g (with electrode state)": [
-            {
-                "0.5C": {
-                    "NCM/C": "191.2 mAh/g", 
-                    "NCM": "175.7 mAh/g"
-                }
-            },
-            {
-                "40C": {
-                    "NCM/C": "54.6 mAh/g", 
-                    "NCM": "13.2 mAh/g"
-                }
-            }
-        ],
-        "Voltage range": "2.50–4.50 V",
-        "Temperature": "30°C"
+    "Particle shape": {
+      "NCM": "irregular particle shape",
+      "NCM/C": "particles appear aggregated together, packaged by a layer of carbon"
+    },
+    "Particle distribution": {
+      "NCM": "individual particles can be clearly identified",
+      "NCM/C": "homogeneous particle size distribution"
+    },
+    "Coating layer characteristics": {
+      "NCM/C": "NCM particles are homogeneously coated by carbon with a thickness of about 10 nm"
+    },
+    "Crystal structure and lattice characteristics": {
+      "NCM": "-",
+      "NCM/C": "-"
     }
+  },
+  "Cathode Performance": {
+    "NCM": [
+      {
+        "Voltage range": "2.5 - 4.5",
+        "Temperature": 30,
+        "C-rate and Specific capacity": [
+          {
+            "C-rate": 0.1,
+            "Capacity": "None"
+          },
+          {
+            "C-rate": 0.2,
+            "Capacity": "None"
+          },
+          {
+            "C-rate": 0.5,
+            "Capacity": 175.7
+          },
+          {
+            "C-rate": 1.0,
+            "Capacity": 154.8
+          },
+          {
+            "C-rate": 2.0,
+            "Capacity": 143.5
+          },
+          {
+            "C-rate": 4.0,
+            "Capacity": "None"
+          },
+          {
+            "Other C-rates and performance": [
+              {
+                "C-rate": 5.0,
+                "Capacity": 101.7
+              },
+              {
+                "C-rate": 10,
+                "Capacity": 71.5
+              },
+              {
+                "C-rate": 20,
+                "Capacity": 44.5
+              },
+              {
+                "C-rate": 40,
+                "Capacity": 13.2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "NCM/C": [
+      {
+        "Voltage range": "2.5 - 4.5",
+        "Temperature": 30,
+        "C-rate and Specific capacity": [
+          {
+            "C-rate": 0.1,
+            "Capacity": "None"
+          },
+          {
+            "C-rate": 0.2,
+            "Capacity": "None"
+          },
+          {
+            "C-rate": 0.5,
+            "Capacity": 191.2
+          },
+          {
+            "C-rate": 1.0,
+            "Capacity": 178.9
+          },
+          {
+            "C-rate": 2.0,
+            "Capacity": 163.5
+          },
+          {
+            "C-rate": 4.0,
+            "Capacity": "None"
+          },
+          {
+            "Other C-rates and performance": [
+              {
+                "C-rate": 5.0,
+                "Capacity": 135.8
+              },
+              {
+                "C-rate": 10,
+                "Capacity": 109.4
+              },
+              {
+                "C-rate": 20,
+                "Capacity": 81.9
+              },
+              {
+                "C-rate": 40,
+                "Capacity": 54.6
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

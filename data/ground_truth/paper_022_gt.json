@@ -1,52 +1,150 @@
 {
-    "CAM (Cathode Active Material)": {
-        "Stoichiometry information": {
-            "LiNi0.84Co0.10Mn0.06O2": {
-                "Li ratio": "1",
-                "Ni ratio": "0.84",
-                "Co ratio": "0.10",
-                "Mn ratio": "0.06",
-                "O ratio": "2"
-            }
-        },
-        "Whether or not commercial NCM was used for each sample (Stoichiometry information in order)": [
-            "no"
-        ],
-        "Lithium source": "LiOH·H2O",
-        "Synthesis method": "co-precipitation",
-        "Describe the crystallization method, such as Hydrothermal, Sintering, or any other technique used during the process.": "Sintering",
-        "What is the Crystallization final temperature in degree of Celcius used in the process? (e.g., calcination or sintering) mentioned for the crystallization stage.": "500 °C for 5 hours, 760 °C for 15 hours",
-        "What is the time duration for the final crystallization process, including any calcination or sintering stages? Specify the hours.": "None",
-        "Doping": "Vanadium (V) doping",
-        "Coating": "None",
-        "Additional treatment": "None"
+  "CAM (Cathode Active Material)": {
+    "Stoichiometry information": {
+      "Pristine NCM": {
+        "Li ratio": "1",
+        "Ni ratio": "0.84",
+        "Co ratio": "0.10",
+        "Mn ratio": "0.06",
+        "O ratio": "2"
+      },
+      "V-doped NCM": {
+        "Li ratio": "1",
+        "Ni ratio": "0.84",
+        "Co ratio": "0.10",
+        "Mn ratio": "0.06",
+        "O ratio": "2"
+      }
     },
-    "Electrode (only for coin-cell (half-cell))": {
-        "Active material to Conductive additive to Binder ratio": "96: 2: 2",
-        "Electrolyte": {
-            "Salt": "LiPF6",
-            "Concentration": "1 M",
-            "Solvent": ["ethylene carbonate (EC)", "dimethyl carbonate (DMC)", "ethylmethyl carbonate (EMC)"],
-            "Solvent ratio": "1:1:1 [v/v/v]"
-        },
-        "Additive": "None",
-        "Loading density": "14.5 mg/cm2",
-        "Additional treatment for electrode": "None"
+    "Commercial NCM used": {
+      "Pristine NCM": "no",
+      "V-doped NCM": "no"
     },
-    "Morphological results": {
-        "Explanation of SEM results": "Figure 3 shows that all powders have a similar spherical morphology with no significant differences between samples. The spherical samples are composed of numerous primary particles, which are around 500 nm in size, regardless of the vanadium doping level. Vanadium doping does not appear to affect the morphology and size of the NCM materials.",
-        "Explanation of TEM results": "None"
+    "Lithium source": "LiOH",
+    "Synthesis method": "solid state method",
+    "Crystallization method": "calcination",
+    "Crystallization final temperature": "760",
+    "Crystallization final duration (hours)": "15",
+    "Doping": "Vanadium (V)",
+    "Coating": "None",
+    "Additional treatment": "None"
+  },
+  "Electrode (half-cell)": {
+    "Active material to Conductive additive to Binder ratio": "96:2:2",
+    "Electrolyte": [
+      {
+        "Salt": "LiPF6",
+        "Concentration": "1 M",
+        "Solvent": "EC:DMC:EMC",
+        "Solvent ratio": "1:1:1"
+      }
+    ],
+    "Additive": "None",
+    "Loading density (mass loading of NCM)": "14.5",
+    "Additional treatment for electrode": "None"
+  },
+  "Morphological Properties": {
+    "Particle size": {
+      "Pristine NCM": "500 nm",
+      "V-doped NCM": "500 nm"
     },
-    "Cathode Performance": {
-        "Capacity at all C-rate": [
-            {
-                "204.6 mAh g−1": "@0.1 C, pristine NCM"
-            },
-            {
-                "204.4 mAh g−1": "@0.1 C, V-0.005 NCM"
-            }            
-        ],
-        "Voltage range": "3.0–4.3 V",
-        "Temperature": "25 °C"
+    "Particle shape": {
+      "Pristine NCM": "Porous and spherical in shape, composed of numerous primary particles",
+      "V-doped NCM": "Porous and spherical in shape, composed of numerous primary particles"
+    },
+    "Particle distribution": {
+      "Pristine NCM": "Uniform",
+      "V-doped NCM": "Uniform"
+    },
+    "Coating layer characteristics": {
+      "Pristine NCM": "-",
+      "V-doped NCM": "-"
+    },
+    "Crystal structure and lattice characteristics": {
+      "Pristine NCM": "-",
+      "V-doped NCM": "-"
     }
+  },
+  "Cathode Performance": {
+    "Pristine NCM": [
+      {
+        "Voltage range": "3.0-4.3",
+        "Temperature": "25",
+        "C-rate and Specific capacity": [
+          {
+            "C-rate": 0.1,
+            "Capacity": 204.6
+          },
+          {
+            "C-rate": 0.2,
+            "Capacity": "None"
+          },
+          {
+            "C-rate": 0.5,
+            "Capacity": "None"
+          },
+          {
+            "C-rate": 1.0,
+            "Capacity": "None"
+          },
+          {
+            "C-rate": 2.0,
+            "Capacity": "None"
+          },
+          {
+            "C-rate": 4.0,
+            "Capacity": "None"
+          },
+          {
+            "Other C-rates and performance": [
+              {
+                "C-rate": "None",
+                "Capacity": "None"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "V-doped NCM": [
+      {
+        "Voltage range": "3.0-4.3",
+        "Temperature": "25",
+        "C-rate and Specific capacity": [
+          {
+            "C-rate": 0.1,
+            "Capacity": 204.4
+          },
+          {
+            "C-rate": 0.2,
+            "Capacity": "None"
+          },
+          {
+            "C-rate": 0.5,
+            "Capacity": "None"
+          },
+          {
+            "C-rate": 1.0,
+            "Capacity": "None"
+          },
+          {
+            "C-rate": 2.0,
+            "Capacity": "None"
+          },
+          {
+            "C-rate": 4.0,
+            "Capacity": "None"
+          },
+          {
+            "Other C-rates and performance": [
+              {
+                "C-rate": "None",
+                "Capacity": "None"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
