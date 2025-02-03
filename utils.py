@@ -128,7 +128,7 @@ def save_data2output_folder(output_folder: str, data, filename: str):
         print("    데이터 형식이 지원되지 않습니다. pandas DataFrame 또는 dict만 저장 가능합니다.")
 
 
-def save_output2json(each_answer:dict, file_num:int, rag_method:str):    
+def save_output2json(each_answer:dict, file_num:int, rag_method:str, category_number:int):    
     ## 파일 이름 설정
     if file_num < 10:
         json_file_num = f"00{file_num}"
@@ -139,7 +139,7 @@ def save_output2json(each_answer:dict, file_num:int, rag_method:str):
         
     json_name = f"paper_{json_file_num}_output"
     
-    save_data2output_folder(output_folder=f"./output/json/{rag_method}/", data=each_answer, filename=json_name)
+    save_data2output_folder(output_folder=f"./output/json/{rag_method}/category{category_number}/", data=each_answer, filename=json_name)
 
 
 # def outputs2csv(total_outputs:dict, filename="temp_result") -> pd.DataFrame:

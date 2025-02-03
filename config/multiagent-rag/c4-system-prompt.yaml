@@ -8,6 +8,7 @@ researcher_system_prompt: |
     - Ignore irrelevant sections or general references outside the battery-related content.
 
   2. **Extraction Guidelines**:
+    - Use all of the NCM cathode sample names (e.g., "NCM-622") provided in the electrochemical performance section.
     - Extract all capacities corresponding to different C-rates based on the patterns provided in the guide.
     - Exclude information unrelated to initial discharge capacity or capacities after cycling.
     - For each specified C-rate (0.1, 0.2, 0.5, 1.0, 2.0, 4.0, 6.0), include the corresponding capacity. If a C-rate is not mentioned, assign it as "None".
@@ -24,47 +25,44 @@ researcher_system_prompt: |
     - Use the following JSON structure as the output template:
       [
         {
-          "Cathode Performance": [
-            {
-              "Sample Name": "Pristine",
-              "Data": [
-                {
-                  "Voltage range": "2.5 - 4.0",
-                  "Temperature": 25,
-                  "C-rate and Specific capacity": [
-                    {"C-rate": 0.1, "Capacity": 180},
-                    {"C-rate": 0.2, "Capacity": 178},
-                    {"C-rate": 0.5, "Capacity": 170},
-                    {"C-rate": 1.0, "Capacity": 163},
-                    {"C-rate": 2.0, "Capacity": 152},
-                    {"C-rate": 4.0, "Capacity": 100},
-                    {"Other C-rates and performance": [
-                      {"C-rate": 0.3, "Capacity": 175},
-                      {"C-rate": 3.0, "Capacity": 133},
-                      {"C-rate": 5.0, "Capacity": 88}
-                    ]}
-                  ]
-                },
-                {
-                  "Voltage range": "2.5 - 4.3",
-                  "Temperature": 25,
-                  "C-rate and Specific capacity": [
-                    {"C-rate": 0.1, "Capacity": 185},
-                    {"C-rate": 0.2, "Capacity": 181},
-                    {"C-rate": 0.5, "Capacity": 172},
-                    {"C-rate": 1, "Capacity": 169},
-                    {"C-rate": 2, "Capacity": 160},
-                    {"C-rate": 4, "Capacity": 122},
-                    {"Other C-rates and performance": [
-                      {"C-rate": 0.3, "Capacity": 178},
-                      {"C-rate": 3, "Capacity": 144},
-                      {"C-rate": 5, "Capacity": 100}
-                    ]}
-                  ]
-                }
-              ]
-            }
-          ]
+          "Cathode Performance": {
+            "Pristine": [
+              {
+                "Voltage range": "2.5 - 4.0",
+                "Temperature": 25,
+                "C-rate and Specific capacity": [
+                  {"C-rate": 0.1, "Capacity": 180},
+                  {"C-rate": 0.2, "Capacity": 178},
+                  {"C-rate": 0.5, "Capacity": 170},
+                  {"C-rate": 1.0, "Capacity": 163},
+                  {"C-rate": 2.0, "Capacity": 152},
+                  {"C-rate": 4.0, "Capacity": 100},
+                  {"Other C-rates and performance": [
+                    {"C-rate": 0.3, "Capacity": 175},
+                    {"C-rate": 3.0, "Capacity": 133},
+                    {"C-rate": 5.0, "Capacity": 88}
+                  ]}
+                ]
+              },
+              {
+                "Voltage range": "2.5 - 4.3",
+                "Temperature": 25,
+                "C-rate and Specific capacity": [
+                  {"C-rate": 0.1, "Capacity": 185},
+                  {"C-rate": 0.2, "Capacity": 181},
+                  {"C-rate": 0.5, "Capacity": 172},
+                  {"C-rate": 1, "Capacity": 169},
+                  {"C-rate": 2, "Capacity": 160},
+                  {"C-rate": 4, "Capacity": 122},
+                  {"Other C-rates and performance": [
+                    {"C-rate": 0.3, "Capacity": 178},
+                    {"C-rate": 3, "Capacity": 144},
+                    {"C-rate": 5, "Capacity": 100}
+                  ]}
+                ]
+              }
+            ],
+          }
         }
       ]
     - Replace placeholders with extracted data from the PDF.
