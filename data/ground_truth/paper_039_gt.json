@@ -28,7 +28,7 @@
       "Crystallization final duration (hours)": "10",
       "Doping": "W6+",
       "Coating": null,
-      "Additional treatment": "Grinding, ball milling, and spray drying"
+      "Additional treatment": null
     },
     "Electrode (half-cell)": {
       "Active material to Conductive additive to Binder ratio": "8:1:1",
