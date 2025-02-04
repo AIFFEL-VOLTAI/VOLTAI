@@ -26,8 +26,7 @@
 		"Crystallization final temperature": "875",
 		"Crystallization final duration": "12",
 		"Doping": null,
-		"Coating": "γ-Al2O3",
-		"Additional treatment": null
+		"Coating": "γ-Al2O3"
 	},
 	"Electrode (half-cell)": {
 		"Active material to Conductive additive to Binder ratio": "90:4:6",
@@ -40,8 +39,7 @@
 			}
 		],
 		"Additive": "VC, 2%",
-		"Loading density (mass loading of NCM)": "9.0",
-		"Additional treatment for electrode": null
+		"Loading density (mass loading of NCM)": "9.0"
 	},
 	"Morphological Properties": {
 		"Particle size": {
@@ -75,10 +73,6 @@
 						"Capacity": 196.07
 					},
 					{
-						"C-rate": 0.2,
-						"Capacity": null
-					},
-					{
 						"C-rate": 0.5,
 						"Capacity": null
 					},
@@ -88,10 +82,6 @@
 					},
 					{
 						"C-rate": 2.0,
-						"Capacity": null
-					},
-					{
-						"C-rate": 4.0,
 						"Capacity": null
 					},
 					{
@@ -110,10 +100,6 @@
 						"Capacity": 203.97
 					},
 					{
-						"C-rate": 0.2,
-						"Capacity": null
-					},
-					{
 						"C-rate": 0.5,
 						"Capacity": null
 					},
@@ -123,10 +109,6 @@
 					},
 					{
 						"C-rate": 2.0,
-						"Capacity": null
-					},
-					{
-						"C-rate": 4.0,
 						"Capacity": null
 					},
 					{

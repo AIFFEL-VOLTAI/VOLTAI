@@ -26,8 +26,7 @@
       "Crystallization final temperature": "975",
       "Crystallization final duration (hours)": "9",
       "Doping": null,
-      "Coating": null,
-      "Additional treatment": "Post-annealing at 750 °C for 3 h and washing in water for 15 min to remove excess Li salts"
+      "Coating": null
     },
     "Electrode (half-cell)": {
       "Active material to Conductive additive to Binder ratio": "90:5:5",
@@ -40,8 +39,7 @@
         }
       ],
       "Additive": null,
-      "Loading density": "5",
-      "Additional treatment for electrode": null
+      "Loading density": "5"
     },
     "Morphological Properties": {
       "Particle size": {
@@ -72,11 +70,9 @@
           "Temperature": 25,
           "C-rate and Specific capacity": [
             {"C-rate": 0.1, "Capacity": null},
-            {"C-rate": 0.2, "Capacity": null},
             {"C-rate": 0.5, "Capacity": null},
             {"C-rate": 1.0, "Capacity": 162},
             {"C-rate": 2.0, "Capacity": null},
-            {"C-rate": 4.0, "Capacity": null},
             {
               "Other C-rates and performance": [
                 {"C-rate": 0.05, "Capacity": 199}
@@ -91,11 +87,9 @@
           "Temperature": null,
           "C-rate and Specific capacity": [
             {"C-rate": 0.1, "Capacity": null},
-            {"C-rate": 0.2, "Capacity": null},
             {"C-rate": 0.5, "Capacity": null},
             {"C-rate": 1.0, "Capacity": null},
             {"C-rate": 2.0, "Capacity": null},
-            {"C-rate": 4.0, "Capacity": null},
             {
               "Other C-rates and performance": [
                 {"C-rate": null, "Capacity": null}

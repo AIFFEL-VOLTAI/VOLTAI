@@ -42,8 +42,7 @@
         "Crystallization final temperature": "850",
         "Crystallization final duration (hours)": "15",
         "Doping": null,
-        "Coating": "RGO",
-        "Additional treatment": "microwave irradiation"
+        "Coating": "RGO"
     },
     "Electrode (half-cell)": {
         "Active material to Conductive additive to Binder ratio": "86:4:10",
@@ -56,8 +55,7 @@
             }
         ],
         "Additive": null,
-        "Loading density (mass loading of NCM)": null,
-        "Additional treatment for electrode": null
+        "Loading density (mass loading of NCM)": null
     },
     "Morphological Properties": {
         "Particle size": {
@@ -101,10 +99,6 @@
                     "Capacity": 155.3
                 },
                 {
-                    "C-rate": 0.2,
-                    "Capacity": null
-                },
-                {
                     "C-rate": 0.5,
                     "Capacity": null
                 },
@@ -114,10 +108,6 @@
                 },
                 {
                     "C-rate": 2.0,
-                    "Capacity": null
-                },
-                {
-                    "C-rate": 4.0,
                     "Capacity": null
                 },
                 {
@@ -143,10 +133,6 @@
                     "Capacity": 154.6
                 },
                 {
-                    "C-rate": 0.2,
-                    "Capacity": null
-                },
-                {
                     "C-rate": 0.5,
                     "Capacity": null
                 },
@@ -156,10 +142,6 @@
                 },
                 {
                     "C-rate": 2.0,
-                    "Capacity": null
-                },
-                {
-                    "C-rate": 4.0,
                     "Capacity": null
                 },
                 {
@@ -185,10 +167,6 @@
                     "Capacity": 166.5
                 },
                 {
-                    "C-rate": 0.2,
-                    "Capacity": null
-                },
-                {
                     "C-rate": 0.5,
                     "Capacity": null
                 },
@@ -198,10 +176,6 @@
                 },
                 {
                     "C-rate": 2.0,
-                    "Capacity": null
-                },
-                {
-                    "C-rate": 4.0,
                     "Capacity": null
                 },
                 {
@@ -227,10 +201,6 @@
                     "Capacity": 175
                 },
                 {
-                    "C-rate": 0.2,
-                    "Capacity": null
-                },
-                {
                     "C-rate": 0.5,
                     "Capacity": null
                 },
@@ -240,10 +210,6 @@
                 },
                 {
                     "C-rate": 2.0,
-                    "Capacity": null
-                },
-                {
-                    "C-rate": 4.0,
                     "Capacity": null
                 },
                 {

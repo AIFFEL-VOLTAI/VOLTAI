@@ -26,8 +26,7 @@
 		"Crystallization final temperature": "750",
 		"Crystallization final duration": "15",
 		"Doping": "Mg",
-		"Coating": "Li3PO4",
-		"Additional treatment": null
+		"Coating": "Li3PO4"
 	},
 	"Electrode (half-cell)": {
 		"Active material to Conductive additive to Binder ratio": "96:2:2",
@@ -38,8 +37,7 @@
 			"Solvent ratio": "1:1:1"
 		}],
 		"Additive": null,
-		"Loading density (mass loading of NCM)": null,
-		"Additional treatment for electrode": null
+		"Loading density (mass loading of NCM)": null
 	},
 	"Morphological Properties": {
 		"Particle size": {
@@ -71,10 +69,6 @@
 					"Capacity": 199.1
 				},
 				{
-					"C-rate": 0.2,
-					"Capacity": null
-				},
-				{
 					"C-rate": 0.5,
 					"Capacity": null
 				},
@@ -87,11 +81,12 @@
 					"Capacity": null
 				},
 				{
-					"C-rate": 4.0,
-					"Capacity": 169.8
-				},
-				{
-					"Other C-rates and performance": [{
+					"Other C-rates and performance": [
+						{
+							"C-rate": 4.0,
+							"Capacity": 169.8
+						},
+						{
 							"C-rate": 5.0,
 							"Capacity": 159.0
 						},
@@ -111,10 +106,6 @@
 					"Capacity": 203.5
 				},
 				{
-					"C-rate": 0.2,
-					"Capacity": null
-				},
-				{
 					"C-rate": 0.5,
 					"Capacity": null
 				},
@@ -124,10 +115,6 @@
 				},
 				{
 					"C-rate": 2.0,
-					"Capacity": null
-				},
-				{
-					"C-rate": 4.0,
 					"Capacity": null
 				},
 				{

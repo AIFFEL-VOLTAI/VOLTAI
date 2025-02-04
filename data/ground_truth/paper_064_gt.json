@@ -26,8 +26,7 @@
 		"Crystallization final temperature": null,
 		"Crystallization final duration": null,
 		"Doping": null,
-		"Coating": "Ge-132",
-		"Additional treatment": null
+		"Coating": "Ge-132"
 	},
 	"Electrode (half-cell)": {
 		"Active material to Conductive additive to Binder ratio": "92:4:4",
@@ -40,8 +39,7 @@
 			}
 		],
 		"Additive": null,
-		"Loading density (mass loading of NCM)": "7.7",
-		"Additional treatment for electrode": null
+		"Loading density (mass loading of NCM)": "7.7"
 	},
 	"Morphological Properties": {
 		"Particle size": {
@@ -75,10 +73,6 @@
 						"Capacity": 278
 					},
 					{
-						"C-rate": 0.2,
-						"Capacity": null
-					},
-					{
 						"C-rate": 0.5,
 						"Capacity": null
 					},
@@ -88,10 +82,6 @@
 					},
 					{
 						"C-rate": 2.0,
-						"Capacity": null
-					},
-					{
-						"C-rate": 4.0,
 						"Capacity": null
 					},
 					{
@@ -110,10 +100,6 @@
 						"Capacity": 266
 					},
 					{
-						"C-rate": 0.2,
-						"Capacity": null
-					},
-					{
 						"C-rate": 0.5,
 						"Capacity": null
 					},
@@ -123,10 +109,6 @@
 					},
 					{
 						"C-rate": 2.0,
-						"Capacity": null
-					},
-					{
-						"C-rate": 4.0,
 						"Capacity": null
 					},
 					{

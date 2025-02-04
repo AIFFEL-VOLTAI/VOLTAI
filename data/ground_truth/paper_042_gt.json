@@ -26,8 +26,7 @@
 		"Crystallization final temperature": "860",
 		"Crystallization final duration (hours)": "12",
 		"Doping": null,
-		"Coating": null,
-		"Additional treatment": "PVP added during hydrothermal reaction"
+		"Coating": null
 	},
 	"Electrode (half-cell)": {
 		"Active material to Conductive additive to Binder ratio": "90:4:6",
@@ -40,8 +39,7 @@
 			}
 		],
 		"Additive": null,
-		"Loading density": "8",
-		"Additional treatment for electrode": null
+		"Loading density": "8"
 	},
 	"Morphological Properties": {
 		"Particle size": {
@@ -75,10 +73,6 @@
 						"Capacity": 209.7
 					},
 					{
-						"C-rate": 0.2,
-						"Capacity": 203.41
-					},
-					{
 						"C-rate": 0.5,
 						"Capacity": null
 					},
@@ -91,11 +85,11 @@
 						"Capacity": null
 					},
 					{
-						"C-rate": 4.0,
-						"Capacity": null
-					},
-					{
 						"Other C-rates and performance": [
+							{
+								"C-rate": 0.2,
+								"Capacity": 203.41
+							},
 							{
 								"C-rate": 5,
 								"Capacity": 166.92
@@ -115,10 +109,6 @@
 						"Capacity": 215.01
 					},
 					{
-						"C-rate": 0.2,
-						"Capacity": 191.95
-					},
-					{
 						"C-rate": 0.5,
 						"Capacity": null
 					},
@@ -131,11 +121,11 @@
 						"Capacity": null
 					},
 					{
-						"C-rate": 4.0,
-						"Capacity": null
-					},
-					{
 						"Other C-rates and performance": [
+							{
+								"C-rate": 0.2,
+								"Capacity": 191.95
+							},
 							{
 								"C-rate": 5,
 								"Capacity": 160.30

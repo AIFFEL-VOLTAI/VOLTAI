@@ -26,8 +26,7 @@
     "Crystallization final temperature": "760",
     "Crystallization final duration (hours)": "15",
     "Doping": "Vanadium (V)",
-    "Coating": null,
-    "Additional treatment": null
+    "Coating": null
   },
   "Electrode (half-cell)": {
     "Active material to Conductive additive to Binder ratio": "96:2:2",
@@ -40,8 +39,7 @@
       }
     ],
     "Additive": null,
-    "Loading density (mass loading of NCM)": "14.5",
-    "Additional treatment for electrode": null
+    "Loading density (mass loading of NCM)": "14.5"
   },
   "Morphological Properties": {
     "Particle size": {
@@ -76,10 +74,6 @@
             "Capacity": 204.6
           },
           {
-            "C-rate": 0.2,
-            "Capacity": null
-          },
-          {
             "C-rate": 0.5,
             "Capacity": null
           },
@@ -89,10 +83,6 @@
           },
           {
             "C-rate": 2.0,
-            "Capacity": null
-          },
-          {
-            "C-rate": 4.0,
             "Capacity": null
           },
           {
@@ -116,10 +106,6 @@
             "Capacity": 204.4
           },
           {
-            "C-rate": 0.2,
-            "Capacity": null
-          },
-          {
             "C-rate": 0.5,
             "Capacity": null
           },
@@ -129,10 +115,6 @@
           },
           {
             "C-rate": 2.0,
-            "Capacity": null
-          },
-          {
-            "C-rate": 4.0,
             "Capacity": null
           },
           {
