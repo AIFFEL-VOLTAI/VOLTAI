@@ -1,0 +1,134 @@
+{
+    "CAM (Cathode Active Material)": {
+        "Stoichiometry information": {
+            "NCM-811": {
+                "Li ratio": "1",
+                "Ni ratio": "0.8",
+                "Co ratio": "0.1",
+                "Mn ratio": "0.1",
+                "O ratio": "2"
+            },
+            "g-C3N4@NCM-811": {
+                "Li ratio": "1",
+                "Ni ratio": "0.8",
+                "Co ratio": "0.1",
+                "Mn ratio": "0.1",
+                "O ratio": "2"
+            },
+            "g-C3N4NS@NCM-811": {
+                "Li ratio": "1",
+                "Ni ratio": "0.8",
+                "Co ratio": "0.1",
+                "Mn ratio": "0.1",
+                "O ratio": "2"
+            }
+        },
+        "Commercial NCM used": {
+            "NCM-811": "yes",
+            "g-C3N4@NCM-811": "yes",
+            "g-C3N4NS@NCM-811": "yes"
+        },
+        "Lithium source": null,
+        "Synthesis method": null,
+        "Crystallization method": null,
+        "Crystallization final temperature": null,
+        "Crystallization final duration": null,
+        "Doping": null,
+        "Coating": "Graphitic carbon nitride",
+        "Additional treatment": null
+    },
+    "Electrode (half-cell)": {
+        "Active material to Conductive additive to Binder ratio": "80:10:10",
+        "Electrolyte": [
+            {
+            "Salt": "LiPF6",
+            "Concentration": "1.0 M",
+            "Solvent": "EC/DMC",
+            "Solvent ratio": "3:7"
+            }
+        ],
+        "Additive": "FEC, 5.0%",
+        "Loading density (mass loading of NCM)": null,
+        "Additional treatment for electrode": null
+    },
+    "Morphological Properties": {
+        "Particle size": {
+            "NCM-811": "10 to 20 μm",
+            "g-C3N4@NCM-811": "10 to 20 μm",
+            "g-C3N4NS@NCM-811": "10 to 20 μm"
+        },
+        "Particle shape": {
+            "NCM-811": "Spherical, surface rupture from nanosized primary particles",
+            "g-C3N4@NCM-811": "Spherical",
+            "g-C3N4NS@NCM-811": "Spherical"
+        },
+        "Particle distribution": {
+            "NCM-811": "Large spherical particles formed by assembled nanosized primary particles.",
+            "g-C3N4@NCM-811": "Particle structure preserved after coating.",
+            "g-C3N4NS@NCM-811": null
+        },
+        "Coating layer characteristics": {
+            "NCM-811": null,
+            "g-C3N4@NCM-811": "Thin homogeneous coating (~20 nm). Increases to ~70 nm as melamine ratio increases from 20% to 40%.",
+            "g-C3N4NS@NCM-811": "Thick (~100 nm), inhomogeneous."
+        },
+        "Crystal structure and lattice characteristics": {
+            "NCM-811": null,
+            "g-C3N4@NCM-811": null,
+            "g-C3N4NS@NCM-811": null
+        }
+    },
+    "Cathode Performance": {
+        "NCM-811": [
+            {
+                "Voltage range": "2.6-4.2",
+                "Temperature": null,
+                "C-rate and Specific capacity": [
+                    {"C-rate": 0.1, "Capacity": 170},
+                    {"C-rate": 0.2, "Capacity": null},
+                    {"C-rate": 0.5, "Capacity": null},
+                    {"C-rate": 1.0, "Capacity": 130},
+                    {"C-rate": 2.0, "Capacity": null},
+                    {"C-rate": 4.0, "Capacity": null},
+                    {"Other C-rates and performance": [
+                        {"C-rate": null, "Capacity": null}
+                    ]}
+                ]
+            }
+        ],
+        "g-C3N4@NCM-811": [
+            {
+                "Voltage range": "2.6-4.2",
+                "Temperature": null,
+                "C-rate and Specific capacity": [
+                    {"C-rate": 0.1, "Capacity": 170},
+                    {"C-rate": 0.2, "Capacity": null},
+                    {"C-rate": 0.5, "Capacity": null},
+                    {"C-rate": 1.0, "Capacity": 140},
+                    {"C-rate": 2.0, "Capacity": null},
+                    {"C-rate": 4.0, "Capacity": null},
+                    {"Other C-rates and performance": [
+                        {"C-rate": null, "Capacity": null}
+                    ]}
+                ]
+            }
+        ],
+        "g-C3N4NS@NCM-811": [
+            {
+                "Voltage range": "2.6-4.2",
+                "Temperature": null,
+                "C-rate and Specific capacity": [
+                    {"C-rate": 0.1, "Capacity": null},
+                    {"C-rate": 0.2, "Capacity": null},
+                    {"C-rate": 0.5, "Capacity": null},
+                    {"C-rate": 1.0, "Capacity": null},
+                    {"C-rate": 2.0, "Capacity": null},
+                    {"C-rate": 4.0, "Capacity": null},
+                    {"Other C-rates and performance": [
+                        {"C-rate": null, "Capacity": null}
+                    ]}
+                ]
+            }
+        ]
+    }
+}
