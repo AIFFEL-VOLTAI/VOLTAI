@@ -68,27 +68,27 @@
         },
         "Particle shape": {
             "NR0": "Faceted morphology like regular polyhedrons with smooth surfaces",
-            "NR1": "-",
-            "NR3": "-",
-            "NR5": "-"
+            "NR1": null,
+            "NR3": null,
+            "NR5": null
         },
         "Particle distribution": {
             "NR0": "Uniform distribution with no significant agglomeration",
-            "NR1": "-",
-            "NR3": "-",
-            "NR5": "-"
+            "NR1": null,
+            "NR3": null,
+            "NR5": null
         },
         "Coating layer characteristics": {
-            "NR0": "-",
+            "NR0": null,
             "NR1": "Transparent RGO sheets, with a lateral size of 1–2 μm, wrap around NCM nanoparticles, forming a core-shell-like structure",
             "NR3": "Transparent RGO sheets, with a lateral size of 1–2 μm, wrap around NCM nanoparticles, forming a core-shell-like structure",
             "NR5": "Transparent RGO sheets, with a lateral size of 1–2 μm, wrap around NCM nanoparticles, forming a core-shell-like structure"
         },
         "Crystal structure and lattice characteristics": {
-            "NR0": "-",
-            "NR1": "-",
-            "NR3": "-",
-            "NR5": "-"
+            "NR0": null,
+            "NR1": null,
+            "NR3": null,
+            "NR5": null
         }
     },
     "Cathode Performance": {
