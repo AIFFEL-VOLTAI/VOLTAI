@@ -34,8 +34,7 @@
         "Crystallization final temperature": null,
         "Crystallization final duration": null,
         "Doping": null,
-        "Coating": "Graphitic carbon nitride",
-        "Additional treatment": null
+        "Coating": "Graphitic carbon nitride"
     },
     "Electrode (half-cell)": {
         "Active material to Conductive additive to Binder ratio": "80:10:10",
@@ -48,8 +47,7 @@
             }
         ],
         "Additive": "FEC, 5.0%",
-        "Loading density (mass loading of NCM)": null,
-        "Additional treatment for electrode": null
+        "Loading density (mass loading of NCM)": null
     },
     "Morphological Properties": {
         "Particle size": {
@@ -85,11 +83,9 @@
                 "Temperature": null,
                 "C-rate and Specific capacity": [
                     {"C-rate": 0.1, "Capacity": 170},
-                    {"C-rate": 0.2, "Capacity": null},
                     {"C-rate": 0.5, "Capacity": null},
                     {"C-rate": 1.0, "Capacity": 130},
                     {"C-rate": 2.0, "Capacity": null},
-                    {"C-rate": 4.0, "Capacity": null},
                     {"Other C-rates and performance": [
                         {"C-rate": null, "Capacity": null}
                     ]}
@@ -102,11 +98,9 @@
                 "Temperature": null,
                 "C-rate and Specific capacity": [
                     {"C-rate": 0.1, "Capacity": 170},
-                    {"C-rate": 0.2, "Capacity": null},
                     {"C-rate": 0.5, "Capacity": null},
                     {"C-rate": 1.0, "Capacity": 140},
                     {"C-rate": 2.0, "Capacity": null},
-                    {"C-rate": 4.0, "Capacity": null},
                     {"Other C-rates and performance": [
                         {"C-rate": null, "Capacity": null}
                     ]}
@@ -119,11 +113,9 @@
                 "Temperature": null,
                 "C-rate and Specific capacity": [
                     {"C-rate": 0.1, "Capacity": null},
-                    {"C-rate": 0.2, "Capacity": null},
                     {"C-rate": 0.5, "Capacity": null},
                     {"C-rate": 1.0, "Capacity": null},
                     {"C-rate": 2.0, "Capacity": null},
-                    {"C-rate": 4.0, "Capacity": null},
                     {"Other C-rates and performance": [
                         {"C-rate": null, "Capacity": null}
                     ]}

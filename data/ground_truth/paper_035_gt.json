@@ -34,8 +34,7 @@
       "Crystallization final temperature": "750",
       "Crystallization final duration (hours)": "12",
       "Doping": null,
-      "Coating": "Boric acid (H3BO3)",
-      "Additional treatment": "Water washing for S2wash sample"
+      "Coating": "Boric acid (H3BO3)"
   },
   "Electrode (half-cell)": {
       "Active material to Conductive additive to Binder ratio": "96.5:1.5:2",
@@ -48,8 +47,7 @@
           }
       ],
       "Additive": null,
-      "Loading density (mass loading of NCM)": "12",
-      "Additional treatment for electrode": null
+      "Loading density (mass loading of NCM)": "12"
   },
   "Morphological Properties": {
       "Particle size": {
@@ -83,14 +81,12 @@
               "Temperature": null,
               "C-rate and Specific capacity": [
                   { "C-rate": 0.1, "Capacity": null },
-                  { "C-rate": 0.2, "Capacity": 197 },
                   { "C-rate": 0.5, "Capacity": null },
                   { "C-rate": 1.0, "Capacity": null },
                   { "C-rate": 2.0, "Capacity": 181 },
-                  { "C-rate": 4.0, "Capacity": null },
                   {
                       "Other C-rates and performance": [
-                          { "C-rate": null, "Capacity": null }
+                          { "C-rate": 0.2, "Capacity": 197 }
                       ]
                   }
               ]
@@ -102,11 +98,9 @@
               "Temperature": null,
               "C-rate and Specific capacity": [
                   { "C-rate": 0.1, "Capacity": null },
-                  { "C-rate": 0.2, "Capacity": null },
                   { "C-rate": 0.5, "Capacity": null },
                   { "C-rate": 1.0, "Capacity": null },
                   { "C-rate": 2.0, "Capacity": null },
-                  { "C-rate": 4.0, "Capacity": null },
                   {
                       "Other C-rates and performance": [
                           { "C-rate": null, "Capacity": null }
@@ -121,14 +115,12 @@
               "Temperature": null,
               "C-rate and Specific capacity": [
                   { "C-rate": 0.1, "Capacity": null },
-                  { "C-rate": 0.2, "Capacity": 205 },
                   { "C-rate": 0.5, "Capacity": null },
                   { "C-rate": 1.0, "Capacity": null },
                   { "C-rate": 2.0, "Capacity": 185 },
-                  { "C-rate": 4.0, "Capacity": null },
                   {
                       "Other C-rates and performance": [
-                          { "C-rate": null, "Capacity": null }
+                          { "C-rate": 0.2, "Capacity": 205 }
                       ]
                   }
               ]

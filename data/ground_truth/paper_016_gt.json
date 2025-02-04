@@ -26,8 +26,7 @@
     "Crystallization final temperature": "850",
     "Crystallization final duration (hours)": "10",
     "Doping": null,
-    "Coating": "Carbon",
-    "Additional treatment": null
+    "Coating": "Carbon"
   },
   "Electrode (half-cell)": {
     "Active material to Conductive additive to Binder ratio": "80:15:5",
@@ -40,8 +39,7 @@
       }
     ],
     "Additive": null,
-    "Loading density (mass loading of NCM)": "5",
-    "Additional treatment for electrode": null
+    "Loading density (mass loading of NCM)": "5"
   },
   "Morphological Properties": {
     "Particle size": {
@@ -75,10 +73,6 @@
             "Capacity": null
           },
           {
-            "C-rate": 0.2,
-            "Capacity": null
-          },
-          {
             "C-rate": 0.5,
             "Capacity": 175.7
           },
@@ -89,10 +83,6 @@
           {
             "C-rate": 2.0,
             "Capacity": 143.5
-          },
-          {
-            "C-rate": 4.0,
-            "Capacity": null
           },
           {
             "Other C-rates and performance": [
@@ -127,10 +117,6 @@
             "Capacity": null
           },
           {
-            "C-rate": 0.2,
-            "Capacity": null
-          },
-          {
             "C-rate": 0.5,
             "Capacity": 191.2
           },
@@ -141,10 +127,6 @@
           {
             "C-rate": 2.0,
             "Capacity": 163.5
-          },
-          {
-            "C-rate": 4.0,
-            "Capacity": null
           },
           {
             "Other C-rates and performance": [
