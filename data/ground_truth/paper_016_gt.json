@@ -2,18 +2,18 @@
   "CAM (Cathode Active Material)": {
     "Stoichiometry information": {
       "NCM": {
-        "Li ratio": 1,
-        "Ni ratio": 0.33,
-        "Co ratio": 0.33,
-        "Mn ratio": 0.33,
-        "O ratio": 2
+        "Li ratio": "1",
+        "Ni ratio": "0.33",
+        "Co ratio": "0.33",
+        "Mn ratio": "0.33",
+        "O ratio": "2"
       },
       "NCM/C": {
-        "Li ratio": 1,
-        "Ni ratio": 0.33,
-        "Co ratio": 0.33,
-        "Mn ratio": 0.33,
-        "O ratio": 2
+        "Li ratio": "1",
+        "Ni ratio": "0.33",
+        "Co ratio": "0.33",
+        "Mn ratio": "0.33",
+        "O ratio": "2"
       }
     },
     "Commercial NCM used": {
