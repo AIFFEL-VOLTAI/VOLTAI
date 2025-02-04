@@ -99,7 +99,7 @@
                 "C-rate and Specific capacity": [
                     {"C-rate": 0.1, "Capacity": 170},
                     {"C-rate": 0.5, "Capacity": null},
-                    {"C-rate": 1.0, "Capacity": 140},
+                    {"C-rate": 1.0, "Capacity": 170},
                     {"C-rate": 2.0, "Capacity": null},
                     {"Other C-rates and performance": [
                         {"C-rate": null, "Capacity": null}
