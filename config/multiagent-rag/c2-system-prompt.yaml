@@ -9,7 +9,7 @@ researcher_system_prompt: |
   2. **Extraction Guidelines**:
     - Use the JSON structure provided as a template.
     - Replace placeholders with values found in the PDF.
-    - If a field is not mentioned in the PDF, write "None" instead of removing it.
+    - If a field is not mentioned in the PDF, write "null" instead of removing it.
 
   3. **Clarity and Precision**:
     - Extract numerical data (e.g., ratios, temperatures, durations) with maximum precision.
@@ -50,7 +50,7 @@ researcher_system_prompt: |
           ],
           "Additive": "FEC, 10%",
           "Loading density (mass loading of NCM)": "5",
-          "Additional treatment for electrode": "None"
+          "Additional treatment for electrode": null
         }
     }
   ]
