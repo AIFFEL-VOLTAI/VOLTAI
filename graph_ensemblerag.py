@@ -60,9 +60,9 @@ class EnsembleRAG:
         )
         
         self.model_name = model_name
-        self.model_1 = ChatOpenAI(model_name=self.model_name, temperature=0.4)
-        self.model_2 = ChatOpenAI(model_name=self.model_name, temperature=0.6)
-        self.model_3 = ChatOpenAI(model_name=self.model_name, temperature=0.8)
+        self.model_1 = ChatOpenAI(model_name=self.model_name, temperature=0.5)
+        self.model_2 = ChatOpenAI(model_name=self.model_name, temperature=0.7)
+        self.model_3 = ChatOpenAI(model_name=self.model_name, temperature=0.9)
         self.llm_answer_prompt = system_prompt["llm_answer_system_prompt"]
 
         self.relevance_checker = ChatOpenAI(model=self.model_name, temperature=0.5)
