@@ -8,42 +8,41 @@ question: |
   [
     {
       "Cathode Performance": {
-        "Pristine": [
+        "SC-NCM83": [
           {
-            "Voltage range": "2.5 - 4.0",
+            "Voltage range": "3.0–4.3",
             "Temperature": 25,
             "C-rate and Specific capacity": [
-              {"C-rate": "0.1", "Capacity": 180},
-              {"C-rate": "0.2", "Capacity": 178},
-              {"C-rate": "0.5", "Capacity": 170},
-              {"C-rate": "1.0", "Capacity": 163},
-              {"C-rate": "2.0", "Capacity": 152},
-              {"C-rate": "4.0", "Capacity": 100},
+              {"C-rate": 0.1, "Capacity": null},
+              {"C-rate": 0.2, "Capacity": null},
+              {"C-rate": 0.5, "Capacity": null},
+              {"C-rate": 1.0, "Capacity": 162},
+              {"C-rate": 2.0, "Capacity": null},
+              {"C-rate": 4.0, "Capacity": null},
               {"Other C-rates and performance": [
-                {"C-rate": "0.3", "Capacity": 175},
-                {"C-rate": "3.0", "Capacity": 133},
-                {"C-rate": "5.0", "Capacity": 88}
-              ]}
-            ]
-          },
-          {
-            "Voltage range": "2.5 - 4.3",
-            "Temperature": 25,
-            "C-rate and Specific capacity": [
-              {"C-rate": "0.1", "Capacity": 185},
-              {"C-rate": "0.2", "Capacity": 181},
-              {"C-rate": "0.5", "Capacity": 172},
-              {"C-rate": "1", "Capacity": 169},
-              {"C-rate": "2", "Capacity": 160},
-              {"C-rate": "4", "Capacity": 122},
-              {"Other C-rates and performance": [
-                {"C-rate": "0.3", "Capacity": 178},
-                {"C-rate": "3", "Capacity": 144},
-                {"C-rate": "5", "Capacity": 100}
+                  {"C-rate": 0.05, "Capacity": 199}
               ]}
             ]
           }
         ],
+        "pristine NCM": [
+          {
+            "Voltage range": "3.0-4.3",
+            "Temperature": 25,
+            "C-rate and Specific capacity": [
+              {"C-rate": 0.1, "Capacity": 199.1},
+              {"C-rate": 0.2, "Capacity": null},
+              {"C-rate": 0.5, "Capacity": null},
+              {"C-rate": 1.0, "Capacity": null},
+              {"C-rate": 2.0, "Capacity": null},
+              {"C-rate": 4.0, "Capacity": 169.8},
+              {"Other C-rates and performance": [
+                {"C-rate": 5.0, "Capacity": 159.0},
+                {"C-rate": 6.0, "Capacity": 151.3}
+              ]}
+            ]
+          }
+        ]
       }
     }
   ]
