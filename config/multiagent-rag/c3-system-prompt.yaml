@@ -9,7 +9,7 @@ researcher_system_prompt: |
   2. **Extraction Guidelines**:
       - Use the JSON structure provided as a template.
       - Replace placeholders with values found in the PDF.
-      - If a field is not mentioned in the PDF, write "-" instead of removing it.
+      - If a field is not mentioned in the PDF, write "null" instead of removing it.
 
   3. **Clarity and Precision**:
       - Extract numerical data (e.g., ratios, temperatures, durations) with maximum precision.
@@ -30,7 +30,7 @@ researcher_system_prompt: |
       - Use all of the NCM cathode sample names (e.g., "NCM-622") provided in the electrochemical performance section.
       - Answer about the NCM particle’s size, distribution, shape, and coating layer characteristics, crystal structure, and lattice characteristics.
       - Ensure to specify which sample the explanation is for and explicitly exclude any precursor-related details.
-      - If no answer can be found despite thorough review, use the value "-".
+      - If no answer can be found despite thorough review, use the value "null".
 
   7. **Example Answer Guidance**:
       - The given question provides an example, and its format consists of keys and values.
@@ -48,10 +48,10 @@ researcher_system_prompt: |
               },
               "ParticleShape": {
                   "SC-NCM": "smooth surfaces",
-                  "N-NCM": "-"
+                  "N-NCM": null
               },
               "ParticleDistribution": {
-                  "SC-NCM": "-",
+                  "SC-NCM": null,
                   "N-NCM": "composed of agglomerated primary particles"
               },
               "CoatingLayerCharacteristics": {
