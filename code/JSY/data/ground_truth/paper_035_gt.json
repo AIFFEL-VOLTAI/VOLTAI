@@ -1,0 +1,140 @@
+{
+  "CAM (Cathode Active Material)": {
+      "Stoichiometry information": {
+          "S1bare": {
+              "Li ratio": "1",
+              "Ni ratio": "0.85",
+              "Co ratio": "0.10",
+              "Mn ratio": "0.05",
+              "O ratio": "2"
+          },
+          "S2wash": {
+              "Li ratio": "1",
+              "Ni ratio": "0.85",
+              "Co ratio": "0.10",
+              "Mn ratio": "0.05",
+              "O ratio": "2"
+          },
+          "S3coat": {
+              "Li ratio": "1",
+              "Ni ratio": "0.85",
+              "Co ratio": "0.10",
+              "Mn ratio": "0.05",
+              "O ratio": "2"
+          }
+      },
+      "Commercial NCM used": {
+          "S1bare": "no",
+          "S2wash": "no",
+          "S3coat": "no"
+      },
+      "Lithium source": "LiOH",
+      "Synthesis method": "Co-precipitation",
+      "Crystallization method": "air purge",
+      "Crystallization final temperature": "750",
+      "Crystallization final duration (hours)": "12",
+      "Doping": null,
+      "Coating": "Boric acid (H3BO3)",
+      "Additional treatment": "Water washing for S2wash sample"
+  },
+  "Electrode (half-cell)": {
+      "Active material to Conductive additive to Binder ratio": "96.5:1.5:2",
+      "Electrolyte": [
+          {
+              "Salt": "LiPF6",
+              "Concentration": "1 M",
+              "Solvent": "EC:DMC",
+              "Solvent ratio": "1:1"
+          }
+      ],
+      "Additive": null,
+      "Loading density (mass loading of NCM)": "12",
+      "Additional treatment for electrode": null
+  },
+  "Morphological Properties": {
+      "Particle size": {
+          "S1bare": "20 μm",
+          "S2wash": "20 μm",
+          "S3coat": "20 μm"
+      },
+      "Particle shape": {
+          "S1bare": "Globular agglomerates with distinct crystallite boundaries",
+          "S2wash": "Globular agglomerates with distinct crystallite boundaries",
+          "S3coat": "Globular agglomerates with distinct crystallite boundaries"
+      },
+      "Particle distribution": {
+          "S1bare": "dense packing",
+          "S2wash": "dense packing",
+          "S3coat": "dense packing"
+      },
+      "Coating layer characteristics": {
+          "S3coat": null
+      },
+      "Crystal structure and lattice characteristics": {
+          "S1bare": null,
+          "S2wash": null,
+          "S3coat": null
+      }
+  },
+  "Cathode Performance": {
+      "S1bare": [
+          {
+              "Voltage range": "3.0-4.3",
+              "Temperature": null,
+              "C-rate and Specific capacity": [
+                  { "C-rate": 0.1, "Capacity": null },
+                  { "C-rate": 0.2, "Capacity": 197 },
+                  { "C-rate": 0.5, "Capacity": null },
+                  { "C-rate": 1.0, "Capacity": null },
+                  { "C-rate": 2.0, "Capacity": 181 },
+                  { "C-rate": 4.0, "Capacity": null },
+                  {
+                      "Other C-rates and performance": [
+                          { "C-rate": null, "Capacity": null }
+                      ]
+                  }
+              ]
+          }
+      ],
+      "S2wash": [
+          {
+              "Voltage range": "3.0-4.3",
+              "Temperature": null,
+              "C-rate and Specific capacity": [
+                  { "C-rate": 0.1, "Capacity": null },
+                  { "C-rate": 0.2, "Capacity": null },
+                  { "C-rate": 0.5, "Capacity": null },
+                  { "C-rate": 1.0, "Capacity": null },
+                  { "C-rate": 2.0, "Capacity": null },
+                  { "C-rate": 4.0, "Capacity": null },
+                  {
+                      "Other C-rates and performance": [
+                          { "C-rate": null, "Capacity": null }
+                      ]
+                  }
+              ]
+          }
+      ],
+      "S3coat": [
+          {
+              "Voltage range": "3.0-4.3",
+              "Temperature": null,
+              "C-rate and Specific capacity": [
+                  { "C-rate": 0.1, "Capacity": null },
+                  { "C-rate": 0.2, "Capacity": 205 },
+                  { "C-rate": 0.5, "Capacity": null },
+                  { "C-rate": 1.0, "Capacity": null },
+                  { "C-rate": 2.0, "Capacity": 185 },
+                  { "C-rate": 4.0, "Capacity": null },
+                  {
+                      "Other C-rates and performance": [
+                          { "C-rate": null, "Capacity": null }
+                      ]
+                  }
+              ]
+          }
+      ]
+  }
+}
+
+  

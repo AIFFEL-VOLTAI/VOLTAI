@@ -1,0 +1,14 @@
+## 250126 update(LHC) - Category 2 (question)
+question: |  
+  [
+    {
+        "Electrode (half-cell)": {
+          "Active material to Conductive additive to Binder ratio": "",
+          "Electrolyte": [
+          ],
+          "Additive": "",
+          "Loading density (mass loading of NCM)": "",
+          "Additional treatment for electrode": ""
+        }
+    }
+  ]

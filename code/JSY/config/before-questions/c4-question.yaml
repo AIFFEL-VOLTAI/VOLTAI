@@ -1,0 +1,13 @@
+example4:
+  task: Extract initial discharge capacity based on C-rate
+  conditions:
+    - description: "Extract all capacity values for each C-rate. Pay special attention to the following patterns:"
+      patterns:
+        - "At 0.1C, the discharge capacity is 190mAh/g."
+        - "At ~ C, the initial discharge capacity is ~ mAh/g."
+        - "At ~ C, the capacity remains ~ mAh/g."
+        - "At ~ C, the capacity decreases to ~ mAh/g."
+        - "At higher/lower C-rate (~ C), the discharge capacity is ~ mAh/g."
+    - description: "If the current is given in mA/g instead of C-rate:"
+      subconditions:
+        - task: "Check the Ni ratio in NCM materials."
