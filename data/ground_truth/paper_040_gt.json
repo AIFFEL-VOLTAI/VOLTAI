@@ -21,12 +21,12 @@
         "SC-NCM": "no"
       },
       "Lithium source": ["LiOH", "Li2CO3"],
-      "Synthesis method": "None",
+      "Synthesis method": null,
       "Crystallization method": "calcination",
       "Crystallization final temperature": "975",
       "Crystallization final duration (hours)": "9",
-      "Doping": "None",
-      "Coating": "None",
+      "Doping": null,
+      "Coating": null,
       "Additional treatment": "Post-annealing at 750 °C for 3 h and washing in water for 15 min to remove excess Li salts"
     },
     "Electrode (half-cell)": {
@@ -39,14 +39,14 @@
           "Solvent ratio": "1:1"
         }
       ],
-      "Additive": "None",
+      "Additive": null,
       "Loading density": "5",
-      "Additional treatment for electrode": "None"
+      "Additional treatment for electrode": null
     },
     "Morphological Properties": {
       "Particle size": {
         "SC-NCM83": "1–4 μm",
-        "PC-NCM": "-"
+        "PC-NCM": null
       },
       "Particle shape": {
         "SC-NCM83": "Uniform, broader size distribution",
@@ -54,15 +54,15 @@
       },
       "Particle distribution": {
         "SC-NCM83": "Broader size distribution, wider inter-particle distance",
-        "PC-NCM": "-"
+        "PC-NCM": null
       },
       "Coating layer characteristics": {
-        "SC-NCM83": "-",
-        "PC-NCM": "-"
+        "SC-NCM83": null,
+        "PC-NCM": null
       },
       "Crystal structure and lattice characteristics": {
-        "SC-NCM83": "-",
-        "PC-NCM": "-"
+        "SC-NCM83": null,
+        "PC-NCM": null
       }
     },
     "Cathode Performance": {
@@ -71,12 +71,12 @@
           "Voltage range": "3.0–4.3",
           "Temperature": 25,
           "C-rate and Specific capacity": [
-            {"C-rate": 0.1, "Capacity": "None"},
-            {"C-rate": 0.2, "Capacity": "None"},
-            {"C-rate": 0.5, "Capacity": "None"},
+            {"C-rate": 0.1, "Capacity": null},
+            {"C-rate": 0.2, "Capacity": null},
+            {"C-rate": 0.5, "Capacity": null},
             {"C-rate": 1.0, "Capacity": 162},
-            {"C-rate": 2.0, "Capacity": "None"},
-            {"C-rate": 4.0, "Capacity": "None"},
+            {"C-rate": 2.0, "Capacity": null},
+            {"C-rate": 4.0, "Capacity": null},
             {
               "Other C-rates and performance": [
                 {"C-rate": 0.05, "Capacity": 199}
@@ -87,18 +87,18 @@
       ],
       "PC-NCM": [
         {
-          "Voltage range": "None",
-          "Temperature": "None",
+          "Voltage range": null,
+          "Temperature": null,
           "C-rate and Specific capacity": [
-            {"C-rate": 0.1, "Capacity": "None"},
-            {"C-rate": 0.2, "Capacity": "None"},
-            {"C-rate": 0.5, "Capacity": "None"},
-            {"C-rate": 1.0, "Capacity": "None"},
-            {"C-rate": 2.0, "Capacity": "None"},
-            {"C-rate": 4.0, "Capacity": "None"},
+            {"C-rate": 0.1, "Capacity": null},
+            {"C-rate": 0.2, "Capacity": null},
+            {"C-rate": 0.5, "Capacity": null},
+            {"C-rate": 1.0, "Capacity": null},
+            {"C-rate": 2.0, "Capacity": null},
+            {"C-rate": 4.0, "Capacity": null},
             {
               "Other C-rates and performance": [
-                {"C-rate": "None", "Capacity": "None"}
+                {"C-rate": null, "Capacity": null}
               ]
             }
           ]

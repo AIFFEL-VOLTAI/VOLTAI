@@ -20,14 +20,14 @@
 			"LNCM": "yes",
 			"CLNCM": "yes"
 		},
-		"Lithium source": "None",
-		"Synthesis method": "None",
-		"Crystallization method": "None",
-		"Crystallization final temperature": "None",
-		"Crystallization final duration": "None",
-		"Doping": "None",
+		"Lithium source": null,
+		"Synthesis method": null,
+		"Crystallization method": null,
+		"Crystallization final temperature": null,
+		"Crystallization final duration": null,
+		"Doping": null,
 		"Coating": "Ge-132",
-		"Additional treatment": "None"
+		"Additional treatment": null
 	},
 	"Electrode (half-cell)": {
 		"Active material to Conductive additive to Binder ratio": "92:4:4",
@@ -39,29 +39,29 @@
 				"Solvent ratio": "3:7"
 			}
 		],
-		"Additive": "None",
+		"Additive": null,
 		"Loading density (mass loading of NCM)": "7.7",
-		"Additional treatment for electrode": "None"
+		"Additional treatment for electrode": null
 	},
 	"Morphological Properties": {
 		"Particle size": {
-			"LNCM": "-",
-			"CLNCM": "-"
+			"LNCM": null,
+			"CLNCM": null
 		},
 		"Particle shape": {
 			"LNCM": "Uniform spherical secondary particles with a smooth surface.",
 			"CLNCM": "Uniform spherical secondary particles with a smooth surface."
 		},
 		"Particle distribution": {
-			"LNCM": "-",
-			"CLNCM": "-"
+			"LNCM": null,
+			"CLNCM": null
 		},
 		"Coating layer characteristics": {
 			"CLNCM": "Homogeneous coating distribution without agglomeration. The Ge-132 coating is evenly applied."
 		},
 		"Crystal structure and lattice characteristics": {
-			"LNCM": "-",
-			"CLNCM": "-"
+			"LNCM": null,
+			"CLNCM": null
 		}
 	},
 	"Cathode Performance": {
@@ -76,26 +76,26 @@
 					},
 					{
 						"C-rate": 0.2,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 0.5,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 1.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 2.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 4.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
-						"Other C-rates and performance": "None"
+						"Other C-rates and performance": null
 					}
 				]
 			}
@@ -111,26 +111,26 @@
 					},
 					{
 						"C-rate": 0.2,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 0.5,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 1.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 2.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 4.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
-						"Other C-rates and performance": "None"
+						"Other C-rates and performance": null
 					}
 				]
 			}

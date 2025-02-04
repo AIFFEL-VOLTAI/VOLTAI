@@ -25,8 +25,8 @@
 		"Crystallization method": "sintering",
 		"Crystallization final temperature": "860",
 		"Crystallization final duration (hours)": "12",
-		"Doping": "None",
-		"Coating": "None",
+		"Doping": null,
+		"Coating": null,
 		"Additional treatment": "PVP added during hydrothermal reaction"
 	},
 	"Electrode (half-cell)": {
@@ -39,9 +39,9 @@
 				"Solvent ratio": "1:1"
 			}
 		],
-		"Additive": "None",
+		"Additive": null,
 		"Loading density": "8",
-		"Additional treatment for electrode": "None"
+		"Additional treatment for electrode": null
 	},
 	"Morphological Properties": {
 		"Particle size": {
@@ -57,11 +57,11 @@
 			"N-NCM": "Agglomerated primary particles."
 		},
 		"Coating layer characteristics": {
-			"SC-NCM": "-"
+			"SC-NCM": null
 		},
 		"Crystal structure and lattice characteristics": {
 			"SC-NCM": "Uniform, clear lattice stripes with ~0.474 nm spacing, corresponding to (003) crystal plane.",
-			"N-NCM": "-"
+			"N-NCM": null
 		}
 	},
 	"Cathode Performance": {
@@ -80,19 +80,19 @@
 					},
 					{
 						"C-rate": 0.5,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 1.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 2.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 4.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"Other C-rates and performance": [
@@ -120,19 +120,19 @@
 					},
 					{
 						"C-rate": 0.5,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 1.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 2.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 4.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"Other C-rates and performance": [
