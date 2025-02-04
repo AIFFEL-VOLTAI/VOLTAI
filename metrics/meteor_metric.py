@@ -17,4 +17,5 @@ def calculate_meteor(question, answer):
     [tokenizer.tokenize(question)],
     tokenizer.tokenize(answer),
     )
+    print("Success Meteor")
     return meteor

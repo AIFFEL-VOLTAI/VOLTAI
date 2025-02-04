@@ -38,6 +38,7 @@ def calculate_rouge(question, answer):
     """    
     scorer = rouge_scorer.RougeScorer(["rouge1", "rouge2", "rougeL"], use_stemmer=False)
     scores = scorer.score(' '.join(tokenize(question)), ' '.join(tokenize(answer)))
+    print("Success Rouge")
     return {
         "rouge1": scores["rouge1"].fmeasure,
         "rouge2": scores["rouge2"].fmeasure,

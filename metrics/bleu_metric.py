@@ -11,5 +11,6 @@ def tokenize(text):
 def calculate_bleu(question, answer):
     reference = [tokenize(question)]
     candidate = tokenize(answer)
+    print("Success BLEU")
     return sentence_bleu(reference, candidate)
 
