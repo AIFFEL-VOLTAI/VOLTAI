@@ -25,9 +25,9 @@
 		"Crystallization method": "sintering",
 		"Crystallization final temperature": "875",
 		"Crystallization final duration": "12",
-		"Doping": "None",
+		"Doping": null,
 		"Coating": "γ-Al2O3",
-		"Additional treatment": "None"
+		"Additional treatment": null
 	},
 	"Electrode (half-cell)": {
 		"Active material to Conductive additive to Binder ratio": "90:4:6",
@@ -41,27 +41,27 @@
 		],
 		"Additive": "VC, 2%",
 		"Loading density (mass loading of NCM)": "9.0",
-		"Additional treatment for electrode": "None"
+		"Additional treatment for electrode": null
 	},
 	"Morphological Properties": {
 		"Particle size": {
-			"pristine NCM622": "-",
-			"polymer/γ-Al2O3-coated NCM622": "-"
+			"pristine NCM622": null,
+			"polymer/γ-Al2O3-coated NCM622": null
 		},
 		"Particle shape": {
 			"pristine NCM622": "Irregular and rough particle surface.",
 			"polymer/γ-Al2O3-coated NCM622": "Irregular and rough particle surface."
 		},
 		"Particle distribution": {
-			"pristine NCM622": "-",
-			"polymer/γ-Al2O3-coated NCM622": "-"
+			"pristine NCM622": null,
+			"polymer/γ-Al2O3-coated NCM622": null
 		},
 		"Coating layer characteristics": {
 			"polymer/γ-Al2O3-coated NCM622": "Ultrathin and microporous γ-Al2O3 coating (~7.8 nm thick). Porous structure with ~3.6 nm pore size. Smooth and continuous."
 		},
 		"Crystal structure and lattice characteristics": {
-			"pristine NCM622": "-",
-			"polymer/γ-Al2O3-coated NCM622": "-"
+			"pristine NCM622": null,
+			"polymer/γ-Al2O3-coated NCM622": null
 		}
 	},
 	"Cathode Performance": {
@@ -76,26 +76,26 @@
 					},
 					{
 						"C-rate": 0.2,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 0.5,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 1.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 2.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 4.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
-						"Other C-rates and performance": "None"
+						"Other C-rates and performance": null
 					}
 				]
 			}
@@ -111,26 +111,26 @@
 					},
 					{
 						"C-rate": 0.2,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 0.5,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 1.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 2.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
 						"C-rate": 4.0,
-						"Capacity": "None"
+						"Capacity": null
 					},
 					{
-						"Other C-rates and performance": "None"
+						"Other C-rates and performance": null
 					}
 				]
 			}

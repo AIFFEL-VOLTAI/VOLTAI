@@ -26,8 +26,8 @@
     "Crystallization final temperature": "760",
     "Crystallization final duration (hours)": "15",
     "Doping": "Vanadium (V)",
-    "Coating": "None",
-    "Additional treatment": "None"
+    "Coating": null,
+    "Additional treatment": null
   },
   "Electrode (half-cell)": {
     "Active material to Conductive additive to Binder ratio": "96:2:2",
@@ -39,9 +39,9 @@
         "Solvent ratio": "1:1:1"
       }
     ],
-    "Additive": "None",
+    "Additive": null,
     "Loading density (mass loading of NCM)": "14.5",
-    "Additional treatment for electrode": "None"
+    "Additional treatment for electrode": null
   },
   "Morphological Properties": {
     "Particle size": {
@@ -57,12 +57,12 @@
       "V-doped NCM": "Uniform"
     },
     "Coating layer characteristics": {
-      "Pristine NCM": "-",
-      "V-doped NCM": "-"
+      "Pristine NCM": null,
+      "V-doped NCM": null
     },
     "Crystal structure and lattice characteristics": {
-      "Pristine NCM": "-",
-      "V-doped NCM": "-"
+      "Pristine NCM": null,
+      "V-doped NCM": null
     }
   },
   "Cathode Performance": {
@@ -77,29 +77,29 @@
           },
           {
             "C-rate": 0.2,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "C-rate": 0.5,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "C-rate": 1.0,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "C-rate": 2.0,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "C-rate": 4.0,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "Other C-rates and performance": [
               {
-                "C-rate": "None",
-                "Capacity": "None"
+                "C-rate": null,
+                "Capacity": null
               }
             ]
           }
@@ -117,29 +117,29 @@
           },
           {
             "C-rate": 0.2,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "C-rate": 0.5,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "C-rate": 1.0,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "C-rate": 2.0,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "C-rate": 4.0,
-            "Capacity": "None"
+            "Capacity": null
           },
           {
             "Other C-rates and performance": [
               {
-                "C-rate": "None",
-                "Capacity": "None"
+                "C-rate": null,
+                "Capacity": null
               }
             ]
           }
