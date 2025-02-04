@@ -21,7 +21,7 @@ from rouge_score import rouge_scorer
 from transformers import AutoTokenizer
 
 # 토크나이저 초기화
-tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("allenai/longformer-base-4096")
 
 def tokenize(text):
     return tokenizer.tokenize(text)
@@ -38,7 +38,7 @@ def calculate_rouge(question, answer):
     """    
     scorer = rouge_scorer.RougeScorer(["rouge1", "rouge2", "rougeL"], use_stemmer=False)
     scores = scorer.score(' '.join(tokenize(question)), ' '.join(tokenize(answer)))
-    print("Success Rouge")
+    
     return {
         "rouge1": scores["rouge1"].fmeasure,
         "rouge2": scores["rouge2"].fmeasure,
