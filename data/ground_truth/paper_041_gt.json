@@ -101,10 +101,10 @@
                 "Voltage range": "2.6-4.2",
                 "Temperature": null,
                 "C-rate and Specific capacity": [
-                    {"C-rate": 0.1, "Capacity": 170},
+                    {"C-rate": 0.1, "Capacity": null},
                     {"C-rate": 0.2, "Capacity": null},
                     {"C-rate": 0.5, "Capacity": null},
-                    {"C-rate": 1.0, "Capacity": 140},
+                    {"C-rate": 1.0, "Capacity": 170},
                     {"C-rate": 2.0, "Capacity": null},
                     {"C-rate": 4.0, "Capacity": null},
                     {"Other C-rates and performance": [
