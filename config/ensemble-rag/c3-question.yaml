@@ -1,32 +1,11 @@
 ## 250126 update(LHC) - Category 3 (question)
-question: |
-  Below are instructions for filling out items by referring to the examples.
-  The values shown to the right of the colon (":") are examples;
-  please delete them after reviewing and rewrite them with the values found in the PDF.
-  If any item is not mentioned in the PDF, do not remove it—write "null".
-  
-  [ 
-      {
-          "Morphological Properties": {
-              "ParticleSize": {
-                  "SC-NCM": "micron-sized particles, which are about 2μm in diameter",
-                  "N-NCM": "secondary particles are 10-13μm in size"
-              },
-              "ParticleShape": {
-                  "SC-NCM": "smooth surfaces",
-                  "N-NCM": null
-              },
-              "ParticleDistribution": {
-                  "SC-NCM": null,
-                  "N-NCM": "composed of agglomerated primary particles"
-              },
-              "CoatingLayerCharacteristics": {
-                  "NCM-RGO": "RGO appears as thin carbon sheets with wrinkled surfaces and folded structures"
-              },
-              "CrystalStructureAndLatticeCharacteristics": {
-                  "SC-NCM": "uniform and clear lattice stripes with a crystal plane spacing of about 0.474 nm, corresponding to the (003) crystal plane of the layered structure",
-                  "WN92": "a layered structure with a space group of R-3m"
-              }
-          }
-      }
-  ]
+question_text: |
+    Fill out in the `null`, `None`, `[]` and `{}` values based on the example format:
+
+template: 
+    Morphological Properties:
+        Particle size: {}
+        Particle shape: {}
+        Particle distribution: {}
+        Coating layer characteristics: {}
+        Crystal structure and lattice characteristics: {}

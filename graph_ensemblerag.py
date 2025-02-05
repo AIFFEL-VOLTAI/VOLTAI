@@ -22,6 +22,7 @@ from tools import embedding_file
 class GraphStateEnsembleRAG(TypedDict):
     question: Annotated[str, "Question"]  # 질문
     context: Annotated[str, "Context"]  # 문서의 검색 결과
+    example: Annotated[dict, "Example"] # 예시
     answer1: Annotated[str, "Answer1"]  # 답변
     answer2: Annotated[str, "Answer2"]  # 답변
     answer3: Annotated[str, "Answer3"]  # 답변
@@ -225,11 +226,14 @@ You are an expert in extracting crucial information from battery-related researc
 
         # 검색된 문서를 상태에서 가져옵니다.
         context = state["context"]
+        
+        # example 
+        example = state["example"]
 
         # prompt 설정
         prompt = PromptTemplate(
             template=self.llm_answer_prompt,
-            input_variables=["context", "question"],
+            input_variables=["example", "context", "question"],
             )
 
         # 체인 호출
@@ -238,7 +242,8 @@ You are an expert in extracting crucial information from battery-related researc
         response = chain.invoke(
             {
                 "question": latest_question,
-                "context": context,
+                "context": context, 
+                "example": example,
                 "chat_history": messages_to_history(state["messages"]),
             }
         )
@@ -264,11 +269,14 @@ You are an expert in extracting crucial information from battery-related researc
 
         # 검색된 문서를 상태에서 가져옵니다.
         context = state["context"]
+        
+        # example 
+        example = state["example"]
 
         # prompt 설정
         prompt = PromptTemplate(
             template=self.llm_answer_prompt,
-            input_variables=["context", "question"],
+            input_variables=["example", "context", "question"],
             )
 
         # 체인 호출
@@ -278,6 +286,7 @@ You are an expert in extracting crucial information from battery-related researc
             {
                 "question": latest_question,
                 "context": context,
+                "example": example,
                 "chat_history": messages_to_history(state["messages"]),
             }
         )
@@ -303,11 +312,14 @@ You are an expert in extracting crucial information from battery-related researc
 
         # 검색된 문서를 상태에서 가져옵니다.
         context = state["context"]
+        
+        # example 
+        example = state["example"]
 
         # prompt 설정
         prompt = PromptTemplate(
             template=self.llm_answer_prompt,
-            input_variables=["context", "question"],
+            input_variables=["example", "context", "question"],
             )
 
         # 체인 호출
@@ -317,6 +329,7 @@ You are an expert in extracting crucial information from battery-related researc
             {
                 "question": latest_question,
                 "context": context,
+                "example": example,
                 "chat_history": messages_to_history(state["messages"]),
             }
         )
