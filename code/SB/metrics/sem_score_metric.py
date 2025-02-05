@@ -13,4 +13,5 @@ def calculate_semantic_similarity(question, answer):
     question_encoded = model.encode(question, convert_to_tensor=True)
     answer_encoded = model.encode(answer, convert_to_tensor=True)
     score = util.pytorch_cos_sim(question_encoded, answer_encoded).item()
+    
     return score

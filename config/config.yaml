@@ -1,7 +1,7 @@
-project_name: temp-rag-experiment
-category_number: 4
-rag_method: "multiagent-rag"
-file_num_list: [8]
+project_name: ensemble-experiment
+category_number: 1
+rag_method: "ensemble-rag"
+file_num_list: [11,16,22]
 embedding_params:
   chunk_size: 500
   chunk_overlap: 100
