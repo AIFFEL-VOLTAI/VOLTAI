@@ -1,0 +1,16 @@
+{
+    "Electrode (half-cell)": {
+        "Active material to Conductive additive to Binder ratio": "90:5:5",
+        "Electrolyte": [
+            {
+            "Salt": "LiPF6",
+            "Concentration": "1M",
+            "Solvent": "EC:EMC:DEC",
+            "Solvent ratio": "1:1:1"
+            }
+        ],
+        "Additive": "FEC, 10%",
+        "Loading density (mass loading of NCM)": "5",
+        "Additional treatment for electrode": null
+    }
+}

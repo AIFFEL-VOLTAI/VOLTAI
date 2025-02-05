@@ -130,16 +130,17 @@ def save_data2output_folder(output_folder: str, data, filename: str):
 
 def save_output2json(each_answer:dict, file_num:int, rag_method:str, category_number:int):    
     ## 파일 이름 설정
-    if file_num < 10:
-        json_file_num = f"00{file_num}"
-    elif file_num < 100:
-        json_file_num = f"0{file_num}"
-    else:
-        json_file_num = f"{file_num}"
+    json_file_num = f"000000{file_num}"[-3:]
+    # if file_num < 10:
+    #     json_file_num = f"00{file_num}"
+    # elif file_num < 100:
+    #     json_file_num = f"0{file_num}"
+    # else:
+    #     json_file_num = f"{file_num}"
         
     json_name = f"paper_{json_file_num}_output"
     
-    save_data2output_folder(output_folder=f"./output/json/{rag_method}/category{category_number}/", data=each_answer, filename=json_name)
+    save_data2output_folder(output_folder=f"./output/json/{rag_method}/{json_name}/", data=each_answer, filename=f"category-{category_number}-{json_name}")
 
 
 # def outputs2csv(total_outputs:dict, filename="temp_result") -> pd.DataFrame:

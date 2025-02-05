@@ -1,0 +1,23 @@
+{
+    "Morphological Properties": {
+        "ParticleSize": {
+            "SC-NCM": "micron-sized particles, which are about 2μm in diameter",
+            "N-NCM": "secondary particles are 10-13μm in size"
+        },
+        "ParticleShape": {
+            "SC-NCM": "smooth surfaces",
+            "N-NCM": null
+        },
+        "ParticleDistribution": {
+            "SC-NCM": null,
+            "N-NCM": "composed of agglomerated primary particles"
+        },
+        "CoatingLayerCharacteristics": {
+            "NCM-RGO": "RGO appears as thin carbon sheets with wrinkled surfaces and folded structures"
+        },
+        "CrystalStructureAndLatticeCharacteristics": {
+            "SC-NCM": "uniform and clear lattice stripes with a crystal plane spacing of about 0.474 nm, corresponding to the (003) crystal plane of the layered structure",
+            "WN92": "a layered structure with a space group of R-3m"
+        }
+    }
+}
