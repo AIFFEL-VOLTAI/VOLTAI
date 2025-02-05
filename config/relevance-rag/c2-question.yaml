@@ -1,25 +1,11 @@
 ## 250126 update(LHC) - Category 2 (question)
-question: |
-  Below are instructions for filling out items by referring to the examples.
-  The values shown to the right of the colon (":") are examples;
-  please delete them after reviewing and rewrite them with the values found in the PDF.
-  If any item is not mentioned in the PDF, do not remove it—write "null".
-  
-  [
-    {
-        "Electrode (half-cell)": {
-          "Active material to Conductive additive to Binder ratio": "90:5:5",
-          "Electrolyte": [
-              {
-                "Salt": "LiPF6",
-                "Concentration": "1M",
-                "Solvent": "EC:EMC:DEC",
-                "Solvent ratio": "1:1:1"
-              }
-          ],
-          "Additive": "FEC, 10%",
-          "Loading density (mass loading of NCM)": "5",
-          "Additional treatment for electrode": null
-        }
-    }
-  ]
+question_text: |
+  Fill out in the `null`, `None`, `[]` and `{}` values based on the example format:
+
+template: 
+  Electrode (half-cell):
+    Active material to Conductive additive to Binder ratio: null
+    Electrolyte: []
+    Additive: null
+    Loading density (mass loading of NCM): null
+    Additional treatment for electrode: null

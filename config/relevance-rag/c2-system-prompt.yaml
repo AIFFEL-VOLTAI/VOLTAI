@@ -35,6 +35,9 @@ llm_answer_system_prompt: |
    - Do not include titles or information from reference papers mentioned in the document.
    - Ensure the final JSON output is complete, accurate, and adheres to all stated requirements.
 
+  Example:
+  {example}
+
   Document:
   {context}
 
