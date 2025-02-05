@@ -50,7 +50,6 @@ researcher_system_prompt: |
           ],
           "Additive": "FEC, 10%",
           "Loading density (mass loading of NCM)": "5",
-          "Additional treatment for electrode": null
         }
     }
   ]

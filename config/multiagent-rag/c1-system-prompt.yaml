@@ -71,8 +71,7 @@ researcher_system_prompt: |
         "Crystallization final temperature": 100,
         "Crystallization final duration (hours)": 12,
         "Doping": "Zr4+",
-        "Coating": "ZrO2",
-        "Additional treatment": null
+        "Coating": "ZrO2"
       }
     }
   ]
