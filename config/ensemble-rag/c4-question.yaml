@@ -1,6 +1,6 @@
 ## 250127 update(CSY) - Category 4 (question)
 question_text: |
-  Fill out in the `null`, `None`, `[]` and `{}` values based on the example format:
+  Fill out in the `null`, `[]` and `{}` values based on the example format:
 
 template: 
   Cathode Performance: 

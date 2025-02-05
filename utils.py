@@ -7,7 +7,7 @@ from pprint import pprint
 
 import pandas as pd
 
-from langchain_core.messages import HumanMessage
+from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.runnables import RunnableConfig
 from langchain_teddynote.messages import random_uuid
 
@@ -122,7 +122,7 @@ def load_invoke_input(config_folder:str="./config", category_number:int=1, rag_m
         invoke_input = {
             "input": {
                 "question": f"{question_text}{[template]}".replace("'", '"'), 
-                "example": json_example
+                "example": AIMessage(content=[json_example])
             }, 
             "config": config
         }
