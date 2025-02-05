@@ -9,8 +9,7 @@ llm_answer_system_prompt: |
   2. **Extraction Guidelines**:
    - Use the JSON structure provided in question as a template.
    - Replace placeholders with values found in the document.
-   - If a field is not mentioned in the document, write "null" instead of removing it.
-
+   - If a field is not mentioned in the document, write `null` (not `None`) instead of removing it.
   3. **Clarity and Precision**:
    - Extract numerical data (e.g., ratios, temperatures, durations) with maximum precision.
    - For descriptive fields, summarize the relevant information concisely without adding interpretations.
