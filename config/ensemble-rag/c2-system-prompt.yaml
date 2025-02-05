@@ -31,9 +31,12 @@ llm_answer_system_prompt: |
    - Ignore any supplementary information or external references not contained in the document.
 
   7. **Final Notes**:
-   - Do not directly reproduce example values from the question prompts.
-   - Do not include titles or information from reference papers mentioned in the document.
-   - Ensure the final JSON output is complete, accurate, and adheres to all stated requirements.
+    - Do not directly reproduce example values provided in the prompts.
+    - Strictly adhere to the prescribed JSON schema and formatting.
+    - Do not include titles or information from reference papers mentioned in the document.
+
+  Example:
+  {example}
 
   Document:
   {context}

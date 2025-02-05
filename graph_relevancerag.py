@@ -22,6 +22,7 @@ from tools import embedding_file
 class GraphState(TypedDict):
     question: Annotated[str, "Question"]  # 질문
     context: Annotated[str, "Context"]  # 문서의 검색 결과
+    example: Annotated[dict, "Example"] # 예시
     answer: Annotated[str, "Answer"]  # 답변
     messages: Annotated[list, add_messages]  # 메시지(누적되는 list)
 
@@ -152,11 +153,14 @@ class RelevanceRAG:
 
         # 검색된 문서를 상태에서 가져옵니다.
         context = state["context"]
+        
+        # example 
+        example = state["example"]
 
         # prompt 설정
         prompt = PromptTemplate(
             template=self.llm_answer_prompt,
-            input_variables=["context", "question"],
+            input_variables=["example", "context", "question"],
             )
 
         # 체인 호출
@@ -165,7 +169,8 @@ class RelevanceRAG:
         response = chain.invoke(
             {
                 "question": latest_question,
-                "context": context,
+                "context": context, 
+                "example": example,
                 "chat_history": messages_to_history(state["messages"]),
             }
         )

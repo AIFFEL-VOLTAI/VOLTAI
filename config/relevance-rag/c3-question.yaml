@@ -4,8 +4,8 @@ question_text: |
 
 template: 
     Morphological Properties:
-        ParticleSize: {}
-        ParticleShape: {}
-        ParticleDistribution: {}
-        CoatingLayerCharacteristics: {}
-        CrystalStructureAndLatticeCharacteristics: {}
+        Particle size: {}
+        Particle shape: {}
+        Particle distribution: {}
+        Coating layer characteristics: {}
+        Crystal structure and lattice characteristics: {}

@@ -31,6 +31,9 @@ llm_answer_system_prompt: |
     - Adhere strictly to the prescribed JSON schema and guide.
     - Ensure clarity and accuracy in all extracted data, following the guide for consistency.
 
+  Example:
+  {example}
+
   Document:
   {context}
 

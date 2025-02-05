@@ -92,7 +92,7 @@ def embedding_file(
         )
     
     ## ref 제거 후 코드
-    elif rag_method == "relevance-rag" or rag_method == "ensemble-rag":
+    elif rag_method == "relevance-rag" or rag_method == "ensemble-rag" or rag_method == "crew-rag":
         docs = remove_last_section_from_pdf(file_path=paper_file_path)
         docs = splitter.split_text(docs)
         
