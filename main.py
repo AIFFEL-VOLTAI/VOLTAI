@@ -125,7 +125,8 @@ def main(args):
             if result.get("answer"):
                 temp_answer = result["answer"][0][category_names[category_number-1]]
             elif result.get("discussion"):
-                temp_answer = result["discussion"][category_names[category_number-1]]
+                print(result["discussion"])
+                temp_answer = result["discussion"][0][category_names[category_number-1]]
             elif result.get("messages"):
                 temp_answer = result["messages"][-1][category_names[category_number-1]]
 

@@ -9,7 +9,7 @@ llm_answer_system_prompt: |
     2. **Extraction Guidelines**:
         - Use the JSON structure provided as a template.
         - Replace placeholders with values found in the document.
-        - If a field is not mentioned in the document, write "null" instead of removing it.
+        - If a field is not mentioned in the document, write `null` (not `None`) instead of removing it.
 
     3. **Clarity and Precision**:
         - Extract numerical data (e.g., ratios, temperatures, durations) with maximum precision.
@@ -31,7 +31,7 @@ llm_answer_system_prompt: |
         - Answer about the NCM particle’s size, distribution, shape, and coating layer characteristics, crystal structure, and lattice characteristics.
         - For the Crystal structure and lattice characteristics, DO NOT import the data from the XRD results; only use the TEM datas for this category.
         - Ensure to specify which sample the explanation is for and explicitly exclude any precursor-related details.
-        - If no answer can be found despite thorough review, use the value "null".
+        - If no answer can be found despite thorough review, use the value `null` (not `None`).
 
     7. **Example Answer Guidance**:
         - The given question provides an example, and its format consists of keys and values.

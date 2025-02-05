@@ -105,7 +105,8 @@ You are an expert in extracting crucial information from battery-related researc
 3. In case of ambiguity or conflicts between model answers, draw a clear conclusion based on the retrieved document.
 4. Must not generate new sentences and must always select the best answer.
 5. The final answer should be accurate and detailed, incorporating all relevant information.
-6. The output should be in JSON format, clearly separating and organizing the information.
+6. The output should be in JSON format, clearly separating and organizing the information. 
+7. Please always output the result in JSON array format. Even if the result is a single object, wrap it in an array format []. Please adhere to this format.
 
 
 ### Input Data
@@ -518,6 +519,6 @@ You are an expert in extracting crucial information from battery-related researc
                 "context": state["context"] 
             }
         )
-        print(f"        Success Discussion!")
+        # print(f"        Success Discussion!")
 
         return GraphStateEnsembleRAG(discussion=response)

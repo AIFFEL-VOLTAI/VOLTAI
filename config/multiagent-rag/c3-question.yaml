@@ -1,7 +1,7 @@
 ## 250126 update(LHC) - Category 3 (question)
 question_text: |
-    Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field. If the information is not mentioned in the PDF, write "null".
-    Fill out in the `null`, `None`, `[]` and `{}` values based on the example format:
+    Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field. If the information is not mentioned in the PDF, write `null` (not `None`).
+    Fill out in the `null`, `[]` and `{}` values based on the example format:
 
 template: 
     Morphological Properties:
