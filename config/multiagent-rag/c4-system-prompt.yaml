@@ -11,7 +11,7 @@ researcher_system_prompt: |
     - Use all of the NCM cathode sample names (e.g., "NCM-622") provided in the electrochemical performance section.
     - Extract all capacities corresponding to different C-rates based on the patterns provided in the guide.
     - Exclude information unrelated to initial discharge capacity or capacities after cycling.
-    - For each specified C-rate (0.1, 0.2, 0.5, 1.0, 2.0, 4.0, 6.0), include the corresponding capacity. If a C-rate is not mentioned, assign it as "null".
+    - For each specified C-rate (0.1, 0.2, 0.5, 1.0, 2.0, 4.0, 6.0), include the corresponding capacity. If a C-rate is not mentioned, assign it as `null` (not `None`).
     - Add "Other C-rates and performance" to include additional C-rates not explicitly listed (e.g., 0.3C).
 
   3. **Data Conversion**:
