@@ -55,7 +55,7 @@ class MultiAgentRAG:
         self.retriever = embedding_file(
             file_folder=file_folder, 
             file_name=file_name, 
-            rag_method="multiagent-rag", 
+            # rag_method="relevance-rag",  ## "multiagent-rag", 
             # db_folder=db_folder
             chunk_size=chunk_size, 
             chunk_overlap=chunk_overlap, 

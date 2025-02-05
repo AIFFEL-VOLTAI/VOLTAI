@@ -58,7 +58,7 @@ def remove_last_section_from_pdf(file_path: str) -> str:
 def embedding_file(
     file_folder: str, 
     file_name: str, 
-    rag_method: str, 
+    # rag_method: str, 
     chunk_size: int=500, 
     chunk_overlap: int=100, 
     search_k: int=10
@@ -80,32 +80,32 @@ def embedding_file(
     paper_file_path = f"{file_folder}/{file_name}.pdf"
     
     ## ref 제거 전 코드
-    if rag_method == "multiagent-rag":
-        loader = PyPDFLoader(paper_file_path)
-        docs = loader.load_and_split(text_splitter=splitter) 
+    # if rag_method == "multiagent-rag":
+    #     loader = PyPDFLoader(paper_file_path)
+    #     docs = loader.load_and_split(text_splitter=splitter) 
        
-        ## Embedding 생성 및 vector store에 저장
-        embeddings = OpenAIEmbeddings()
-        vector_store = FAISS.from_documents(
-            documents=docs,         ## 벡터 저장소에 추가할 문서 리스트
-            embedding=embeddings    ## 사용할 임베딩 함수
-        )
+    #     ## Embedding 생성 및 vector store에 저장
+    #     embeddings = OpenAIEmbeddings()
+    #     vector_store = FAISS.from_documents(
+    #         documents=docs,         ## 벡터 저장소에 추가할 문서 리스트
+    #         embedding=embeddings    ## 사용할 임베딩 함수
+    #     )
     
     ## ref 제거 후 코드
-    elif rag_method == "relevance-rag" or rag_method == "ensemble-rag" or rag_method == "crew-rag":
-        docs = remove_last_section_from_pdf(file_path=paper_file_path)
-        docs = splitter.split_text(docs)
-        
-        ## Embedding 생성 및 vector store에 저장        
-        embeddings = OpenAIEmbeddings()
-        vector_store = FAISS.from_texts(
-            texts=docs,         ## 벡터 저장소에 추가할 문서 리스트
-            embedding=embeddings    ## 사용할 임베딩 함수
-        )
+    # elif rag_method == "relevance-rag" or rag_method == "ensemble-rag" or rag_method == "crew-rag":
+    docs = remove_last_section_from_pdf(file_path=paper_file_path)
+    docs = splitter.split_text(docs)
     
-    ## key error
-    else:
-        raise KeyError(f"Invalid rag_method: {rag_method}")
+    ## Embedding 생성 및 vector store에 저장        
+    embeddings = OpenAIEmbeddings()
+    vector_store = FAISS.from_texts(
+        texts=docs,         ## 벡터 저장소에 추가할 문서 리스트
+        embedding=embeddings    ## 사용할 임베딩 함수
+    )
+    
+    # ## key error
+    # else:
+    #     raise KeyError(f"Invalid rag_method: {rag_method}")
 
     ## 검색기로 변환: 현재 벡터 저장소를 기반으로 VectorStoreRetriever 객체를 생성하는 기능을 제공
     retriever = vector_store.as_retriever(
