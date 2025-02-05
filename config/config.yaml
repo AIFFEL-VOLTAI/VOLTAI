@@ -1,11 +1,13 @@
-project_name: temp-rag-experiment
-category_number: 4
-rag_method: "multiagent-rag"
-file_num_list: [8]
+project_name: rag-sample-name-experiment
+# category_number: 1    ## 이제 자동으로 다 돌아감
+rag_method: "relevance-rag"
+file_num_list: [22]
 embedding_params:
-  chunk_size: 500
+  chunk_size: 1000      ## 1000으로 고정
   chunk_overlap: 100
   search_k: 10
 model_name: "gpt-4o"
 save_graph_png: False
 process_all_files: False
+sample_name_searcher_question : | 
+  Use all of the NCM cathode sample names (e.g., 'NCM-622', 'pristine NCM', 'M-NCM') provided in the electrochemical performance section. You just output sample names. Do Not output like '- NCM622' , just output 'NCM622.
