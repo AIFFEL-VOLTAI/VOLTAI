@@ -129,7 +129,7 @@ def load_invoke_input(config_folder:str="./config", category_number:int=1, rag_m
 
     else: 
         raise KeyError(f"Unsupported rag_method: {rag_method}. Please use one of ['multiagent-rag', 'relevance-rag', 'ensemble-rag'].")
-    print(invoke_input)
+    
     return invoke_input
 
 
