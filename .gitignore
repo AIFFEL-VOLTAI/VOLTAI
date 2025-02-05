@@ -131,7 +131,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+output/
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -181,5 +181,6 @@ pyrightconfig.json
 *.pkl
 vectordb/
 
-
+#
+.DS_Store
 # End of https://www.toptal.com/developers/gitignore/api/python

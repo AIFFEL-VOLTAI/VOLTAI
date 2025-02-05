@@ -102,6 +102,7 @@ def main(args):
         else:
             result = voltai_graph.invoke(*invoke_input)
 
+        type(result)
         ## RAG method에 따른 결과 확인
         if result.get("answer"):
             temp_answer = result["answer"][0][category_names[config["category_number"]-1]]
