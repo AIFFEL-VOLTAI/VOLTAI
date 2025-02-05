@@ -1,8 +1,8 @@
 # evaluate_all.py
-from rouge_metric import calculate_rouge
-from bleu_metric import calculate_bleu
-from meteor_metric import calculate_meteor
-from semantic_similarity_metric import calculate_semantic_similarity
+from .rouge_metric import calculate_rouge
+from .bleu_metric import calculate_bleu
+from .meteor_metric import calculate_meteor
+from .sem_score_metric import calculate_semantic_similarity
 
 def evaluate_all_metrics(question, answer):
     results = {
