@@ -1,25 +1,12 @@
 ## 250126 update(LHC) - Category 3 (question)
-question: |
-  Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field, replacing the placeholders. If the information is not mentioned in the PDF, write "null".
+question_text: |
+    Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field. If the information is not mentioned in the PDF, write "null".
+    Fill out in the `null`, `None`, `[]` and `{}` values based on the example format:
 
-  [ 
-      {
-          "Morphological Properties": {
-              "ParticleSize": {
-              
-              },
-              "ParticleShape": {
-              
-              },
-              "ParticleDistribution": {
-              
-              },
-              "CoatingLayerCharacteristics": {
-                  
-              },
-              "CrystalStructureAndLatticeCharacteristics": {
-              
-              }
-          }
-      }
-  ]
+template: 
+    Morphological Properties:
+        Particle size: {}
+        Particle shape: {}
+        Particle distribution: {}
+        Coating layer characteristics: {}
+        Crystal structure and lattice characteristics: {}

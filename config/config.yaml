@@ -1,6 +1,6 @@
 project_name: rag-sample-name-experiment
 # category_number: 1    ## 이제 자동으로 다 돌아감
-rag_method: "ensemble-rag"
+rag_method: "multiagent-rag"
 file_num_list: [22]
 embedding_params:
   chunk_size: 1000      ## 1000으로 고정
