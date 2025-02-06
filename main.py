@@ -26,7 +26,6 @@ def get_rag_instance(
     rag_method, 
     file_folder, 
     file_number, 
-    # db_folder,
     chunk_size, 
     chunk_overlap,
     search_k,
