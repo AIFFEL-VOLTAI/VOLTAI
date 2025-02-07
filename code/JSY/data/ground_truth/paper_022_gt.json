@@ -1,0 +1,132 @@
+{
+  "CAM (Cathode Active Material)": {
+    "Stoichiometry information": {
+      "Pristine NCM": {
+        "Li ratio": "1",
+        "Ni ratio": "0.84",
+        "Co ratio": "0.10",
+        "Mn ratio": "0.06",
+        "O ratio": "2"
+      },
+      "V-doped NCM": {
+        "Li ratio": "1",
+        "Ni ratio": "0.84",
+        "Co ratio": "0.10",
+        "Mn ratio": "0.06",
+        "O ratio": "2"
+      }
+    },
+    "Commercial NCM used": {
+      "Pristine NCM": "no",
+      "V-doped NCM": "no"
+    },
+    "Lithium source": "LiOH",
+    "Synthesis method": "solid state method",
+    "Crystallization method": "calcination",
+    "Crystallization final temperature": "760",
+    "Crystallization final duration (hours)": "15",
+    "Doping": "Vanadium (V)",
+    "Coating": null
+  },
+  "Electrode (half-cell)": {
+    "Active material to Conductive additive to Binder ratio": "96:2:2",
+    "Electrolyte": [
+      {
+        "Salt": "LiPF6",
+        "Concentration": "1 M",
+        "Solvent": "EC:DMC:EMC",
+        "Solvent ratio": "1:1:1"
+      }
+    ],
+    "Additive": null,
+    "Loading density (mass loading of NCM)": "14.5"
+  },
+  "Morphological Properties": {
+    "Particle size": {
+      "Pristine NCM": "500 nm",
+      "V-doped NCM": "500 nm"
+    },
+    "Particle shape": {
+      "Pristine NCM": "Porous and spherical in shape, composed of numerous primary particles",
+      "V-doped NCM": "Porous and spherical in shape, composed of numerous primary particles"
+    },
+    "Particle distribution": {
+      "Pristine NCM": "Uniform",
+      "V-doped NCM": "Uniform"
+    },
+    "Coating layer characteristics": {
+      "Pristine NCM": null,
+      "V-doped NCM": null
+    },
+    "Crystal structure and lattice characteristics": {
+      "Pristine NCM": null,
+      "V-doped NCM": null
+    }
+  },
+  "Cathode Performance": {
+    "Pristine NCM": [
+      {
+        "Voltage range": "3.0-4.3",
+        "Temperature": "25",
+        "C-rate and Specific capacity": [
+          {
+            "C-rate": 0.1,
+            "Capacity": 204.6
+          },
+          {
+            "C-rate": 0.5,
+            "Capacity": null
+          },
+          {
+            "C-rate": 1.0,
+            "Capacity": null
+          },
+          {
+            "C-rate": 2.0,
+            "Capacity": null
+          },
+          {
+            "Other C-rates and performance": [
+              {
+                "C-rate": null,
+                "Capacity": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "V-doped NCM": [
+      {
+        "Voltage range": "3.0-4.3",
+        "Temperature": "25",
+        "C-rate and Specific capacity": [
+          {
+            "C-rate": 0.1,
+            "Capacity": 204.4
+          },
+          {
+            "C-rate": 0.5,
+            "Capacity": null
+          },
+          {
+            "C-rate": 1.0,
+            "Capacity": null
+          },
+          {
+            "C-rate": 2.0,
+            "Capacity": null
+          },
+          {
+            "Other C-rates and performance": [
+              {
+                "C-rate": null,
+                "Capacity": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

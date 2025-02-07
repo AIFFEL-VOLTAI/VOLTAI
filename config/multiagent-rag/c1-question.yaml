@@ -1,0 +1,17 @@
+## 250126 update(LHC) - Category 1 (question)
+question_text: |
+  Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field. If the information is not mentioned in the PDF, write `null` (not `None`).
+  Use all of the NCM cathode sample names (e.g., "NCM-622") provided in the electrochemical performance section.
+  Fill out in the `null`, `[]` and `{}` values based on the example format:
+
+template: 
+  CAM (Cathode Active Material): 
+    Stoichiometry information: {}
+    Commercial NCM used: {}
+    Lithium source: null
+    Synthesis method: null
+    Crystallization method: null
+    Crystallization final temperature: null
+    Crystallization final duration (hours): null
+    Doping: null
+    Coating: null
