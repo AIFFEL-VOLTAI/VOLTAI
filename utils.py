@@ -12,7 +12,7 @@ from langchain_core.runnables import RunnableConfig
 from langchain_teddynote.messages import random_uuid
 
 
-def load_config(config_folder:str="./config") -> dict:
+def load_config(config_folder: str = "./configs") -> dict:
     """
     config 파일을 불러오는 함수입니다. 
 
@@ -22,115 +22,90 @@ def load_config(config_folder:str="./config") -> dict:
     Returns:
         dict: YAML 파일 내용을 Python 딕셔너리로 변환하여 반환.
     """
-    file_path = f"{config_folder}/config.yaml"
+    file_path = f"{config_folder}/project_config.yaml"
     with open(file_path, "r", encoding="utf-8") as file:
         config = yaml.safe_load(file)
     
-    print(f"## {file_path}를 불러왔습니다.")
+    print(f"##  {file_path}를 불러왔습니다.")
     
     return config
 
 
-def load_system_prompt(config_folder:str="./config", category_number:int=1, rag_method:str="multiagent-rag") -> dict:
+def load_system_prompt(
+    config_folder: str = "./configs",  
+    rag_method: str = "multiagent"
+    ) -> dict:
     """
     시스템 프롬프트 구성 파일을 주어진 RAG 방식(rag_method)과 카테고리 번호(category_number)에 따라 불러옵니다.
 
     Args:
     config_folder (str, optional): 설정 파일이 저장된 폴더 경로. 기본값은 "./config".
     category_number (int, optional): 불러올 시스템 프롬프트의 카테고리 번호. 기본값은 1.
-    rag_method (str, optional): RAG 방식 (예: "multiagent-rag", "relevance-rag"). 기본값은 "multiagent-rag".
+    rag_method (str, optional): RAG 방식 (예: "multiagent", "relevance"). 기본값은 "multiagent".
 
     Returns:
     dict: YAML 파일 내용을 Python 딕셔너리로 변환하여 반환.
     """      
-    
-    file_name = f"c{category_number}-system-prompt.yaml"
-    system_prompt_path = f"{config_folder}/{rag_method}/{file_name}"
-    
+    system_prompt_path = f"{config_folder}/prompts/{rag_method}.yaml"
+     
     with open(system_prompt_path, 'r', encoding="utf-8") as file:
         system_prompt = yaml.safe_load(file)
     
-    print(f"##          {system_prompt_path}를 불러왔습니다.")
+    print(f"##  {system_prompt_path}를 불러왔습니다.")
     
     return system_prompt
 
 
-def load_invoke_input(config_folder:str="./config", category_number:int=1, rag_method:str="multiagent-rag", sample_names:list=None) -> Union[tuple, dict]:  
-    """
-    질문 파일을 불러오고, 주어진 RAG 방식에 따라 적절한 입력 형식을 반환합니다.
+# def invoke_input_processor(, category_number:int=1, rag_method:str="multiagent-rag", sample_names:list=None) -> Union[tuple, dict]:  
+#     """
+#     질문 파일을 불러오고, 주어진 RAG 방식에 따라 적절한 입력 형식을 반환합니다.
 
-    Args:
-        config_folder (str, optional): 설정 파일이 저장된 폴더 경로. 기본값은 "./config".
-        category_number (int, optional): 불러올 질문 파일의 카테고리 번호. 기본값은 1.
-        rag_method (str, optional): RAG 방식 (예: "multiagent-rag", "relevance-rag", "ensemble-rag"). 기본값은 "multiagent-rag".
+#     Args:
+#         config_folder (str, optional): 설정 파일이 저장된 폴더 경로. 기본값은 "./config".
+#         category_number (int, optional): 불러올 질문 파일의 카테고리 번호. 기본값은 1.
+#         rag_method (str, optional): RAG 방식 (예: "multiagent-rag", "relevance-rag", "ensemble-rag"). 기본값은 "multiagent-rag".
 
-    Raises:
-        KeyError: 지원되지 않는 RAG 방식이 입력된 경우 예외 발생.
+#     Raises:
+#         KeyError: 지원되지 않는 RAG 방식이 입력된 경우 예외 발생.
 
-    Returns:
-        Union[tuple, dict]: RAG 방식에 따라 적절히 구성된 입력 데이터.
-    """     
-    category_names = ["CAM (Cathode Active Material)", "Electrode (half-cell)", "Morphological Properties", "Cathode Performance"]
-
-    question_file_name = f"c{category_number}-question.yaml"
-    question_path = f"{config_folder}/{rag_method}/{question_file_name}"
-    with open(question_path, 'r', encoding="utf-8") as file:
-        question = yaml.safe_load(file)
-    print(f"##          {question_path}를 불러왔습니다.")
-        
-    ## category 별 question 생성
-    for i, sample_name in enumerate(sample_names):
-        if category_number == 1:
-            question["template"][category_names[category_number-1]]["Stoichiometry information"][sample_name] = {}
-            question["template"][category_names[category_number-1]]["Commercial NCM used"][sample_name] = {}
-        elif category_number == 3:
-            temp_template = question["template"][category_names[category_number-1]]
-            for k in temp_template.keys():
-                question["template"][category_names[category_number-1]][k][sample_name] = None
-        elif category_number == 4:
-            temp_performance = question["template"]["Cathode Performance"][""]
-            question["template"]["Cathode Performance"].update({sample_name:temp_performance})
-            if i == len(sample_names)-1:
-                del question["template"]["Cathode Performance"][""]
-    
-    question_text = question['question_text']
-    template = question['template'] 
-    
-    ## method 별 invoke_input 생성
-    if rag_method == "multiagent-rag": 
-        invoke_input = (
-            {"messages": [HumanMessage(
-                content=f"{question_text}{[template]}".replace("'", '"'), 
-                name="Researcher")]
-            }, 
-            {"recursion_limit": 30}
-        )
+#     Returns:
+#         Union[tuple, dict]: RAG 방식에 따라 적절히 구성된 입력 데이터.
+#     """                 
+#     ## method 별 invoke_input 생성
+#     if rag_method == "multiagent": 
+#         invoke_input = (
+#             {"messages": [HumanMessage(
+#                 content=, 
+#                 name="Researcher")]
+#             }, 
+#             {"recursion_limit": 30}
+#         )
                                         
-    elif rag_method == "relevance-rag" or rag_method == "ensemble-rag":        
-        example_file_name = f"c{category_number}-example.json"
-        example_path = f"{config_folder}/{rag_method}/{example_file_name}"
+#     elif rag_method == "relevance" or rag_method == "ensemble":        
+#         example_file_name = f"c{category_number}-example.json"
+#         example_path = f"{config_folder}/{rag_method}/{example_file_name}"
 
-        with open(example_path, 'r', encoding="utf-8") as file:
-            json_example = json.load(file)
-        print(f"##          {example_path}를 불러왔습니다.")
+#         with open(example_path, 'r', encoding="utf-8") as file:
+#             json_example = json.load(file)
+#         print(f"##          {example_path}를 불러왔습니다.")
 
-        config = RunnableConfig(
-            recursion_limit=30, 
-            configurable={"thread_id": random_uuid()}
-            )
+#         config = RunnableConfig(
+#             recursion_limit=30, 
+#             configurable={"thread_id": random_uuid()}
+#             )
 
-        invoke_input = {
-            "input": {
-                "question": f"{question_text}{[template]}".replace("'", '"'), 
-                "example": AIMessage(content=[json_example])
-            }, 
-            "config": config
-        }
+#         invoke_input = {
+#             "input": {
+#                 "question": , 
+#                 "example": AIMessage(content=[json_example])
+#             }, 
+#             "config": config
+#         }
 
-    else: 
-        raise KeyError(f"Unsupported rag_method: {rag_method}. Please use one of ['multiagent-rag', 'relevance-rag', 'ensemble-rag'].")
+#     else: 
+#         raise KeyError(f"Unsupported rag_method: {rag_method}. Please use one of ['multiagent-rag', 'relevance-rag', 'ensemble-rag'].")
     
-    return invoke_input
+#     return invoke_input
 
 
 def save_data2output_folder(output_folder: str, data, filename: str):
@@ -167,37 +142,7 @@ def save_data2output_folder(output_folder: str, data, filename: str):
 
 def save_output2json(each_answer:dict, file_num:int, rag_method:str, category_number:int):    
     ## 파일 이름 설정
-    json_file_num = f"00{file_num}"[-3:]
-    # if file_num < 10:
-    #     json_file_num = f"00{file_num}"
-    # elif file_num < 100:
-    #     json_file_num = f"0{file_num}"
-    # else:
-    #     json_file_num = f"{file_num}"
-        
-    json_name = f"paper_{json_file_num}_output"
+    json_file_num = f"00{file_num}"[-3:]        
+    json_name = f"paper_{json_file_num}"
     
-    save_data2output_folder(output_folder=f"./output/json/{rag_method}/{json_name}/", data=each_answer, filename=f"category-{category_number}-{json_name}")
-
-
-# def outputs2csv(total_outputs:dict, filename="temp_result") -> pd.DataFrame:
-#     answers_list = []
-#     for file_num in list(total_outputs.keys()):
-#         outputs = total_outputs[file_num]
-#         answers = outputs[0]["answer"][0]["CAM (Cathode Active Material)"] | outputs[1]["answer"][0]["Electrode (only for coin-cell (half-cell))"] | outputs[2]["answer"][0]["Morphological results"] | outputs[3]["answer"][0]["Cathode Performance"]
-#         answers["Paper Number"] = file_num
-#         answers_list.append(answers)
-
-#     answers_csv = pd.DataFrame(answers_list)                               
-#     columns = ["Paper Number"] + [col for col in answers_csv.columns if col != "Paper Number"]
-#     answers_csv = answers_csv[columns]
-    
-#     save_data2output_folder(output_folder="./output/csv/", data=answers_csv, filename=filename)
-    
-    
-# def outputs2pprint(total_outputs:dict):
-#     for file_num in list(total_outputs.keys()):
-#         print(f"    {file_num}번째 논문 결과")
-#         outputs = total_outputs[file_num]
-#         answers = outputs[0]["answer"][0] | outputs[1]["answer"][0] | outputs[2]["answer"][0] | outputs[3]["answer"][0]
-#         pprint.pprint(answers, sort_dicts=False)
+    save_data2output_folder(output_folder=f"./data/processed/answer/{rag_method}/{json_name}/", data=each_answer, filename=f"category-{category_number}-{json_name}")

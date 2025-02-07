@@ -173,8 +173,10 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
-# pdf
-*.pdf
+# data
+data/
+configs/
+notebooks/
 
 # faiss & pkl
 *.faiss
