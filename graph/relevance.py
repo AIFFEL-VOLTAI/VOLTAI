@@ -31,6 +31,7 @@ class RelevanceRAG:
     def __init__(
         self, 
         file_folder: str = "./data/raw", 
+        file_number: int = 11,
         retriever: object = None, 
         system_prompt: str = None, 
         model_name: str = "gpt-4o",
