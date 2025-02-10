@@ -33,22 +33,13 @@ class EnsembleRAG:
         self, 
         file_folder: str = "./data/raw", 
         file_number: int = 11, 
-        chunk_size: int = 1000, 
-        chunk_overlap: int = 100, 
-        search_k: int = 10,       
+        retriever: object = None, 
         system_prompt: str = None, 
         model_name: str = "gpt-4o",
         save_graph_png: bool = False
     ):
         file_name = f"00{file_number}"[-3:] 
-        
-        self.retriever = embedding_file(
-            file_folder=file_folder, 
-            file_name=file_name, 
-            chunk_size=chunk_size, 
-            chunk_overlap=chunk_overlap, 
-            search_k=search_k
-        )
+        self.retriever = retriever
         
         self.model_name = model_name
         self.model_1 = ChatOpenAI(model_name=self.model_name, temperature=0.4)

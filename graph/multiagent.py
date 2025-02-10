@@ -33,31 +33,19 @@ class AgentState(TypedDict):
 class MultiAgentRAG:
     def __init__(
         self, 
-        file_folder:str="./data/input_data", 
-        file_number:int=1, 
-        # db_folder:str="./vectordb", 
-        chunk_size: int=500, 
-        chunk_overlap: int=100, 
-        search_k: int=10,       
-        system_prompt:str = None, 
-        model_name:str="gpt-4o",
-        save_graph_png:bool=False,
+        file_folder: str = "./data/raw", 
+        file_number: int = 1, 
+        retriever: object = None,
+        system_prompt: str = None, 
+        model_name: str = "gpt-4o",
+        save_graph_png: bool = False,
     ):
         file_name = f"00{file_number}"[-3:] 
 
         ## retriever 설정
-        self.retriever = embedding_file(
-            file_folder=file_folder, 
-            file_name=file_name, 
-            # rag_method="relevance-rag",  ## "multiagent-rag", 
-            # db_folder=db_folder
-            chunk_size=chunk_size, 
-            chunk_overlap=chunk_overlap, 
-            search_k=search_k
-        )
         self.retriever_tool = Tool(
             name="retriever",
-            func=self.retriever.get_relevant_documents,
+            func=retriever.get_relevant_documents,
             description="Retrieve relevant documents based on a query."
         )
 
