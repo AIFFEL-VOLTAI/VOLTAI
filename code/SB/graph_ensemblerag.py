@@ -102,9 +102,8 @@ You are an expert in extracting crucial information from battery-related researc
 1. Analyze the answers from each LLM model and extract the key information, prioritizing the overlapping points.
 2. Evaluate how the retrieved document (context) relates to the answers from the LLM models, and add important content based on its credibility.
 3. In case of ambiguity or conflicts between model answers, draw a clear conclusion based on the retrieved document.
-4. Must not generate new sentences and must always select the best answer.
-5. The final answer should be accurate and detailed, incorporating all relevant information.
-6. The output should be in JSON format, clearly separating and organizing the information.
+4. The final answer should be accurate and detailed, incorporating all relevant information.
+5. The output should be in JSON format, clearly separating and organizing the information.
 
 
 ### Input Data

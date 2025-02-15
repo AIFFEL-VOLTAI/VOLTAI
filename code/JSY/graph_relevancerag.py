@@ -59,7 +59,7 @@ class RelevanceRAG:
         )
         self.answer_model_name = answer_model_name
         self.model_name = model_name
-        self.model = ChatOpenAI(model_name=self.answer_model_name, temperature=0.5)
+        self.model = ChatGoogleGenerativeAI(model=self.answer_model_name, temperature=0.5)
         
         self.relevance_checker = ChatOpenAI(model_name=self.model_name, temperature=0.5)
 
