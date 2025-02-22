@@ -33,7 +33,7 @@ class AgentState(TypedDict):
 class MultiAgentRAG:
     def __init__(
         self, 
-        file_folder:str="./data/input_data", 
+        file_folder:str="./data/raw", 
         file_number:int=1, 
         # db_folder:str="./vectordb", 
         chunk_size: int=500, 

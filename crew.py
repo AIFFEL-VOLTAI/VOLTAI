@@ -9,7 +9,7 @@ from langchain_core.runnables import RunnablePassthrough
 class Crew:
     def __init__(
         self, 
-        file_folder:str="./data/input_data", 
+        file_folder:str="./data/raw", 
         file_number:int=22, 
         rag_method:str="crew-rag", 
         chunk_size:int=1000, 

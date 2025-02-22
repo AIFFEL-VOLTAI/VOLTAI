@@ -9,7 +9,8 @@ from graph_relevancerag import RelevanceRAG
 from graph_ensemblerag import EnsembleRAG
 from graph_multiagentrag import MultiAgentRAG
 
-from .utils import load_config, load_system_prompt, load_invoke_input, save_output2json
+from utils import load_config, save_output2json
+from prompt import load_system_prompt, load_invoke_input
 
 # .env 파일 로드
 load_dotenv(dotenv_path=".env")
@@ -70,7 +71,7 @@ def main(args):
     
     ## 전체 파일에 대해 진행여부 결정
     if config["process_all_files"]:
-        file_folder = f"{args.data_folder}/input_data"
+        file_folder = f"{args.data_folder}/raw"
         file_num_list = [int(f[6:9]) for f in os.listdir(file_folder) if os.path.isfile(os.path.join(file_folder, f))]
     else:
         file_num_list = config["file_num_list"]
@@ -82,7 +83,7 @@ def main(args):
 
         ## Sample Name Searcher
         crew = Crew(
-            file_folder=f"{args.data_folder}/input_data/", 
+            file_folder=f"{args.data_folder}/raw/", 
             file_number=file_number, 
             rag_method="crew-rag", 
             chunk_size=config["embedding_params"]["chunk_size"], 
@@ -104,7 +105,7 @@ def main(args):
             ## graph 호출
             voltai_graph = get_rag_instance(
                 rag_method=config["rag_method"], 
-                file_folder=f"{args.data_folder}/input_data/", 
+                file_folder=f"{args.data_folder}/raw/", 
                 file_number=file_number, 
                 chunk_size=config["embedding_params"]["chunk_size"], 
                 chunk_overlap=config["embedding_params"]["chunk_overlap"], 
