@@ -1,0 +1,71 @@
+category1: 
+  question_text: |
+    Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field. If the information is not mentioned in the PDF, write `null` (not `None`).
+    Use all of the NCM cathode sample names (e.g., "NCM-622") provided in the electrochemical performance section.
+    Fill out in the `null`, `[]` and `{}` values based on the example format:
+
+  template: 
+    CAM (Cathode Active Material): 
+      Stoichiometry information: {}
+      Commercial NCM used: {}
+      Lithium source: null
+      Synthesis method: null
+      Crystallization method: null
+      Crystallization final temperature: null
+      Crystallization final duration (hours): null
+      Doping: null
+      Coating: null
+
+
+category2: 
+  question_text: |
+    Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field. If the information is not mentioned in the PDF, write `null` (not `None`).
+    Fill out in the `null`, `[]` and `{}` values based on the example format:
+
+  template: 
+    Electrode (half-cell):
+      Active material to Conductive additive to Binder ratio: null
+      Electrolyte: 
+        - 
+      Additive: null
+      Loading density (mass loading of NCM): null
+
+
+category3:
+  question_text: |
+      Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field. If the information is not mentioned in the PDF, write `null` (not `None`).
+      Fill out in the `null`, `[]` and `{}` values based on the example format:
+
+  template: 
+      Morphological Properties:
+          Particle size: {}
+          Particle shape: {}
+          Particle distribution: {}
+          Coating layer characteristics: {}
+          Crystal structure and lattice characteristics: {}
+
+
+category4: 
+  question_text: |
+    Please fill out the following JSON structure by referring to the PDF. Verify accurate values for each field. If the information is not mentioned in the PDF, write `null` (not `None`).
+    Fill out in the `null`, `[]` and `{}` values based on the example format:
+
+  template: 
+    Cathode Performance: 
+      "": 
+        - Voltage range: null
+          Temperature: null
+          C-rate and Specific capacity:
+            - C-rate: "0.1"
+              Capacity: null
+            - C-rate: "0.2"
+              Capacity: null
+            - C-rate: "0.5"
+              Capacity: null
+            - C-rate: "1.0"
+              Capacity: null
+            - C-rate: "2.0"
+              Capacity: null
+            - Other C-rates and performance:
+                - C-rate: null
+                  Capacity: null

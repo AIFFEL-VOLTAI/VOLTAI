@@ -1,0 +1,10 @@
+project_name: "github-modularize"
+rag_method: "relevance-rag"
+file_num_list: [11, 16]
+embedding_params:
+  chunk_size: 1000     
+  chunk_overlap: 100
+  search_k: 10
+model_name: "gpt-4o"
+save_graph_png: False
+process_all_files: False

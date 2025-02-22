@@ -1,0 +1,65 @@
+{
+    "CAM (Cathode Active Material)": {
+        "Stoichiometry information": {
+            "": {"Li ratio": , "Ni ratio": , "Co ratio": , "Mn ratio": , "O ratio": },
+        },
+        "Commercial NCM used": {"": "",
+        },
+        "Lithium source": "",
+        "Synthesis method": "",
+        "Crystallization method": "",
+        "Crystallization final temperature": "",
+        "Crystallization final duration (hours)": "",
+        "Doping": "",
+        "Coating": "",
+        "Additional treatment": ""
+    },
+    "Electrode (half-cell)": {
+        "Active material to Conductive additive to Binder ratio": "",
+        "Electrolyte": [
+            {
+                "Salt": "",
+                "Concentration": "",
+                "Solvent": "",
+                "Solvent ratio": ""
+            },
+        ],
+        "Additive": "",
+        "Loading density (mass loading of NCM)": "",
+        "Additional treatment for electrode": ""
+    },
+    "Morphological properties": {
+        "ParticleSize": {
+            "": "-",
+        },
+        "ParticleShape": {
+            "": "-",
+        },
+        "ParticleDistribution": {
+            "": "-",
+        },
+        "CoatingLayerCharacteristics": {
+            "": "-",
+        },
+        "CrystalStructureAndLatticeCharacteristics": {
+            "": ,
+        }
+    },
+    "Cathode Performance": {
+        "": [
+            {
+                "Voltage range": "",
+                "Temperature": ,
+                "C-rate and Specific capacity": [
+                    {"C-rate": 0.1, "Capacity": "None"},
+                    {"C-rate": 0.2, "Capacity": "None"},
+                    {"C-rate": 0.5, "Capacity": "None"}, 
+                    {"C-rate": 1.0, "Capacity": "None"},
+                    {"C-rate": 2.0, "Capacity": "None"},
+                    {"C-rate": 4.0, "Capacity": "None"},
+                    {"Other C-rates and performance": [{"C-rate": "C/5", "Capacity": "None"}]}
+                ]
+            }
+        ]
+    }
+}

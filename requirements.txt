@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 absl-py==2.1.0
+=======
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 aiohappyeyeballs==2.4.4
 aiohttp==3.11.11
 aioredis==1.3.1
 aiosignal==1.3.2
+<<<<<<< HEAD
 altair==5.5.0
+=======
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 amqp==5.3.1
 annotated-types==0.7.0
 anthropic==0.42.0
@@ -17,6 +23,7 @@ attrs==24.3.0
 autobahn==24.4.2
 Automat==24.8.1
 backcall==0.2.0
+<<<<<<< HEAD
 bcrypt==4.2.1
 billiard==4.2.1
 blinker==1.9.0
@@ -24,6 +31,11 @@ build==1.2.2.post1
 CacheControl==0.14.1
 cachetools==5.5.1
 captcha==0.6.0
+=======
+billiard==4.2.1
+build==1.2.2.post1
+CacheControl==0.14.1
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 celery==5.4.0
 certifi==2024.12.14
 cffi==1.17.1
@@ -54,16 +66,22 @@ Django==5.1.4
 django-extensions==3.2.3
 dulwich==0.21.7
 executing==2.1.0
+<<<<<<< HEAD
 extra-streamlit-components==0.1.71
+=======
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 faiss-cpu==1.9.0.post1
 fastjsonschema==2.21.1
 feedparser==6.0.11
 filelock==3.16.1
 fonttools==4.55.3
 frozenlist==1.5.0
+<<<<<<< HEAD
 fsspec==2024.12.0
 gitdb==4.0.12
 GitPython==3.1.44
+=======
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 googleapis-common-protos==1.66.0
 greenlet==3.1.1
 grpcio==1.68.1
@@ -72,7 +90,10 @@ hiredis==3.1.0
 httpcore==1.0.7
 httpx==0.28.1
 httpx-sse==0.4.0
+<<<<<<< HEAD
 huggingface-hub==0.27.1
+=======
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 hyperlink==21.0.0
 idna==3.10
 importlib_metadata==8.5.0
@@ -84,13 +105,19 @@ ipython==7.34.0
 isort==5.13.2
 jaraco.classes==3.4.0
 jedi==0.19.2
+<<<<<<< HEAD
 Jinja2==3.1.5
+=======
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 jiter==0.8.2
 joblib==1.4.2
 jsonpatch==1.33
 jsonpointer==3.0.0
+<<<<<<< HEAD
 jsonschema==4.23.0
 jsonschema-specifications==2024.10.1
+=======
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 jupyter_client==8.6.3
 jupyter_core==5.7.2
 keyring==24.3.1
@@ -111,12 +138,16 @@ langgraph-sdk==0.1.48
 langsmith==0.2.7
 lazy-object-proxy==1.10.0
 lz4==4.3.3
+<<<<<<< HEAD
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
+=======
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 marshmallow==3.23.2
 matplotlib==3.10.0
 matplotlib-inline==0.1.7
 mccabe==0.7.0
+<<<<<<< HEAD
 mdurl==0.1.2
 mmh3==4.1.0
 more-itertools==10.5.0
@@ -127,6 +158,14 @@ mypy-extensions==1.0.0
 narwhals==1.25.1
 nest-asyncio==1.6.0
 networkx==3.4.2
+=======
+mmh3==4.1.0
+more-itertools==10.5.0
+msgpack==1.1.0
+multidict==6.1.0
+mypy-extensions==1.0.0
+nest-asyncio==1.6.0
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 nltk==3.9.1
 numpy==1.26.4
 olefile==0.47
@@ -137,7 +176,10 @@ pandas==2.2.3
 parso==0.8.4
 pathtools==0.1.2
 pdf2image==1.17.0
+<<<<<<< HEAD
 pdfminer.six==20240706
+=======
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 pexpect==4.9.0
 pickleshare==0.7.5
 pillow==11.1.0
@@ -159,13 +201,17 @@ psutil==6.1.1
 ptyprocess==0.7.0
 pure_eval==0.2.3
 py==1.11.0
+<<<<<<< HEAD
 pyarrow==19.0.0
+=======
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
 pycparser==2.22
 pydantic==2.10.4
 pydantic-settings==2.7.1
 pydantic_core==2.27.2
+<<<<<<< HEAD
 pydeck==0.9.1
 Pygments==2.18.0
 PyJWT==2.10.1
@@ -175,6 +221,13 @@ pyOpenSSL==24.3.0
 pyparsing==3.2.1
 pypdf==5.1.0
 PyPDF2==3.0.1
+=======
+Pygments==2.18.0
+pylint==2.17.7
+pyOpenSSL==24.3.0
+pyparsing==3.2.1
+pypdf==5.1.0
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 pyproject_hooks==1.2.0
 pytest==6.2.5
 pytest-django==4.5.2
@@ -191,6 +244,7 @@ ragclip==0.0.4
 rank-bm25==0.2.2
 RapidFuzz==3.11.0
 redis==3.5.3
+<<<<<<< HEAD
 referencing==0.36.2
 regex==2024.11.6
 requests==2.32.3
@@ -203,15 +257,24 @@ scikit-learn==1.6.1
 scipy==1.15.1
 seaborn==0.13.2
 sentence-transformers==3.3.1
+=======
+regex==2024.11.6
+requests==2.32.3
+requests-toolbelt==1.0.0
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 service-identity==24.2.0
 sgmllib3k==1.0.0
 shellingham==1.5.4
 six==1.17.0
+<<<<<<< HEAD
 smmap==5.0.2
+=======
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 sniffio==1.3.1
 SQLAlchemy==2.0.36
 sqlparse==0.5.3
 stack-data==0.6.3
+<<<<<<< HEAD
 streamlit==1.42.0
 streamlit-authenticator==0.4.1
 sympy==1.13.1
@@ -227,6 +290,16 @@ tornado==6.4.2
 tqdm==4.67.1
 traitlets==5.14.3
 transformers==4.48.0
+=======
+tavily-python==0.5.0
+tenacity==9.0.0
+tiktoken==0.8.0
+toml==0.10.2
+tomlkit==0.13.2
+tornado==6.4.2
+tqdm==4.67.1
+traitlets==5.14.3
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 trove-classifiers==2024.10.21.16
 Twisted==24.11.0
 txaio==23.1.1
@@ -237,7 +310,11 @@ tzdata==2024.2
 urllib3==2.3.0
 vine==5.1.0
 virtualenv==20.28.1
+<<<<<<< HEAD
 watchdog==6.0.0
+=======
+watchdog==0.10.4
+>>>>>>> 226f2a5c856e1f65941da32cea15f0525ddbeab8
 wcwidth==0.2.13
 wget==3.2
 wrapt==1.17.0

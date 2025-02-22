@@ -1,0 +1,2 @@
+samplenamesearcher: |
+  Use all of the NCM cathode sample names (e.g., 'NCM-622', 'pristine NCM', 'M-NCM') provided in the electrochemical performance section. You just output sample names. Do Not output like '- NCM622' , just output 'NCM622.
