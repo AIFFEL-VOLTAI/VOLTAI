@@ -15,7 +15,7 @@ from langchain_teddynote.messages import messages_to_history
 from langchain.prompts import PromptTemplate
 from pydantic import BaseModel, Field
 
-from tools import embedding_file
+from retriever import get_retriever
 
 
 # GraphState 상태 정의
@@ -33,7 +33,7 @@ class GraphStateEnsembleRAG(TypedDict):
 class EnsembleRAG:
     def __init__(
         self, 
-        file_folder:str="./data/input_data", 
+        file_folder:str="./data/raw", 
         file_number:int=1, 
         # db_folder:str="./vectordb", 
         chunk_size: int=500, 
@@ -43,18 +43,9 @@ class EnsembleRAG:
         model_name:str="gpt-4o",
         save_graph_png:bool=False,
     ):
-        if file_number < 10:
-            file_name = f"paper_00{file_number}"
-        elif file_number < 100:
-            file_name = f"paper_0{file_number}"
-        else:
-            file_name = f"paper_{file_number}"
-
-        self.retriever = embedding_file(
+        self.retriever = get_retriever(
             file_folder=file_folder, 
-            file_name=file_name, 
-            # rag_method="ensemble-rag", 
-            # db_folder=db_folder
+            file_number=file_number,
             chunk_size=chunk_size, 
             chunk_overlap=chunk_overlap, 
             search_k=search_k
