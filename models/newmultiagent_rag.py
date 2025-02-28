@@ -41,18 +41,10 @@ class NewMultiAgentRAG:
         model_name:str="gpt-4o",
         save_graph_png:bool=False,
     ):
-        ## 파일 명 설정
-        if file_number < 10:
-            file_name = f"paper_00{file_number}"
-        elif file_number < 100:
-            file_name = f"paper_0{file_number}"
-        else:
-            file_name = f"paper_{file_number}"
-
         ## retriever 설정
         self.retriever = get_retriever(
             file_folder=file_folder, 
-            file_name=file_name, 
+            file_number=file_number,
             chunk_size=chunk_size, 
             chunk_overlap=chunk_overlap, 
             search_k=search_k

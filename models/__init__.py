@@ -2,7 +2,6 @@ from .agents import sample_name_searcher
 from .relevance_rag import RelevanceRAG
 from .ensemble_rag import EnsembleRAG
 from .multiagent_rag import MultiAgentRAG
-from .newmultiagent_rag import NewMultiAgentRAG
 
 __all__ = ["sample_name_searcher", "get_rag_instance"]
 
@@ -40,4 +39,4 @@ def get_rag_instance(
         return EnsembleRAG(file_folder, file_number, chunk_size, chunk_overlap, search_k, system_prompt, model_name, save_graph_png)
         
     elif rag_method == "multiagent-rag":
-        return NewMultiAgentRAG(file_folder, file_number, chunk_size, chunk_overlap, search_k, system_prompt, model_name, save_graph_png)
+        return MultiAgentRAG(file_folder, file_number, chunk_size, chunk_overlap, search_k, system_prompt, model_name, save_graph_png)

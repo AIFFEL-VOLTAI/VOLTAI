@@ -82,7 +82,6 @@ def main(args):
             if result.get("answer"):
                 temp_answer = result["answer"][0][category_names[category_number-1]]
             elif result.get("discussion"):
-                print(result["discussion"])
                 temp_answer = result["discussion"][0][category_names[category_number-1]]
             elif result.get("messages"):
                 temp_answer = result["messages"][-1][category_names[category_number-1]]
@@ -90,8 +89,6 @@ def main(args):
             ## 결과 저장
             save_output2json(each_answer=temp_answer, file_num=file_number, rag_method=config["rag_method"], category_number=category_number)
                 
-            print(f"##          Print {file_number} Result:")
-            print("------------------------------------------------------------------")
             pprint(temp_answer, sort_dicts=False)        
     
     
