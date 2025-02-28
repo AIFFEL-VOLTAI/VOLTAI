@@ -21,8 +21,7 @@ from langchain_openai import ChatOpenAI
 from typing_extensions import TypedDict
 
 import functools
-
-from tools import embedding_file
+from retriever import get_retriever
 
 
 # 각 에이전트와 도구에 대한 다른 노드를 생성할 것입니다. 이 클래스는 그래프의 각 노드 사이에서 전달되는 객체를 정의합니다.
@@ -30,12 +29,11 @@ class AgentState(TypedDict):
     messages: Annotated[Sequence[BaseMessage], operator.add]
     sender: str
 
-class MultiAgentRAG:
+class NewMultiAgentRAG:
     def __init__(
         self, 
         file_folder:str="./data/raw", 
         file_number:int=1, 
-        # db_folder:str="./vectordb", 
         chunk_size: int=500, 
         chunk_overlap: int=100, 
         search_k: int=10,       
@@ -52,11 +50,9 @@ class MultiAgentRAG:
             file_name = f"paper_{file_number}"
 
         ## retriever 설정
-        self.retriever = embedding_file(
+        self.retriever = get_retriever(
             file_folder=file_folder, 
             file_name=file_name, 
-            # rag_method="relevance-rag",  ## "multiagent-rag", 
-            # db_folder=db_folder
             chunk_size=chunk_size, 
             chunk_overlap=chunk_overlap, 
             search_k=search_k
@@ -66,6 +62,9 @@ class MultiAgentRAG:
             func=self.retriever.get_relevant_documents,
             description="Retrieve relevant documents based on a query."
         )
+
+        ## Coordinator Agent
+        self.coordinator_system_prompt = system_prompt["coordinator_system_prompt"]
 
         ## researcher 시스템 프롬프트
         self.researcher_system_prompt = system_prompt["researcher_system_prompt"]

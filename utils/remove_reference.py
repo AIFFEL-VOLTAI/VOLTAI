@@ -1,20 +1,6 @@
 import re
-import fitz  # PyMuPDF
 import unicodedata
-import tools
 from pdfminer.high_level import extract_text
-import re
-import fitz  # PyMuPDF
-from pdfminer.high_level import extract_text
-import unicodedata
-
-from langchain_core.vectorstores.base import VectorStoreRetriever
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.document_loaders import PyPDFLoader
-from langchain_openai import OpenAIEmbeddings
-from langchain_community.vectorstores import FAISS
-
-
 
 def remove_last_section_from_pdf(file_path: str) -> str:
     """

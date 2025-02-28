@@ -4,10 +4,7 @@ from pprint import pprint
 from dotenv import load_dotenv
 from langchain_teddynote import logging
 
-from crew import Crew
-from graph_relevancerag import RelevanceRAG
-from graph_ensemblerag import EnsembleRAG
-from graph_multiagentrag import MultiAgentRAG
+from models import sample_name_searcher, get_rag_instance
 
 from utils import load_config, save_output2json
 from prompt import load_system_prompt, load_invoke_input
@@ -20,45 +17,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
 
 # LangSmith 추적 기능을 활성화합니다. (선택적)
-os.environ["LANGCHAIN_TRACING_V2"] = "true"
-
-
-def get_rag_instance(
-    rag_method, 
-    file_folder, 
-    file_number, 
-    chunk_size, 
-    chunk_overlap,
-    search_k,
-    system_prompt, 
-    model_name, 
-    save_graph_png
-):
-    """
-    RAG 클래스를 동적으로 받아서 인스턴스를 생성하는 함수
-    
-    Params:
-        rag_method: RAG 방법 ("relevance-rag", "ensemble-rag", "multiagent-rag")
-        file_folder: 논문 파일이 위치한 폴더 경로
-        file_number: 처리할 논문 번호
-        system_prompt: system prompt
-        model_name: LLM 모델 명 ("gpt-4o", "gpt-4o-mini")
-        save_graph_png: graph 저장 결정
-        
-    Return:
-        생성된 RAG 모델 인스턴스
-    """
-    
-    # RAG 모델 인스턴스 생성
-    if rag_method == "relevance-rag":
-        return RelevanceRAG(file_folder, file_number, chunk_size, chunk_overlap, search_k, system_prompt, model_name, save_graph_png)
-        
-    elif rag_method == "ensemble-rag":
-        return EnsembleRAG(file_folder, file_number, chunk_size, chunk_overlap, search_k, system_prompt, model_name, save_graph_png)
-        
-    elif rag_method == "multiagent-rag":
-        return MultiAgentRAG(file_folder, file_number, chunk_size, chunk_overlap, search_k, system_prompt, model_name, save_graph_png)
-    
+os.environ["LANGCHAIN_TRACING_V2"] = "true"    
 
 def main(args):    
     category_names = ["CAM (Cathode Active Material)", "Electrode (half-cell)", "Morphological Properties", "Cathode Performance"]
@@ -82,16 +41,14 @@ def main(args):
         print(f"##       rag method     : {config['rag_method']}")
 
         ## Sample Name Searcher
-        crew = Crew(
+        sample_name_searcher_chain = sample_name_searcher(
             file_folder=f"{args.data_folder}/raw/", 
             file_number=file_number, 
-            rag_method="crew-rag", 
             chunk_size=config["embedding_params"]["chunk_size"], 
             chunk_overlap=config["embedding_params"]["chunk_overlap"], 
             search_k=config["embedding_params"]["search_k"], 
             model_name=config["model_name"]        
         )
-        sample_name_searcher_chain = crew.sample_name_searcher()
         sample_names = sample_name_searcher_chain.invoke(config["sample_name_searcher_question"])
         print(f"##       Sample Names    : {sample_names}")
     
