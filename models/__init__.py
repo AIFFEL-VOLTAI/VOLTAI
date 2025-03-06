@@ -1,9 +1,9 @@
-from .agents import sample_name_searcher
+from .agents import Agent
 from .relevance_rag import RelevanceRAG
 from .ensemble_rag import EnsembleRAG
 from .multiagent_rag import MultiAgentRAG
 
-__all__ = ["sample_name_searcher", "get_rag_instance"]
+__all__ = ["Agent", "get_rag_instance"]
 
 def get_rag_instance(
     rag_method, 
