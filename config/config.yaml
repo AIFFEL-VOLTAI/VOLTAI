@@ -8,5 +8,6 @@ embedding_params:
 model_name: "gpt-4o"
 save_graph_png: False
 process_all_files: False
+# method: 평가 or 수집
 sample_name_searcher_question : | 
   Use all of the NCM cathode sample names (e.g., 'NCM-622', 'pristine NCM', 'M-NCM') provided in the electrochemical performance section. You just output sample names. Do Not output like '- NCM622' , just output 'NCM622.

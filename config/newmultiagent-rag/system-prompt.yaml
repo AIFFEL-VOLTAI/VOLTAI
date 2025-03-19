@@ -161,3 +161,48 @@ verifier_system_prompt: |
   ### Scope:  
   Focus **exclusively** on battery-related content extracted from the PDF.  
   Ignore any reference content or information outside the provided document.  
+
+template:
+  CAM (Cathode Active Material): 
+    Stoichiometry information: {}
+    Commercial NCM used: {}
+    Lithium source: null
+    Synthesis method: null
+    Crystallization method: null
+    Crystallization final temperature: null
+    Crystallization final duration (hours): null
+    Doping: null
+    Coating: null
+  
+  Electrode (half-cell):
+    Active material to Conductive additive to Binder ratio: null
+    Electrolyte: 
+      - 
+    Additive: null
+    Loading density (mass loading of NCM): null
+  
+  Morphological Properties:
+    Particle size: {}
+    Particle shape: {}
+    Particle distribution: {}
+    Coating layer characteristics: {}
+    Crystal structure and lattice characteristics: {}
+
+  Cathode Performance: 
+    "": 
+      - Voltage range: null
+        Temperature: null
+        C-rate and Specific capacity:
+          - C-rate: "0.1"
+            Capacity: null
+          - C-rate: "0.2"
+            Capacity: null
+          - C-rate: "0.5"
+            Capacity: null
+          - C-rate: "1.0"
+            Capacity: null
+          - C-rate: "2.0"
+            Capacity: null
+          - Other C-rates and performance:
+              - C-rate: null
+                Capacity: null
