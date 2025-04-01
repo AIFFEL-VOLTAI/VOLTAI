@@ -29,7 +29,7 @@ class AgentState(TypedDict):
     messages: Annotated[Sequence[BaseMessage], operator.add]
     sender: str
 
-class NewMultiAgentRAG:
+class MultiAgentRAGText:
     def __init__(
         self, 
         file_folder:str="./data/raw", 
@@ -55,56 +55,34 @@ class NewMultiAgentRAG:
             description="Retrieve relevant documents based on a query."
         )
 
-        ## Coordinator Agent
-        self.coordinator_system_prompt = system_prompt["coordinator_system_prompt"]
-
         ## researcher 시스템 프롬프트
-        self.researcher_system_prompt = system_prompt["researcher_system_prompt"]
+        self.researcher_system_prompt = """You are a Researcher Agent, responsible for extracting structured and detailed information from scientific papers, specifically in the field of lithium-ion battery materials. Your task is to answer a specific sub-question assigned by the Supervisor by retrieving information from the given paper.
+
+## Your Responsibilities:
+    1. Extract information strictly from the paper without making assumptions or hallucinations.
+    2. Write the response as a single, coherent technical paragraph (not bullet points or lists).
+    3. Use precise scientific language, such as:
+        - "was synthesized by..."
+        - "was reported to exhibit..."
+        - "was not mentioned in the paper..."
+    4. If a detail is not reported in the paper, explicitly state it (e.g., “The composition data was not mentioned.”).
+    5. Maintain logical flow and consistency in your paragraph.
+    6. Once you complete your response, submit it to the Verifier for validation.
+
+After submitting, you may receive feedback from the Verifier. If your response contains incorrect, missing, or unclear information, you must revise and resubmit it based on the Verifier’s comments.        
+"""
 
         ## verifier 시스템 프롬프트
-        self.verifier_system_prompt = """You are a meticulous verifier agent specializing in the domain of battery technology.
-Your primary task is to verify the accuracy of the Researcher's answers by using the search tool to cross-check the extracted information from research papers on batteries, formatted into JSON.  
+        self.verifier_system_prompt = """You are a Verifier Agent, responsible for validating the responses provided by the Researcher. Your primary task is to check for accuracy, completeness, and adherence to scientific precision by cross-referencing the information with the given scientific paper.
 
-Your responsibilities include validating the following:  
+## Your Responsibilities:
+    1. Verify the Researcher’s response using the retriever tool to ensure it is fully supported by the paper.
+    2. Identify any incorrect, missing, or assumed information and provide precise feedback to the Researcher.
+    3. If a required detail is not present in the paper, ensure that the Researcher has correctly stated that it was "not reported."
+    4. Maintain strict scientific language and formatting consistency.
+    5. Once a response is fully verified and correct, submit it to the Supervisor with the marker: `### Complete Verification`
 
-### Accuracy:  
-Extracted values through documents retrieved via the search tool must be verified to ensure they match accurately.
-
-### Completeness:  
-Confirm that all fields in the JSON structure are either filled with accurate values from the battery-related sections of the PDF or marked as "None" if not mentioned in the document.  
-
-If any field is missing or only partially extracted, explicitly state:  
-- **Which fields are incomplete or missing**  
-- **Whether the missing information exists in the PDF but was not extracted, or is genuinely absent**  
-- **Suggestions for improvement (e.g., re-extraction, manual verification, or alternative sources if applicable)**  
-
-### Consistency:  
-Verify that the JSON structure, format, and data types adhere strictly to the required schema for battery-related research data.  
-
-### Corrections:  
-Identify and highlight any errors, including:  
-- **Inaccurate values** (i.e., extracted values that do not match the PDF)  
-- **Missing data** (i.e., fields left empty when information is available)  
-- **Formatting inconsistencies** (i.e., data types or schema mismatches)  
-
-For any issues found, provide a **clear and actionable correction**, including:  
-- **The specific field in question**  
-- **The nature of the issue (incorrect value, missing data, formatting error, etc.)**  
-- **Suggestions or corrections to resolve the issue**  
-
-### Handling Missing Data:  
-If certain information is genuinely **not found** in the PDF, specify:  
-- **Which fields could not be located**  
-- **Confirmation that they are absent from the document**  
-- **A recommendation to keep the field as `"None"` or any alternative solutions**  
-
-### Final Output:  
-If the JSON is entirely correct, confirm its validity and output the JSON structure exactly as provided.  
-Include the phrase `### Final Output` before printing the JSON. This ensures the output is clearly marked and easy to locate.  
-
-### Scope:  
-Focus **exclusively** on battery-related content extracted from the PDF.  
-Ignore any reference content or information outside the provided document.  
+If you find errors, return the response to the Researcher with clear feedback so they can revise and resubmit.
 """
         
         ## agent 및 node 생성
@@ -128,38 +106,38 @@ Ignore any reference content or information outside the provided document.
         self.verifier_node = functools.partial(self.agent_node, agent=self.verifier_agent, name="Data_Verifier")
 
         # Json_Processor
-        self.json_processor_system_prompt = ChatPromptTemplate.from_messages(
-            [
-                (
-                    "system",
-                    """You are a JSON Processor Agent. Your sole responsibility is to process the response generated by an LLM and ensure the accurate extraction of the JSON content within the response. Follow these instructions precisely:
+#         self.json_processor_system_prompt = ChatPromptTemplate.from_messages(
+#             [
+#                 (
+#                     "system",
+#                     """You are a JSON Processor Agent. Your sole responsibility is to process the response generated by an LLM and ensure the accurate extraction of the JSON content within the response. Follow these instructions precisely:
 
-### Instructions:
-1. **Extract JSON Only**:
-- Identify the ```json``` block within the provided response.
-- Extract and output the content within the ```json``` block exactly as it appears.
+# ### Instructions:
+# 1. **Extract JSON Only**:
+# - Identify the ```json``` block within the provided response.
+# - Extract and output the content within the ```json``` block exactly as it appears.
 
-2. **No Modifications**:
-- Do not modify, add, or remove any part of the JSON content.
-- Preserve the relevancerag structure, field names, and values without alteration.
+# 2. **No Modifications**:
+# - Do not modify, add, or remove any part of the JSON content.
+# - Preserve the relevancerag structure, field names, and values without alteration.
 
-3. **No Hallucination**:
-- Do not interpret, infer, or generate additional content.
+# 3. **No Hallucination**:
+# - Do not interpret, infer, or generate additional content.
 
-4. **Output Format**:
-- Respond with the extracted JSON content only.
-- Do not include any explanations, comments, or surrounding text.
-- The output must be a clean, valid JSON.
+# 4. **Output Format**:
+# - Respond with the extracted JSON content only.
+# - Do not include any explanations, comments, or surrounding text.
+# - The output must be a clean, valid JSON.
 
-### Your Role:
-Ensure the integrity and consistency of the JSON data by strictly adhering to these instructions. Your output should always be concise and compliant with the above rules."""
-                ),
-                MessagesPlaceholder(variable_name="messages"),
-            ]
-        )
+# ### Your Role:
+# Ensure the integrity and consistency of the JSON data by strictly adhering to these instructions. Your output should always be concise and compliant with the above rules."""
+#                 ),
+#                 MessagesPlaceholder(variable_name="messages"),
+#             ]
+#         )
 
-        self.json_processor_agent = self.json_processor_system_prompt | ChatOpenAI(model=self.model_name, temperature=0.1) | JsonOutputParser()
-        self.json_processor_node = functools.partial(self.json_processor_agent_node, agent=self.json_processor_agent, name="Json_Processor")
+        # self.json_processor_agent = self.json_processor_system_prompt | ChatOpenAI(model=self.model_name, temperature=0.1) | JsonOutputParser()
+        # self.json_processor_node = functools.partial(self.json_processor_agent_node, agent=self.json_processor_agent, name="Json_Processor")
 
         self.tools = [self.retriever_tool]
         self.tool_executor = ToolExecutor(self.tools)
@@ -171,9 +149,9 @@ Ensure the integrity and consistency of the JSON data by strictly adhering to th
         workflow.add_node("Researcher", self.research_node)
         workflow.add_node("Data_Verifier", self.verifier_node)
         workflow.add_node("call_tool", self.tool_node)
-        workflow.add_node("Json_Processor", self.json_processor_node)
+        # workflow.add_node("Json_Processor", self.json_processor_node)
 
-        workflow.add_edge("Json_Processor", END)
+        workflow.add_edge("Data_Verifier", END)
         workflow.add_conditional_edges(
             "Researcher",
             self.router,
@@ -197,7 +175,7 @@ Ensure the integrity and consistency of the JSON data by strictly adhering to th
         self.graph = workflow.compile()   
         
         if save_graph_png:        
-            self.graph.get_graph().draw_mermaid_png(output_file_path="./graph_img/multiagentrag_graph.png")
+            self.graph.get_graph().draw_mermaid_png(output_file_path="./graph_img/multiagentragtext_graph.png")
 
 
     def create_agent(self, llm, tools, system_message: str):
@@ -236,15 +214,15 @@ Ensure the integrity and consistency of the JSON data by strictly adhering to th
         }
 
 
-    def json_processor_agent_node(self, state, agent, name):
-        result = agent.invoke(
-            {
-                "messages": [
-                    HumanMessage(content=f"""Convert Final Output in the given response into a JSON format.: {state["messages"][-1].content}""")
-                ]
-            }
-        )
-        return {"messages": result, "name": name}
+    # def json_processor_agent_node(self, state, agent, name):
+    #     result = agent.invoke(
+    #         {
+    #             "messages": [
+    #                 HumanMessage(content=f"""Convert Final Output in the given response into a JSON format.: {state["messages"][-1].content}""")
+    #             ]
+    #         }
+    #     )
+    #     return {"messages": result, "name": name}
 
 
     def tool_node(self, state):

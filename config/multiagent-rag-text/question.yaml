@@ -1,0 +1,42 @@
+question_c1: |
+  Extract the following information. Verify accurate values for each field.
+  Use all of the NCM cathode {sample names}.
+
+  - The exact chemical composition (stoichiometry) of the cathode active material (CAM) used in the study.
+  - The type of commercially used NCM (e.g., LiNixCoyMnzO2), including code names or abbreviations (e.g., NCM811, N-NCM, SC-NCM) if applicable.
+  - The lithium source used for synthesizing the NCM.
+  - The synthesis method used for preparing the NCM samples (e.g., co-precipitation, sol-gel), including intermediate steps if reported.
+  - The crystallization method used (e.g., solid-state sintering, hydrothermal), and the specific final temperatures and durations used in the process.
+  - Whether any doping technique was applied to the CAM, and if so, which element(s) were doped.
+  - Whether any coating layer was applied to the CAM, and if so, what material was used for coating.
+
+question_c2: |
+  Extract the following information. Verify accurate values for each field.
+  Use all of the NCM cathode {sample names}.
+
+  - The electrode composition, including the mass ratios of active material, conductive additive (e.g., Super P), and binder (e.g., PVDF).
+  - The type of electrolyte solvent used (e.g., EC/DEC, EC/EMC/DEC), including volume or mass ratios if available.
+  - The lithium salt used in the electrolyte (e.g., LiPF6), and its concentration (e.g., 1 M or 1 mol/L).
+  - Any additives used in the electrolyte, including their names and concentrations if reported.
+  - The mass loading (in mg/cm²) of the NCM active material used in the electrode.
+
+question_c3: |
+  Extract the following information. Verify accurate values for each field.
+  Use all of the NCM cathode {sample names}.
+  - Particle size information from SEM or TEM images, including both secondary and primary particles if available.
+  - Descriptions of the particle shape observed in SEM or TEM data.
+  - Observations on particle distribution or uniformity reported in the SEM or TEM analysis.
+  - If a coating was applied, the reported properties and thickness of the coating layer as observed in SEM or TEM.
+  - The crystal structure and lattice characteristics (e.g., crystal plane spacing, presence of layered structure) from structural analysis.
+
+question_c4: |
+  Extract the following information. Verify accurate values for each field.
+  Use all of the NCM cathode {sample names}.
+  - The voltage range and temperature used in electrochemical tests
+  - The specific discharge capacities reported at various C-rates:
+      - 0.1C
+      - 0.2C
+      - 0.5C
+      - 1.0C
+      - 2.0C
+      - Any additional C-rate values and performance data reported
