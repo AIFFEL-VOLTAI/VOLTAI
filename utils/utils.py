@@ -46,7 +46,7 @@ def load_config(config_folder:str="./config") -> dict:
 
 
 
-def save_data2output_folder(output_folder: str, data, filename: str):
+def save_data2output_folder(output_folder: str, data, filename: str, hyper_param_method: str):
     """
     Save data as either a CSV or JSON file in a specified output folder with a timestamped filename.
 
@@ -69,21 +69,28 @@ def save_data2output_folder(output_folder: str, data, filename: str):
         print(f"    CSV 파일 {file_path}에 저장되었습니다.")
         
     elif isinstance(data, dict):
-        file_path = os.path.join(output_folder, f"{filename}-{timestamp}.json")
+        if hyper_param_method:
+            filename += f"-{hyper_param_method}.json"        
+        else: 
+            filename += f"-{timestamp}.json"        
+
+        file_path = os.path.join(output_folder, filename)
         with open(file_path, 'w', encoding='utf-8') as json_file:
             json.dump(data, json_file, ensure_ascii=False, indent=4)
         print(f"##       {file_path}를 저장했습니다.")
         
     else:
         print("    데이터 형식이 지원되지 않습니다. pandas DataFrame 또는 dict만 저장 가능합니다.")
+        
 
 
-def save_output2json(each_answer:dict, file_num:int, rag_method:str, category_number:int):    
+
+def save_output2json(each_answer: dict, file_num: int, rag_method: str, category_number: int, hyper_param_method: str):    
     ## 파일 이름 설정
     json_file_num = f"00{file_num}"[-3:]
         
     json_name = f"paper_{json_file_num}_output"
-    
-    save_data2output_folder(output_folder=f"./output/json/{rag_method}/{json_name}/", data=each_answer, filename=f"category-{category_number}-{json_name}")
+
+    save_data2output_folder(output_folder=f"./output/json/{rag_method}/{json_name}/", data=each_answer, filename=f"category-{category_number}-{json_name}", hyper_param_method=hyper_param_method)
 
 

@@ -87,7 +87,7 @@ def main(args):
                 temp_answer = result["messages"][-1][category_names[category_number-1]]
 
             ## 결과 저장
-            save_output2json(each_answer=temp_answer, file_num=file_number, rag_method=config["rag_method"], category_number=category_number)
+            save_output2json(each_answer=temp_answer, file_num=file_number, rag_method=config["rag_method"], category_number=category_number, hyper_param_method=args.hyper_param_method)
                 
             pprint(temp_answer, sort_dicts=False)        
     
@@ -102,8 +102,9 @@ if __name__ == "__main__":
             raise argparse.ArgumentTypeError('Boolean values expected')
         
     parser = argparse.ArgumentParser()
-    parser.add_argument("-cf", "--config_folder", default="./config", type=str, help="config folder path")    
+    parser.add_argument("-cf", "--config_folder", default="./config", type=str, help="config folder path")     
     parser.add_argument("-df", "--data_folder", default="./data", type=str, help="data folder path")
+    parser.add_argument("-hp", "--hyper_param_method", default=None, type=str, help="method of hyper parameters")
     args = parser.parse_args()
 
     main(args)
