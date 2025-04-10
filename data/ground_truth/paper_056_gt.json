@@ -24,7 +24,7 @@
 		"Synthesis method": "co-precipitation",
 		"Crystallization method": "sintering",
 		"Crystallization final temperature": "750",
-		"Crystallization final duration": "15",
+		"Crystallization final duration (hours)": "15",
 		"Doping": "Mg",
 		"Coating": "Li3PO4"
 	},

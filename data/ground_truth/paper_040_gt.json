@@ -18,7 +18,7 @@
       },
       "Commercial NCM used": {
         "PC-NCM": "no",
-        "SC-NCM": "no"
+        "SC-NCM83": "no"
       },
       "Lithium source": ["LiOH", "Li2CO3"],
       "Synthesis method": null,
@@ -39,7 +39,7 @@
         }
       ],
       "Additive": null,
-      "Loading density": "5"
+      "Loading density (mass loading of NCM)": "5"
     },
     "Morphological Properties": {
       "Particle size": {
