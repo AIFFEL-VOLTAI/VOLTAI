@@ -76,7 +76,7 @@
             {"C-rate": 2.0, "Capacity": null},
             {
               "Other C-rates and performance": [
-                {"C-rate": 5, "Capacity": 64.19}
+                {"C-rate": 5.0, "Capacity": 64.19}
               ]
             }
           ]
@@ -93,7 +93,7 @@
             {"C-rate": 2.0, "Capacity": null},
             {
               "Other C-rates and performance": [
-                {"C-rate": 5, "Capacity": 159.11}
+                {"C-rate": 5.0, "Capacity": 159.11}
               ]
             }
           ]

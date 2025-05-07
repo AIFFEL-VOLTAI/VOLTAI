@@ -91,7 +91,7 @@
 								"Capacity": 203.41
 							},
 							{
-								"C-rate": 5,
+								"C-rate": 5.0,
 								"Capacity": 166.92
 							}
 						]
@@ -127,7 +127,7 @@
 								"Capacity": 191.95
 							},
 							{
-								"C-rate": 5,
+								"C-rate": 5.0,
 								"Capacity": 160.30
 							}
 						]
