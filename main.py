@@ -1,5 +1,6 @@
 import os
 import argparse
+import time
 from pprint import pprint
 from dotenv import load_dotenv
 from langchain_teddynote import logging
@@ -19,7 +20,11 @@ LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
 # LangSmith 추적 기능을 활성화합니다. (선택적)
 os.environ["LANGCHAIN_TRACING_V2"] = "true"    
 
+
 def main(args):    
+    ## 시간 측정 시작
+    start_time = time.time()
+
     category_names = ["CAM (Cathode Active Material)", "Electrode (half-cell)", "Morphological Properties", "Cathode Performance"]
 
     ## config 불러오기
@@ -69,6 +74,7 @@ def main(args):
                 search_k=config["embedding_params"]["search_k"], 
                 system_prompt=system_prompt,
                 model_name=config["model_name"], 
+                discussion_model_name=config["discussion_model_name"],
                 save_graph_png=config["save_graph_png"],
             ).graph
             
@@ -90,8 +96,12 @@ def main(args):
             save_output2json(each_answer=temp_answer, file_num=file_number, rag_method=config["rag_method"], category_number=category_number, hyper_param_method=args.hyper_param_method)
                 
             pprint(temp_answer, sort_dicts=False)        
-    
-    
+
+    ## 시간 측정 끝
+    end_time = time.time()
+    execution_time = end_time - start_time
+    print(f"코드 실행 시간: {execution_time:.4f} 초")
+
 if __name__ == "__main__":   
     def str2bool(value):
         if value.lower() in ('true', '1', 't', 'y', 'yes'):

@@ -14,6 +14,7 @@ def get_rag_instance(
     search_k,
     system_prompt, 
     model_name, 
+    discussion_model_name,
     save_graph_png
 ):
     """
@@ -36,7 +37,7 @@ def get_rag_instance(
         return RelevanceRAG(file_folder, file_number, chunk_size, chunk_overlap, search_k, system_prompt, model_name, save_graph_png)
         
     elif rag_method == "ensemble-rag":
-        return EnsembleRAG(file_folder, file_number, chunk_size, chunk_overlap, search_k, system_prompt, model_name, save_graph_png)
+        return EnsembleRAG(file_folder, file_number, chunk_size, chunk_overlap, search_k, system_prompt, model_name, discussion_model_name, save_graph_png)
         
     elif rag_method == "multiagent-rag":
         return MultiAgentRAG(file_folder, file_number, chunk_size, chunk_overlap, search_k, system_prompt, model_name, save_graph_png)

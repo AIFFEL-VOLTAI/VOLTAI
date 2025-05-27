@@ -1,11 +1,12 @@
-project_name: rag-sample-name-experiment
-rag_method: "multiagent-rag"
-file_num_list: [39]
+project_name: ensemble-o1
+rag_method: "ensemble-rag"
+file_num_list: [22] ## 11, 16, 22, 35, 39, 40, 41, 42, 44, 56
 embedding_params:
   chunk_size: 1000      ## 1000으로 고정
   chunk_overlap: 100
   search_k: 10
 model_name: "gpt-4o"
+discussion_model_name: "o1"
 save_graph_png: False
 process_all_files: False
 sample_name_searcher_question : | 

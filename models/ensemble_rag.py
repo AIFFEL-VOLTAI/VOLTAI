@@ -41,6 +41,7 @@ class EnsembleRAG:
         search_k: int=10,       
         system_prompt:str = None, 
         model_name:str="gpt-4o",
+        discussion_model_name:str="gpt-4o",
         save_graph_png:bool=False,
     ):
         self.retriever = get_retriever(
@@ -86,7 +87,11 @@ Give a binary score 'yes' or 'no' score to indicate whether the retrieved docume
 If the retrieved document does not contain the values or information being searched for, and 'None' is provided as the answer, check if the response accurately reflects the absence of the requested information. If the absence is accurate and justified, grade the document as relevant even if the values are 'None'.
 """
         
-        self.discussion_model = ChatOpenAI(model=self.model_name, temperature=0.1)
+        if discussion_model_name == "gpt-4o":
+            self.discussion_model = ChatOpenAI(model=discussion_model_name, temperature=0.1)
+        elif discussion_model_name == "o1":
+            self.discussion_model = ChatOpenAI(model=discussion_model_name)
+        
         self.discussion_prompt = """
 You are an expert in extracting crucial information from battery-related research papers and generating the most accurate and comprehensive answers. Below are the answers provided by multiple LLM models to the same question, along with the retrieved document (context). Based on this information, generate the most reliable and well-rounded answer. Follow these guidelines when formulating your response:
 
@@ -135,7 +140,7 @@ You are an expert in extracting crucial information from battery-related researc
             self.is_relevant1,
             {
                 "yes": "discussion_node",  # 관련성이 있으면 _end_로 이동합니다.
-                "no": "retrieve",  # 관련성이 없으면 다시 검색합니다.
+                "no": "llm_answer1",  # 관련성이 없으면 다시 검색합니다.
             },
         )
         bulider.add_conditional_edges(
@@ -143,7 +148,7 @@ You are an expert in extracting crucial information from battery-related researc
             self.is_relevant2,
             {
                 "yes": "discussion_node",  # 관련성이 있으면 _end_로 이동합니다.
-                "no": "retrieve",  # 관련성이 없으면 다시 검색합니다.
+                "no": "llm_answer2",  # 관련성이 없으면 다시 검색합니다.
             },
         )
         bulider.add_conditional_edges(
@@ -151,7 +156,7 @@ You are an expert in extracting crucial information from battery-related researc
             self.is_relevant3,
             {
                 "yes": "discussion_node",  # 관련성이 있으면 _end_로 이동합니다.
-                "no": "retrieve",  # 관련성이 없으면 다시 검색합니다.
+                "no": "llm_answer3",  # 관련성이 없으면 다시 검색합니다.
             },
         )
 
@@ -167,6 +172,7 @@ You are an expert in extracting crucial information from battery-related researc
         self.graph = bulider.compile(checkpointer=memory)        
         
         if save_graph_png:
+            # print(self.graph.get_graph().draw_mermaid())
             self.graph.get_graph().draw_mermaid_png(output_file_path="./graph_img/ensemblerag_graph.png")
 
     
