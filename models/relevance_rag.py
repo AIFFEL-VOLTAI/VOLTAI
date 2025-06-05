@@ -48,8 +48,8 @@ class RelevanceRAG:
             search_k=search_k
         )
         self.model_name = model_name
-        self.model = ChatOpenAI(model_name=self.model_name, temperature=0.7)
-        self.relevance_checker = ChatOpenAI(model=self.model_name, temperature=0.5)
+        self.model = ChatOpenAI(model_name=self.model_name, temperature=0.0)
+        self.relevance_checker = ChatOpenAI(model=self.model_name, temperature=0.0)
         self.llm_answer_prompt = system_prompt["llm_answer_system_prompt"]
         self.relevance_check_template = """
         You are a grader assessing relevance of a retrieved document to a user question. \n 

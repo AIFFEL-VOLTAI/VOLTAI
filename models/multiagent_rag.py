@@ -108,7 +108,7 @@ Ignore any reference content or information outside the provided document.
         
         ## agent 및 node 생성
         self.model_name = model_name
-        llm = ChatOpenAI(model=self.model_name, temperature=0.1)
+        llm = ChatOpenAI(model=self.model_name, temperature=0.0)
 
         # Research agent and node
         self.research_agent = self.create_agent(
@@ -157,7 +157,7 @@ Ensure the integrity and consistency of the JSON data by strictly adhering to th
             ]
         )
 
-        self.json_processor_agent = self.json_processor_system_prompt | ChatOpenAI(model=self.model_name, temperature=0.1) | JsonOutputParser()
+        self.json_processor_agent = self.json_processor_system_prompt | ChatOpenAI(model=self.model_name, temperature=0.0) | JsonOutputParser()
         self.json_processor_node = functools.partial(self.json_processor_agent_node, agent=self.json_processor_agent, name="Json_Processor")
 
         self.tools = [self.retriever_tool]
