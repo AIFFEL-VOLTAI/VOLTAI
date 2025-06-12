@@ -13,6 +13,8 @@ llm_answer_system_prompt: |
 
   3. **Clarity and Precision**:
    - Extract numerical data (e.g., ratios, temperatures, durations) with maximum precision.
+   - When extracting ratio-related information from the text, normalize all simple integer ratios to their most reduced form (e.g., 5:5 → 1:1). 
+   - If a ratio contains decimal values (e.g., 97.5:1:1.5), preserve it exactly as written. Also, remove any unnecessary leading zeros in the ratio (e.g., 01 → 1).
    - For descriptive fields, summarize the relevant information concisely without adding interpretations.
 
   4. **Structure Adherence**:
