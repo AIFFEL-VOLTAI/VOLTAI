@@ -1,12 +1,12 @@
-project_name: Extract-RelevanceRAG
-rag_method: "relevance-rag"
+project_name: Relevance-Rag
+rag_method: "multiagent-rag"
 file_num_list: [11, 16, 22, 35, 39, 40, 41, 42, 44, 56] ## 11, 16, 22, 35, 39, 40, 41, 42, 44, 56
 embedding_params:
   chunk_size: 1000      ## 1000으로 고정
-  chunk_overlap: 30
-  search_k: 9
-model_name: "gpt-4o"
-discussion_model_name: "o1" ## o1
+  chunk_overlap: 30     ## 30으로 고정
+  search_k: 9           ## 9로 고정
+model_name: "gpt-4o"    ## gpt-4o로 고정
+discussion_model_name: "gpt-4o" ## gpt-4o로 고정
 save_graph_png: False
 process_all_files: False
 sample_name_searcher_question : | 

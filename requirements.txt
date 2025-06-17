@@ -11,7 +11,7 @@ anyio==4.7.0
 asgiref==3.8.1
 astroid==2.15.8
 asttokens==3.0.0
-async-timeout==5.0.1
+async-timeout==4.0.3 ## async-timeout==5.0.1
 atomicwrites==1.4.1
 attrs==24.3.0
 autobahn==24.4.2
