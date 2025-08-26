@@ -39,7 +39,7 @@
 			}
 		],
 		"Additive": null,
-		"Loading density": "8"
+		"Loading density (mass loading of NCM)": "8"
 	},
 	"Morphological Properties": {
 		"Particle size": {

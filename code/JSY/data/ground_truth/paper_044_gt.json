@@ -24,7 +24,7 @@
 		"Synthesis method": "co-precipitation",
 		"Crystallization method": "sintering",
 		"Crystallization final temperature": "875",
-		"Crystallization final duration": "12",
+		"Crystallization final duration (hours)": "12",
 		"Doping": null,
 		"Coating": "γ-Al2O3"
 	},

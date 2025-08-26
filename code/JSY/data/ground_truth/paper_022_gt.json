@@ -1,14 +1,28 @@
 {
   "CAM (Cathode Active Material)": {
     "Stoichiometry information": {
-      "Pristine NCM": {
+      "Pristine": {
         "Li ratio": "1",
         "Ni ratio": "0.84",
         "Co ratio": "0.10",
         "Mn ratio": "0.06",
         "O ratio": "2"
       },
-      "V-doped NCM": {
+      "V-0.005": {
+        "Li ratio": "1",
+        "Ni ratio": "0.84",
+        "Co ratio": "0.10",
+        "Mn ratio": "0.06",
+        "O ratio": "2"
+      },
+      "V-0.01": {
+        "Li ratio": "1",
+        "Ni ratio": "0.84",
+        "Co ratio": "0.10",
+        "Mn ratio": "0.06",
+        "O ratio": "2"
+      },
+      "V-0.02": {
         "Li ratio": "1",
         "Ni ratio": "0.84",
         "Co ratio": "0.10",
@@ -17,8 +31,10 @@
       }
     },
     "Commercial NCM used": {
-      "Pristine NCM": "no",
-      "V-doped NCM": "no"
+      "Pristine": "no",
+      "V-0.005": "no",
+      "V-0.01": "no",
+      "V-0.02": "no"
     },
     "Lithium source": "LiOH",
     "Synthesis method": "solid state method",
@@ -43,28 +59,38 @@
   },
   "Morphological Properties": {
     "Particle size": {
-      "Pristine NCM": "500 nm",
-      "V-doped NCM": "500 nm"
+      "Pristine": "500 nm",
+      "V-0.005": "500 nm",
+      "V-0.01": "500 nm",
+      "V-0.02": "500 nm"
     },
     "Particle shape": {
-      "Pristine NCM": "Porous and spherical in shape, composed of numerous primary particles",
-      "V-doped NCM": "Porous and spherical in shape, composed of numerous primary particles"
+      "Pristine": "Porous and spherical in shape, composed of numerous primary particles",
+      "V-0.005": "Porous and spherical in shape, composed of numerous primary particles",
+      "V-0.01": "Porous and spherical in shape, composed of numerous primary particles",
+      "V-0.02": "Porous and spherical in shape, composed of numerous primary particles"
     },
     "Particle distribution": {
-      "Pristine NCM": "Uniform",
-      "V-doped NCM": "Uniform"
+      "Pristine": "Uniform",
+      "V-0.005": "Uniform",
+      "V-0.01": "Uniform",
+      "V-0.02": "Uniform"
     },
     "Coating layer characteristics": {
-      "Pristine NCM": null,
-      "V-doped NCM": null
+      "Pristine": null,
+      "V-0.005": null,
+      "V-0.01": null,
+      "V-0.02": null
     },
     "Crystal structure and lattice characteristics": {
-      "Pristine NCM": null,
-      "V-doped NCM": null
+      "Pristine": null,
+      "V-0.005": null,
+      "V-0.01": null,
+      "V-0.02": null
     }
   },
   "Cathode Performance": {
-    "Pristine NCM": [
+    "Pristine": [
       {
         "Voltage range": "3.0-4.3",
         "Temperature": "25",
@@ -96,7 +122,7 @@
         ]
       }
     ],
-    "V-doped NCM": [
+    "V-0.005": [
       {
         "Voltage range": "3.0-4.3",
         "Temperature": "25",
@@ -104,6 +130,70 @@
           {
             "C-rate": 0.1,
             "Capacity": 204.4
+          },
+          {
+            "C-rate": 0.5,
+            "Capacity": null
+          },
+          {
+            "C-rate": 1.0,
+            "Capacity": null
+          },
+          {
+            "C-rate": 2.0,
+            "Capacity": null
+          },
+          {
+            "Other C-rates and performance": [
+              {
+                "C-rate": null,
+                "Capacity": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "V-0.01": [
+      {
+        "Voltage range": "3.0-4.3",
+        "Temperature": "25",
+        "C-rate and Specific capacity": [
+          {
+            "C-rate": 0.1,
+            "Capacity": 203.9
+          },
+          {
+            "C-rate": 0.5,
+            "Capacity": null
+          },
+          {
+            "C-rate": 1.0,
+            "Capacity": null
+          },
+          {
+            "C-rate": 2.0,
+            "Capacity": null
+          },
+          {
+            "Other C-rates and performance": [
+              {
+                "C-rate": null,
+                "Capacity": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "V-0.005": [
+      {
+        "Voltage range": "3.0-4.3",
+        "Temperature": "25",
+        "C-rate and Specific capacity": [
+          {
+            "C-rate": 0.1,
+            "Capacity": 200.9
           },
           {
             "C-rate": 0.5,
