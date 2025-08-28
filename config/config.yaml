@@ -1,4 +1,4 @@
-project_name: Relevance-Rag
+project_name: 10-Extract-for-context-answer-2
 rag_method: "multiagent-rag"
 file_num_list: [11, 16, 22, 35, 39, 40, 41, 42, 44, 56] ## 11, 16, 22, 35, 39, 40, 41, 42, 44, 56
 embedding_params:

@@ -66,7 +66,7 @@ def load_invoke_input(config_folder:str="./config", category_number:int=1, rag_m
         
 
         config = RunnableConfig(
-            recursion_limit=30, 
+            recursion_limit=40, 
             configurable={"thread_id": random_uuid()}
             )
 
