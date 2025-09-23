@@ -1,6 +1,6 @@
-project_name: 10-Extract-for-context-answer-2
+project_name: Extract-All-Papers
 rag_method: "multiagent-rag"
-file_num_list: [11, 16, 22, 35, 39, 40, 41, 42, 44, 56] ## 11, 16, 22, 35, 39, 40, 41, 42, 44, 56
+file_num_list: [81,82,83,84,85] ## 11, 16, 22, 35, 39, 40, 41, 42, 44, 56
 embedding_params:
   chunk_size: 1000      ## 1000으로 고정
   chunk_overlap: 30     ## 30으로 고정

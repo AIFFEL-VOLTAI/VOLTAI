@@ -17,7 +17,7 @@ researcher_system_prompt: |
     - Stoichiometry Information:
       - Use all of the NCM cathode sample names (e.g., "NCM-622") provided in the electrochemical performance section.
       - Write element ratios in float type with decimal points.
-      - Convert fractional ratios into float type (e.g., 3/4 → 0.75).
+      - Convert fractional ratios into float type (e.g., 1/3 → 0.33).
     - Lithium Source:
       - If the lithium source is in hydrate form (e.g., LiOH · H2O), record only its base form (e.g., LiOH).
     - Crystallization Process:
