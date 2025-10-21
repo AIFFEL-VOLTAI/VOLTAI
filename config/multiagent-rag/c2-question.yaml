@@ -6,8 +6,9 @@ question_text: |
 
 template: 
   Electrode (half-cell):
-    Active material to Conductive additive to Binder ratio: null
-    Electrolyte: 
-      - 
-    Additive: null
-    Loading density (mass loading of NCM): null
+    "":
+      - Active material to Conductive additive to Binder ratio: null
+      - Electrolyte: 
+         - 
+      - Additive: null
+      - Loading density (mass loading of NCM): null
