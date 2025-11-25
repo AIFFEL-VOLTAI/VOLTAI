@@ -1,71 +1,230 @@
 {
     "CAM (Cathode Active Material)": {
         "Stoichiometry information": {
-            "LiNi1/3Co1/3Mn1/3O2": {
+            "NR0": {
                 "Li ratio": "1",
-                "Ni ratio": "1/3",
-                "Co ratio": "1/3",
-                "Mn ratio": "1/3",
+                "Ni ratio": "0.33",
+                "Co ratio": "0.33",
+                "Mn ratio": "0.33",
+                "O ratio": "2"
+            },
+            "NR1": {
+                "Li ratio": "1",
+                "Ni ratio": "0.33",
+                "Co ratio": "0.33",
+                "Mn ratio": "0.33",
+                "O ratio": "2"
+            },
+            "NR3": {
+                "Li ratio": "1",
+                "Ni ratio": "0.33",
+                "Co ratio": "0.33",
+                "Mn ratio": "0.33",
+                "O ratio": "2"
+            },
+            "NR5": {
+                "Li ratio": "1",
+                "Ni ratio": "0.33",
+                "Co ratio": "0.33",
+                "Mn ratio": "0.33",
                 "O ratio": "2"
             }
         },
-        "Whether or not commercial NCM was used for each sample (Stoichiometry information in order)": [
-            "no"
-        ],
+        "Commercial NCM used": {
+            "NR0": "no",
+            "NR1": "no",
+            "NR3": "no",
+            "NR5": "no"
+        },
         "Lithium source": "LiNO3",
         "Synthesis method": "solution combustion",
-        "Describe the crystallization method, such as Hydrothermal, Sintering, or any other technique used during the process.": "sintering",
-        "What is the Crystallization final temperature in degree of Celcius used in the process? (e.g., calcination or sintering) mentioned for the crystallization stage.": "850",
-        "What is the time duration for the final crystallization process, including any calcination or sintering stages? Specify the hours.": "15",
-        "Doping": "None",
-        "Coating": "RGO (Reduced Graphene Oxide) coating",
-        "Additional treatment": "Microwave irradiation"
+        "Crystallization method": "calcination",
+        "Crystallization final temperature": "850",
+        "Crystallization final duration (hours)": "15",
+        "Doping": null,
+        "Coating": "RGO"
     },
-    "Electrode (only for coin-cell (half-cell))": {
-        "Active material to Conductive additive to Binder ratio": "NCM : RGO : PVDF in various ratios, with 3–4 wt% carbon black",
-        "Electrolyte": {
-            "Salt": "LiPF6",
-            "Concentration": "1 M",
-            "Solvent": ["ethylene carbonate (EC)", "dimethyl carbonate (DMC)"],
-            "Solvent ratio": "1:1"
-        },
-        "Additive": "None",
-        "Loading density (mass loading of NCM, Standardize the unit to mg/cm^2)": "None",
-        "Additional treatment for electrode": "None"
-    },
-    "Morphological results": {
-        "Explanation of SEM results": [
-            "Fig. 2(a): NCM particles are uniformly distributed with minimal agglomeration.",
-            "Fig. 2(b): NCM particles range between 200–300 nm, exhibit polyhedral shapes, and have smooth surfaces, indicating high crystallinity.",
-            "Fig. 5(a): RGO appears as thin carbon sheets with wrinkled surfaces and folded structures."
-        ],
-        "Explanation of TEM results": [
-            "Fig. 5(b): Graphene sheets supported on the TEM holder are folded at the edges, with lateral sizes of 1–2 μm.", 
-            "Figs. 5(c) and (d): Transparent RGO sheets encapsulate individual or several NCM nanoparticles, forming NCM-RGO composites."
-        ]
-    },
-    "Cathode Performance": {
-        "Capacity at all C-rate, mAh/g (with electrode state)": [
+    "Electrode (half-cell)": {
+        "Active material to Conductive additive to Binder ratio": "86:4:10",
+        "Electrolyte": [
             {
-                "0.05C": {
-                    "NR0 (pristine NCM)": "167.64 mAh/g", 
-                    "NR5 (5 wt% RGO)": "186.64 mAh/g"
-                }
-            },
-            {
-                "0.1C": {
-                    "NR0 (pristine NCM)": "155.3 mAh/g", 
-                    "NR5 (5 wt% RGO)": "175 mAh/g"
-                }
-            },
-            {
-                "5C": {
-                    "NR0 (pristine NCM)": "45.5 mAh/g", 
-                    "NR5 (5 wt% RGO)": "95.4 mAh/g"
-                }
+                "Salt": "LiPF6",
+                "Concentration": "1 M",
+                "Solvent": "EC:DMC",
+                "Solvent ratio": "1:1"
             }
         ],
-        "Voltage range": "2.5–4.3 V",
-        "Temperature": "Room temperature (25°C)"
+        "Additive": null,
+        "Loading density (mass loading of NCM)": null
+    },
+    "Morphological Properties": {
+        "Particle size": {
+            "NR0": "200-300 nm",
+            "NR1": "nanoparticle",
+            "NR3": "nanoparticle",
+            "NR5": "nanoparticle"
+        },
+        "Particle shape": {
+            "NR0": "Faceted morphology like regular polyhedrons with smooth surfaces",
+            "NR1": null,
+            "NR3": null,
+            "NR5": null
+        },
+        "Particle distribution": {
+            "NR0": "Uniform distribution with no significant agglomeration",
+            "NR1": null,
+            "NR3": null,
+            "NR5": null
+        },
+        "Coating layer characteristics": {
+            "NR0": null,
+            "NR1": "Transparent RGO sheets, with a lateral size of 1–2 μm, wrap around NCM nanoparticles, forming a core-shell-like structure",
+            "NR3": "Transparent RGO sheets, with a lateral size of 1–2 μm, wrap around NCM nanoparticles, forming a core-shell-like structure",
+            "NR5": "Transparent RGO sheets, with a lateral size of 1–2 μm, wrap around NCM nanoparticles, forming a core-shell-like structure"
+        },
+        "Crystal structure and lattice characteristics": {
+            "NR0": null,
+            "NR1": null,
+            "NR3": null,
+            "NR5": null
+        }
+    },
+    "Cathode Performance": {
+        "NR0": [{
+            "Voltage range": "2.5-4.3",
+            "Temperature": "room temperature",
+            "C-rate and Specific capacity": [
+                {
+                    "C-rate": 0.1,
+                    "Capacity": 155.3
+                },
+                {
+                    "C-rate": 0.5,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 1.0,
+                    "Capacity": 123
+                },
+                {
+                    "C-rate": 2.0,
+                    "Capacity": null
+                },
+                {
+                    "Other C-rates and performance": [
+                        {
+                            "C-rate": 0.05,
+                            "Capacity": 167.64
+                        },
+                        {
+                            "C-rate": 5.0,
+                            "Capacity": 45.5
+                        }
+                    ]
+                }
+            ]
+        }],
+        "NR1": [{
+            "Voltage range": "2.5-4.3",
+            "Temperature": "room temperature",
+            "C-rate and Specific capacity": [
+                {
+                    "C-rate": 0.1,
+                    "Capacity": 154.6
+                },
+                {
+                    "C-rate": 0.5,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 1.0,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 2.0,
+                    "Capacity": null
+                },
+                {
+                    "Other C-rates and performance": [
+                        {
+                            "C-rate": 0.05,
+                            "Capacity": 169.21
+                        },
+                        {
+                            "C-rate": 5.0,
+                            "Capacity": 47.0
+                        }
+                    ]
+                }
+            ]
+        }],
+        "NR3": [{
+            "Voltage range": "2.5-4.3",
+            "Temperature": "room temperature",
+            "C-rate and Specific capacity": [
+                {
+                    "C-rate": 0.1,
+                    "Capacity": 166.5
+                },
+                {
+                    "C-rate": 0.5,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 1.0,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 2.0,
+                    "Capacity": null
+                },
+                {
+                    "Other C-rates and performance": [
+                        {
+                            "C-rate": 0.05,
+                            "Capacity": 172.46
+                        },
+                        {
+                            "C-rate": 5.0,
+                            "Capacity": 75.4
+                        }
+                    ]
+                }
+            ]
+        }],
+        "NR5": [{
+            "Voltage range": "2.5-4.3",
+            "Temperature": "room temperature",
+            "C-rate and Specific capacity": [
+                {
+                    "C-rate": 0.1,
+                    "Capacity": 175
+                },
+                {
+                    "C-rate": 0.5,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 1.0,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 2.0,
+                    "Capacity": null
+                },
+                {
+                    "Other C-rates and performance": [
+                        {
+                            "C-rate": 0.05,
+                            "Capacity": 186.64
+                        },
+                        {
+                            "C-rate": 5.0,
+                            "Capacity": 95.4
+                        }
+                    ]
+                }
+            ]
+        }]
     }
 }

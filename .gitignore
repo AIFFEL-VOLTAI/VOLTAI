@@ -185,4 +185,8 @@ vectordb/
 .DS_Store
 configs/
 code/
+/evaluation/**/*.csv
+/evaluation/**/*.json
+/evaluation/**/*.txt
+
 # End of https://www.toptal.com/developers/gitignore/api/python

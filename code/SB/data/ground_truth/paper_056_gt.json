@@ -1,68 +1,134 @@
 {
-    "CAM (Cathode Active Material)": {
-      "Stoichiometry information": {
-        "Li[Ni0.8Co0.1Mn0.1]O2": {
-          "Li ratio": "1",
-          "Ni ratio": "0.8",
-          "Co ratio": "0.1",
-          "Mn ratio": "0.1",
-          "O ratio": "2"
-        }
-      },
-      "Whether or not commercial NCM was used for each sample (Stoichiometry information in order)": [
-        "No"
-      ],
-      "Lithium source": "LiOH·H2O",
-      "Synthesis method": "co-precipitation",
-      "Describe the crystallization method, such as Hydrothermal, Sintering, or any other technique used during the process.": "sintering",
-      "What is the Crystallization final temperature in degree of Celcius used in the process? (e.g., calcination or sintering) mentioned for the crystallization stage.": "750",
-      "What is the time duration for the final crystallization process, including any calcination or sintering stages? Specify the hours.": "15",
-      "Doping": "Mg",
-      "Coating": "Li3PO4 coating",
-      "Additional treatment": "None"
-    },
-    "Electrode (only for coin-cell (half-cell))": {
-      "Active material to Conductive additive to Binder ratio": "96:2:2",
-      "Electrolyte": {
-        "Salt": "LiPF6",
-        "Concentration": "1.0 M",
-        "Solvent": "DMC, EC, EMC",
-        "Solvent ratio": "1:1:1 (vol%)"
-      },
-      "Additive": "None",
-      "Loading density (mass loading of NCM, Standardize the unit to mg/cm^2)": "None",
-      "Additional treatment for electrode": "None"
-    },
-    "Morphological results": {
-      "Explanation of SEM results": "Fig. 2A, B; spherical secondary particles with an average size of approximately 11.7 μm are observed. These secondary particles are composed of primary particles with an average diameter of 170–230 nm. The MgHPO4 modification does not appear to affect the size or morphology of the NCM cathode material.",
-      "Explanation of TEM results": "Fig. 2C, D; a thin Li3PO4 coating layer, approximately 1.8 nm thick, is formed on the surface of the M-NCM particles."
-    },
-    "Cathode Performance": {
-      "Capacity at all C-rate, mAh/g (with electrode state)": [
-        {
-          "203.5 mAh/g": "@0.1C, M-NCM"
-        },
-        {
-          "199.1 mAh/g": "@0.1C, pristine"
-        },
-        {
-          "180.0 mAh/g": "@5.0C, M-NCM"
-        },
-        {
-          "159.0 mAh/g": "@5.0C, pristine"
-        },
-        {
-          "168.9 mAh/g": "@6.0C, M-NCM"
-        },
-        {
-          "169.8 mAh/g": "@4.0C, pristine"
-        },
-        {
-          "151.3 mAh/g": "@2.0C, pristine"
-        }
-      ],
-      "Voltage range": "3.0–4.3 V",
-      "Temperature": "25°C"
-    }
-  }
-  
+	"CAM (Cathode Active Material)": {
+		"Stoichiometry information": {
+			"pristine NCM": {
+				"Li ratio": "1",
+				"Ni ratio": "0.8",
+				"Co ratio": "0.1",
+				"Mn ratio": "0.1",
+				"O ratio": "2"
+			},
+			"M-NCM": {
+				"Li ratio": "1",
+				"Ni ratio": "0.8",
+				"Co ratio": "0.1",
+				"Mn ratio": "0.1",
+				"O ratio": "2"
+			}
+		},
+		"Commercial NCM used": {
+			"pristine NCM": "no",
+			"M-NCM": "no"
+		},
+		"Lithium source": "LiOH",
+		"Synthesis method": "co-precipitation",
+		"Crystallization method": "sintering",
+		"Crystallization final temperature": "750",
+		"Crystallization final duration (hours)": "15",
+		"Doping": "Mg",
+		"Coating": "Li3PO4"
+	},
+	"Electrode (half-cell)": {
+		"Active material to Conductive additive to Binder ratio": "96:2:2",
+		"Electrolyte": [{
+			"Salt": "LiPF6",
+			"Concentration": "1 M",
+			"Solvent": "DMC:EC:EMC",
+			"Solvent ratio": "1:1:1"
+		}],
+		"Additive": null,
+		"Loading density (mass loading of NCM)": null
+	},
+	"Morphological Properties": {
+		"Particle size": {
+			"pristine NCM": "11.7 μm",
+			"M-NCM": "11.7 μm"
+		},
+		"Particle shape": {
+			"pristine NCM": "Spherical",
+			"M-NCM": "Spherical"
+		},
+		"Particle distribution": {
+			"pristine NCM": "Homogeneous",
+			"M-NCM": "Homogeneous"
+		},
+		"Coating layer characteristics": {
+			"M-NCM": "Thin Li3PO4 coating (~1.8 nm) on M-NCM particles."
+		},
+		"Crystal structure and lattice characteristics": {
+			"pristine NCM": null,
+			"M-NCM": null
+		}
+	},
+	"Cathode Performance": {
+		"pristine NCM": [{
+			"Voltage range": "3.0-4.3",
+			"Temperature": 25,
+			"C-rate and Specific capacity": [{
+					"C-rate": 0.1,
+					"Capacity": 199.1
+				},
+				{
+					"C-rate": 0.5,
+					"Capacity": null
+				},
+				{
+					"C-rate": 1.0,
+					"Capacity": null
+				},
+				{
+					"C-rate": 2.0,
+					"Capacity": null
+				},
+				{
+					"Other C-rates and performance": [
+						{
+							"C-rate": 4.0,
+							"Capacity": 169.8
+						},
+						{
+							"C-rate": 5.0,
+							"Capacity": 159.0
+						},
+						{
+							"C-rate": 6.0,
+							"Capacity": 151.3
+						}
+					]
+				}
+			]
+		}],
+		"M-NCM": [{
+			"Voltage range": "3.0-4.3",
+			"Temperature": 25,
+			"C-rate and Specific capacity": [{
+					"C-rate": 0.1,
+					"Capacity": 203.5
+				},
+				{
+					"C-rate": 0.5,
+					"Capacity": null
+				},
+				{
+					"C-rate": 1.0,
+					"Capacity": null
+				},
+				{
+					"C-rate": 2.0,
+					"Capacity": null
+				},
+				{
+					"Other C-rates and performance": [{
+							"C-rate": 5.0,
+							"Capacity": 180.0
+						},
+						{
+							"C-rate": 6.0,
+							"Capacity": 168.9
+						}
+					]
+				}
+			]
+		}]
+	}
+}
