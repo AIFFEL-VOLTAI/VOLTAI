@@ -9,7 +9,7 @@ researcher_system_prompt: |
   2. **Extraction Guidelines**:
     - Use the JSON structure provided as a template.
     - Replace placeholders with values found in the PDF.
-    - If a field is not mentioned in the PDF, write "null" instead of removing it.
+    - If a field is not mentioned in the PDF, write `null` (not `None`) instead of removing it.
 
   3. **Clarity and Precision**:
     - Extract numerical data (e.g., ratios, temperatures, durations) with maximum precision.
@@ -38,19 +38,33 @@ researcher_system_prompt: |
   Below are instructions for filling out items by referring to the examples.
   [
     {
-        "Electrode (half-cell)": {
+      "Electrode (half-cell)": {
+        "NCM-622": {
           "Active material to Conductive additive to Binder ratio": "90:5:5",
           "Electrolyte": [
-              {
-                "Salt": "LiPF6",
-                "Concentration": "1M",
-                "Solvent": "EC:EMC:DEC",
-                "Solvent ratio": "1:1:1"
-              }
+            {
+              "Salt": "LiPF6",
+              "Concentration": "1M",
+              "Solvent": "EC:EMC:DEC",
+              "Solvent ratio": "1:1:1"
+            }
           ],
           "Additive": "FEC, 10%",
-          "Loading density (mass loading of NCM)": "5",
-          "Additional treatment for electrode": null
+          "Loading density (mass loading of NCM)": "5"
+        },
+        "ZrO2-NCM-622 (Z622)": {
+          "Active material to Conductive additive to Binder ratio": "90:5:5",
+          "Electrolyte": [
+            {
+              "Salt": "LiPF6",
+              "Concentration": "1M",
+              "Solvent": "EC:EMC:DEC",
+              "Solvent ratio": "1:1:1"
+            }
+          ],
+          "Additive": "FEC, 10%",
+          "Loading density (mass loading of NCM)": "5"
         }
+      }
     }
   ]
