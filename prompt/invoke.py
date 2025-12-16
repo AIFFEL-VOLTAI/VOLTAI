@@ -34,6 +34,8 @@ def load_invoke_input(config_folder:str="./config", category_number:int=1, rag_m
         if category_number == 1:
             question["template"][category_names[category_number-1]]["Stoichiometry information"][sample_name] = {}
             question["template"][category_names[category_number-1]]["Commercial NCM used"][sample_name] = {}
+        elif category_number == 2:
+            question["template"][category_names[category_number-1]][sample_name] = {}
         elif category_number == 3:
             temp_template = question["template"][category_names[category_number-1]]
             for k in temp_template.keys():

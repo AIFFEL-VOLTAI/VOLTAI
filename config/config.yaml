@@ -1,6 +1,6 @@
 project_name: Extract-All-Papers
 rag_method: "multiagent-rag"
-file_num_list: [81,82,83,84,85] ## 11, 16, 22, 35, 39, 40, 41, 42, 44, 56
+file_num_list: [] ## 11, 16, 22, 35, 39, 40, 41, 42, 44, 56
 embedding_params:
   chunk_size: 1000      ## 1000으로 고정
   chunk_overlap: 30     ## 30으로 고정
@@ -11,3 +11,6 @@ save_graph_png: False
 process_all_files: False
 sample_name_searcher_question : | 
   Use all of the NCM cathode sample names (e.g., 'NCM-622', 'pristine NCM', 'M-NCM') provided in the electrochemical performance section. You just output sample names. Do Not output like '- NCM622' , just output 'NCM622.
+
+## 9, 17, 31, 34, 35, 36, 37, 43, 44, 45, 61, 74, 82, 84, 102, 110, 112, 118, 121, 131, 132, 138, 142
+##
