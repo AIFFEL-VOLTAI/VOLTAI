@@ -32,7 +32,7 @@
         "Synthesis method": null,
         "Crystallization method": null,
         "Crystallization final temperature": null,
-        "Crystallization final duration": null,
+        "Crystallization final duration (hours)": null,
         "Doping": null,
         "Coating": "Graphitic carbon nitride"
     },
@@ -99,7 +99,7 @@
                 "C-rate and Specific capacity": [
                     {"C-rate": 0.1, "Capacity": 170},
                     {"C-rate": 0.5, "Capacity": null},
-                    {"C-rate": 1.0, "Capacity": 140},
+                    {"C-rate": 1.0, "Capacity": 170},
                     {"C-rate": 2.0, "Capacity": null},
                     {"Other C-rates and performance": [
                         {"C-rate": null, "Capacity": null}

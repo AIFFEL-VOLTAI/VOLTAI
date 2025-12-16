@@ -24,7 +24,7 @@
 		"Synthesis method": null,
 		"Crystallization method": null,
 		"Crystallization final temperature": null,
-		"Crystallization final duration": null,
+		"Crystallization final duration (hours)": null,
 		"Doping": null,
 		"Coating": "Ge-132"
 	},
