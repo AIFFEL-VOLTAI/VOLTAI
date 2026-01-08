@@ -1,53 +1,16 @@
 project_name: Extract-All-Papers
-rag_method: "relevance-rag"
-file_num_list: [56] ## 11, 16, 22, 35, 39, 40, 41, 42, 44, 56
+rag_method: "multiagent-rag"
+file_num_list: [] ## 11, 16, 22, 35, 39, 40, 41, 42, 44, 56
 embedding_params:
   chunk_size: 1000      ## 1000으로 고정
-  chunk_overlap: 100     ## 30으로 고정
-  search_k: 10           ## 9로 고정
-model_name: "gemini-3-pro-preview"    ## gpt-4o로 고정
-discussion_model_name: "gemini-3-pro-preview" ## gpt-4o로 고정
-
-# 🌟🌟🌟 추가된 설정 (여기에 넣고 싶은 파라미터를 정의합니다) 🌟🌟🌟
-llm_generation_config:
-  temperature: 1.0
-  max_output_tokens: 2048
-  thinking_config:
-    include_thoughts: False
-    thinking_level: "high"
-# 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟
-
+  chunk_overlap: 30     ## 30으로 고정
+  search_k: 9           ## 9로 고정
+model_name: "gpt-4o"    ## gpt-4o로 고정
+discussion_model_name: "gpt-4o" ## gpt-4o로 고정
 save_graph_png: False
 process_all_files: False
 sample_name_searcher_question : | 
-sample_name_searcher_question : | 
-  You are an expert assistant specializing in identifying the **PRIMARY EXPERIMENTAL SUBJECTS** (samples) from the provided scientific text.
-  
-  Your task is to identify and extract ONLY the **most specific identifiers** used by the authors to name their different **CATHODE MATERIALS** or experimental groups.
+  Use all of the NCM cathode sample names (e.g., 'NCM-622', 'pristine NCM', 'M-NCM') provided in the electrochemical performance section. You just output sample names. Do Not output like '- NCM622' , just output 'NCM622.
 
-  ========================================================
-  CORE CONSTRAINT: EVIDENCE OF TESTING
-  ========================================================
-  **CRITICAL FOR CASE 2:** You must ONLY extract sample names that are directly associated with **experimental electrochemical performance data**.
-  * **INCLUDE:** Samples that have reported discharge capacity (mAh/g), C-rate capability, or cycling stability results in the text or figures.
-  * **EXCLUDE:** General chemical formulas (e.g., "LiNi1-x-yCoxMnyO2") mentioned only for theoretical background, synthesis precursors, or comparison groups that do not have performance data shown.
-
-  ========================================================
-  CRITICAL RULE: SPECIFICITY & CLEANING
-  ========================================================
-  1. **HIGHEST PRIORITY (Specific Samples):** Extract the unique code or name used to label the sample in **Figures and Tables**.
-     * **Examples to INCLUDE:** pristine NCM622, NCM@CNT, M-NCM, **A-0.5**, **LCO-S**, **NCM-811**.
-
-  2. **ALIAS & DE-DUPLICATION (Case 1 Solution):**
-     * If a long chemical formula is followed by a short code in parentheses (e.g., "LiNi0.83Co0.12Mn0.05O2 (SC-NCM)"), extract **ONLY the short code** (e.g., "SC-NCM").
-     * Do NOT output both the formula and the code. The short code is the effective sample name.
-
-  3. **LOWEST PRIORITY (General Types):** **DO NOT** extract generic material types.
-     * **Examples to EXCLUDE:** LFP, Cathode, Anode, Electrolyte, Carbon, **Sample**, target material.
-
-  ========================================================
-  OUTPUT FORMAT
-  ========================================================
-  Output ONLY the list of valid, unique sample IDs, separated by a comma and a single space. Do not use dashes, bullet points, numbering, or surrounding text.
-  
-  Example Format: pristine NCM622, NCM@CNT, M-NCM
+## 9, 17, 31, 34, 35, 36, 37, 43, 44, 45, 61, 74, 82, 84, 102, 110, 112, 118, 121, 131, 132, 138, 142
+##

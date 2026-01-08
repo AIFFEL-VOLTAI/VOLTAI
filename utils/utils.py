@@ -8,30 +8,6 @@ from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.runnables import RunnableConfig
 from langchain_teddynote.messages import random_uuid
 
-from langsmith import Client
-
-class LangSmithLogger:
-    def __init__(self, project_name: str | None = None):
-        self.project_name = project_name or "voltai-rag"  # 프로젝트 이름은 마음대로
-        # Client는 환경변수(LANGCHAIN_API_KEY 등)를 자동으로 읽음
-        self.client = Client()
-
-    def langsmith(self, message: str):
-        """LangSmith에 단순 로그(run) 하나 남기는 메서드"""
-        run = self.client.create_run(
-            project_name=self.project_name,
-            name="main-run",
-            inputs={"message": message},
-            run_type="chain",
-        )
-        print(f"[LangSmith] {message}")
-        return run
-
-# main.py에서 from utils.utils import logging 으로 쓰는 객체
-logging = LangSmithLogger()
-
-
-
 def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 

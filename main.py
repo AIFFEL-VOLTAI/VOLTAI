@@ -1,5 +1,4 @@
 import os
-os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import argparse
 import time
 from pprint import pprint
@@ -36,7 +35,7 @@ def main(args):
     
     ## 전체 파일에 대해 진행여부 결정
     if config["process_all_files"]:
-        file_folder = f"{args.data_folder}"
+        file_folder = f"{args.data_folder}/raw"
         file_num_list = [int(f[6:9]) for f in os.listdir(file_folder) if os.path.isfile(os.path.join(file_folder, f))]
     else:
         file_num_list = config["file_num_list"]
@@ -48,7 +47,7 @@ def main(args):
 
         ## Sample Name Searcher
         sample_name_searcher_chain = sample_name_searcher(
-            file_folder=f"{args.data_folder}", 
+            file_folder=f"{args.data_folder}/raw/", 
             file_number=file_number, 
             chunk_size=config["embedding_params"]["chunk_size"], 
             chunk_overlap=config["embedding_params"]["chunk_overlap"], 
@@ -68,7 +67,7 @@ def main(args):
             ## graph 호출
             voltai_graph = get_rag_instance(
                 rag_method=config["rag_method"], 
-                file_folder=f"{args.data_folder}", 
+                file_folder=f"{args.data_folder}/raw/", 
                 file_number=file_number, 
                 chunk_size=config["embedding_params"]["chunk_size"], 
                 chunk_overlap=config["embedding_params"]["chunk_overlap"], 
