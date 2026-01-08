@@ -1,0 +1,34 @@
+{
+    "NCM": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.33,
+            "Co ratio": 0.33,
+            "Mn ratio": 0.33
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiAc",
+        "Synthesis method": "sol-gel",
+        "Crystallization method": "heat-treatment",
+        "Crystallization final temperature": 850,
+        "Crystallization final duration (hours)": 10,
+        "Doping": null,
+        "Coating": null
+    },
+    "NCM/C": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.33,
+            "Co ratio": 0.33,
+            "Mn ratio": 0.33
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiAc",
+        "Synthesis method": "one-step method",
+        "Crystallization method": "sintering",
+        "Crystallization final temperature": 850,
+        "Crystallization final duration (hours)": 10,
+        "Doping": null,
+        "Coating": "Carbon"
+    }
+}

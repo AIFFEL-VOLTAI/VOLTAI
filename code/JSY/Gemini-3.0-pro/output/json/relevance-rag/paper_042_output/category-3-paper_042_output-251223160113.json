@@ -1,0 +1,22 @@
+{
+    "Particle size": {
+        "SC-NCM": "micron-sized SC-NCM particles (about 2 mm in diameter)",
+        "N-NCM": "size of the secondary particles of N-NCM is 10–13 mm"
+    },
+    "Particle shape": {
+        "SC-NCM": "regular structure, smooth surface",
+        "N-NCM": "spherical polycrystalline secondary particles"
+    },
+    "Particle distribution": {
+        "SC-NCM": "uniform particle size",
+        "N-NCM": "composed of agglomerated primary particles"
+    },
+    "Coating layer characteristics": {
+        "SC-NCM": null,
+        "N-NCM": null
+    },
+    "Crystal structure and lattice characteristics": {
+        "SC-NCM": "uniform and clear lattice stripes, and the crystal plane spacing is about 0.474 nm, corresponding to the (003) crystal plane of the layered structure",
+        "N-NCM": null
+    }
+}

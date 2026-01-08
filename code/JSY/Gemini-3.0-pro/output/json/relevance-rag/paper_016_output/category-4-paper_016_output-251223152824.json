@@ -1,0 +1,98 @@
+{
+    "NCM": [
+        {
+            "Voltage range": "2.50–4.50",
+            "Temperature": 30,
+            "C-rate and Specific capacity": [
+                {
+                    "C-rate": 0.1,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 0.2,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 0.5,
+                    "Capacity": 175.7
+                },
+                {
+                    "C-rate": 1.0,
+                    "Capacity": 154.8
+                },
+                {
+                    "C-rate": 2.0,
+                    "Capacity": 143.5
+                },
+                {
+                    "Other C-rates and performance": [
+                        {
+                            "C-rate": 5.0,
+                            "Capacity": 101.7
+                        },
+                        {
+                            "C-rate": 10.0,
+                            "Capacity": 71.5
+                        },
+                        {
+                            "C-rate": 20.0,
+                            "Capacity": 44.5
+                        },
+                        {
+                            "C-rate": 40.0,
+                            "Capacity": 13.2
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "NCM/C": [
+        {
+            "Voltage range": "2.50–4.50",
+            "Temperature": 30,
+            "C-rate and Specific capacity": [
+                {
+                    "C-rate": 0.1,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 0.2,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 0.5,
+                    "Capacity": 191.2
+                },
+                {
+                    "C-rate": 1.0,
+                    "Capacity": 178.9
+                },
+                {
+                    "C-rate": 2.0,
+                    "Capacity": 163.5
+                },
+                {
+                    "Other C-rates and performance": [
+                        {
+                            "C-rate": 5.0,
+                            "Capacity": 135.8
+                        },
+                        {
+                            "C-rate": 10.0,
+                            "Capacity": 109.4
+                        },
+                        {
+                            "C-rate": 20.0,
+                            "Capacity": 81.9
+                        },
+                        {
+                            "C-rate": 40.0,
+                            "Capacity": 54.6
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "pristine NCM": {
+        "Stoichiometry information": {
+            "Li": 1.0,
+            "Ni": 0.84,
+            "Co": 0.1,
+            "Mn": 0.06,
+            "O": 2.0
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiOH",
+        "Synthesis method": "solid state method",
+        "Crystallization method": null,
+        "Crystallization final temperature": 760,
+        "Crystallization final duration (hours)": 15,
+        "Doping": null,
+        "Coating": null
+    },
+    "V-0.005 NCM": {
+        "Stoichiometry information": {
+            "Li": 1.0,
+            "Ni": 0.84,
+            "Co": 0.1,
+            "Mn": 0.06,
+            "O": 2.0
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiOH",
+        "Synthesis method": "solid state method",
+        "Crystallization method": null,
+        "Crystallization final temperature": 760,
+        "Crystallization final duration (hours)": 15,
+        "Doping": "V",
+        "Coating": null
+    },
+    "V-0.01 NCM": {
+        "Stoichiometry information": {
+            "Li": 1.0,
+            "Ni": 0.84,
+            "Co": 0.1,
+            "Mn": 0.06,
+            "O": 2.0
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiOH",
+        "Synthesis method": "solid state method",
+        "Crystallization method": null,
+        "Crystallization final temperature": 760,
+        "Crystallization final duration (hours)": 15,
+        "Doping": "V",
+        "Coating": null
+    },
+    "V-0.02 NCM": {
+        "Stoichiometry information": {
+            "Li": 1.0,
+            "Ni": 0.84,
+            "Co": 0.1,
+            "Mn": 0.06,
+            "O": 2.0
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiOH",
+        "Synthesis method": "solid state method",
+        "Crystallization method": null,
+        "Crystallization final temperature": 760,
+        "Crystallization final duration (hours)": 15,
+        "Doping": "V",
+        "Coating": null
+    }
+}

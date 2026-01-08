@@ -1,0 +1,36 @@
+{
+    "SC-NCM": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.83,
+            "Co ratio": 0.12,
+            "Mn ratio": 0.05,
+            "O ratio": 2.0
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiCO3",
+        "Synthesis method": "co-precipitation and hydrothermal",
+        "Crystallization method": "solid-phase",
+        "Crystallization final temperature": 860,
+        "Crystallization final duration (hours)": 12,
+        "Doping": null,
+        "Coating": null
+    },
+    "N-NCM": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.83,
+            "Co ratio": 0.12,
+            "Mn ratio": 0.05,
+            "O ratio": 2.0
+        },
+        "Commercial NCM used": "yes",
+        "Lithium source": null,
+        "Synthesis method": null,
+        "Crystallization method": null,
+        "Crystallization final temperature": null,
+        "Crystallization final duration (hours)": null,
+        "Doping": null,
+        "Coating": null
+    }
+}

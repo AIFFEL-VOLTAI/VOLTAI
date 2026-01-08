@@ -1,0 +1,32 @@
+{
+    "Particle size": {
+        "pristine NCM": "primary particles have similar size (500 nm)",
+        "V-0.005 NCM": "primary particles have similar size (500 nm)",
+        "V-0.01 NCM": "primary particles have similar size (500 nm)",
+        "V-0.02 NCM": "primary particles have similar size (500 nm)"
+    },
+    "Particle shape": {
+        "pristine NCM": "spherical morphology",
+        "V-0.005 NCM": "spherical morphology",
+        "V-0.01 NCM": "spherical morphology",
+        "V-0.02 NCM": "spherical morphology"
+    },
+    "Particle distribution": {
+        "pristine NCM": "composed of numerous primary particles",
+        "V-0.005 NCM": "composed of numerous primary particles",
+        "V-0.01 NCM": "composed of numerous primary particles",
+        "V-0.02 NCM": "composed of numerous primary particles"
+    },
+    "Coating layer characteristics": {
+        "pristine NCM": null,
+        "V-0.005 NCM": null,
+        "V-0.01 NCM": null,
+        "V-0.02 NCM": null
+    },
+    "Crystal structure and lattice characteristics": {
+        "pristine NCM": null,
+        "V-0.005 NCM": null,
+        "V-0.01 NCM": null,
+        "V-0.02 NCM": null
+    }
+}

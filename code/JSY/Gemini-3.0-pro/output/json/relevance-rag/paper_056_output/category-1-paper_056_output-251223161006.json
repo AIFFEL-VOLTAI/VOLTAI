@@ -1,0 +1,34 @@
+{
+    "pristine NCM": {
+        "Stoichiometry information": {
+            "Li": 1.05,
+            "Ni": 0.8,
+            "Co": 0.1,
+            "Mn": 0.1
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiOH",
+        "Synthesis method": "solid-state reaction",
+        "Crystallization method": "sintering",
+        "Crystallization final temperature": 750,
+        "Crystallization final duration (hours)": 15,
+        "Doping": null,
+        "Coating": null
+    },
+    "M-NCM": {
+        "Stoichiometry information": {
+            "Li": 1.05,
+            "Ni": 0.8,
+            "Co": 0.1,
+            "Mn": 0.1
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiOH",
+        "Synthesis method": "solid-state reaction",
+        "Crystallization method": "sintering",
+        "Crystallization final temperature": 750,
+        "Crystallization final duration (hours)": 15,
+        "Doping": "Mg",
+        "Coating": "Li3PO4"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "SC-NCM83": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.83,
+            "Co ratio": 0.11,
+            "Mn ratio": 0.06
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "Li2CO3",
+        "Synthesis method": "Solid-state reaction",
+        "Crystallization method": "Calcination",
+        "Crystallization final temperature": 975,
+        "Crystallization final duration (hours)": 9,
+        "Doping": null,
+        "Coating": null
+    }
+}

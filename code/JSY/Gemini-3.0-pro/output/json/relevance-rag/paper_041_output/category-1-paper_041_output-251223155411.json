@@ -1,0 +1,70 @@
+{
+    "pristine NCM-811": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.8,
+            "Co ratio": 0.1,
+            "Mn ratio": 0.1,
+            "O ratio": 2.0
+        },
+        "Commercial NCM used": "yes",
+        "Lithium source": null,
+        "Synthesis method": null,
+        "Crystallization method": null,
+        "Crystallization final temperature": null,
+        "Crystallization final duration (hours)": null,
+        "Doping": null,
+        "Coating": null
+    },
+    "g-C3N4NSs@NCM-811": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.8,
+            "Co ratio": 0.1,
+            "Mn ratio": 0.1,
+            "O ratio": 2.0
+        },
+        "Commercial NCM used": "yes",
+        "Lithium source": null,
+        "Synthesis method": "sonication-assisted liquid exfoliation method",
+        "Crystallization method": null,
+        "Crystallization final temperature": null,
+        "Crystallization final duration (hours)": null,
+        "Doping": null,
+        "Coating": "g-C3N4"
+    },
+    "thin g-C3N4@NCM-811": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.8,
+            "Co ratio": 0.1,
+            "Mn ratio": 0.1,
+            "O ratio": 2.0
+        },
+        "Commercial NCM used": "yes",
+        "Lithium source": null,
+        "Synthesis method": "chemical vaporization-assisted synthesis method",
+        "Crystallization method": null,
+        "Crystallization final temperature": 550,
+        "Crystallization final duration (hours)": 4,
+        "Doping": null,
+        "Coating": "g-C3N4"
+    },
+    "thick g-C3N4@NCM-811": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.8,
+            "Co ratio": 0.1,
+            "Mn ratio": 0.1,
+            "O ratio": 2.0
+        },
+        "Commercial NCM used": "yes",
+        "Lithium source": null,
+        "Synthesis method": "chemical vaporization-assisted synthesis method",
+        "Crystallization method": null,
+        "Crystallization final temperature": 550,
+        "Crystallization final duration (hours)": 4,
+        "Doping": null,
+        "Coating": "g-C3N4"
+    }
+}

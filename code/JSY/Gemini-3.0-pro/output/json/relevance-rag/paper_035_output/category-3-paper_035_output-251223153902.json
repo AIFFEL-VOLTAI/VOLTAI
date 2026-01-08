@@ -1,0 +1,27 @@
+{
+    "Particle size": {
+        "S1bare": null,
+        "S2wash": null,
+        "S3coat": null
+    },
+    "Particle shape": {
+        "S1bare": "spherical agglomerates; inclusions of irregular shape",
+        "S2wash": "spherical agglomerates",
+        "S3coat": "spherical agglomerates"
+    },
+    "Particle distribution": {
+        "S1bare": "fairly dense packing of crystallites",
+        "S2wash": "fairly dense packing of crystallites",
+        "S3coat": "fairly dense packing of crystallites"
+    },
+    "Coating layer characteristics": {
+        "S1bare": null,
+        "S2wash": null,
+        "S3coat": null
+    },
+    "Crystal structure and lattice characteristics": {
+        "S1bare": null,
+        "S2wash": null,
+        "S3coat": null
+    }
+}

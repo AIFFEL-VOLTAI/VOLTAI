@@ -1,0 +1,28 @@
+{
+    "pristine NCM622": {
+        "Active material to Conductive additive to Binder ratio": "90:4:6",
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1.0",
+                "Solvent": "EC:EMC",
+                "Solvent ratio": "3:7"
+            }
+        ],
+        "Additive": "VC, 2%",
+        "Loading density (mass loading of NCM)": "9.0"
+    },
+    "polymer/γ-Al2O3-coated NCM622": {
+        "Active material to Conductive additive to Binder ratio": "90:4:6",
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1.0",
+                "Solvent": "EC:EMC",
+                "Solvent ratio": "3:7"
+            }
+        ],
+        "Additive": "VC, 2%",
+        "Loading density (mass loading of NCM)": "9.0"
+    }
+}

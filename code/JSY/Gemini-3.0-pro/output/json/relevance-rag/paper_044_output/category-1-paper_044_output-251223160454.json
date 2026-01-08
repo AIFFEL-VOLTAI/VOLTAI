@@ -1,0 +1,36 @@
+{
+    "pristine NCM622": {
+        "Stoichiometry information": {
+            "Li": 1.0,
+            "Ni": 0.6,
+            "Co": 0.2,
+            "Mn": 0.2,
+            "O": 2.0
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiOH",
+        "Synthesis method": "coprecipitation",
+        "Crystallization method": "sintering",
+        "Crystallization final temperature": 875,
+        "Crystallization final duration (hours)": 12,
+        "Doping": null,
+        "Coating": null
+    },
+    "polymer/γ-Al2O3-coated NCM622": {
+        "Stoichiometry information": {
+            "Li": 1.0,
+            "Ni": 0.6,
+            "Co": 0.2,
+            "Mn": 0.2,
+            "O": 2.0
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiOH",
+        "Synthesis method": "coprecipitation",
+        "Crystallization method": "sintering",
+        "Crystallization final temperature": 875,
+        "Crystallization final duration (hours)": 12,
+        "Doping": null,
+        "Coating": "γ-Al2O3"
+    }
+}

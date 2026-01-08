@@ -1,0 +1,22 @@
+{
+    "Particle size": {
+        "pristine NCM": "secondary particles (about 11.7 μm), primary particles with average diameters of 170 to 230 nm",
+        "M-NCM": "secondary particles (about 11.7 μm), primary particles with average diameters of 170 to 230 nm"
+    },
+    "Particle shape": {
+        "pristine NCM": "spherical secondary particles",
+        "M-NCM": "spherical secondary particles"
+    },
+    "Particle distribution": {
+        "pristine NCM": "composing of the primary particles",
+        "M-NCM": "composing of the primary particles"
+    },
+    "Coating layer characteristics": {
+        "pristine NCM": null,
+        "M-NCM": "thin Li3PO4 coating layer with about 1.8 nm thickness"
+    },
+    "Crystal structure and lattice characteristics": {
+        "pristine NCM": null,
+        "M-NCM": null
+    }
+}

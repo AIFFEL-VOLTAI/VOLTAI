@@ -1,0 +1,64 @@
+{
+    "pristine NCM622": [
+        {
+            "Voltage range": "3.0-4.55 V",
+            "Temperature": 25,
+            "C-rate and Specific capacity": [
+                {
+                    "C-rate": "0.1",
+                    "Capacity": 196.07
+                },
+                {
+                    "C-rate": "0.2",
+                    "Capacity": null
+                },
+                {
+                    "C-rate": "0.5",
+                    "Capacity": null
+                },
+                {
+                    "C-rate": "1.0",
+                    "Capacity": null
+                },
+                {
+                    "C-rate": "2.0",
+                    "Capacity": null
+                },
+                {
+                    "Other C-rates and performance": []
+                }
+            ]
+        }
+    ],
+    "polymer/γ-Al2O3-coated NCM622": [
+        {
+            "Voltage range": "3.0-4.55 V",
+            "Temperature": 25,
+            "C-rate and Specific capacity": [
+                {
+                    "C-rate": "0.1",
+                    "Capacity": 203.97
+                },
+                {
+                    "C-rate": "0.2",
+                    "Capacity": null
+                },
+                {
+                    "C-rate": "0.5",
+                    "Capacity": null
+                },
+                {
+                    "C-rate": "1.0",
+                    "Capacity": null
+                },
+                {
+                    "C-rate": "2.0",
+                    "Capacity": null
+                },
+                {
+                    "Other C-rates and performance": []
+                }
+            ]
+        }
+    ]
+}

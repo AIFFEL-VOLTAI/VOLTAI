@@ -1,0 +1,22 @@
+{
+    "Particle size": {
+        "N92": null,
+        "WN92": null
+    },
+    "Particle shape": {
+        "N92": "granular particles",
+        "WN92": "granular particles"
+    },
+    "Particle distribution": {
+        "N92": null,
+        "WN92": null
+    },
+    "Coating layer characteristics": {
+        "N92": null,
+        "WN92": null
+    },
+    "Crystal structure and lattice characteristics": {
+        "N92": null,
+        "WN92": "retrieved into the NCM-layered structure with a space group of R-3m"
+    }
+}

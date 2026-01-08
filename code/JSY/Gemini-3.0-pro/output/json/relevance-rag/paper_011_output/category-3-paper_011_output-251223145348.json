@@ -1,0 +1,32 @@
+{
+    "Particle size": {
+        "NR0": "narrow size range of 200e300 nm",
+        "NR1": null,
+        "NR3": null,
+        "NR5": null
+    },
+    "Particle shape": {
+        "NR0": "faceted morphology; regular polyhedrons with smooth surfaces",
+        "NR1": null,
+        "NR3": null,
+        "NR5": null
+    },
+    "Particle distribution": {
+        "NR0": "uniform distribution of the particle size with no significant agglomeration",
+        "NR1": null,
+        "NR3": null,
+        "NR5": null
+    },
+    "Coating layer characteristics": {
+        "NR0": null,
+        "NR1": "wrapped up by thin RGO nanosheets, forming a core-shell-like structure",
+        "NR3": "wrapped up by thin RGO nanosheets, forming a core-shell-like structure",
+        "NR5": "wrapped up by thin RGO nanosheets, forming a core-shell-like structure"
+    },
+    "Crystal structure and lattice characteristics": {
+        "NR0": null,
+        "NR1": null,
+        "NR3": null,
+        "NR5": null
+    }
+}

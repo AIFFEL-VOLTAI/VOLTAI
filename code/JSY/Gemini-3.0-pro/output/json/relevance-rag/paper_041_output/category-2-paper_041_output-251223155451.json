@@ -1,0 +1,54 @@
+{
+    "pristine NCM-811": {
+        "Active material to Conductive additive to Binder ratio": "80:10:10",
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1.0",
+                "Solvent": "EC:DMC",
+                "Solvent ratio": "3:7"
+            }
+        ],
+        "Additive": "FEC, 5.0%",
+        "Loading density (mass loading of NCM)": null
+    },
+    "g-C3N4NSs@NCM-811": {
+        "Active material to Conductive additive to Binder ratio": "80:10:10",
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1.0",
+                "Solvent": "EC:DMC",
+                "Solvent ratio": "3:7"
+            }
+        ],
+        "Additive": "FEC, 5.0%",
+        "Loading density (mass loading of NCM)": null
+    },
+    "thin g-C3N4@NCM-811": {
+        "Active material to Conductive additive to Binder ratio": "80:10:10",
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1.0",
+                "Solvent": "EC:DMC",
+                "Solvent ratio": "3:7"
+            }
+        ],
+        "Additive": "FEC, 5.0%",
+        "Loading density (mass loading of NCM)": null
+    },
+    "thick g-C3N4@NCM-811": {
+        "Active material to Conductive additive to Binder ratio": "80:10:10",
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1.0",
+                "Solvent": "EC:DMC",
+                "Solvent ratio": "3:7"
+            }
+        ],
+        "Additive": "FEC, 5.0%",
+        "Loading density (mass loading of NCM)": null
+    }
+}

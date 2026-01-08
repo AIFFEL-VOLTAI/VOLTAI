@@ -1,0 +1,28 @@
+{
+    "N92": {
+        "Active material to Conductive additive to Binder ratio": "8:1:1",
+        "Electrolyte": [
+            {
+                "Salt": null,
+                "Concentration": null,
+                "Solvent": null,
+                "Solvent ratio": null
+            }
+        ],
+        "Additive": null,
+        "Loading density (mass loading of NCM)": null
+    },
+    "WN92": {
+        "Active material to Conductive additive to Binder ratio": "8:1:1",
+        "Electrolyte": [
+            {
+                "Salt": null,
+                "Concentration": null,
+                "Solvent": null,
+                "Solvent ratio": null
+            }
+        ],
+        "Additive": null,
+        "Loading density (mass loading of NCM)": null
+    }
+}

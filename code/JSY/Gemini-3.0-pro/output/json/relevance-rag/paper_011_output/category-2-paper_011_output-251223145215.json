@@ -1,0 +1,54 @@
+{
+    "NR0": {
+        "Active material to Conductive additive to Binder ratio": null,
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1",
+                "Solvent": "EC:DMC",
+                "Solvent ratio": "1:1"
+            }
+        ],
+        "Additive": null,
+        "Loading density (mass loading of NCM)": null
+    },
+    "NR1": {
+        "Active material to Conductive additive to Binder ratio": null,
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1",
+                "Solvent": "EC:DMC",
+                "Solvent ratio": "1:1"
+            }
+        ],
+        "Additive": null,
+        "Loading density (mass loading of NCM)": null
+    },
+    "NR3": {
+        "Active material to Conductive additive to Binder ratio": null,
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1",
+                "Solvent": "EC:DMC",
+                "Solvent ratio": "1:1"
+            }
+        ],
+        "Additive": null,
+        "Loading density (mass loading of NCM)": null
+    },
+    "NR5": {
+        "Active material to Conductive additive to Binder ratio": null,
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1",
+                "Solvent": "EC:DMC",
+                "Solvent ratio": "1:1"
+            }
+        ],
+        "Additive": null,
+        "Loading density (mass loading of NCM)": null
+    }
+}

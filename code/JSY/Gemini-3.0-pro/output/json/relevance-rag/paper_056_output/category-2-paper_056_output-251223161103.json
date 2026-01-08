@@ -1,0 +1,28 @@
+{
+    "pristine NCM": {
+        "Active material to Conductive additive to Binder ratio": "96:2:2",
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1",
+                "Solvent": "DMC:EC:EMC",
+                "Solvent ratio": "1:1:1"
+            }
+        ],
+        "Additive": null,
+        "Loading density (mass loading of NCM)": null
+    },
+    "M-NCM": {
+        "Active material to Conductive additive to Binder ratio": "96:2:2",
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1",
+                "Solvent": "DMC:EC:EMC",
+                "Solvent ratio": "1:1:1"
+            }
+        ],
+        "Additive": null,
+        "Loading density (mass loading of NCM)": null
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "NR0": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.33,
+            "Co ratio": 0.33,
+            "Mn ratio": 0.33,
+            "O ratio": 2.0
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiNO3",
+        "Synthesis method": "solution combustion",
+        "Crystallization method": "calcination",
+        "Crystallization final temperature": 850,
+        "Crystallization final duration (hours)": 15,
+        "Doping": null,
+        "Coating": null
+    },
+    "NR1": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.33,
+            "Co ratio": 0.33,
+            "Mn ratio": 0.33,
+            "O ratio": 2.0
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiNO3",
+        "Synthesis method": "solution combustion",
+        "Crystallization method": "calcination",
+        "Crystallization final temperature": 850,
+        "Crystallization final duration (hours)": 15,
+        "Doping": null,
+        "Coating": "Reduced graphene oxide (RGO)"
+    },
+    "NR3": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.33,
+            "Co ratio": 0.33,
+            "Mn ratio": 0.33,
+            "O ratio": 2.0
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiNO3",
+        "Synthesis method": "solution combustion",
+        "Crystallization method": "calcination",
+        "Crystallization final temperature": 850,
+        "Crystallization final duration (hours)": 15,
+        "Doping": null,
+        "Coating": "Reduced graphene oxide (RGO)"
+    },
+    "NR5": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.33,
+            "Co ratio": 0.33,
+            "Mn ratio": 0.33,
+            "O ratio": 2.0
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiNO3",
+        "Synthesis method": "solution combustion",
+        "Crystallization method": "calcination",
+        "Crystallization final temperature": 850,
+        "Crystallization final duration (hours)": 15,
+        "Doping": null,
+        "Coating": "Reduced graphene oxide (RGO)"
+    }
+}

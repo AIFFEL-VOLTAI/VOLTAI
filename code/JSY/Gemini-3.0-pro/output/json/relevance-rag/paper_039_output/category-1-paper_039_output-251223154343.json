@@ -1,0 +1,37 @@
+{
+    "N92": {
+        "Stoichiometry information": {
+            "Li": 1.0,
+            "Ni": 0.92,
+            "Co": 0.04,
+            "Mn": 0.04,
+            "O": 2.0
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiOH",
+        "Synthesis method": "solid-phase method",
+        "Crystallization method": "calcined",
+        "Crystallization final temperature": 780,
+        "Crystallization final duration (hours)": 10,
+        "Doping": null,
+        "Coating": null
+    },
+    "WN92": {
+        "Stoichiometry information": {
+            "Li": 1.0,
+            "Ni": 0.91,
+            "Co": 0.04,
+            "Mn": 0.04,
+            "W": 0.01,
+            "O": 2.0
+        },
+        "Commercial NCM used": "no",
+        "Lithium source": "LiOH",
+        "Synthesis method": "solid-phase method",
+        "Crystallization method": "calcined",
+        "Crystallization final temperature": 780,
+        "Crystallization final duration (hours)": 10,
+        "Doping": "W",
+        "Coating": null
+    }
+}

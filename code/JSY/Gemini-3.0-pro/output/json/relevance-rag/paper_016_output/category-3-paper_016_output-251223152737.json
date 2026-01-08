@@ -1,0 +1,22 @@
+{
+    "Particle size": {
+        "NCM": "particle sizes range from 50 to 200 nm",
+        "NCM/C": "diameter of about 150 nm"
+    },
+    "Particle shape": {
+        "NCM": "irregular particle shape",
+        "NCM/C": "irregular particle shape"
+    },
+    "Particle distribution": {
+        "NCM": "almost every particle in NCM can be identified clearly",
+        "NCM/C": "particles aggregating together; distribution of the particle’s size is homogeneous"
+    },
+    "Coating layer characteristics": {
+        "NCM": null,
+        "NCM/C": "packaged by a layer of carbon; homogeneously coated by carbon with a thickness about 10 nm"
+    },
+    "Crystal structure and lattice characteristics": {
+        "NCM": null,
+        "NCM/C": null
+    }
+}

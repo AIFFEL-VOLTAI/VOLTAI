@@ -1,0 +1,32 @@
+{
+    "Particle size": {
+        "pristine NCM-811": "diameter ranging from 10 to 20 μm",
+        "g-C3N4NSs@NCM-811": null,
+        "thin g-C3N4@NCM-811": null,
+        "thick g-C3N4@NCM-811": null
+    },
+    "Particle shape": {
+        "pristine NCM-811": "spherical in shape; well-defined shape interface",
+        "g-C3N4NSs@NCM-811": "particle structure is preserved; overall shape is similar to the pristine sample",
+        "thin g-C3N4@NCM-811": "particle structure is preserved",
+        "thick g-C3N4@NCM-811": "particle structure is preserved"
+    },
+    "Particle distribution": {
+        "pristine NCM-811": "formed by the assembly of small nanosized primary particles",
+        "g-C3N4NSs@NCM-811": null,
+        "thin g-C3N4@NCM-811": null,
+        "thick g-C3N4@NCM-811": null
+    },
+    "Coating layer characteristics": {
+        "pristine NCM-811": "without an obvious surface coating layer",
+        "g-C3N4NSs@NCM-811": "formation of a thick coating layer; thicker and inhomogeneous coating; thick coating layer (∼100 nm); flakes similar to the g-C3N4 nanosheet are further attached to the NCM-811 surface",
+        "thin g-C3N4@NCM-811": "surface coating layer is not as obvious; thin homogenous coating layer; ∼20 nm",
+        "thick g-C3N4@NCM-811": "surface coating layer is not as obvious; ∼70 nm"
+    },
+    "Crystal structure and lattice characteristics": {
+        "pristine NCM-811": null,
+        "g-C3N4NSs@NCM-811": null,
+        "thin g-C3N4@NCM-811": null,
+        "thick g-C3N4@NCM-811": null
+    }
+}

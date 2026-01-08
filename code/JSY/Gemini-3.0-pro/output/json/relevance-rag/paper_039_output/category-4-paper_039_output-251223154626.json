@@ -1,0 +1,74 @@
+{
+    "N92": [
+        {
+            "Voltage range": "2.8–4.3",
+            "Temperature": null,
+            "C-rate and Specific capacity": [
+                {
+                    "C-rate": 0.1,
+                    "Capacity": 211.93
+                },
+                {
+                    "C-rate": 0.2,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 0.5,
+                    "Capacity": 191.47
+                },
+                {
+                    "C-rate": 1.0,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 2.0,
+                    "Capacity": null
+                },
+                {
+                    "Other C-rates and performance": [
+                        {
+                            "C-rate": 5.0,
+                            "Capacity": 64.19
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "WN92": [
+        {
+            "Voltage range": "2.8–4.3",
+            "Temperature": null,
+            "C-rate and Specific capacity": [
+                {
+                    "C-rate": 0.1,
+                    "Capacity": 210.83
+                },
+                {
+                    "C-rate": 0.2,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 0.5,
+                    "Capacity": 190.1
+                },
+                {
+                    "C-rate": 1.0,
+                    "Capacity": null
+                },
+                {
+                    "C-rate": 2.0,
+                    "Capacity": null
+                },
+                {
+                    "Other C-rates and performance": [
+                        {
+                            "C-rate": 5.0,
+                            "Capacity": 159.11
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

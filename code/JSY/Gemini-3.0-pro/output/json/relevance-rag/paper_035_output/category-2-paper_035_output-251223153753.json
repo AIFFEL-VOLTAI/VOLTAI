@@ -1,0 +1,41 @@
+{
+    "S1bare": {
+        "Active material to Conductive additive to Binder ratio": "96.5:1.5:2",
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1",
+                "Solvent": "EC:DMC",
+                "Solvent ratio": "1:1"
+            }
+        ],
+        "Additive": null,
+        "Loading density (mass loading of NCM)": "12"
+    },
+    "S2wash": {
+        "Active material to Conductive additive to Binder ratio": "96.5:1.5:2",
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1",
+                "Solvent": "EC:DMC",
+                "Solvent ratio": "1:1"
+            }
+        ],
+        "Additive": null,
+        "Loading density (mass loading of NCM)": "12"
+    },
+    "S3coat": {
+        "Active material to Conductive additive to Binder ratio": "96.5:1.5:2",
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1",
+                "Solvent": "EC:DMC",
+                "Solvent ratio": "1:1"
+            }
+        ],
+        "Additive": null,
+        "Loading density (mass loading of NCM)": "12"
+    }
+}

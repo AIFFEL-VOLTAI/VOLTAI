@@ -1,0 +1,22 @@
+{
+    "Particle size": {
+        "pristine NCM622": null,
+        "polymer/γ-Al2O3-coated NCM622": null
+    },
+    "Particle shape": {
+        "pristine NCM622": null,
+        "polymer/γ-Al2O3-coated NCM622": "irregular particle surface"
+    },
+    "Particle distribution": {
+        "pristine NCM622": null,
+        "polymer/γ-Al2O3-coated NCM622": null
+    },
+    "Coating layer characteristics": {
+        "pristine NCM622": null,
+        "polymer/γ-Al2O3-coated NCM622": "uniform coating of the γ-Al2O3 layer on the particle surface; layer was around 7.8 nm on the particle surface; ultrathin yet uniform and microporous coating layer"
+    },
+    "Crystal structure and lattice characteristics": {
+        "pristine NCM622": null,
+        "polymer/γ-Al2O3-coated NCM622": null
+    }
+}

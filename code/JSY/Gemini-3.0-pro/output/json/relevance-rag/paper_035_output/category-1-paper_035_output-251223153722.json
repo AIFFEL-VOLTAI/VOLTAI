@@ -1,0 +1,53 @@
+{
+    "S1bare": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.85,
+            "Co ratio": 0.1,
+            "Mn ratio": 0.05,
+            "O ratio": 2.0
+        },
+        "Commercial NCM used": null,
+        "Lithium source": null,
+        "Synthesis method": null,
+        "Crystallization method": null,
+        "Crystallization final temperature": null,
+        "Crystallization final duration (hours)": null,
+        "Doping": null,
+        "Coating": null
+    },
+    "S2wash": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.85,
+            "Co ratio": 0.1,
+            "Mn ratio": 0.05,
+            "O ratio": 2.0
+        },
+        "Commercial NCM used": null,
+        "Lithium source": null,
+        "Synthesis method": null,
+        "Crystallization method": null,
+        "Crystallization final temperature": null,
+        "Crystallization final duration (hours)": null,
+        "Doping": null,
+        "Coating": null
+    },
+    "S3coat": {
+        "Stoichiometry information": {
+            "Li ratio": 1.0,
+            "Ni ratio": 0.85,
+            "Co ratio": 0.1,
+            "Mn ratio": 0.05,
+            "O ratio": 2.0
+        },
+        "Commercial NCM used": null,
+        "Lithium source": null,
+        "Synthesis method": null,
+        "Crystallization method": null,
+        "Crystallization final temperature": null,
+        "Crystallization final duration (hours)": null,
+        "Doping": null,
+        "Coating": null
+    }
+}

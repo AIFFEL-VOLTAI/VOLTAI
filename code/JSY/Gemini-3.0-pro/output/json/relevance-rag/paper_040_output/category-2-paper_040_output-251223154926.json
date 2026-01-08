@@ -1,0 +1,15 @@
+{
+    "SC-NCM83": {
+        "Active material to Conductive additive to Binder ratio": "90:5:5",
+        "Electrolyte": [
+            {
+                "Salt": "LiPF6",
+                "Concentration": "1",
+                "Solvent": "EC:DEC",
+                "Solvent ratio": "50:50"
+            }
+        ],
+        "Additive": null,
+        "Loading density (mass loading of NCM)": "5"
+    }
+}
