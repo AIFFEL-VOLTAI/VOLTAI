@@ -29,7 +29,7 @@ def main(args):
     category_names = ["CAM (Cathode Active Material)", "Electrode (half-cell)", "Morphological Properties", "Cathode Performance"]
 
     ## config 불러오기
-    config = load_config(config_folder=args.config_folder)
+    config = load_cnfig(config_folder=args.config_folder)
     
     ## 프로젝트 이름 설정: langsmith 추척
     logging.langsmith(f"{config['project_name']} : {config['rag_method']}")
