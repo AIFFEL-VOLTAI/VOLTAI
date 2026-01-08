@@ -1,11 +1,14 @@
 import warnings
+import json
+import google.generativeai as genai
 warnings.filterwarnings("ignore")
 
 from langgraph.graph import END, StateGraph
 from langchain_core.output_parsers import JsonOutputParser
 
 from typing import Annotated, TypedDict
-from langchain_openai import ChatOpenAI
+#from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from typing_extensions import TypedDict
 
 from langgraph.graph.message import add_messages
@@ -30,14 +33,14 @@ class GraphState(TypedDict):
 class RelevanceRAG:
     def __init__(
         self, 
-        file_folder:str="./data/raw", 
+        file_folder:str="./data/input_data/", 
         file_number:int=1, 
         # db_folder:str="./vectordb", 
         chunk_size: int=500, 
         chunk_overlap: int=100, 
         search_k: int=10,       
         system_prompt:str = None, 
-        model_name:str="gpt-4o",
+        model_name:str="gemini-3-pro-preview",
         save_graph_png:bool=False,
     ):
         self.retriever = get_retriever(
@@ -48,8 +51,23 @@ class RelevanceRAG:
             search_k=search_k
         )
         self.model_name = model_name
-        self.model = ChatOpenAI(model_name=self.model_name, temperature=0.0)
-        self.relevance_checker = ChatOpenAI(model=self.model_name, temperature=0.7)
+
+        # =======================================================
+        # 🌟 [추가된 코드] generation_config 변수 정의 🌟
+        # * NameError 해결 및 RAG 최적화 설정 적용
+        # =======================================================
+        generation_config = {
+            "temperature": 1.0,          
+            "max_output_tokens": 2048,     # JSON 출력을 위해 넉넉히 설정
+            "thinking_config": {
+                "include_thoughts": False, # LangGraph의 JSON 파싱 오류 방지 (필수)
+                "thinking_level": "high"    # 속도 개선을 위해 Low Reasoning 레벨로 설정
+            }
+        }
+        # =======================================================
+
+        self.model = ChatGoogleGenerativeAI(model=self.model_name, generation_config=generation_config) # 👈 설정 적용)
+        self.relevance_checker = ChatGoogleGenerativeAI(model=self.model_name, temperature=1.0)
         self.llm_answer_prompt = system_prompt["llm_answer_system_prompt"]
         self.relevance_check_template = """
         You are a grader assessing relevance of a retrieved document to a user question. \n 
@@ -167,9 +185,18 @@ class RelevanceRAG:
         )
 
         # 생성된 답변, (유저의 질문, 답변) 메시지를 상태에 저장합니다.
+
+        if isinstance(response, list):
+            final_answer = response
+        else:
+            final_answer = [response]
+
         return GraphState(
-            answer=response,
-            messages=[("user", latest_question), ("assistant", response)]
+            answer=final_answer, 
+            messages=[
+                ("user", latest_question), 
+                ("assistant", json.dumps(response, ensure_ascii=False)) 
+            ]
         )
 
 

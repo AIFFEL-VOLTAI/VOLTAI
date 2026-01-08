@@ -1,7 +1,7 @@
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.runnables import RunnableConfig
 from langchain_teddynote.messages import random_uuid
-
+import copy
 import json
 import yaml
 from typing import Union
@@ -32,10 +32,32 @@ def load_invoke_input(config_folder:str="./config", category_number:int=1, rag_m
     ## category 별 question 생성
     for i, sample_name in enumerate(sample_names):
         if category_number == 1:
-            question["template"][category_names[category_number-1]]["Stoichiometry information"][sample_name] = {}
-            question["template"][category_names[category_number-1]]["Commercial NCM used"][sample_name] = {}
+            #question["template"][category_names[category_number-1]]["Stoichiometry information"][sample_name] = {}
+            #question["template"][category_names[category_number-1]]["Commercial NCM used"][sample_name] = {}
+            # [수정된 부분 시작] ------------------------------------------------
+            target_category = category_names[category_number-1] # "CAM (Cathode Active Material)"
+            
+            # 첫 번째 샘플 처리 시: 원본 템플릿(스키마) 복사 후 부모 초기화
+            if i == 0:
+                base_schema = copy.deepcopy(question["template"][target_category])
+                question["template"][target_category] = {}
+            
+            # 스키마를 샘플 이름 아래에 할당
+            question["template"][target_category][sample_name] = copy.deepcopy(base_schema)
+            # [수정된 부분 끝] --------------------------------------------------
         elif category_number == 2:
-            question["template"][category_names[category_number-1]][sample_name] = {}
+            #question["template"][category_names[category_number-1]][sample_name] = {}
+            target_category = category_names[category_number-1] # "Electrode (half-cell)"
+            
+            # 첫 번째 샘플을 처리할 때만 스키마를 복사하고 틀을 비웁니다.
+            if i == 0:
+                # 1. yaml에 있던 원본 속성들(Active material 등)을 따로 저장
+                base_schema = copy.deepcopy(question["template"][target_category])
+                # 2. 원래 자리는 비워서 중복 출력 방지
+                question["template"][target_category] = {}
+            
+            # 3. 저장해둔 스키마를 샘플 이름 아래에 넣어줌
+            question["template"][target_category][sample_name] = copy.deepcopy(base_schema)
         elif category_number == 3:
             temp_template = question["template"][category_names[category_number-1]]
             for k in temp_template.keys():
