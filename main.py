@@ -16,6 +16,7 @@ load_dotenv(dotenv_path=".env")
 # API 키 가져오기
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # LangSmith 추적 기능을 활성화합니다. (선택적)
 os.environ["LANGCHAIN_TRACING_V2"] = "true"    
