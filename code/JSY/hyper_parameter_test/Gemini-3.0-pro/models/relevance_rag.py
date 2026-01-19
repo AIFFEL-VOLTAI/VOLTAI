@@ -66,8 +66,8 @@ class RelevanceRAG:
         }
         # =======================================================
 
-        self.model = ChatGoogleGenerativeAI(model=self.model_name, generation_config=generation_config) # 👈 설정 적용)
-        self.relevance_checker = ChatGoogleGenerativeAI(model=self.model_name, temperature=0.3)
+        self.model = ChatGoogleGenerativeAI(model=self.model_name, generation_config=generation_config, transport="rest") # 👈 설정 적용)
+        self.relevance_checker = ChatGoogleGenerativeAI(model=self.model_name, temperature=0.3, transport="rest")
         self.llm_answer_prompt = system_prompt["llm_answer_system_prompt"]
         self.relevance_check_template = """
         You are a grader assessing relevance of a retrieved document to a user question. \n 
