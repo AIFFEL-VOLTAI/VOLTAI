@@ -1,0 +1,12 @@
+## 250126 update(LHC) - Category 3 (question)
+question_text: |
+    Please fill out the following JSON structure by referring to the PDF. If the information is not mentioned in the PDF, write `null` (not `None`).
+    모든 항목에 대해 논문에 제시되어 있지 않으니 없거나 모르겠으면 일단 json 형식으로 작성하고 넘겨라. Fill out in the `null`, `[]` and `{}` values based on the example format:
+
+template: 
+    Morphological Properties:
+        Particle size: {}
+        Particle shape: {}
+        Particle distribution: {}
+        Coating layer characteristics: {}
+        Crystal structure and lattice characteristics: {}

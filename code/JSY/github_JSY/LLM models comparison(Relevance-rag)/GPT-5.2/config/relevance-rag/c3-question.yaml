@@ -1,0 +1,11 @@
+## 250126 update(LHC) - Category 3 (question)
+question_text: |
+    Fill out in the `null`, `[]` and `{}` values based on the example format:
+
+template: 
+    Morphological Properties:
+        Particle size: {}
+        Particle shape: {}
+        Particle distribution: {}
+        Coating layer characteristics: {}
+        Crystal structure and lattice characteristics: {}

@@ -1,0 +1,30 @@
+{
+    "Cathode Performance": {
+        "SC-NCM83": [
+            {
+                "Voltage range": "3.0–4.3",
+                "Temperature": 25,
+                "C-rate and Specific capacity": [
+                    {"C-rate": 0.1, "Capacity": null},
+                    {"C-rate": 0.5, "Capacity": null},
+                    {"C-rate": 1.0, "Capacity": 162},
+                    {"C-rate": 2.0, "Capacity": null},
+                    {"Other C-rates and performance": [{"C-rate": 0.05, "Capacity": 199}]}
+                ]
+            }
+        ],
+        "pristine NCM": [
+            {
+                "Voltage range": "3.0-4.3",
+                "Temperature": 25,
+                "C-rate and Specific capacity": [
+                    {"C-rate": 0.1, "Capacity": 199.1},
+                    {"C-rate": 0.5, "Capacity": null},
+                    {"C-rate": 1.0, "Capacity": null},
+                    {"C-rate": 2.0, "Capacity": null},
+                    {"Other C-rates and performance": [{"C-rate": 5.0, "Capacity": 159.0}, {"C-rate": 6.0, "Capacity": 151.3}]}
+                ]
+            }
+        ]
+    }
+}

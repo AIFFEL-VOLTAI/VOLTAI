@@ -1,0 +1,14 @@
+## 260206 update(JSY) - Category 2 (question)
+question_text: |
+  Fill out in the `null`, `[]` and `{}` values based on the example format:
+
+template: 
+  Electrode (half-cell):
+    Active material to Conductive additive to Binder ratio: null
+    Electrolyte: 
+      - Salt: null
+        Concentration: null
+        Solvent: null
+        Solvent ratio: null
+    Additive: null
+    Loading density (mass loading of NCM): null
